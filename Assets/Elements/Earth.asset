@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Earth
   m_EditorClassIdentifier: 
   _id: Earth
-  _name: "\u0417\u0435\u043C\u043B\u044F"
-  _sprite: {fileID: 0}
-  _createRecipies: []
-  _recipes: []
+  _lable: "\u0417\u0435\u043C\u043B\u044F"
+  _sprite: {fileID: 21300000, guid: a2c1ed610c148e34090aa4da3f841cbd, type: 3}
+  _creationRecipies: []
+  _recipesWithElement: []

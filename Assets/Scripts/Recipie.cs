@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 [Serializable]
-public class Recipe
+public sealed class Recipe
 {
     [SerializeField] private Element _secondElement;
     [SerializeField] private Element _result;

@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: Water
   m_EditorClassIdentifier: 
   _id: Water
-  _name: "\u0412\u043E\u0434\u0430"
-  _recipes: []
+  _lable: "\u0412\u043E\u0434\u0430"
+  _sprite: {fileID: 21300000, guid: 0f8176a3e4bc9474dac3590beb38a8f3, type: 3}
+  _creationRecipies: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+    _result: {fileID: 11400000, guid: c27f4b9e0111b2540b594be6c48f1286, type: 2}

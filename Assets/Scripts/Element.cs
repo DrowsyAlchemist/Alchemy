@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Element", menuName = "Element", order = 51)]
-public class Element : ScriptableObject
+public sealed class Element : ScriptableObject
 {
     [SerializeField] private string _id;
-    [SerializeField] private string _name;
+    [SerializeField] private string _lable;
     [SerializeField] private Sprite _sprite;
     [SerializeField] private List<CreationRecipie> _creationRecipies = new();
     [SerializeField] private List<Recipe> _recipesWithElement = new();
 
     public string Id => _id;
-    public string Name => _name;
+    public string Lable => _lable;
     public Sprite Sprite => _sprite;
     public IReadOnlyCollection<CreationRecipie> CreationRecipies => _creationRecipies;
     public IReadOnlyCollection<Recipe> Recipes => _recipesWithElement;
@@ -29,20 +29,6 @@ public class Element : ScriptableObject
 
         if (HasRecipie(recipieToCheck) == false)
             _recipesWithElement.Add(recipieToCheck);
-    }
-
-    public void RemoveRecipie(Element secondElement, Element result)
-    {
-        if (secondElement == null)
-            throw new ArgumentNullException(nameof(secondElement));
-
-        if (result == null)
-            throw new ArgumentNullException(nameof(result));
-
-        var recipieToCheck = new Recipe(secondElement, result);
-
-        if (HasRecipie(recipieToCheck))
-            _recipesWithElement.Remove(recipieToCheck);
     }
 
     public void RemoveRecipie(Recipe recipeWithElement)

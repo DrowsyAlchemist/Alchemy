@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 [Serializable]
-public class CreationRecipie
+public sealed class CreationRecipie
 {
     [SerializeField] private Element _firstElement;
     [SerializeField] private Element _secondElement;

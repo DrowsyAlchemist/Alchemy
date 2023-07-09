@@ -5,7 +5,7 @@ using UnityEditor;
 namespace RecipiesChecker
 {
     [CustomEditor(typeof(RecipiesCheckerInterface))]
-    public class RecipiesCheckerGUI : Editor
+    public sealed class RecipiesCheckerGUI : Editor
     {
         public override void OnInspectorGUI()
         {

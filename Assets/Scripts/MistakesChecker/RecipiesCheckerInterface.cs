@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace RecipiesChecker
 {
-    public class RecipiesCheckerInterface : MonoBehaviour
+    public sealed class RecipiesCheckerInterface : MonoBehaviour
     {
         [SerializeField] private List<Element> _elements;
 
