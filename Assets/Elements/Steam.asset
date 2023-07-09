@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
-  m_Name: Fire
+  m_Name: Steam
   m_EditorClassIdentifier: 
-  _id: Fire
-  _name: "\u041E\u0433\u043E\u043D\u044C"
+  _id: Steam
+  _name: "\u041F\u0430\u0440"
   _sprite: {fileID: 0}
-  _creationRecipies: []
-  _recipesWithElement:
-  - _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
-    _result: {fileID: 11400000, guid: c27f4b9e0111b2540b594be6c48f1286, type: 2}
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
+    _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+  _recipesWithElement: []
