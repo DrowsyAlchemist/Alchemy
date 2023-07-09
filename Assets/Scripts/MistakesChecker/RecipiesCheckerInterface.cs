@@ -5,7 +5,7 @@ namespace RecipiesChecker
 {
     public sealed class RecipiesCheckerInterface : MonoBehaviour
     {
-        [SerializeField] private List<Element> _elements;
+        [SerializeField] private ElementsStorage _elementsStorage;
 
         private void Awake()
         {
@@ -16,7 +16,7 @@ namespace RecipiesChecker
         {
             var recipiesToRemove = new List<Recipe>();
 
-            foreach (var element in _elements)
+            foreach (var element in _elementsStorage.Elements)
             {
                 foreach (var recipieWithElement in element.Recipes)
                 {
@@ -34,7 +34,7 @@ namespace RecipiesChecker
 
         public void AddRecipiesByCreationRecipieForAll()
         {
-            foreach (var element in _elements)
+            foreach (var element in _elementsStorage.Elements)
                 foreach (var creationRecipie in element.CreationRecipies)
                     AddRecipies(creationRecipie, result: element); ;
         }
