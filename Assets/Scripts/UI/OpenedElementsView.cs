@@ -25,8 +25,22 @@ public class OpenedElementsView : MonoBehaviour
         if (_initialized == false)
             throw new InvalidOperationException("Object is not initialized");
 
+        int i = 0;
+
         foreach (var element in elements)
-            AddElement(element);
+        {
+            if ((i + 1) > _openedElementRenderers.Count)
+                AddElement(element);
+            else
+                _openedElementRenderers[i].Render(element);
+
+            i++;
+        }
+        while (_openedElementRenderers.Count > elements.Count)
+        {
+            Destroy(_openedElementRenderers[i].gameObject);
+            _openedElementRenderers.RemoveAt(i);
+        }
     }
 
     public void AddElement(Element element)
@@ -40,8 +54,18 @@ public class OpenedElementsView : MonoBehaviour
         _openedElementRenderers.Add(renderer);
     }
 
-    public void Sort()
+    public void Rerender(IReadOnlyCollection<Element> elements)
     {
-        _openedElementRenderers.Sort((a, b) => a.Element.Lable.CompareTo(b.Element.Lable));
+        int i = 0;
+
+        foreach (var element in elements)
+        {
+            if ((i + 1) > _openedElementRenderers.Count)
+                AddElement(element);
+            else
+                _openedElementRenderers[i].Render(element);
+
+            i++;
+        }
     }
 }

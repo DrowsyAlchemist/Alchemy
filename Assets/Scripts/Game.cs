@@ -1,26 +1,35 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public sealed class Game : MonoBehaviour, IMergeHandler
 {
     [SerializeField] private ElementsStorage _elementsStorage;
     [SerializeField] private OpenedElementsView _openedElementsView;
     [SerializeField] private GameField _gameField;
+    [SerializeField] private Button _resetButton;
 
     [SerializeField] private List<Element> _initialElements;
 
     private void Start()
     {
+        OpedInitialElements();
+        _resetButton.onClick.AddListener(ResetProgress);
         _openedElementsView.Init(_gameField, this);
+        _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
+    }
 
-        foreach (var element in _initialElements)
-            element.Open();
+    private void OnDestroy()
+    {
+        _resetButton.onClick.RemoveListener(ResetProgress);
+    }
 
-        foreach (var element in _elementsStorage.Elements)
-            if (element.IsOpened)
-                _openedElementsView.AddElement(element);
-
-        _openedElementsView.Sort();
+    private void ResetProgress()
+    {
+        PlayerPrefs.DeleteAll();
+        _gameField.Clear();
+        OpedInitialElements();
+        _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
     }
 
     public void TryMergeElements(MergeableElementRenderer firstRenderer, MergeableElementRenderer secondRenderer)
@@ -60,7 +69,12 @@ public sealed class Game : MonoBehaviour, IMergeHandler
     private void OpenNewElement(Element element)
     {
         element.Open();
-        _openedElementsView.AddElement(element);
-        _openedElementsView.Sort();
+        _openedElementsView.Rerender(_elementsStorage.SortedOpenedElements);
+    }
+
+    private void OpedInitialElements()
+    {
+        foreach (var element in _initialElements)
+            element.Open();
     }
 }

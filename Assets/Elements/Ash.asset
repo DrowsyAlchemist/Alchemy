@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ash
   m_EditorClassIdentifier: 
   _id: Ash
-  _lable: "\u041F\u044B\u043B\u044C"
+  _lable: "\u041F\u0435\u043F\u0435\u043B"
   _sprite: {fileID: 0}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 6cefb0d7a6874fa4d8255e1958bab4e0, type: 2}

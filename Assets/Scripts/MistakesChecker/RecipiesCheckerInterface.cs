@@ -16,7 +16,7 @@ namespace RecipiesChecker
         {
             var recipiesToRemove = new List<Recipe>();
 
-            foreach (var element in _elementsStorage.Elements)
+            foreach (var element in _elementsStorage.SortedElements)
             {
                 foreach (var recipieWithElement in element.Recipes)
                 {
@@ -34,7 +34,7 @@ namespace RecipiesChecker
 
         public void AddRecipiesByCreationRecipieForAll()
         {
-            foreach (var element in _elementsStorage.Elements)
+            foreach (var element in _elementsStorage.SortedElements)
                 foreach (var creationRecipie in element.CreationRecipies)
                     AddRecipies(creationRecipie, result: element); ;
         }
