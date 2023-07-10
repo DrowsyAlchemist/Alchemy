@@ -12,8 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
   m_Name: Garden
   m_EditorClassIdentifier: 
-  _id: 
-  _lable: 
+  _id: Garden
+  _lable: "\u0421\u0430\u0434"
   _sprite: {fileID: 0}
-  _creationRecipies: []
-  _recipesWithElement: []
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
+    _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 622571748d2a8dd45b475b042f3addb4, type: 2}
+    _secondElement: {fileID: 11400000, guid: 622571748d2a8dd45b475b042f3addb4, type: 2}
+  - _firstElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
+    _secondElement: {fileID: 11400000, guid: 0ff280c20f14be6489dd8a2a2fc9601a, type: 2}
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
+    _result: {fileID: 11400000, guid: 622571748d2a8dd45b475b042f3addb4, type: 2}

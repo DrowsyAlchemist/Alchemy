@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
   m_Name: Gunpowder
   m_EditorClassIdentifier: 
-  _id: 
-  _lable: 
+  _id: Gunpowder
+  _lable: "\u041F\u043E\u0440\u043E\u0445"
   _sprite: {fileID: 0}
-  _creationRecipies: []
-  _recipesWithElement: []
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: 4971fcf875cdafb4db004ac27ecc4ecb, type: 2}
+    _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+    _result: {fileID: 11400000, guid: f90057cbf413a7c4fb294ca4a06476bb, type: 2}

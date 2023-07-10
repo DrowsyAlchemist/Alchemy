@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
   m_Name: Swamp
   m_EditorClassIdentifier: 
-  _id: 
-  _lable: 
+  _id: Swamp
+  _lable: "\u0411\u043E\u043B\u043E\u0442\u043E"
   _sprite: {fileID: 0}
-  _creationRecipies: []
-  _recipesWithElement: []
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: 85ea3114226562f4f8910a34ef7b7670, type: 2}
+    _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
+    _result: {fileID: 11400000, guid: 5049d9451a522f04dbad2d899ed209d5, type: 2}

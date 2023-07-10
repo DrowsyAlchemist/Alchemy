@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
   m_Name: Explosion
   m_EditorClassIdentifier: 
-  _id: 
-  _lable: 
+  _id: Explosion
+  _lable: "\u0412\u0437\u0440\u044B\u0432"
   _sprite: {fileID: 0}
-  _creationRecipies: []
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+    _secondElement: {fileID: 11400000, guid: c4f234f4bb10e3546a89c7a7a9bf4c9b, type: 2}
   _recipesWithElement: []

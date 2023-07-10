@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
   m_Name: Flood
   m_EditorClassIdentifier: 
-  _id: 
-  _lable: 
+  _id: Flood
+  _lable: "\u041F\u043E\u0442\u043E\u043F"
   _sprite: {fileID: 0}
-  _creationRecipies: []
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: bb425f3a78827f549b847208e99056b5, type: 2}
+    _secondElement: {fileID: 11400000, guid: bb425f3a78827f549b847208e99056b5, type: 2}
+  - _firstElement: {fileID: 11400000, guid: bb425f3a78827f549b847208e99056b5, type: 2}
+    _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
   _recipesWithElement: []

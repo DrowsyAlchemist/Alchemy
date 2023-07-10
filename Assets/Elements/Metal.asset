@@ -12,8 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
   m_Name: Metal
   m_EditorClassIdentifier: 
-  _id: 
-  _lable: 
+  _id: Metal
+  _lable: "\u041C\u0435\u0442\u0430\u043B"
   _sprite: {fileID: 0}
-  _creationRecipies: []
-  _recipesWithElement: []
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}
+    _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}
+    _result: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
+  - _secondElement: {fileID: 11400000, guid: b0aa5cf4a684f074980f2968646d8a67, type: 2}
+    _result: {fileID: 11400000, guid: 81668e2597190414a92632ae1510dfae, type: 2}
+  - _secondElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
+    _result: {fileID: 11400000, guid: 2621517271405c64389d106ba804fc2e, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}

@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
   m_Name: Glass
   m_EditorClassIdentifier: 
-  _id: 
-  _lable: 
+  _id: Glass
+  _lable: "\u0421\u0442\u0435\u043A\u043B\u043E"
   _sprite: {fileID: 0}
-  _creationRecipies: []
-  _recipesWithElement: []
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
+    _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
+    _result: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}

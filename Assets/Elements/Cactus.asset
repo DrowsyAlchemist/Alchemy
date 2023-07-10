@@ -12,8 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
   m_Name: Cactus
   m_EditorClassIdentifier: 
-  _id: 
-  _lable: 
+  _id: Cactus
+  _lable: "\u041A\u0430\u043A\u0442\u0443\u0441"
   _sprite: {fileID: 0}
-  _creationRecipies: []
-  _recipesWithElement: []
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
+    _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
+  - _firstElement: {fileID: 11400000, guid: e8ed961991c20674ab1887fbdaa7ec34, type: 2}
+    _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
+    _result: {fileID: 11400000, guid: e8ed961991c20674ab1887fbdaa7ec34, type: 2}

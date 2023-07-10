@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
   m_Name: Forest
   m_EditorClassIdentifier: 
-  _id: 
-  _lable: 
+  _id: Forest
+  _lable: "\u041B\u0435\u0441"
   _sprite: {fileID: 0}
-  _creationRecipies: []
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
+    _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
   _recipesWithElement: []

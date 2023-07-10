@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
   m_Name: Brick
   m_EditorClassIdentifier: 
-  _id: 
-  _lable: 
+  _id: Brick
+  _lable: "\u041A\u0438\u0440\u043F\u0438\u0447"
   _sprite: {fileID: 0}
-  _creationRecipies: []
-  _recipesWithElement: []
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+    _secondElement: {fileID: 11400000, guid: 85ea3114226562f4f8910a34ef7b7670, type: 2}
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000}
+    _result: {fileID: 11400000, guid: 7be785ceef6fbb24c8f4f70f78ac0cd2, type: 2}

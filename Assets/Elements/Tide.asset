@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
   m_Name: Tide
   m_EditorClassIdentifier: 
-  _id: 
-  _lable: 
+  _id: Tide
+  _lable: "\u041F\u0440\u0438\u043B\u0438\u0432"
   _sprite: {fileID: 0}
-  _creationRecipies: []
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}
+    _secondElement: {fileID: 11400000, guid: 779ecbf5c09925540b98dbacf97b00ff, type: 2}
+  - _firstElement: {fileID: 11400000, guid: bebaefc52908c9c4f809dc9f68c8022f, type: 2}
+    _secondElement: {fileID: 11400000, guid: 779ecbf5c09925540b98dbacf97b00ff, type: 2}
   _recipesWithElement: []

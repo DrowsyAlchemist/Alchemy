@@ -12,8 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
   m_Name: Moon
   m_EditorClassIdentifier: 
-  _id: 
-  _lable: 
+  _id: Moon
+  _lable: "\u041B\u0443\u043D\u0430"
   _sprite: {fileID: 0}
-  _creationRecipies: []
-  _recipesWithElement: []
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: 9f0d97070c0818543adcb8fa68d51192, type: 2}
+    _secondElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}
+    _result: {fileID: 11400000, guid: a20ca2eec15fe6643bdc72e6fa4d9cb9, type: 2}
+  - _secondElement: {fileID: 11400000, guid: bebaefc52908c9c4f809dc9f68c8022f, type: 2}
+    _result: {fileID: 11400000, guid: a20ca2eec15fe6643bdc72e6fa4d9cb9, type: 2}
