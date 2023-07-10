@@ -11,6 +11,8 @@ public sealed class Game : MonoBehaviour, IMergeHandler
 
     [SerializeField] private List<Element> _initialElements;
 
+    private Saver _saver;
+
     private void Start()
     {
         Init();
@@ -18,7 +20,8 @@ public sealed class Game : MonoBehaviour, IMergeHandler
 
     private void Init()
     {
-        OpedInitialElements();
+        _saver = Saver.Create(_elementsStorage);
+        OpenInitialElements();
         _elementsStorage.Init();
         _progressRenderer.Init(_elementsStorage);
         _openedElementsView.Init(_gameField, this);
@@ -30,7 +33,7 @@ public sealed class Game : MonoBehaviour, IMergeHandler
     {
         PlayerPrefs.DeleteAll();
         _gameField.Clear();
-        OpedInitialElements();
+        OpenInitialElements();
         _elementsStorage.Init();
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
     }
@@ -75,7 +78,7 @@ public sealed class Game : MonoBehaviour, IMergeHandler
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
     }
 
-    private void OpedInitialElements()
+    private void OpenInitialElements()
     {
         foreach (var element in _initialElements)
             element.Open();

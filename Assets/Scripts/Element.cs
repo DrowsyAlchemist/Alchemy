@@ -16,13 +16,12 @@ public sealed class Element : ScriptableObject
     public Sprite Sprite => _sprite;
     public IReadOnlyCollection<CreationRecipie> CreationRecipies => _creationRecipies;
     public IReadOnlyCollection<Recipe> Recipes => _recipesWithElement;
-    public bool IsOpened => PlayerPrefs.GetInt(_id, 0) == 1;
+    public bool IsOpened => Saver.GetInstance().IsElementOpened(this);
 
     public event Action<Element> Opened; 
 
     public void Open()
     {
-        PlayerPrefs.SetInt(_id, 1);
         Opened?.Invoke(this);
     }
 
