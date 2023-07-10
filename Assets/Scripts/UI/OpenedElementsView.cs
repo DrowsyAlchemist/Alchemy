@@ -53,19 +53,4 @@ public class OpenedElementsView : MonoBehaviour
         renderer.Init(_mergeableElementRendererTemplate, _gameField, _mergeHandler);
         _openedElementRenderers.Add(renderer);
     }
-
-    public void Rerender(IReadOnlyCollection<Element> elements)
-    {
-        int i = 0;
-
-        foreach (var element in elements)
-        {
-            if ((i + 1) > _openedElementRenderers.Count)
-                AddElement(element);
-            else
-                _openedElementRenderers[i].Render(element);
-
-            i++;
-        }
-    }
 }

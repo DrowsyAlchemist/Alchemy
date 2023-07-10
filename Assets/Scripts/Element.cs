@@ -18,9 +18,12 @@ public sealed class Element : ScriptableObject
     public IReadOnlyCollection<Recipe> Recipes => _recipesWithElement;
     public bool IsOpened => PlayerPrefs.GetInt(_id, 0) == 1;
 
+    public event Action<Element> Opened; 
+
     public void Open()
     {
         PlayerPrefs.SetInt(_id, 1);
+        Opened?.Invoke(this);
     }
 
     public void CheckAndAddRecipe(Element secondElement, Element result)

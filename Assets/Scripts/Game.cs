@@ -1,27 +1,29 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public sealed class Game : MonoBehaviour, IMergeHandler
 {
     [SerializeField] private ElementsStorage _elementsStorage;
     [SerializeField] private OpenedElementsView _openedElementsView;
     [SerializeField] private GameField _gameField;
-    [SerializeField] private Button _resetButton;
+    [SerializeField] private UIButton _resetButton;
+    [SerializeField] private ProgressRenderer _progressRenderer;
 
     [SerializeField] private List<Element> _initialElements;
 
     private void Start()
     {
-        OpedInitialElements();
-        _resetButton.onClick.AddListener(ResetProgress);
-        _openedElementsView.Init(_gameField, this);
-        _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
+        Init();
     }
 
-    private void OnDestroy()
+    private void Init()
     {
-        _resetButton.onClick.RemoveListener(ResetProgress);
+        OpedInitialElements();
+        _elementsStorage.Init();
+        _progressRenderer.Init(_elementsStorage);
+        _openedElementsView.Init(_gameField, this);
+        _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
+        _resetButton.Init(onButtonClick: ResetProgress);
     }
 
     private void ResetProgress()
@@ -29,6 +31,7 @@ public sealed class Game : MonoBehaviour, IMergeHandler
         PlayerPrefs.DeleteAll();
         _gameField.Clear();
         OpedInitialElements();
+        _elementsStorage.Init();
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
     }
 
@@ -69,7 +72,7 @@ public sealed class Game : MonoBehaviour, IMergeHandler
     private void OpenNewElement(Element element)
     {
         element.Open();
-        _openedElementsView.Rerender(_elementsStorage.SortedOpenedElements);
+        _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
     }
 
     private void OpedInitialElements()

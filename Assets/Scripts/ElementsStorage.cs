@@ -1,22 +1,37 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ElementsStorage : MonoBehaviour
+public class ElementsStorage : MonoBehaviour, IProgressHolder
 {
     [SerializeField] private List<Element> _elements = new();
+    private List<Element> _sortedOpenedElements = new();
 
     public IReadOnlyCollection<Element> SortedElements => _elements;
-    public IReadOnlyCollection<Element> SortedOpenedElements => GetOpenedElements();
+    public IReadOnlyCollection<Element> SortedOpenedElements => _sortedOpenedElements;
+    public int MaxCount => _elements.Count;
+    public int CurrentCount => _sortedOpenedElements.Count;
 
-    private IReadOnlyCollection<Element> GetOpenedElements()
+    public event Action<int> CurrentCountChanged;
+
+    public void Init()
     {
-        var result = new List<Element>();
+        _sortedOpenedElements.Clear();
 
         foreach (var element in _elements)
-            if(element.IsOpened)
-                result.Add(element);
+        {
+            if (element.IsOpened)
+                _sortedOpenedElements.Add(element);
+            else
+                element.Opened += OnElementOpened;
+        }
+        CurrentCountChanged?.Invoke(CurrentCount);
+    }
 
-        return result;
+    private void OnElementOpened(Element element)
+    {
+        _sortedOpenedElements.Add(element);
+        CurrentCountChanged?.Invoke(CurrentCount);
     }
 
     public void OnValidate()

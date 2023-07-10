@@ -1,8 +1,12 @@
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragHandler
+public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragHandler, IPointerClickHandler
 {
+    private const float XCloneShift = 20;
+    private const float YCloneShift = 20;
+
     private IMergeHandler _mergeHandler;
 
     public void Init(IMergeHandler mergeHandler)
@@ -31,5 +35,17 @@ public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragH
                 if (otherElementRenderer != this)
                     _mergeHandler.TryMergeElements(this, otherElementRenderer);
         }
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (eventData.clickCount == 2)
+            Clone();
+    }
+
+    private void Clone()
+    {
+        var clone = Instantiate(this, transform.position + new Vector3(XCloneShift, YCloneShift, 0), Quaternion.identity, transform.parent);
+        clone.Init(_mergeHandler);
     }
 }
