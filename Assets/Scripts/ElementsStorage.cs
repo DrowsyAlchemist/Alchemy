@@ -9,6 +9,6 @@ public class ElementsStorage : MonoBehaviour
 
     public void OnValidate()
     {
-        
+        _elements.Sort((a, b) => a.Lable.CompareTo(b.Lable));
     }
 }

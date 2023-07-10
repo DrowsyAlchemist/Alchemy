@@ -1,22 +1,47 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class OpenedElementsView : MonoBehaviour
 {
     [SerializeField] private RectTransform _container;
-    [SerializeField] private ElementRenderer _elementRendererTemplate;
+    [SerializeField] private OpenedElementRenderer _openedElementRendererTemplate;
+    [SerializeField] private MergeableElementRenderer _mergeableElementRendererTemplate;
 
-    public void FillWithOpened(IReadOnlyCollection<Element> elements)
+    private List<OpenedElementRenderer> _openedElementRenderers = new();
+    private GameField _gameField;
+    private IMergeHandler _mergeHandler;
+    private bool _initialized = false;
+
+    public void Init(GameField gameField, IMergeHandler mergeHandler)
     {
-        foreach (var element in elements)
-        {
-            if (element.IsOpened)
-            {
-                var renderer = Instantiate(_elementRendererTemplate, _container);
-                renderer.Render(element);
-            }
+        _gameField = gameField ?? throw new ArgumentNullException();
+        _mergeHandler = mergeHandler ?? throw new ArgumentNullException();
+        _initialized = true;
+    }
 
-        }
+    public void Fill(IReadOnlyCollection<Element> elements)
+    {
+        if (_initialized == false)
+            throw new InvalidOperationException("Object is not initialized");
+
+        foreach (var element in elements)
+            AddElement(element);
+    }
+
+    public void AddElement(Element element)
+    {
+        if (_initialized == false)
+            throw new InvalidOperationException("Object is not initialized");
+
+        var renderer = Instantiate(_openedElementRendererTemplate, _container);
+        renderer.Render(element);
+        renderer.Init(_mergeableElementRendererTemplate, _gameField, _mergeHandler);
+        _openedElementRenderers.Add(renderer);
+    }
+
+    public void Sort()
+    {
+        _openedElementRenderers.Sort((a, b) => a.Element.Lable.CompareTo(b.Element.Lable));
     }
 }

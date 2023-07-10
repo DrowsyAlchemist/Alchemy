@@ -3,7 +3,27 @@ using UnityEngine;
 
 public sealed class Game : MonoBehaviour, IMergeHandler
 {
-    public void TryMergeElements(ElementRenderer firstRenderer, ElementRenderer secondRenderer)
+    [SerializeField] private ElementsStorage _elementsStorage;
+    [SerializeField] private OpenedElementsView _openedElementsView;
+    [SerializeField] private GameField _gameField;
+
+    [SerializeField] private List<Element> _initialElements;
+
+    private void Start()
+    {
+        _openedElementsView.Init(_gameField, this);
+
+        foreach (var element in _initialElements)
+            element.Open();
+
+        foreach (var element in _elementsStorage.Elements)
+            if (element.IsOpened)
+                _openedElementsView.AddElement(element);
+
+        _openedElementsView.Sort();
+    }
+
+    public void TryMergeElements(MergeableElementRenderer firstRenderer, MergeableElementRenderer secondRenderer)
     {
         var results = new List<Element>();
 
@@ -14,10 +34,13 @@ public sealed class Game : MonoBehaviour, IMergeHandler
         Merge(firstRenderer, secondRenderer, results);
     }
 
-    private void Merge(ElementRenderer firstRenderer, ElementRenderer secondRenderer, List<Element> results)
+    private void Merge(MergeableElementRenderer firstRenderer, MergeableElementRenderer secondRenderer, List<Element> results)
     {
         for (var i = 0; i < results.Count; i++)
         {
+            if (results[i].IsOpened == false)
+                OpenNewElement(results[i]);
+
             if (i == 0)
                 firstRenderer.Render(results[0]);
 
@@ -31,6 +54,13 @@ public sealed class Game : MonoBehaviour, IMergeHandler
             }
         }
         if (results.Count == 1)
-            Destroy(secondRenderer);
+            Destroy(secondRenderer.gameObject);
+    }
+
+    private void OpenNewElement(Element element)
+    {
+        element.Open();
+        _openedElementsView.AddElement(element);
+        _openedElementsView.Sort();
     }
 }

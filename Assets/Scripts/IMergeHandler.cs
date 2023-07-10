@@ -1,4 +1,4 @@
 public interface IMergeHandler
 {
-    public void TryMergeElements(ElementRenderer firstElement, ElementRenderer secondElement);
+    public void TryMergeElements(MergeableElementRenderer firstElement, MergeableElementRenderer secondElement);
 }
