@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ElementRenderer : MonoBehaviour, IEndDragHandler, IDragHandler
+public class MergeableElementRenderer : MonoBehaviour, IEndDragHandler, IDragHandler
 {
     [SerializeField] private Image _image;
     [SerializeField] private Button _button;
@@ -13,11 +13,19 @@ public class ElementRenderer : MonoBehaviour, IEndDragHandler, IDragHandler
     [SerializeField] private Element _element;
     [SerializeField] private Game _game;
 
+    private IMergeHandler _mergeHandler;
+
     public Element Element { get; private set; }
 
-    public void Render(Element element)
+    private void Awake()
+    {
+        Render(_element, _game);
+    }
+
+    public void Render(Element element, IMergeHandler mergeHandler)
     {
         Element = element;
+        _mergeHandler = mergeHandler;
         _image.sprite = element.Sprite;
         _lableText.text = element.Lable;
     }
@@ -35,6 +43,6 @@ public class ElementRenderer : MonoBehaviour, IEndDragHandler, IDragHandler
         foreach (var result in results)
             if (result.gameObject.TryGetComponent(out ElementRenderer otherElementRenderer))
                 if (otherElementRenderer != this) ;
-                   // _mergeHandler.TryMergeElements(this, otherElementRenderer);
+                  //  _mergeHandler.TryMergeElements(this, otherElementRenderer);
     }
 }

@@ -26,10 +26,7 @@ public sealed class Recipe
         if (otherRecipe.SecondElement.Equals(_secondElement) == false)
             return false;
 
-        if (otherRecipe.Result.Equals(_result))
-            return true;
-        else
-            throw new ArgumentException();
+        return otherRecipe.Result.Equals(_result);
     }
 
     public override int GetHashCode()
