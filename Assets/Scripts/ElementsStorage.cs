@@ -34,6 +34,7 @@ public class ElementsStorage : MonoBehaviour, IProgressHolder
     private void OnElementOpened(Element element)
     {
         _sortedOpenedElements.Add(element);
+        _sortedOpenedElements.Sort((a, b) => a.Lable.CompareTo(b.Lable));
         CurrentCountChanged?.Invoke(CurrentCount);
     }
 

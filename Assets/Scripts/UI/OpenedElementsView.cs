@@ -43,7 +43,7 @@ public class OpenedElementsView : MonoBehaviour
         }
     }
 
-    public void AddElement(Element element)
+    private void AddElement(Element element)
     {
         if (_initialized == false)
             throw new InvalidOperationException("Object is not initialized");

@@ -9,8 +9,9 @@ public class AlphabeticalIndex : MonoBehaviour
     [SerializeField] private List<LetterButton> _letterButtons;
     [SerializeField] private ScrollRect _scrollRect;
 
-    private Coroutine _coroutine;
+    private const float MinPosition = 0.1f;
     private const float ScrollDuration = 1;
+    private Coroutine _coroutine;
 
     private void Awake()
     {
@@ -35,7 +36,7 @@ public class AlphabeticalIndex : MonoBehaviour
 
             if (target.TryGetComponent(out IHasElement hasElement))
             {
-                if (hasElement.Element.Lable.StartsWith(symbol))
+                if (hasElement.Element.Lable[0] >= symbol)
                 {
                     MoveContentToTarget(_scrollRect.content, target);
                     return;
@@ -55,11 +56,13 @@ public class AlphabeticalIndex : MonoBehaviour
         float newYPosition = _scrollRect.transform.InverseTransformPoint(content.position).y
             - _scrollRect.transform.InverseTransformPoint(targetPosition).y;
 
-        float minPosition = 0.1f;
         float maxPosition = content.rect.height - (_scrollRect.transform as RectTransform).rect.height;
 
-        if (newYPosition < minPosition)
-            newYPosition = minPosition;
+        if (maxPosition < 0)
+            return;
+
+        if (newYPosition < MinPosition)
+            newYPosition = MinPosition;
 
         if (newYPosition > maxPosition)
             newYPosition = maxPosition;
