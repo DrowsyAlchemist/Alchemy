@@ -18,6 +18,16 @@ public sealed class Game : MonoBehaviour, IMergeHandler
         Init();
     }
 
+    public void OpenAllElements()
+    {
+#if UNITY_EDITOR
+        foreach (var element in _elementsStorage.SortedElements)
+            element.Open();
+
+        _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
+#endif
+    }
+
     private void Init()
     {
         _saver = Saver.Create(_elementsStorage);
