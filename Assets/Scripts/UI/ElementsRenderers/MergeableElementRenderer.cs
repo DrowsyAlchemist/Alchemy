@@ -46,6 +46,7 @@ public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragH
     private void Clone()
     {
         var clone = Instantiate(this, transform.position + new Vector3(XCloneShift, YCloneShift, 0), Quaternion.identity, transform.parent);
+        clone.Render(Element);
         clone.Init(_mergeHandler);
     }
 }
