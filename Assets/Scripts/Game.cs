@@ -31,10 +31,11 @@ public sealed class Game : MonoBehaviour, IMergeHandler
 
     private void ResetProgress()
     {
-        PlayerPrefs.DeleteAll();
-        _gameField.Clear();
+        _saver.ResetSaves();
+        _elementsStorage.ResetOpenedElements();
         OpenInitialElements();
-        _elementsStorage.Init();
+
+        _gameField.Clear();
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
     }
 

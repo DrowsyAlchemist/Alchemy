@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8009619013186903891
+--- !u!1 &6301671841904088080
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8009619013186903890}
-  - component: {fileID: 8009619013186903900}
-  - component: {fileID: 8009619013186903901}
+  - component: {fileID: 3166789383467117239}
+  - component: {fileID: 1099768502087883404}
+  - component: {fileID: 630817891581477562}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -18,14 +18,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &8009619013186903890
+--- !u!224 &3166789383467117239
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8009619013186903891}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 6301671841904088080}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -33,26 +33,26 @@ RectTransform:
   m_Father: {fileID: 8009619013427714430}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.34533805}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000034332275, y: 0.00399971}
-  m_SizeDelta: {x: 0.3199997, y: 0.08999634}
+  m_AnchorMin: {x: 0.21358696, y: 0.365}
+  m_AnchorMax: {x: 0.7864131, y: 1}
+  m_AnchoredPosition: {x: 0.0000038146973, y: 0.3185997}
+  m_SizeDelta: {x: -0.6068878, y: -0.63720703}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &8009619013186903900
+--- !u!222 &1099768502087883404
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8009619013186903891}
+  m_GameObject: {fileID: 6301671841904088080}
   m_CullTransparentMesh: 1
---- !u!114 &8009619013186903901
+--- !u!114 &630817891581477562
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8009619013186903891}
+  m_GameObject: {fileID: 6301671841904088080}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -107,15 +107,15 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8009619013186903890}
+  - {fileID: 3166789383467117239}
   - {fileID: 8009619013711320826}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076293945, y: 0}
-  m_SizeDelta: {x: 126.32, y: 162.1}
+  m_AnchoredPosition: {x: -29.2093, y: -40.436188}
+  m_SizeDelta: {x: 184.7386, y: 166.9661}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8009619013427714426
 CanvasRenderer:
@@ -167,12 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 887f52d255b4c4946ba5291c76cee4d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _image: {fileID: 8009619013186903901}
-  _button: {fileID: 0}
+  _image: {fileID: 630817891581477562}
   _lableText: {fileID: 8009619013711320709}
-  _element: {fileID: 0}
-  _game: {fileID: 0}
-  _mergeableElementRendererTemplate: {fileID: 0}
 --- !u!1 &8009619013711320827
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,9 +203,9 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.34533805}
-  m_AnchoredPosition: {x: 0, y: 0.01499939}
-  m_SizeDelta: {x: 0, y: 0.028999329}
+  m_AnchorMax: {x: 1, y: 0.365}
+  m_AnchoredPosition: {x: 0, y: 0.32499695}
+  m_SizeDelta: {x: 0, y: 0.64890003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8009619013711320708
 CanvasRenderer:
@@ -266,11 +262,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50.1
+  m_fontSize: 55.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 1
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2

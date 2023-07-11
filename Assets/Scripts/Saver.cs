@@ -7,8 +7,8 @@ public class Saver
 
     private static Saver _instance;
 
-    private ElementsStorage _elementsStorage;
-    private StringBuilder _saveDataBuilder = new StringBuilder();
+    private readonly ElementsStorage _elementsStorage;
+    private readonly StringBuilder _saveDataBuilder = new();
 
     private Saver(ElementsStorage elementsStorage)
     {
@@ -16,8 +16,7 @@ public class Saver
         _elementsStorage = elementsStorage;
 
         foreach (var element in _elementsStorage.SortedElements)
-            if (IsElementOpened(element) == false)
-                element.Opened += OnElementOpened;
+            element.Opened += OnElementOpened;
     }
 
     public static Saver Create(ElementsStorage elementsStorage)
@@ -44,8 +43,9 @@ public class Saver
     public void ResetSaves()
     {
 #if UNITY_EDITOR
-        PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey(SavesStorage);
         PlayerPrefs.Save();
+        _saveDataBuilder.Clear();
 #endif
     }
 

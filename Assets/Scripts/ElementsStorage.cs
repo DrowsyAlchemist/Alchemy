@@ -16,16 +16,19 @@ public class ElementsStorage : MonoBehaviour, IProgressHolder
 
     public void Init()
     {
-        _sortedOpenedElements.Clear();
-
         foreach (var element in _elements)
         {
             if (element.IsOpened)
                 _sortedOpenedElements.Add(element);
-            else
-                element.Opened += OnElementOpened;
+
+            element.Opened += OnElementOpened;
         }
         CurrentCountChanged?.Invoke(CurrentCount);
+    }
+
+    public void ResetOpenedElements()
+    {
+        _sortedOpenedElements.Clear();
     }
 
     private void OnElementOpened(Element element)

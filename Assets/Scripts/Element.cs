@@ -18,11 +18,12 @@ public sealed class Element : ScriptableObject
     public IReadOnlyCollection<Recipe> Recipes => _recipesWithElement;
     public bool IsOpened => Saver.GetInstance().IsElementOpened(this);
 
-    public event Action<Element> Opened; 
+    public event Action<Element> Opened;
 
     public void Open()
     {
-        Opened?.Invoke(this);
+        if (IsOpened == false)
+            Opened?.Invoke(this);
     }
 
     public void CheckAndAddRecipe(Element secondElement, Element result)
