@@ -18,7 +18,7 @@ namespace RecipiesChecker
 
             foreach (var element in _elementsStorage.SortedElements)
             {
-                foreach (var recipieWithElement in element.Recipes)
+                foreach (var recipieWithElement in element.Recipies)
                 {
                     var createdElement = recipieWithElement.Result;
 

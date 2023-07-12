@@ -2,14 +2,15 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Button))]
 public class UIButton : MonoBehaviour
 {
-    [SerializeField] private Button _button;
-
+    private Button _button;
     private Action _onClick;
 
     private void Awake()
     {
+        _button = GetComponent<Button>();
         _button.onClick.AddListener(OnButtonClick);
     }
 

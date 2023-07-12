@@ -4,14 +4,19 @@ using UnityEngine;
 public sealed class Game : MonoBehaviour, IMergeHandler
 {
     [SerializeField] private ElementsStorage _elementsStorage;
-    [SerializeField] private OpenedElementsView _openedElementsView;
+    [SerializeField] private MainOpenedElementsView _openedElementsView;
     [SerializeField] private GameField _gameField;
     [SerializeField] private UIButton _resetButton;
+    [SerializeField] private UIButton _openRecipiesBookButton;
     [SerializeField] private ProgressRenderer _progressRenderer;
+
+    [SerializeField] private BookElementsView _bookGridView;
+    [SerializeField] private RecipiesWithElementView _recipiesWithElementView;
 
     [SerializeField] private List<Element> _initialElements;
 
     private Saver _saver;
+    private RecipiesBook _recipiesBook;
 
     private void Start()
     {
@@ -36,7 +41,11 @@ public sealed class Game : MonoBehaviour, IMergeHandler
         _progressRenderer.Init(_elementsStorage);
         _openedElementsView.Init(_gameField, this);
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
+
         _resetButton.Init(onButtonClick: ResetProgress);
+        _openRecipiesBookButton.Init(onButtonClick: OpenRecipiesBook);
+
+        _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
     }
 
     private void ResetProgress()
@@ -53,11 +62,16 @@ public sealed class Game : MonoBehaviour, IMergeHandler
     {
         var results = new List<Element>();
 
-        foreach (var recipe in firstRenderer.Element.Recipes)
+        foreach (var recipe in firstRenderer.Element.Recipies)
             if (recipe.SecondElement.Equals(secondRenderer.Element))
                 results.Add(recipe.Result);
 
         Merge(firstRenderer, secondRenderer, results);
+    }
+
+    public void OpenRecipiesBook()
+    {
+        _recipiesBook.Open();
     }
 
     private void Merge(MergeableElementRenderer firstRenderer, MergeableElementRenderer secondRenderer, List<Element> results)

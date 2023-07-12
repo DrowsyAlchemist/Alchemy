@@ -26,7 +26,7 @@ public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragH
 
         foreach (var result in results)
         {
-            if (result.gameObject.TryGetComponent(out OpenedElementsView _))
+            if (result.gameObject.TryGetComponent(out MainOpenedElementsView _))
             {
                 Destroy(gameObject);
                 return;

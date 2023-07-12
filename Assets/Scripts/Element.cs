@@ -15,7 +15,7 @@ public sealed class Element : ScriptableObject
     public string Lable => _lable;
     public Sprite Sprite => _sprite;
     public IReadOnlyCollection<CreationRecipie> CreationRecipies => _creationRecipies;
-    public IReadOnlyCollection<Recipe> Recipes => _recipesWithElement;
+    public IReadOnlyCollection<Recipe> Recipies => _recipesWithElement;
     public bool IsOpened => Saver.GetInstance().IsElementOpened(this);
 
     public event Action<Element> Opened;
