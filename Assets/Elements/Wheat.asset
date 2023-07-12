@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
+  m_Name: Wheat
+  m_EditorClassIdentifier: 
+  _id: Wheat
+  _lable: "\u041F\u0448\u0435\u043D\u0438\u0446\u0430"
+  _sprite: {fileID: 0}
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: c6f82918901eaea44b1250d6532021df, type: 2}
+    _secondElement: {fileID: 11400000, guid: d33ca1774458e614ba9e62ed28cf36cb, type: 2}
+  - _firstElement: {fileID: 11400000, guid: c6f82918901eaea44b1250d6532021df, type: 2}
+    _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
+  _recipesWithElement: []
