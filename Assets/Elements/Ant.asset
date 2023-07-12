@@ -17,7 +17,7 @@ MonoBehaviour:
   _sprite: {fileID: 0}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 0ff280c20f14be6489dd8a2a2fc9601a, type: 2}
-    _secondElement: {fileID: 11400000, guid: 10ae8db2b784b6b41a4c4bfce06a5a45, type: 2}
-  - _firstElement: {fileID: 11400000, guid: 99ee6e14a9081b343a80c8c7f433bc4c, type: 2}
-    _secondElement: {fileID: 11400000, guid: 10ae8db2b784b6b41a4c4bfce06a5a45, type: 2}
+    _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 05151ed70e48bd049b580bf76c91ef87, type: 2}
+    _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
   _recipesWithElement: []

@@ -16,7 +16,7 @@ MonoBehaviour:
   _lable: "\u041D\u043E\u0447\u044C"
   _sprite: {fileID: 0}
   _creationRecipies:
-  - _firstElement: {fileID: 11400000, guid: cbf6d537345f1684fb1064e7b387e273, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 8fa9e46f26c57eb4ea91d229d2767020, type: 2}
     _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
   - _firstElement: {fileID: 11400000, guid: 779ecbf5c09925540b98dbacf97b00ff, type: 2}
     _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}

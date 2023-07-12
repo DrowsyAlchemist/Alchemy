@@ -17,5 +17,5 @@ MonoBehaviour:
   _sprite: {fileID: 0}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
-    _secondElement: {fileID: 11400000, guid: ab4bccd05ab4cc24db46754b6d85a669, type: 2}
+    _secondElement: {fileID: 11400000, guid: b0937334f0f479546bc69fb7838ca906, type: 2}
   _recipesWithElement: []

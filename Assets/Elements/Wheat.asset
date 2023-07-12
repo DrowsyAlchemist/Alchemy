@@ -16,8 +16,8 @@ MonoBehaviour:
   _lable: "\u041F\u0448\u0435\u043D\u0438\u0446\u0430"
   _sprite: {fileID: 0}
   _creationRecipies:
-  - _firstElement: {fileID: 11400000, guid: c6f82918901eaea44b1250d6532021df, type: 2}
-    _secondElement: {fileID: 11400000, guid: d33ca1774458e614ba9e62ed28cf36cb, type: 2}
-  - _firstElement: {fileID: 11400000, guid: c6f82918901eaea44b1250d6532021df, type: 2}
+  - _firstElement: {fileID: 11400000, guid: ada2fa01b72a1064396df1fe5cdf4b01, type: 2}
+    _secondElement: {fileID: 11400000, guid: 21a1e89e0de17e640a577f9c0b265757, type: 2}
+  - _firstElement: {fileID: 11400000, guid: ada2fa01b72a1064396df1fe5cdf4b01, type: 2}
     _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
   _recipesWithElement: []
