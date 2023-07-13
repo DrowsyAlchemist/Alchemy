@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Blade
   _lable: "\u041B\u0435\u0437\u0432\u0438\u0435"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 9923801cc0c28ad46a735c88c9b85641, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
     _secondElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}

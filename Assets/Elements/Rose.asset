@@ -20,6 +20,4 @@ MonoBehaviour:
     _secondElement: {fileID: 11400000, guid: 622571748d2a8dd45b475b042f3addb4, type: 2}
   - _firstElement: {fileID: 11400000, guid: cfc748bb54293d34482c9d60c30cb416, type: 2}
     _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
-  _recipesWithElement:
-  - _secondElement: {fileID: 0}
-    _result: {fileID: 0}
+  _recipesWithElement: []

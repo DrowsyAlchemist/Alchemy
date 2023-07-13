@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wall
   _lable: "\u0421\u0442\u0435\u043D\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 00de9c7fc5c70b5489f5855db23dae40, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: d686ea1d16761c74694819355be05264, type: 2}
     _secondElement: {fileID: 11400000, guid: d686ea1d16761c74694819355be05264, type: 2}

@@ -32,6 +32,22 @@ namespace RecipiesChecker
             }
         }
 
+        public void RemoveAllRecipies()
+        {
+            var recipiesToRemove = new List<Recipe>();
+
+            foreach (var element in _elementsStorage.SortedElements)
+            {
+                foreach (var recipieWithElement in element.Recipies)
+                    recipiesToRemove.Add(recipieWithElement);
+
+                foreach (var recipieToRemove in recipiesToRemove)
+                    element.RemoveRecipie(recipieToRemove);
+
+                recipiesToRemove.Clear();
+            }
+        }
+
         public void AddRecipiesByCreationRecipieForAll()
         {
             foreach (var element in _elementsStorage.SortedElements)

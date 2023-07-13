@@ -15,8 +15,8 @@ namespace RecipiesChecker
             if (GUILayout.Button("Проверить и добавить"))
                 recipiesChecker.AddRecipiesByCreationRecipieForAll();
 
-            if (GUILayout.Button("Удалить лишние"))
-                recipiesChecker.RemoveExcessRecipies();
+            if (GUILayout.Button("Удалить все"))
+                recipiesChecker.RemoveAllRecipies();
         }
     }
 }

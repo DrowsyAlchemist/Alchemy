@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Flower
   _lable: "\u0426\u0432\u0435\u0442\u043E\u043A"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 9c54372e6809133449447755af82d37e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
     _secondElement: {fileID: 11400000, guid: 4f9aad5770c5d0e44a75c12060faaca2, type: 2}

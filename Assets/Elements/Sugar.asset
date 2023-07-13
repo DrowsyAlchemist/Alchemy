@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sugar
   _lable: "\u0421\u0430\u0445\u0430\u0440"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 9feb2d88d39174240a20615f29614b79, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}
     _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
