@@ -1,22 +1,29 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Button))]
 public class SoundOnOffButton : MonoBehaviour
 {
     [SerializeField] private Image _image;
 
-    protected void Start()
+    private Button _button;
+
+    private void Start()
     {
+        _button = GetComponent<Button>();
+        _button.onClick.AddListener(OnButtonClick);
+
         _image.sprite = (Sound.IsOn) ? Sound.TurnedOnSprite : Sound.MuteSprite;
         Sound.ConditionChanged += OnSoundConditionChanged;
     }
 
-    protected void OnDestroy()
+    private void OnDestroy()
     {
+        _button.onClick.RemoveListener(OnButtonClick);
         Sound.ConditionChanged -= OnSoundConditionChanged;
     }
 
-    protected void OnButtonClick()
+    private void OnButtonClick()
     {
         if (Sound.IsOn)
         {
@@ -25,7 +32,6 @@ public class SoundOnOffButton : MonoBehaviour
         }
         else
         {
-            Sound.ClickSound.Play();
             Sound.TurnOn();
             _image.sprite = Sound.TurnedOnSprite;
         }

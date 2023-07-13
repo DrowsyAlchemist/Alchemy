@@ -1,4 +1,5 @@
 using Agava.YandexGames;
+using GameAnalyticsSDK;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,24 +37,23 @@ public sealed class Game : MonoBehaviour, IMergeHandler
     private IEnumerator Start()
     {
 #if !UNITY_WEBGL || UNITY_EDITOR
+        Init();
         yield break;
 #endif
         while (YandexGamesSdk.IsInitialized == false)
             yield return YandexGamesSdk.Initialize();
 
         InterstitialAd.Show(onOpenCallback: () => Sound.Mute(), onCloseCallback: (_) => Sound.TurnOn());
-        //GameAnalytics.Initialize();
+        GameAnalytics.Initialize();
         Init();
     }
 
     public void OpenAllElements()
     {
-#if UNITY_EDITOR
         foreach (var element in _elementsStorage.SortedElements)
             element.Open();
 
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
-#endif
     }
 
     private void Init()

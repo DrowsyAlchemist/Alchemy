@@ -7,7 +7,7 @@ public class Sound : MonoBehaviour
 {
     [SerializeField] private bool _muteOnAwake;
     [SerializeField] private AudioMixer _mixer;
-    [SerializeField] private string _masterVolumeName;
+    [SerializeField] private string _masterVolumeName = "MasterVolume";
     [SerializeField] private float _maxValue = -20;
     [SerializeField] private float _minValue = -80;
 
