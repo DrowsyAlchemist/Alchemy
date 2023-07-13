@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
+  m_Name: Bird
+  m_EditorClassIdentifier: 
+  _id: Bird
+  _lable: "\u041F\u0442\u0438\u0446\u0430"
+  _sprite: {fileID: 0}
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: 9f0d97070c0818543adcb8fa68d51192, type: 2}
+    _secondElement: {fileID: 11400000, guid: 5049d9451a522f04dbad2d899ed209d5, type: 2}
+  - _firstElement: {fileID: 11400000, guid: a96507007ab1aa14392343f935f535ee, type: 2}
+    _secondElement: {fileID: 11400000, guid: 1fe7e68feb10b5149a7445507be65155, type: 2}
+  - _firstElement: {fileID: 11400000, guid: a96507007ab1aa14392343f935f535ee, type: 2}
+    _secondElement: {fileID: 11400000, guid: 9f0d97070c0818543adcb8fa68d51192, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 1fe7e68feb10b5149a7445507be65155, type: 2}
+    _secondElement: {fileID: 11400000, guid: 5049d9451a522f04dbad2d899ed209d5, type: 2}
+  _recipesWithElement: []

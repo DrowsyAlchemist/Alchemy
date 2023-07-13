@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
-  m_Name: Sword
+  m_Name: River
   m_EditorClassIdentifier: 
-  _id: Sword
-  _lable: "\u041C\u0435\u0447"
+  _id: River
+  _lable: "\u0420\u0435\u043A\u0430"
   _sprite: {fileID: 0}
   _creationRecipies:
-  - _firstElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
-    _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
-  - _firstElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
-    _secondElement: {fileID: 11400000, guid: 712d6384182b7354e9630f19dc2bd756, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 3659d2203c3214b4b8e70e7413967f35, type: 2}
+    _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 3659d2203c3214b4b8e70e7413967f35, type: 2}
+    _secondElement: {fileID: 11400000, guid: bb425f3a78827f549b847208e99056b5, type: 2}
   _recipesWithElement: []

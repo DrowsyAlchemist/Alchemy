@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
-  m_Name: Sword
+  m_Name: Wool
   m_EditorClassIdentifier: 
-  _id: Sword
-  _lable: "\u041C\u0435\u0447"
+  _id: Wool
+  _lable: "\u0428\u0435\u0440\u0441\u0442\u044C"
   _sprite: {fileID: 0}
   _creationRecipies:
-  - _firstElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
-    _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
-  - _firstElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
-    _secondElement: {fileID: 11400000, guid: 712d6384182b7354e9630f19dc2bd756, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 2314dc53a54a7ff4687c35581335359e, type: 2}
+    _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 2314dc53a54a7ff4687c35581335359e, type: 2}
+    _secondElement: {fileID: 11400000, guid: ca40b2160965d4e4a9b7bafdd7a930f3, type: 2}
   _recipesWithElement: []

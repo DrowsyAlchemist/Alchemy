@@ -18,4 +18,10 @@ MonoBehaviour:
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 7be785ceef6fbb24c8f4f70f78ac0cd2, type: 2}
     _secondElement: {fileID: 11400000, guid: 7be785ceef6fbb24c8f4f70f78ac0cd2, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
+    _secondElement: {fileID: 11400000, guid: d686ea1d16761c74694819355be05264, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _secondElement: {fileID: 11400000, guid: d686ea1d16761c74694819355be05264, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
   _recipesWithElement: []
