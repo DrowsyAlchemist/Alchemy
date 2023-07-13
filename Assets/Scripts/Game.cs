@@ -1,3 +1,5 @@
+using Agava.YandexGames;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,11 +17,32 @@ public sealed class Game : MonoBehaviour, IMergeHandler
 
     [SerializeField] private List<Element> _initialElements;
 
+    [SerializeField] private Element _closedElement;
+
+    private static Game _instance;
     private Saver _saver;
     private RecipiesBook _recipiesBook;
 
-    private void Start()
+    public static Element ClosedElement => _instance._closedElement;
+
+    private void Awake()
     {
+        if (_instance == null)
+            _instance = this;
+        else
+            Destroy(gameObject);
+    }
+
+    private IEnumerator Start()
+    {
+#if !UNITY_WEBGL || UNITY_EDITOR
+        yield break;
+#endif
+        while (YandexGamesSdk.IsInitialized == false)
+            yield return YandexGamesSdk.Initialize();
+
+        InterstitialAd.Show(onOpenCallback: () => Sound.Mute(), onCloseCallback: (_) => Sound.TurnOn());
+        //GameAnalytics.Initialize();
         Init();
     }
 

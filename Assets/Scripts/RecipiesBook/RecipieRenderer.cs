@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class RecipieRenderer : MonoBehaviour
@@ -9,8 +8,19 @@ public class RecipieRenderer : MonoBehaviour
 
     public void Render(Element element, Recipe recipe)
     {
-        _firstElementRenderer.Render(element);
-        _secondElementRenderer.Render(recipe.SecondElement);
-        _resultElementRenderer.Render(recipe.Result);
+        if (element.IsOpened)
+            _firstElementRenderer.Render(element);
+        else
+            _firstElementRenderer.Render(Game.ClosedElement);
+
+        if (recipe.SecondElement.IsOpened && recipe.Result.IsOpened)
+            _secondElementRenderer.Render(recipe.SecondElement);
+        else
+            _secondElementRenderer.Render(Game.ClosedElement);
+
+        if (recipe.Result.IsOpened)
+            _resultElementRenderer.Render(recipe.Result);
+        else
+            _resultElementRenderer.Render(Game.ClosedElement);
     }
 }

@@ -1,13 +1,20 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BookElementsView : ElementsView
 {
     [SerializeField] private BookElementRenderer _bookElementTemplate;
     [SerializeField] private RectTransform _container;
     [SerializeField] private UIButton _closeButton;
+    [SerializeField] private ScrollRect _scrollView;
 
     private IElementClickHandler _elementClickHandler;
+
+    private void OnEnable()
+    {
+        _scrollView.normalizedPosition = new Vector2(0, 1);
+    }
 
     public void Init(IElementClickHandler elementClickHandler)
     {

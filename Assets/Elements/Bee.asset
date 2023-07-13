@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bee
   m_EditorClassIdentifier: 
   _id: Bee
-  _lable: "\u0411\u0430\u0431\u043E\u0447\u043A\u0430"
+  _lable: "\u041F\u0447\u0435\u043B\u0430"
   _sprite: {fileID: 0}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 622571748d2a8dd45b475b042f3addb4, type: 2}
