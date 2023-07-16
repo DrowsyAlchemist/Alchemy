@@ -19,7 +19,7 @@ public class UIButton : MonoBehaviour
         _button.onClick.RemoveListener(OnButtonClick);
     }
 
-    public void Init(Action onButtonClick)
+    public void AssignOnClickAction(Action onButtonClick)
     {
         _onClick = onButtonClick;
     }

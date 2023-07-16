@@ -65,8 +65,8 @@ public sealed class Game : MonoBehaviour, IMergeHandler
         _openedElementsView.Init(_gameField, this);
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
 
-        _resetButton.Init(onButtonClick: ResetProgress);
-        _openRecipiesBookButton.Init(onButtonClick: OpenRecipiesBook);
+        _resetButton.AssignOnClickAction(onButtonClick: ResetProgress);
+        _openRecipiesBookButton.AssignOnClickAction(onButtonClick: OpenRecipiesBook);
 
         _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
     }

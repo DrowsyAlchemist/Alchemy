@@ -3165,6 +3165,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 81668e2597190414a92632ae1510dfae, type: 2}
   - {fileID: 11400000, guid: ae69d684606ffcb47bfe11153422a959, type: 2}
   - {fileID: 11400000, guid: 144c04e8596d08844b1bb28613e94103, type: 2}
+  - {fileID: 11400000, guid: 11f3200454621474ab3fd2eb17861224, type: 2}
   - {fileID: 11400000, guid: 8760eec2f8043fe49aadecd026cee9e6, type: 2}
   - {fileID: 11400000, guid: 945680ad7cc26814b8b61bf7b8458793, type: 2}
   - {fileID: 11400000, guid: 2fa5a1f4a6843f541984de3a623aa62c, type: 2}
@@ -3208,7 +3209,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 21a1e89e0de17e640a577f9c0b265757, type: 2}
   - {fileID: 11400000, guid: c4f234f4bb10e3546a89c7a7a9bf4c9b, type: 2}
   - {fileID: 11400000, guid: 521b8e1427401854f8a44ba6857720af, type: 2}
-  - {fileID: 11400000, guid: 11f3200454621474ab3fd2eb17861224, type: 2}
   - {fileID: 11400000, guid: a20ca2eec15fe6643bdc72e6fa4d9cb9, type: 2}
   - {fileID: 11400000, guid: a4c7c4b107bc62b45b3864701879c4e6, type: 2}
   - {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
@@ -3723,7 +3723,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 7a0fe4036a63c934fa1be66d075e47b1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4269,7 +4269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58c3daed5a15b2a469cfcd94fcd0dff6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clearButton: {fileID: 2123566948}
+  _clearButton: {fileID: 2123566951}
 --- !u!1 &1177445128
 GameObject:
   m_ObjectHideFlags: 0
@@ -6460,7 +6460,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1724932629
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7442,6 +7442,7 @@ GameObject:
   - component: {fileID: 2123566950}
   - component: {fileID: 2123566949}
   - component: {fileID: 2123566948}
+  - component: {fileID: 2123566951}
   m_Layer: 5
   m_Name: ClearButton
   m_TagString: Untagged
@@ -7552,6 +7553,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2123566946}
   m_CullTransparentMesh: 1
+--- !u!114 &2123566951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123566946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a532190fd58c6340a03ea49527cc9fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2142738501
 PrefabInstance:
   m_ObjectHideFlags: 0

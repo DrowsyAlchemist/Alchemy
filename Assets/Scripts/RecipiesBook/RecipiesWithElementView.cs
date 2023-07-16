@@ -13,7 +13,7 @@ public class RecipiesWithElementView : MonoBehaviour
 
     private void Awake()
     {
-        _closeButton.Init(Close);
+        _closeButton.AssignOnClickAction(Close);
     }
 
     private void OnEnable()

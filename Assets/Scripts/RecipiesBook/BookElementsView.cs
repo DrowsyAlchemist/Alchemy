@@ -19,7 +19,7 @@ public class BookElementsView : ElementsView
     public void Init(IElementClickHandler elementClickHandler)
     {
         _elementClickHandler = elementClickHandler;
-        _closeButton.Init(Close);
+        _closeButton.AssignOnClickAction(Close);
         IsInitialized = true;
     }
 

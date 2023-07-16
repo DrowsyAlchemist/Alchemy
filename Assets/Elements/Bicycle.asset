@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Bicycle
   _lable: "\u0412\u0435\u043B\u043E\u0441\u0438\u043F\u0435\u0434"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: e79864f82a68e0747877d14f673b1591, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2fde0860edc0d6447af142a195680b08, type: 2}
     _secondElement: {fileID: 11400000, guid: 2fde0860edc0d6447af142a195680b08, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: 092792658d5369143bfc6c34448a5d2e, type: 2}

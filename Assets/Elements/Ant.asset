@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Ant
   _lable: "\u041C\u0443\u0440\u0430\u0432\u0435\u0439"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 3397fde0de4238a46aa7f156136db4e7, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 0ff280c20f14be6489dd8a2a2fc9601a, type: 2}
     _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}

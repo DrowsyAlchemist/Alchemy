@@ -1,18 +1,12 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GameField : MonoBehaviour
 {
-    [SerializeField] private Button _clearButton;
+    [SerializeField] private UIButton _clearButton;
 
-    public void Start()
+    public void Awake()
     {
-        _clearButton.onClick.AddListener(Clear);
-    }
-
-    private void OnDestroy()
-    {
-        _clearButton.onClick.RemoveListener(Clear);
+        _clearButton.AssignOnClickAction(Clear);
     }
 
     public void Clear()
