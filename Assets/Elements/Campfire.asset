@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Campfire
   m_EditorClassIdentifier: 
   _id: Campfire
-  _lable: "\u041A\u043E\u0441\u0442\u0451\u0440"
+  _lable: "\u041F\u043E\u0445\u043E\u0434\u043D\u044B\u0439 \u043A\u043E\u0441\u0442\u0451\u0440"
   _sprite: {fileID: 0}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}

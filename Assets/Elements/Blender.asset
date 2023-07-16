@@ -14,12 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Blender
   _lable: "\u0411\u043B\u0435\u043D\u0434\u0435\u0440"
-  _sprite: {fileID: 21300000, guid: 1f0507ec14ea21344857b243eb852732, type: 3}
+  _sprite: {fileID: 0}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
     _secondElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}
   - _firstElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
     _secondElement: {fileID: 11400000, guid: 158e079c518ceba4a95a18b7d314f6c5, type: 2}
-  _recipesWithElement:
-  - _secondElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}
-    _result: {fileID: 11400000, guid: 91d6ce9794437e440a33a38f663dac37, type: 2}
+  _recipesWithElement: []

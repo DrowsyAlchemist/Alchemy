@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Diamond
   _lable: "\u0411\u0440\u0438\u043B\u0438\u0430\u043D\u0442"
-  _sprite: {fileID: 21300000, guid: bd5694a0b3ec6574798115e0124d1966, type: 3}
+  _sprite: {fileID: 0}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 8d573b29b97159545bf24dd1fdd62c8f, type: 2}
     _secondElement: {fileID: 11400000, guid: ec21e2563dda2a547b4f5a989e7b0f9b, type: 2}

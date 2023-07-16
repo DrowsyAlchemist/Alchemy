@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
+  m_Name: Harp
+  m_EditorClassIdentifier: 
+  _id: Harp
+  _lable: "\u0410\u0440\u0444\u0430"
+  _sprite: {fileID: 0}
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: 938ecac5a609a0247b1491d1a5c23521, type: 2}
+    _secondElement: {fileID: 11400000, guid: 6eaeccb02ba2bc3489951f5ab346e510, type: 2}
+  _recipesWithElement: []
