@@ -61,7 +61,13 @@ public sealed class Game : MonoBehaviour, IMergeHandler
 
     private void Init()
     {
-        _saver = Saver.Create(_elementsStorage);
+#if UNITY_EDITOR
+        bool isPlayerAuthorized = false;
+#else
+        bool isPlayerAuthorized = PlayerAccount.IsAuthorized;
+
+#endif
+        _saver = Saver.Create(_elementsStorage, isPlayerAuthorized);
         OpenInitialElements();
         _elementsStorage.Init();
         _progressRenderer.Init(_elementsStorage);
@@ -73,11 +79,7 @@ public sealed class Game : MonoBehaviour, IMergeHandler
 
         _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
 
-#if UNITY_EDITOR
-        _score = new Score(isPlayerAuthorized:false);
-#else
-        _score = new Score(PlayerAccount.IsAuthorized);
-#endif
+        _score = new Score(isPlayerAuthorized);
         _scoreRenderer.Init(_score);
     }
 

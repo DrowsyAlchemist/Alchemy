@@ -1,3 +1,5 @@
+using Agava.YandexGames;
+using System;
 using System.Text;
 using UnityEngine;
 
@@ -7,22 +9,24 @@ public class Saver
 
     private static Saver _instance;
 
+    private readonly bool _isPlayerAuthorized;
     private readonly ElementsStorage _elementsStorage;
     private readonly StringBuilder _saveDataBuilder = new();
 
-    private Saver(ElementsStorage elementsStorage)
+    private Saver(ElementsStorage elementsStorage, bool isPlayerAuthorized)
     {
-        Load();
+        _isPlayerAuthorized = isPlayerAuthorized;
         _elementsStorage = elementsStorage;
+        Load();
 
         foreach (var element in _elementsStorage.SortedElements)
             element.Opened += OnElementOpened;
     }
 
-    public static Saver Create(ElementsStorage elementsStorage)
+    public static Saver Create(ElementsStorage elementsStorage, bool isPlayerAuthorizedge)
     {
         if (_instance == null)
-            _instance = new Saver(elementsStorage);
+            _instance = new Saver(elementsStorage, isPlayerAuthorizedge);
 
         return _instance;
     }
@@ -30,7 +34,7 @@ public class Saver
     public static Saver GetInstance()
     {
         if (_instance == null)
-            throw new System.InvalidOperationException();
+            throw new InvalidOperationException();
 
         return _instance;
     }
@@ -42,11 +46,8 @@ public class Saver
 
     public void ResetSaves()
     {
-#if UNITY_EDITOR
-        PlayerPrefs.DeleteKey(SavesStorage);
-        PlayerPrefs.Save();
         _saveDataBuilder.Clear();
-#endif
+        Save();
     }
 
     private void OnElementOpened(Element element)
@@ -60,19 +61,27 @@ public class Saver
 
     private void Save()
     {
-#if UNITY_EDITOR
-        PlayerPrefs.SetString(SavesStorage, _saveDataBuilder.ToString());
-        PlayerPrefs.Save();
-#endif
+        if (_isPlayerAuthorized)
+        {
+            PlayerAccount.SetCloudSaveData(_saveDataBuilder.ToString());
+        }
+        else
+        {
+            PlayerPrefs.SetString(SavesStorage, _saveDataBuilder.ToString());
+            PlayerPrefs.Save();
+        }
     }
 
     private void Load()
     {
-#if UNITY_EDITOR
-        string saves = PlayerPrefs.GetString(SavesStorage);
+        string saves = string.Empty;
+
+        if (_isPlayerAuthorized)
+            PlayerAccount.GetCloudSaveData(onSuccessCallback: (result) => saves = result, onErrorCallback: (error) => Debug.Log("Saves load error: " + error));
+        else
+            saves = PlayerPrefs.GetString(SavesStorage);
 
         if (string.IsNullOrEmpty(saves) == false)
             _saveDataBuilder.Append(saves);
-#endif
     }
 }
