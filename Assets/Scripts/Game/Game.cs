@@ -12,6 +12,7 @@ public sealed class Game : MonoBehaviour, IMergeHandler
     [SerializeField] private UIButton _resetButton;
     [SerializeField] private UIButton _openRecipiesBookButton;
     [SerializeField] private ProgressRenderer _progressRenderer;
+    [SerializeField] private ScoreRenderer _scoreRenderer;
 
     [SerializeField] private BookElementsView _bookGridView;
     [SerializeField] private RecipiesWithElementView _recipiesWithElementView;
@@ -20,9 +21,11 @@ public sealed class Game : MonoBehaviour, IMergeHandler
 
     [SerializeField] private Element _closedElement;
 
+    private const int PointsByOpenElement = 5;
     private static Game _instance;
     private Saver _saver;
     private RecipiesBook _recipiesBook;
+    private Score _score;
 
     public static Element ClosedElement => _instance._closedElement;
 
@@ -69,11 +72,19 @@ public sealed class Game : MonoBehaviour, IMergeHandler
         _openRecipiesBookButton.AssignOnClickAction(onButtonClick: OpenRecipiesBook);
 
         _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
+
+#if UNITY_EDITOR
+        _score = new Score(isPlayerAuthorized:false);
+#else
+        _score = new Score(PlayerAccount.IsAuthorized);
+#endif
+        _scoreRenderer.Init(_score);
     }
 
     private void ResetProgress()
     {
         _saver.ResetSaves();
+        _score.ResetCurrentScore();
         _elementsStorage.ResetOpenedElements();
         OpenInitialElements();
 
@@ -122,6 +133,7 @@ public sealed class Game : MonoBehaviour, IMergeHandler
 
     private void OpenNewElement(Element element)
     {
+        _score.AddScore(PointsByOpenElement);
         element.Open();
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
     }
