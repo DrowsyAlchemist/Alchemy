@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 public sealed class RecipiesBook : IElementClickHandler
 {
     private ElementsStorage _elementsStorage;
@@ -23,9 +21,9 @@ public sealed class RecipiesBook : IElementClickHandler
         _gridView.Fill(_elementsStorage.SortedOpenedElements);
     }
 
-    public void OnBookTileElementClick(Element element)
+    public void OnElementClick(ElementRenderer elementRenderer)
     {
-        _recipiesWithElementView.Fill(element);
+        _recipiesWithElementView.Fill(elementRenderer.Element);
         _recipiesWithElementView.gameObject.SetActive(true);
     }
 }

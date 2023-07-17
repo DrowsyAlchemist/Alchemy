@@ -1,4 +1,4 @@
 public interface IElementClickHandler
 {
-    public void OnBookTileElementClick(Element element);
+    public void OnElementClick(ElementRenderer elementRenderer);
 }

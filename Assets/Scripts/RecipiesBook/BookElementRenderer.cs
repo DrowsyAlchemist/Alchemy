@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -8,35 +9,58 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
     [SerializeField] private Image _highlightedImage;
 
     private IElementClickHandler _clickHandler;
+    private bool _isInitialized;
+    private bool _isInteractable;
 
-    private void Awake()
+    private void Init()
     {
-        _button.onClick.AddListener(OnClick);
         _highlightedImage.gameObject.SetActive(false);
+        _button.onClick.AddListener(OnClick);
+        _button.interactable = false;
     }
 
     private void OnDestroy()
     {
-        _button.onClick.RemoveListener(OnClick);
+        if (_isInitialized)
+            _button.onClick.RemoveListener(OnClick);
     }
 
-    public void Init(IElementClickHandler clickHandler)
+    public void AssignClickHandler(IElementClickHandler clickHandler)
     {
         _clickHandler = clickHandler;
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
+    public void Render(Element element, bool isInteractable, bool isClosed = false)
     {
-        _highlightedImage.gameObject.SetActive(true);
+        if (_isInitialized == false)
+            Init();
+
+        if (isClosed)
+            base.RenderClosed(element);
+        else
+            base.Render(element);
+
+        if (isInteractable && _clickHandler == null)
+            throw new InvalidOperationException("ClickHandler is not assigned");
+
+        _isInteractable = isInteractable;
+        _button.interactable = isInteractable;
     }
 
-    public void OnPointerExit(PointerEventData eventData)
+    public virtual void OnPointerEnter(PointerEventData eventData)
     {
-        _highlightedImage.gameObject.SetActive(false);
+        if (_isInteractable)
+            _highlightedImage.gameObject.SetActive(true);
+    }
+
+    public virtual void OnPointerExit(PointerEventData eventData)
+    {
+        if (_isInteractable)
+            _highlightedImage.gameObject.SetActive(false);
     }
 
     private void OnClick()
     {
-        _clickHandler.OnBookTileElementClick(Element);
+        _clickHandler.OnElementClick(this);
     }
 }

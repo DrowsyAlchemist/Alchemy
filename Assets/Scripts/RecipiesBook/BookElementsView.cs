@@ -29,8 +29,8 @@ public class BookElementsView : ElementsView
             throw new InvalidOperationException("Object is not initialized");
 
         var renderer = Instantiate(_bookElementTemplate, _container);
-        renderer.Init(_elementClickHandler);
-        renderer.Render(element);
+        renderer.AssignClickHandler(_elementClickHandler);
+        renderer.Render(element, isInteractable: true);
         OpenedElementRenderers.Add(renderer);
     }
 
