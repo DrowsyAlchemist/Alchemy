@@ -2,17 +2,17 @@ public sealed class RecipiesBook : IElementClickHandler
 {
     private ElementsStorage _elementsStorage;
     private BookElementsView _gridView;
-    private RecipiesWithElementView _recipiesWithElementView;
+    private RecipiesView _recipiesView;
 
-    public RecipiesBook(ElementsStorage elementsStorage, BookElementsView gridView, RecipiesWithElementView recipiesWithElementView)
+    public RecipiesBook(ElementsStorage elementsStorage, BookElementsView gridView, RecipiesView recipiesView)
     {
         _elementsStorage = elementsStorage;
         _gridView = gridView;
-        _recipiesWithElementView = recipiesWithElementView;
+        _recipiesView = recipiesView;
 
         _gridView.Init(this);
         _gridView.gameObject.SetActive(false);
-        _recipiesWithElementView.gameObject.SetActive(false);
+        _recipiesView.gameObject.SetActive(false);
     }
 
     public void Open()
@@ -21,9 +21,9 @@ public sealed class RecipiesBook : IElementClickHandler
         _gridView.Fill(_elementsStorage.SortedOpenedElements);
     }
 
-    public void OnElementClick(ElementRenderer elementRenderer)
+    public void OnElementClick(BookElementRenderer elementRenderer)
     {
-        _recipiesWithElementView.Fill(elementRenderer.Element);
-        _recipiesWithElementView.gameObject.SetActive(true);
+        _recipiesView.Fill(elementRenderer.Element);
+        _recipiesView.gameObject.SetActive(true);
     }
 }

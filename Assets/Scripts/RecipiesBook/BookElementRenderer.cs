@@ -17,6 +17,7 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
         _highlightedImage.gameObject.SetActive(false);
         _button.onClick.AddListener(OnClick);
         _button.interactable = false;
+        _isInitialized = true;
     }
 
     private void OnDestroy()
@@ -35,25 +36,32 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
         if (_isInitialized == false)
             Init();
 
-        if (isClosed)
-            base.RenderClosed(element);
-        else
-            base.Render(element);
-
         if (isInteractable && _clickHandler == null)
             throw new InvalidOperationException("ClickHandler is not assigned");
+
+        if (isClosed)
+        {
+            if (isInteractable)
+                base.RenderManual(element, Game.Settings.VideoAdInfo.Sprite, Game.Settings.VideoAdInfo.Lable);
+            else
+                base.RenderClosed(element);
+        }
+        else
+        {
+            base.Render(element);
+        }
 
         _isInteractable = isInteractable;
         _button.interactable = isInteractable;
     }
 
-    public virtual void OnPointerEnter(PointerEventData eventData)
+    public void OnPointerEnter(PointerEventData eventData)
     {
         if (_isInteractable)
             _highlightedImage.gameObject.SetActive(true);
     }
 
-    public virtual void OnPointerExit(PointerEventData eventData)
+    public void OnPointerExit(PointerEventData eventData)
     {
         if (_isInteractable)
             _highlightedImage.gameObject.SetActive(false);
@@ -62,5 +70,6 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
     private void OnClick()
     {
         _clickHandler.OnElementClick(this);
+        _highlightedImage.gameObject.SetActive(false);
     }
 }

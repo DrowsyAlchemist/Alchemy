@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class RecipieRenderer : MonoBehaviour
@@ -34,6 +35,16 @@ public class RecipieRenderer : MonoBehaviour
         if (recipe.Result.IsOpened)
             _resultElementRenderer.Render(recipe.Result, isInteractable: false, isClosed: false);
         else
-            _resultElementRenderer.Render(Game.ClosedElement, isInteractable: false, isClosed: true);
+            _resultElementRenderer.Render(recipe.Result, isInteractable: false, isClosed: true);
+    }
+
+    public void Render(Element element, CreationRecipie creationRecipie)
+    {
+        if (element.IsOpened == false)
+            throw new InvalidOperationException();
+
+        _firstElementRenderer.Render(creationRecipie.FirstElement, isInteractable: false, isClosed: creationRecipie.FirstElement.IsOpened == false);
+        _secondElementRenderer.Render(creationRecipie.SecondElement, isInteractable: false, isClosed: creationRecipie.FirstElement.IsOpened == false);
+        _resultElementRenderer.Render(element, isInteractable: false, isClosed: false);
     }
 }

@@ -15,11 +15,11 @@ public sealed class Game : MonoBehaviour, IMergeHandler
     [SerializeField] private ScoreRenderer _scoreRenderer;
 
     [SerializeField] private BookElementsView _bookGridView;
-    [SerializeField] private RecipiesWithElementView _recipiesWithElementView;
+    [SerializeField] private RecipiesView _recipiesWithElementView;
 
     [SerializeField] private List<Element> _initialElements;
 
-    [SerializeField] private Element _closedElement;
+    [SerializeField] private Settings _settings;
 
     private const int PointsByOpenElement = 5;
     private static Game _instance;
@@ -27,7 +27,7 @@ public sealed class Game : MonoBehaviour, IMergeHandler
     private RecipiesBook _recipiesBook;
     private Score _score;
 
-    public static Element ClosedElement => _instance._closedElement;
+    public static Settings Settings => _instance._settings;
 
     private void Awake()
     {
