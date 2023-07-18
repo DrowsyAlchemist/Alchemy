@@ -9,6 +9,21 @@ public sealed class CreationRecipie
 
     public Element FirstElement => _firstElement;
     public Element SecondElement => _secondElement;
+    public int OpenedElementsCount
+    {
+        get
+        {
+            int i = 0;
+
+            if (FirstElement.IsOpened)
+                i++;
+
+            if (SecondElement.IsOpened)
+                i++;
+
+            return i;
+        }
+    }
 
     public CreationRecipie(Element firstElement, Element secondElement)
     {

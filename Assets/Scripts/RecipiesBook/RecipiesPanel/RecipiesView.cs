@@ -1,32 +1,42 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class RecipiesView : MonoBehaviour
 {
-    [SerializeField] private RecipieRenderer _recipieRendererTemplate;
+    [SerializeField] private RecipeRenderer _recipieRendererTemplate;
     [SerializeField] private RectTransform _recipiesWithElementContainer;
     [SerializeField] private RectTransform _creationRecipiesContainer;
     [SerializeField] private UIButton _closeButton;
     [SerializeField] private ScrollRect _scrollView;
 
-    private List<RecipieRenderer> _recipiesWithElementsRenderers = new();
-    private List<RecipieRenderer> _creationRecipiesRenderers = new();
+    [SerializeField] private RectTransform _recipiesWithElementLable;
+    [SerializeField] private RectTransform _creationRecipiesLable;
+
+    private List<RecipeRenderer> _recipiesWithElementsRenderers = new();
+    private List<RecipeRenderer> _creationRecipiesRenderers = new();
 
     private void Awake()
     {
         _closeButton.AssignOnClickAction(Close);
     }
 
-    private void OnEnable()
-    {
-        _scrollView.normalizedPosition = new Vector2(0, 1);
-    }
-
     public void Fill(Element element)
     {
+        element.SortRecipies();
         FillRecipiesWithElement(element);
         FillCreationRecipies(element);
+        Game.CoroutineObject.StartCoroutine(UpdateContent());
+    }
+
+    private IEnumerator UpdateContent()
+    {
+        yield return new WaitForEndOfFrame();
+        _scrollView.content.gameObject.SetActive(false);
+        yield return new WaitForEndOfFrame();
+        _scrollView.content.gameObject.SetActive(true);
+        _scrollView.normalizedPosition = new Vector2(0, 1);
     }
 
     private void FillRecipiesWithElement(Element element)
@@ -47,6 +57,7 @@ public class RecipiesView : MonoBehaviour
             Destroy(_recipiesWithElementsRenderers[i].gameObject);
             _recipiesWithElementsRenderers.RemoveAt(i);
         }
+        _recipiesWithElementLable.gameObject.SetActive(_recipiesWithElementsRenderers.Count > 0);
     }
 
     private void FillCreationRecipies(Element element)
@@ -67,6 +78,7 @@ public class RecipiesView : MonoBehaviour
             Destroy(_creationRecipiesRenderers[i].gameObject);
             _creationRecipiesRenderers.RemoveAt(i);
         }
+        _creationRecipiesLable.gameObject.SetActive(_creationRecipiesRenderers.Count > 0);
     }
 
     private void AddRecipieWithElement(Element element, Recipe recipie)

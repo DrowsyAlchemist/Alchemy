@@ -9,6 +9,21 @@ public sealed class Recipe
 
     public Element SecondElement => _secondElement;
     public Element Result => _result;
+    public int OpenedElementsCount
+    {
+        get
+        {
+            int i = 0;
+
+            if (SecondElement.IsOpened)
+                i++;
+
+            if (Result.IsOpened)
+                i++;
+
+            return i;
+        }
+    }
 
     public Recipe(Element secondElement, Element result)
     {

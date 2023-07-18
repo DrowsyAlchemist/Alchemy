@@ -27,6 +27,7 @@ public sealed class Game : MonoBehaviour, IMergeHandler
     private RecipiesBook _recipiesBook;
     private Score _score;
 
+    public static MonoBehaviour CoroutineObject => _instance;
     public static Settings Settings => _instance._settings;
 
     private void Awake()

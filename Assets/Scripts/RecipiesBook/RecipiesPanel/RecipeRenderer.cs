@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class RecipieRenderer : MonoBehaviour
+public class RecipeRenderer : MonoBehaviour
 {
     [SerializeField] private BookElementRenderer _firstElementRenderer;
     [SerializeField] private BookElementRenderer _secondElementRenderer;

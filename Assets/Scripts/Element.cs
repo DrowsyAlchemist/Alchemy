@@ -26,6 +26,12 @@ public sealed class Element : ScriptableObject
             Opened?.Invoke(this);
     }
 
+    public void SortRecipies()
+    {
+        _creationRecipies.Sort((a, b) => b.OpenedElementsCount - a.OpenedElementsCount);
+        _recipesWithElement.Sort((a, b) => b.OpenedElementsCount - a.OpenedElementsCount);
+    }
+
     public void CheckAndAddRecipe(Element secondElement, Element result)
     {
         if (secondElement == null)
