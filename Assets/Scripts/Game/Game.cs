@@ -11,8 +11,8 @@ public sealed class Game : MonoBehaviour, IMergeHandler
     [SerializeField] private GameField _gameField;
     [SerializeField] private UIButton _resetButton;
     [SerializeField] private UIButton _openRecipiesBookButton;
-    [SerializeField] private ProgressRenderer _progressRenderer;
-    [SerializeField] private ScoreRenderer _scoreRenderer;
+    [SerializeField] private Progress _progress;
+    [SerializeField] private Score _score;
 
     [SerializeField] private BookElementsView _bookGridView;
     [SerializeField] private RecipiesView _recipiesWithElementView;
@@ -25,7 +25,6 @@ public sealed class Game : MonoBehaviour, IMergeHandler
     private static Game _instance;
     private Saver _saver;
     private RecipiesBook _recipiesBook;
-    private Score _score;
 
     public static MonoBehaviour CoroutineObject => _instance;
     public static Settings Settings => _instance._settings;
@@ -71,7 +70,7 @@ public sealed class Game : MonoBehaviour, IMergeHandler
         _saver = Saver.Create(_elementsStorage, isPlayerAuthorized);
         OpenInitialElements();
         _elementsStorage.Init();
-        _progressRenderer.Init(_elementsStorage);
+        _progress.Init(_elementsStorage);
         _openedElementsView.Init(_gameField, this);
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
 
@@ -79,9 +78,7 @@ public sealed class Game : MonoBehaviour, IMergeHandler
         _openRecipiesBookButton.AssignOnClickAction(onButtonClick: OpenRecipiesBook);
 
         _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
-
-        _score = new Score(isPlayerAuthorized);
-        _scoreRenderer.Init(_score);
+        _score.Init(isPlayerAuthorized);
     }
 
     private void ResetProgress()

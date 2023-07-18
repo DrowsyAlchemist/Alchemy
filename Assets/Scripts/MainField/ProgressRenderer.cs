@@ -19,6 +19,6 @@ public class ProgressRenderer : MonoBehaviour
 
     private void RenderCount(int currentProgress)
     {
-        _text.text = currentProgress + " / " + _maxCount;
+        _text.text = "Открыто " + currentProgress + " элементов из " + _maxCount;
     }
 }

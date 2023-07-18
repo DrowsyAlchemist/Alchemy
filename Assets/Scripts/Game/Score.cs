@@ -2,12 +2,15 @@ using Agava.YandexGames;
 using System;
 using UnityEngine;
 
-public class Score
+public class Score : MonoBehaviour
 {
+    [SerializeField] private ScoreRenderer[] _scoreRenderers;
+
     private const string LeaderboardName = "AlchemyLeaderboard";
     private const string CurrentScoreStorage = "CurrentScore";
 
-    private readonly bool _isPlayerAuthorized;
+    private static Score _instance;
+    private bool _isPlayerAuthorized;
     private PlayerExtraData _playerExtraData;
 
     public int CurrentScore { get; private set; }
@@ -16,7 +19,16 @@ public class Score
     public event Action<int> CurrentScoreChanged;
     public event Action<int> BestScoreChanged;
 
-    public Score(bool isPlayerAuthorized)
+
+    private void Awake()
+    {
+        if (_instance == null)
+            _instance = this;
+        else
+            Destroy(gameObject);
+    }
+
+    public void Init(bool isPlayerAuthorized)
     {
         _isPlayerAuthorized = isPlayerAuthorized;
 
@@ -24,6 +36,9 @@ public class Score
             Leaderboard.GetPlayerEntry(LeaderboardName, GetScoreFromLeaderboard, OnLeaderboardError);
         else
             GetScoreFromPrefs();
+
+        foreach (var scoreRenderer in _scoreRenderers)
+            scoreRenderer.Init(this);
     }
 
     public void AddScore(int amount)

@@ -5,18 +5,18 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button))]
 public class UIButton : MonoBehaviour
 {
-    private Button _button;
     private Action _onClick;
+    protected Button Button { get; private set; }
 
     private void Awake()
     {
-        _button = GetComponent<Button>();
-        _button.onClick.AddListener(OnButtonClick);
+        Button = GetComponent<Button>();
+        Button.onClick.AddListener(OnButtonClick);
     }
 
     private void OnDestroy()
     {
-        _button.onClick.RemoveListener(OnButtonClick);
+        Button.onClick.RemoveListener(OnButtonClick);
     }
 
     public void AssignOnClickAction(Action onButtonClick)
