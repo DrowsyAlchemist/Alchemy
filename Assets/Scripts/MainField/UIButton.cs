@@ -16,7 +16,7 @@ public class UIButton : MonoBehaviour
 
     private void OnDestroy()
     {
-        Button.RemoveListener(OnButtonClick);
+        Button?.RemoveListener(OnButtonClick);
     }
 
     public void AssignOnClickAction(Action onButtonClick)

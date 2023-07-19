@@ -6,7 +6,6 @@ public class Score : MonoBehaviour
 {
     [SerializeField] private ScoreRenderer[] _scoreRenderers;
 
-    private const string LeaderboardName = "AlchemyLeaderboard";
     private const string CurrentScoreStorage = "CurrentScore";
 
     private static Score _instance;
@@ -33,7 +32,7 @@ public class Score : MonoBehaviour
         _isPlayerAuthorized = isPlayerAuthorized;
 
         if (isPlayerAuthorized)
-            Leaderboard.GetPlayerEntry(LeaderboardName, GetScoreFromLeaderboard, OnLeaderboardError);
+            Leaderboard.GetPlayerEntry(Game.LeaderboardName, GetScoreFromLeaderboard, OnLeaderboardError);
         else
             GetScoreFromPrefs();
 
@@ -77,12 +76,12 @@ public class Score : MonoBehaviour
     {
         _playerExtraData.CurrentScore = CurrentScore;
         string jsonData = JsonUtility.ToJson(_playerExtraData);
-        Leaderboard.SetScore(LeaderboardName, BestScore, extraData: jsonData);
+        Leaderboard.SetScore(Game.LeaderboardName, BestScore, extraData: jsonData);
     }
 
     private void SetScoreToPrefs()
     {
-        PlayerPrefs.SetInt(LeaderboardName, BestScore);
+        PlayerPrefs.SetInt(Game.LeaderboardName, BestScore);
         PlayerPrefs.SetInt(CurrentScoreStorage, CurrentScore);
         PlayerPrefs.Save();
     }
@@ -111,7 +110,7 @@ public class Score : MonoBehaviour
 
     private void GetScoreFromPrefs()
     {
-        BestScore = PlayerPrefs.GetInt(LeaderboardName, 0);
+        BestScore = PlayerPrefs.GetInt(Game.LeaderboardName, 0);
         CurrentScore = PlayerPrefs.GetInt(CurrentScoreStorage, 0);
     }
 

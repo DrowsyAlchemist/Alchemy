@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -27,16 +26,8 @@ public class RecipiesView : MonoBehaviour
         element.SortRecipies();
         FillRecipiesWithElement(element);
         FillCreationRecipies(element);
-        Game.CoroutineObject.StartCoroutine(UpdateContent());
-    }
-
-    private IEnumerator UpdateContent()
-    {
-        yield return new WaitForEndOfFrame();
-        _scrollView.content.gameObject.SetActive(false);
-        yield return new WaitForEndOfFrame();
-        _scrollView.content.gameObject.SetActive(true);
-        _scrollView.normalizedPosition = new Vector2(0, 1);
+        _scrollView.RerenderContent(Game.CoroutineObject);
+        _scrollView.RaiseContent();
     }
 
     private void FillRecipiesWithElement(Element element)

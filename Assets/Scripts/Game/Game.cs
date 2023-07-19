@@ -13,6 +13,7 @@ public sealed class Game : MonoBehaviour, IMergeHandler
     [SerializeField] private UIButton _openRecipiesBookButton;
     [SerializeField] private Progress _progress;
     [SerializeField] private Score _score;
+    [SerializeField] private LeaderboardView _leaderboardView;
 
     [SerializeField] private BookElementsView _bookGridView;
     [SerializeField] private RecipiesView _recipiesWithElementView;
@@ -21,6 +22,7 @@ public sealed class Game : MonoBehaviour, IMergeHandler
 
     [SerializeField] private Settings _settings;
 
+    public const string LeaderboardName = "AlchemyLeaderboard";
     private const int PointsByOpenElement = 5;
     private static Game _instance;
     private Saver _saver;
@@ -51,14 +53,6 @@ public sealed class Game : MonoBehaviour, IMergeHandler
         Init();
     }
 
-    public void OpenAllElements()
-    {
-        foreach (var element in _elementsStorage.SortedElements)
-            element.Open();
-
-        _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
-    }
-
     private void Init()
     {
 #if UNITY_EDITOR
@@ -79,6 +73,15 @@ public sealed class Game : MonoBehaviour, IMergeHandler
 
         _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
         _score.Init(isPlayerAuthorized);
+        _leaderboardView.Init(isPlayerAuthorized, _score);
+    }
+
+    public void OpenAllElements()
+    {
+        foreach (var element in _elementsStorage.SortedElements)
+            element.Open();
+
+        _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
     }
 
     private void ResetProgress()
