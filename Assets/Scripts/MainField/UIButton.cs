@@ -11,12 +11,12 @@ public class UIButton : MonoBehaviour
     private void Awake()
     {
         Button = GetComponent<Button>();
-        Button.onClick.AddListener(OnButtonClick);
+        Button.AddListener(OnButtonClick);
     }
 
     private void OnDestroy()
     {
-        Button.onClick.RemoveListener(OnButtonClick);
+        Button.RemoveListener(OnButtonClick);
     }
 
     public void AssignOnClickAction(Action onButtonClick)

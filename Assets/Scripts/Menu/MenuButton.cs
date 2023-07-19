@@ -21,7 +21,7 @@ public class MenuButton : UIButton
             Init();
 
         Button.interactable = false;
-        _openedPanel.gameObject.SetActive(true);
+        _openedPanel.Activate();
     }
 
     public void ClosePanel()
@@ -30,7 +30,7 @@ public class MenuButton : UIButton
             Init();
 
         Button.interactable = true;
-        _openedPanel.gameObject.SetActive(false);
+        _openedPanel.Deactivate();
     }
 
     private void OnClick()

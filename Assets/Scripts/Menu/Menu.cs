@@ -24,12 +24,12 @@ public class Menu : MonoBehaviour
 
     public void Open()
     {
-        _menuPanel.gameObject.SetActive(true);
+        _menuPanel.Activate();
     }
 
     public void Close()
     {
-        _menuPanel.gameObject.SetActive(false);
+        _menuPanel.Deactivate();
     }
 
     private void OnButtonClick(MenuButton menuButton)
