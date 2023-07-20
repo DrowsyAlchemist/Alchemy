@@ -20,8 +20,8 @@ public abstract class ElementRenderer : MonoBehaviour, IHasElement
     protected void RenderClosed(Element element)
     {
         Element = element;
-        _image.sprite = Game.Settings.ClosedElementInfo.Sprite;
-        _lableText.text = Game.Settings.ClosedElementInfo.Lable;
+        _image.sprite = Settings.ClosedElement.Sprite;
+        _lableText.text = Settings.ClosedElement.Lable;
         _lableText.color = Color.white;
     }
 

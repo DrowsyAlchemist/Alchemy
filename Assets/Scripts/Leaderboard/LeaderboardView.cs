@@ -37,11 +37,11 @@ public class LeaderboardView : MonoBehaviour
             _playerRenderer.Render(_score.BestScore);
             return;
         }
-        Leaderboard.GetPlayerEntry(Game.LeaderboardName,
+        Leaderboard.GetPlayerEntry(Settings.LeaderboardSettings.LeaderboardName,
             onSuccessCallback: (entry) => _playerRenderer.Render(entry),
             onErrorCallback: (error) => _playerRenderer.Render(_score.BestScore));
 
-        Leaderboard.GetEntries(Game.LeaderboardName,
+        Leaderboard.GetEntries(Settings.LeaderboardSettings.LeaderboardName,
             onSuccessCallback: (result) =>
             {
                 int i = 0;
@@ -52,12 +52,16 @@ public class LeaderboardView : MonoBehaviour
                     {
                         var entryRenderer = Instantiate(_entryRendererTemplate, _container);
                         _entryRenderers.Add(entryRenderer);
-                        entryRenderer.Render(entry);
                     }
                     _entryRenderers[i].Render(entry);
                     i++;
                 }
-            }
+            },
+            onErrorCallback: (error) => Debug.Log("Leaderboard error: " + error),
+            topPlayersCount: Settings.LeaderboardSettings.TopPlayersCount,
+            competingPlayersCount: Settings.LeaderboardSettings.CompetingPlayersCount,
+            includeSelf: Settings.LeaderboardSettings.IncludeSelf,
+            pictureSize: Settings.LeaderboardSettings.ProfilePictureSize
         );
     }
 }

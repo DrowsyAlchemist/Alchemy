@@ -1,34 +1,26 @@
-using System;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Settings", menuName = "Settings", order = 51)]
-public class Settings : ScriptableObject
+public class Settings : MonoBehaviour
 {
-    [SerializeField] private ClosedElement _closedElementInfo;
-    [SerializeField] private VideoAd _videoAdInfo;
+    [SerializeField] private GameSettings _gameSettings;
+    [SerializeField] private ClosedElement _closedElement;
+    [SerializeField] private AdSettings _adSettings;
+    [SerializeField] private LeaderboardSettings _leaderboardSettings;
 
-    public ClosedElement ClosedElementInfo => _closedElementInfo;
-    public VideoAd VideoAdInfo => _videoAdInfo;
+    private static Settings _instance;
 
-    [Serializable]
-    public class ClosedElement
+    private void Awake()
     {
-        [SerializeField] private Sprite _sprite;
-        [SerializeField] private string _lable;
-        [SerializeField] private string _lableEn;
-
-        public Sprite Sprite => _sprite;
-        public string Lable => _lable;
+        if (_instance == null)
+            _instance = this;
+        else
+            Destroy(gameObject);
     }
 
-    [Serializable]
-    public class VideoAd
-    {
-        [SerializeField] private Sprite _sprite;
-        [SerializeField] private string _lable;
-        [SerializeField] private string _lableEn;
+    public static GameSettings GameSettings => _instance._gameSettings;
+    public static ClosedElement ClosedElement => _instance._closedElement;
+    public static AdSettings AdSettings => _instance._adSettings;
+    public static LeaderboardSettings LeaderboardSettings => _instance._leaderboardSettings;
 
-        public Sprite Sprite => _sprite;
-        public string Lable => _lable;
-    }
+    public static MonoBehaviour CoroutineObject => _instance;
 }

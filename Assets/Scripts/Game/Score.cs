@@ -32,7 +32,7 @@ public class Score : MonoBehaviour
         _isPlayerAuthorized = isPlayerAuthorized;
 
         if (isPlayerAuthorized)
-            Leaderboard.GetPlayerEntry(Game.LeaderboardName, GetScoreFromLeaderboard, OnLeaderboardError);
+            Leaderboard.GetPlayerEntry(Settings.LeaderboardSettings.LeaderboardName, GetScoreFromLeaderboard, OnLeaderboardError);
         else
             GetScoreFromPrefs();
 
@@ -76,12 +76,12 @@ public class Score : MonoBehaviour
     {
         _playerExtraData.CurrentScore = CurrentScore;
         string jsonData = JsonUtility.ToJson(_playerExtraData);
-        Leaderboard.SetScore(Game.LeaderboardName, BestScore, extraData: jsonData);
+        Leaderboard.SetScore(Settings.LeaderboardSettings.LeaderboardName, BestScore, extraData: jsonData);
     }
 
     private void SetScoreToPrefs()
     {
-        PlayerPrefs.SetInt(Game.LeaderboardName, BestScore);
+        PlayerPrefs.SetInt(Settings.LeaderboardSettings.LeaderboardName, BestScore);
         PlayerPrefs.SetInt(CurrentScoreStorage, CurrentScore);
         PlayerPrefs.Save();
     }
@@ -110,7 +110,7 @@ public class Score : MonoBehaviour
 
     private void GetScoreFromPrefs()
     {
-        BestScore = PlayerPrefs.GetInt(Game.LeaderboardName, 0);
+        BestScore = PlayerPrefs.GetInt(Settings.LeaderboardSettings.LeaderboardName, 0);
         CurrentScore = PlayerPrefs.GetInt(CurrentScoreStorage, 0);
     }
 

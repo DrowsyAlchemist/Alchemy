@@ -26,7 +26,7 @@ public class RecipiesView : MonoBehaviour
         element.SortRecipies();
         FillRecipiesWithElement(element);
         FillCreationRecipies(element);
-        _scrollView.RerenderContent(Game.CoroutineObject);
+        _scrollView.RerenderContent(Settings.CoroutineObject);
         _scrollView.RaiseContent();
     }
 

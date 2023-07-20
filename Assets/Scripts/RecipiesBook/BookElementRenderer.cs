@@ -42,7 +42,7 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
         if (isClosed)
         {
             if (isInteractable)
-                base.RenderManual(element, Game.Settings.VideoAdInfo.Sprite, Game.Settings.VideoAdInfo.Lable);
+                base.RenderManual(element, Settings.AdSettings.AdSprite, Settings.AdSettings.AdLable);
             else
                 base.RenderClosed(element);
         }

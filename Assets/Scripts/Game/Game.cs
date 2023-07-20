@@ -20,16 +20,9 @@ public sealed class Game : MonoBehaviour, IMergeHandler
 
     [SerializeField] private List<Element> _initialElements;
 
-    [SerializeField] private Settings _settings;
-
-    public const string LeaderboardName = "AlchemyLeaderboard";
-    private const int PointsByOpenElement = 5;
     private static Game _instance;
     private Saver _saver;
     private RecipiesBook _recipiesBook;
-
-    public static MonoBehaviour CoroutineObject => _instance;
-    public static Settings Settings => _instance._settings;
 
     private void Awake()
     {
@@ -136,7 +129,7 @@ public sealed class Game : MonoBehaviour, IMergeHandler
 
     private void OpenNewElement(Element element)
     {
-        _score.AddScore(PointsByOpenElement);
+        _score.AddScore(Settings.GameSettings.PointsForOpenedElement);
         element.Open();
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
     }
