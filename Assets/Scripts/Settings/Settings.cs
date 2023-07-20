@@ -6,6 +6,7 @@ public class Settings : MonoBehaviour
     [SerializeField] private ClosedElement _closedElement;
     [SerializeField] private AdSettings _adSettings;
     [SerializeField] private LeaderboardSettings _leaderboardSettings;
+    [SerializeField] private MonoBehaviour _coroutineObject;
 
     private static Settings _instance;
 
@@ -21,6 +22,5 @@ public class Settings : MonoBehaviour
     public static ClosedElement ClosedElement => _instance._closedElement;
     public static AdSettings AdSettings => _instance._adSettings;
     public static LeaderboardSettings LeaderboardSettings => _instance._leaderboardSettings;
-
-    public static MonoBehaviour CoroutineObject => _instance;
+    public static MonoBehaviour CoroutineObject => _instance._coroutineObject;
 }

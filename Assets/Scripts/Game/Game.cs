@@ -1,5 +1,6 @@
 using Agava.YandexGames;
 using GameAnalyticsSDK;
+using Lean.Localization;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -67,6 +68,12 @@ public sealed class Game : MonoBehaviour, IMergeHandler
         _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
         _score.Init(isPlayerAuthorized);
         _leaderboardView.Init(isPlayerAuthorized, _score);
+
+#if UNITY_EDITOR
+        return;
+#endif
+        string systemLang = YandexGamesSdk.Environment.GetCurrentLang();
+        LeanLocalization.SetCurrentLanguageAll(systemLang);
     }
 
     public void OpenAllElements()
