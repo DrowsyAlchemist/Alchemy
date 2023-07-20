@@ -16,6 +16,8 @@ public class ElementsStorage : MonoBehaviour, IProgressHolder
 
     public void Init()
     {
+        SortElements(_elements);
+
         foreach (var element in _elements)
         {
             if (element.IsOpened)
@@ -34,12 +36,17 @@ public class ElementsStorage : MonoBehaviour, IProgressHolder
     private void OnElementOpened(Element element)
     {
         _sortedOpenedElements.Add(element);
-        _sortedOpenedElements.Sort((a, b) => a.Lable.CompareTo(b.Lable));
+        SortElements(_sortedOpenedElements);
         CurrentCountChanged?.Invoke(CurrentCount);
+    }
+
+    private void SortElements(List<Element> elements)
+    {
+        elements.Sort((a, b) => a.Lable.CompareTo(b.Lable));
     }
 
     public void OnValidate()
     {
-        _elements.Sort((a, b) => a.Lable.CompareTo(b.Lable));
+        SortElements(_elements);
     }
 }

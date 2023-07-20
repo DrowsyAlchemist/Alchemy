@@ -1,3 +1,4 @@
+using Lean.Localization;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +13,7 @@ public sealed class Element : ScriptableObject
     [SerializeField] private List<Recipe> _recipesWithElement = new();
 
     public string Id => _id;
-    public string Lable => _lable;
+    public string Lable => GetLocalizedLable();
     public Sprite Sprite => _sprite;
     public IReadOnlyCollection<CreationRecipie> CreationRecipies => _creationRecipies;
     public IReadOnlyCollection<Recipe> Recipies => _recipesWithElement;
@@ -73,5 +74,21 @@ public sealed class Element : ScriptableObject
                 return true;
 
         return false;
+    }
+
+    private string GetLocalizedLable()
+    {
+        switch (LeanLocalization.GetFirstCurrentLanguage())
+        {
+            case "en":
+                return _id;
+            case "ru":
+                return _lable;
+            case null:
+                return _lable;
+            default:
+                Debug.Log(LeanLocalization.GetFirstCurrentLanguage());
+                throw new NotImplementedException();
+        }
     }
 }
