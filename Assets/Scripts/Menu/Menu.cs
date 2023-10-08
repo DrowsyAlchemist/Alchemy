@@ -7,7 +7,7 @@ public class Menu : MonoBehaviour
 
     private MenuButton _currentButton;
 
-    private void Awake()
+    public void Init()
     {
         foreach (var button in _menuButtons)
         {

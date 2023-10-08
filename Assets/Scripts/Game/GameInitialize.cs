@@ -5,11 +5,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public sealed class Game : MonoBehaviour, IMergeHandler
+public sealed class GameInitialize : MonoBehaviour, IMergeHandler
 {
     [SerializeField] private ElementsStorage _elementsStorage;
     [SerializeField] private MainOpenedElementsView _openedElementsView;
+    [SerializeField] private AlphabeticalIndex _alphabeticalIndex;
     [SerializeField] private GameField _gameField;
+    [SerializeField] private Menu _menu;
     [SerializeField] private UIButton _resetButton;
     [SerializeField] private UIButton _openRecipiesBookButton;
     [SerializeField] private Progress _progress;
@@ -21,7 +23,7 @@ public sealed class Game : MonoBehaviour, IMergeHandler
 
     [SerializeField] private List<Element> _initialElements;
 
-    private static Game _instance;
+    private static GameInitialize _instance;
     private Saver _saver;
     private RecipiesBook _recipiesBook;
 
@@ -58,9 +60,11 @@ public sealed class Game : MonoBehaviour, IMergeHandler
         _saver = Saver.Create(_elementsStorage, isPlayerAuthorized);
         OpenInitialElements();
         _elementsStorage.Init();
+        _menu.Init();
         _progress.Init(_elementsStorage);
         _openedElementsView.Init(_gameField, this);
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
+        _alphabeticalIndex.Init();
 
         _resetButton.AssignOnClickAction(onButtonClick: ResetProgress);
         _openRecipiesBookButton.AssignOnClickAction(onButtonClick: OpenRecipiesBook);

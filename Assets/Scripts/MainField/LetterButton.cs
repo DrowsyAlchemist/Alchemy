@@ -10,7 +10,7 @@ public class LetterButton : MonoBehaviour
 
     public event Action<char> Clicked;
 
-    public char Letter => _letterText.text[0];
+    public char Letter { get; private set; }
 
     private void Awake()
     {
@@ -20,6 +20,12 @@ public class LetterButton : MonoBehaviour
     private void OnDestroy()
     {
         _button.onClick.RemoveListener(OnButtonClick);
+    }
+
+    public void Render(char letter)
+    {
+        Letter = letter;
+        _letterText.text = letter.ToString();
     }
 
     private void OnButtonClick()

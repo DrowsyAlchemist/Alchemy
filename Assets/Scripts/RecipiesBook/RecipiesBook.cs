@@ -24,6 +24,6 @@ public sealed class RecipiesBook : IElementClickHandler
     public void OnElementClick(BookElementRenderer elementRenderer)
     {
         _recipiesView.Fill(elementRenderer.Element);
-        _recipiesView.Deactivate();
+        _recipiesView.Activate();
     }
 }

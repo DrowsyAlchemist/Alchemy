@@ -1,3 +1,4 @@
+using Lean.Localization;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,23 +7,47 @@ using UnityEngine.UI;
 
 public class AlphabeticalIndex : MonoBehaviour
 {
-    [SerializeField] private List<LetterButton> _letterButtons;
     [SerializeField] private ScrollRect _scrollRect;
+    [SerializeField] private RectTransform _lettersContainer;
+    [SerializeField] private LetterButton _letterTemplate;
+
+    private List<LetterButton> _letterButtons = new();
 
     private const float MinPosition = 0.1f;
     private const float ScrollDuration = 1;
     private Coroutine _coroutine;
 
-    private void Awake()
+    public void Init()
     {
-        foreach (var button in _letterButtons)
-            button.Clicked += OnButtonClick;
+        FillByLanguage();
     }
 
     private void OnDestroy()
     {
         foreach (var button in _letterButtons)
             button.Clicked -= OnButtonClick;
+    }
+
+    private void FillByLanguage()
+    {
+        if (LeanLocalization.GetFirstCurrentLanguage().Equals("ru"))
+        {
+            for (char symbol = 'À'; symbol <= 'ß'; symbol++)
+                CreateLetter(symbol);
+        }
+        else
+        {
+            for (char symbol = 'A'; symbol <= 'Z'; symbol++)
+                CreateLetter(symbol);
+        }
+    }
+
+    private void CreateLetter(char symbol)
+    {
+        var letterButton = Instantiate(_letterTemplate, _lettersContainer);
+        letterButton.Render(symbol);
+        letterButton.Clicked += OnButtonClick;
+        _letterButtons.Add(letterButton);
     }
 
     private void OnButtonClick(char symbol)
