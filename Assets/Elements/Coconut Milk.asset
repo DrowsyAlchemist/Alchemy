@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
+  m_Name: Coconut Milk
+  m_EditorClassIdentifier: 
+  _id: Coconut Milk
+  _lable: "\u041A\u043E\u043A\u043E\u0441\u043E\u0432\u043E\u0435 \u043C\u043E\u043B\u043E\u043A\u043E"
+  _sprite: {fileID: 21300000, guid: b6b3461a2f3965d45bcb3de5af33164d, type: 3}
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: 0817a63286c40b84aa59356398289c7c, type: 2}
+    _secondElement: {fileID: 11400000, guid: 7c081a78d6d8abf428f9260c1afbaa76, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 0817a63286c40b84aa59356398289c7c, type: 2}
+    _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
+  _recipesWithElement: []

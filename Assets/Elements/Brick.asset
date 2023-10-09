@@ -14,10 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Brick
   _lable: "\u041A\u0438\u0440\u043F\u0438\u0447"
-  _sprite: {fileID: 21300000, guid: b309d9b6fb613f8448de9da6fbc9feaa, type: 3}
+  _sprite: {fileID: 0}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
     _secondElement: {fileID: 11400000, guid: 85ea3114226562f4f8910a34ef7b7670, type: 2}
   _recipesWithElement:
   - _secondElement: {fileID: 11400000}
     _result: {fileID: 11400000, guid: 7be785ceef6fbb24c8f4f70f78ac0cd2, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
+    _result: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
