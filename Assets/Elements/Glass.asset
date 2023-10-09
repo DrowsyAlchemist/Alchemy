@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Glass
   _lable: "\u0421\u0442\u0435\u043A\u043B\u043E"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 36370f5f2894de343ad0c3a3ab07e19c, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
@@ -25,3 +25,21 @@ MonoBehaviour:
     _result: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
   - _secondElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
     _result: {fileID: 11400000, guid: 96b6a93c45ffeca46b30c63eafa3791b, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
+    _result: {fileID: 11400000, guid: cb796f8e45331e74d899f41e872f2a97, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 3203e04fde19c9347bfd6219beb787cf, type: 2}
+    _result: {fileID: 11400000, guid: cb796f8e45331e74d899f41e872f2a97, type: 2}
+  - _secondElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
+    _result: {fileID: 11400000, guid: ed763e9cd6e5baa47b5050981b91fd6a, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
+    _result: {fileID: 11400000, guid: e7da72197de2a4543ba0f78c0e7cfe62, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 158e079c518ceba4a95a18b7d314f6c5, type: 2}
+    _result: {fileID: 11400000, guid: 2fa5a1f4a6843f541984de3a623aa62c, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
+    _result: {fileID: 11400000, guid: d696695e226793540b3d58c191fa3123, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 9f0d97070c0818543adcb8fa68d51192, type: 2}
+    _result: {fileID: 11400000, guid: f777755a66386f4419fb820ed5c2f9b2, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 5cc14ab8b084f124c9c07b14abaa1e04, type: 2}
+    _result: {fileID: 11400000, guid: f777755a66386f4419fb820ed5c2f9b2, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 144c04e8596d08844b1bb28613e94103, type: 2}
+    _result: {fileID: 11400000, guid: f777755a66386f4419fb820ed5c2f9b2, type: 2}

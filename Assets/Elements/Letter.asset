@@ -14,8 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Letter
   _lable: "\u041F\u0438\u0441\u044C\u043C\u043E"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: ab83ab7e68b19f9458d460848a9f532f, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}
     _secondElement: {fileID: 11400000, guid: 5e7a7995d420ef643b408a17d417c3e1, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
+    _result: {fileID: 11400000, guid: 308e076627bdb9b4397932205f3a1f44, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: f5e80572d5723884e8fa1af9ef49a699, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 10c36b5744ff95f4b95c778551770ab0, type: 2}
+    _result: {fileID: 11400000, guid: fdf580eac0d28b24e83c3d2dd25e1db8, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 93cd71a8580f6cf478781a7a60d92447, type: 2}
+    _result: {fileID: 11400000, guid: fdf580eac0d28b24e83c3d2dd25e1db8, type: 2}

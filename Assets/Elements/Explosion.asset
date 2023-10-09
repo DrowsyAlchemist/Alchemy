@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Explosion
   _lable: "\u0412\u0437\u0440\u044B\u0432"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 32384b410f6f8bb42bb342f60c0890ca, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
     _secondElement: {fileID: 11400000, guid: c4f234f4bb10e3546a89c7a7a9bf4c9b, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
+    _result: {fileID: 11400000, guid: 63320bdc10ff4e74c96109bbcbe7ec06, type: 2}

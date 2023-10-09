@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Earthquake
   _lable: "\u0417\u0435\u043C\u043B\u0435\u0442\u0440\u044F\u0441\u0435\u043D\u0438\u0435"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: ffec93c2f3e7cdb45be380298af278cd, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}
     _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}
+    _result: {fileID: 11400000, guid: 3659d2203c3214b4b8e70e7413967f35, type: 2}

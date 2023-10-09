@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Firetruck
   _lable: "\u041F\u043E\u0436\u0430\u0440\u043D\u0430\u044F \u043C\u0430\u0448\u0438\u043D\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 28235e38bf965974aa55c17575f98013, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 9669b2a4beafe924fac01346d548c20c, type: 2}
     _secondElement: {fileID: 11400000, guid: 5b147f1257991d149a0eead78d3e299e, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: 9669b2a4beafe924fac01346d548c20c, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Astronaut
   _lable: "\u0410\u0441\u0442\u0440\u043E\u043D\u0430\u0432\u0442"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: e5e16b1554cfc4c47b8666dbf513d3f2, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 779ecbf5c09925540b98dbacf97b00ff, type: 2}
@@ -24,4 +24,6 @@ MonoBehaviour:
     _secondElement: {fileID: 11400000, guid: 1949e08252e033a44bd5caa2e9c33ccf, type: 2}
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 144c04e8596d08844b1bb28613e94103, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: c65a240c878b56c47a7cb9c04358076e, type: 2}
+    _result: {fileID: 11400000, guid: 5e0c1bc81c097a54398fdee047045fbe, type: 2}

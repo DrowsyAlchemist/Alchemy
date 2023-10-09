@@ -14,10 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Juice
   _lable: "\u0421\u043E\u043A"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 938195da87096c84fa05b9e03a18833c, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
     _secondElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}
   - _firstElement: {fileID: 11400000, guid: ec21e2563dda2a547b4f5a989e7b0f9b, type: 2}
     _secondElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
+    _result: {fileID: 11400000, guid: 3796662a1e80935409226844cca428a7, type: 2}
+  - _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
+    _result: {fileID: 11400000, guid: 05151ed70e48bd049b580bf76c91ef87, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+    _result: {fileID: 11400000, guid: 05151ed70e48bd049b580bf76c91ef87, type: 2}

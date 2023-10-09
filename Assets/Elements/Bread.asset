@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Bread
   _lable: "\u0425\u043B\u0435\u0431"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 3b8db32a9bee0a1428e62e8c6e70a797, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: a7cc456e627395443a3dcf554d44d689, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
+    _result: {fileID: 11400000, guid: 94ceb4e9dfe052a478a09a7ea16a0e30, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: 77443b96b467719419b791b98e5afbd4, type: 2}

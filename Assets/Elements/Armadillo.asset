@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Armadillo
   _lable: "\u0411\u0440\u043E\u043D\u0435\u043D\u043E\u0441\u0435\u0446"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: d3d07bcf74e41514dbc6dc3a31d42fd6, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
     _secondElement: {fileID: 11400000, guid: 23f2a993a092e1c48aeac253a10060f4, type: 2}

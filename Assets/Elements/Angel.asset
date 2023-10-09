@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Angel
   _lable: "\u0410\u043D\u0433\u0435\u043B"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 04a342dbd072f35458c8e781297de7f7, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 6eaeccb02ba2bc3489951f5ab346e510, type: 2}
+    _result: {fileID: 11400000, guid: d057730ef6f37a648aa53105c444d30b, type: 2}

@@ -14,10 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Milk
   _lable: "\u041C\u043E\u043B\u043E\u043A\u043E"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: ddf91fd5018a35e4cae2d2faa9cdfa6e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ada2fa01b72a1064396df1fe5cdf4b01, type: 2}
     _secondElement: {fileID: 11400000, guid: 2c0a7c16c8156834d8666193432b975e, type: 2}
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 2c0a7c16c8156834d8666193432b975e, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
+    _result: {fileID: 11400000, guid: 21b230eb84dba684494b8462b0196336, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 32f8a61c70e00874692c992534b4752a, type: 2}
+    _result: {fileID: 11400000, guid: b00fcb370e640424ba4e0232bed0dd14, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 6b6e4faac3ae3484eb63825d5b215e3b, type: 2}
+    _result: {fileID: 11400000, guid: b00fcb370e640424ba4e0232bed0dd14, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
+    _result: {fileID: 11400000, guid: 055d1a856f7d27845908a8074cf42202, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 6c62807331e9cfe43bf04007e30f6778, type: 2}
+    _result: {fileID: 11400000, guid: 6f11ff92311b1fe4b924ff9f5aa87536, type: 2}

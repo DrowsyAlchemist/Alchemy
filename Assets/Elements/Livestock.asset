@@ -14,8 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Livestock
   _lable: "\u0414\u043E\u043C\u0430\u0448\u043D\u0438\u0439 \u0441\u043A\u043E\u0442"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 54b53daf2ca082b43886cbb85e595215, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
+    _result: {fileID: 11400000, guid: 8dea871fdaeba994ca58914ffd9a47a0, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 0ff280c20f14be6489dd8a2a2fc9601a, type: 2}
+    _result: {fileID: 11400000, guid: 2c0a7c16c8156834d8666193432b975e, type: 2}
+  - _secondElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
+    _result: {fileID: 11400000, guid: 2eb88271ce8c0144f85e48dd399c0cff, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 8d3f6d7717bf28142b9846a2090f6ab9, type: 2}
+    _result: {fileID: 11400000, guid: 2eb88271ce8c0144f85e48dd399c0cff, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 85728691054b8be47ad8631598473d65, type: 2}
+    _result: {fileID: 11400000, guid: 2314dc53a54a7ff4687c35581335359e, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 85ea3114226562f4f8910a34ef7b7670, type: 2}
+    _result: {fileID: 11400000, guid: 20392d3695b38a34a8e84e4322f95cb2, type: 2}

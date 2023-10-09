@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Family
   _lable: "\u0421\u0435\u043C\u044C\u044F"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 87de7b37e0d8ee94bbf696a4f880de76, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
+    _result: {fileID: 11400000, guid: cf26ebca62e6bba49bf0de772bf26b9a, type: 2}

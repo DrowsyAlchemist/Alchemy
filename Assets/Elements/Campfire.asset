@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Campfire
   _lable: "\u041F\u043E\u0445\u043E\u0434\u043D\u044B\u0439 \u043A\u043E\u0441\u0442\u0451\u0440"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 368ca0cbf4da0be41a004e61ec8f0120, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
     _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 2eb88271ce8c0144f85e48dd399c0cff, type: 2}
+    _result: {fileID: 11400000, guid: dabd5c9843511594784077a24d4a8fe7, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4f9aad5770c5d0e44a75c12060faaca2, type: 2}
+    _result: {fileID: 11400000, guid: dabd5c9843511594784077a24d4a8fe7, type: 2}

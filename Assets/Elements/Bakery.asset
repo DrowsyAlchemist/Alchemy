@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Bakery
   _lable: "\u0411\u0443\u043B\u043E\u0447\u043D\u0430\u044F"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 5128a5ac53e5e3349a6052f8e1b6cd0e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
     _secondElement: {fileID: 11400000, guid: 4096541e6af17ef42ac8f49d8abedfe6, type: 2}

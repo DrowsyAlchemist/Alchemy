@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Bulletproof Vest
   _lable: "\u0411\u0440\u043E\u043D\u0435\u0436\u0438\u043B\u0435\u0442"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 05dbeec66d4cb95428f83c0d1a1a486e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 7010e2c44c7e5ed4bb7df1672822efef, type: 2}
     _secondElement: {fileID: 11400000, guid: 23f2a993a092e1c48aeac253a10060f4, type: 2}

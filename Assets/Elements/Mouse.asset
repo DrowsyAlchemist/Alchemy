@@ -14,8 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Mouse
   _lable: "\u041C\u044B\u0448\u044C"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: fc2b1ade396479442a3371710489f91d, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
     _secondElement: {fileID: 11400000, guid: 055d1a856f7d27845908a8074cf42202, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
+    _result: {fileID: 11400000, guid: 456b7efa58993634ab7152429ad3e512, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 10c36b5744ff95f4b95c778551770ab0, type: 2}
+    _result: {fileID: 11400000, guid: 42103fb5f76badb48b06b59175ec9d7b, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
+    _result: {fileID: 11400000, guid: 55ccd401d3fc7f546b75a295a70d6622, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 9f0d97070c0818543adcb8fa68d51192, type: 2}
+    _result: {fileID: 11400000, guid: 55ccd401d3fc7f546b75a295a70d6622, type: 2}

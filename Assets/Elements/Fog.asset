@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Fog
   _lable: "\u0422\u0443\u043C\u0430\u043D"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 6b0bf81b25c94654181ca1315e0b6691, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 85728691054b8be47ad8631598473d65, type: 2}
     _secondElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 641ac9dfe4a8b394cbcc65db90244f29, type: 2}
+    _result: {fileID: 11400000, guid: 4c48fca609a237a419283b1182845018, type: 2}

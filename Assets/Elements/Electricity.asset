@@ -14,8 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Electricity
   _lable: "\u042D\u043B\u0435\u043A\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u043E"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 106217215a1a8da4eaf153b547bd412d, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
     _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
+    _result: {fileID: 11400000, guid: ed763e9cd6e5baa47b5050981b91fd6a, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4460400019dc60a4dbf8041a68359132, type: 2}
+    _result: {fileID: 11400000, guid: 10c36b5744ff95f4b95c778551770ab0, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}
+    _result: {fileID: 11400000, guid: 2fa5a1f4a6843f541984de3a623aa62c, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
+    _result: {fileID: 11400000, guid: a4c7c4b107bc62b45b3864701879c4e6, type: 2}
+  - _secondElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
+    _result: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
+    _result: {fileID: 11400000, guid: 0dce544b6b3073e4d9643eb818f791c3, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: 18bac9e0a0895124fbfc98dfc57710ba, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 5b147f1257991d149a0eead78d3e299e, type: 2}
+    _result: {fileID: 11400000, guid: 65d55d9b50ebad241beecfdf98548ee0, type: 2}

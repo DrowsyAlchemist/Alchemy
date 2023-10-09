@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Angler
   _lable: "\u0420\u044B\u0431\u043E\u043B\u043E\u0432"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 403b309bfef4ec2419dda74a4d1cdb4a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5aa0e12f2fdd25646a9ff1f31c91a78e, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}

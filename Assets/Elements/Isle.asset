@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
   m_Name: Isle
   m_EditorClassIdentifier: 
-  _id: Isle
+  _id: Island
   _lable: "\u041E\u0441\u0442\u0440\u043E\u0432"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: d4ab113c65617eb42bdba433afb84b70, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 6cefb0d7a6874fa4d8255e1958bab4e0, type: 2}
     _secondElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}
   - _firstElement: {fileID: 11400000, guid: 6cefb0d7a6874fa4d8255e1958bab4e0, type: 2}
     _secondElement: {fileID: 11400000, guid: bebaefc52908c9c4f809dc9f68c8022f, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000}
+    _result: {fileID: 11400000, guid: 8d72a6ce7d197e24d920d6cfd070c51b, type: 2}

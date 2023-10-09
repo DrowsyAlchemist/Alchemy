@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Oxygen
   _lable: "\u041A\u0438\u0441\u043B\u043E\u0440\u043E\u0434"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: e244b24b5ca548a4bbb774b83ddd705d, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}
     _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}

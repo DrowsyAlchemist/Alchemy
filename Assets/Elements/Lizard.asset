@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Lizard
   _lable: "\u042F\u0449\u0435\u0440\u0438\u0446\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 63739278ce014254bb4bbd98703a31da, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: a96507007ab1aa14392343f935f535ee, type: 2}
     _secondElement: {fileID: 11400000, guid: d695aa551ea721d4d8139893cda895bb, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: d695aa551ea721d4d8139893cda895bb, type: 2}
+    _result: {fileID: 11400000, guid: 9a99a12ce39cc4e47a6a33d164d807a6, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 9cd97d0b8adb45147b39eaa4769059d4, type: 2}
+    _result: {fileID: 11400000, guid: 9a99a12ce39cc4e47a6a33d164d807a6, type: 2}

@@ -14,8 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Volcano
   _lable: "\u0412\u0443\u043B\u043A\u0430\u043D"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 598ff2bed19d70843945a2afa5778d89, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}
     _secondElement: {fileID: 11400000, guid: 945680ad7cc26814b8b61bf7b8458793, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
+    _result: {fileID: 11400000, guid: c149f9668fa703046b562d04665889cf, type: 2}
+  - _secondElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}
+    _result: {fileID: 11400000, guid: a507677f41beafa4f8242b857bbe1234, type: 2}
+  - _secondElement: {fileID: 11400000, guid: bebaefc52908c9c4f809dc9f68c8022f, type: 2}
+    _result: {fileID: 11400000, guid: a507677f41beafa4f8242b857bbe1234, type: 2}
+  - _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
+    _result: {fileID: 11400000, guid: 93ab9480156da3b498164bb8d71ee84b, type: 2}

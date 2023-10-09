@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Geyser
   _lable: "\u0413\u0435\u0439\u0437\u0435\u0440"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 3800ef91c5bae9d41a40a661123e8c78, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}
     _secondElement: {fileID: 11400000, guid: c27f4b9e0111b2540b594be6c48f1286, type: 2}

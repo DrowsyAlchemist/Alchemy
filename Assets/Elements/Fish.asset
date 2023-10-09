@@ -14,8 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Fish
   _lable: "\u0420\u044B\u0431\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 5974bf3cdbc09ab4c998fe8c73eef76a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: eb6aa1e7be3b3d744b8af6fc11c329aa, type: 2}
     _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}
+    _result: {fileID: 11400000, guid: cb796f8e45331e74d899f41e872f2a97, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 2621517271405c64389d106ba804fc2e, type: 2}
+    _result: {fileID: 11400000, guid: 8c5c1104e99cda242ba52fa8dec57273, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
+    _result: {fileID: 11400000, guid: 5aa0e12f2fdd25646a9ff1f31c91a78e, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
+    _result: {fileID: 11400000, guid: 5aa0e12f2fdd25646a9ff1f31c91a78e, type: 2}

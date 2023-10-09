@@ -14,8 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Gun
   _lable: "\u041E\u0440\u0443\u0436\u0438\u0435"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: c6e70a7ea8b84f2438e36a8c9bf9f020, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
     _secondElement: {fileID: 11400000, guid: 7010e2c44c7e5ed4bb7df1672822efef, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 5b147f1257991d149a0eead78d3e299e, type: 2}
+    _result: {fileID: 11400000, guid: 896c646211ac8dd429e8b0c26a6957b3, type: 2}
+  - _secondElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
+    _result: {fileID: 11400000, guid: 75266aad609f84c4fa35cf1dd69bca17, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 2621517271405c64389d106ba804fc2e, type: 2}
+    _result: {fileID: 11400000, guid: 75266aad609f84c4fa35cf1dd69bca17, type: 2}

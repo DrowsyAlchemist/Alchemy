@@ -15,7 +15,7 @@ MonoBehaviour:
   _id: Eruption
   _lable: "\u0418\u0437\u0432\u0435\u0440\u0433\u0430\u044E\u0449\u0438\u0439\u0441\u044F
     \u0432\u0443\u043B\u043A\u0430\u043D"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 96e8b11b59ed5e342bee9990b8bf82b9, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 6cefb0d7a6874fa4d8255e1958bab4e0, type: 2}
     _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}

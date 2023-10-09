@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Banana
   _lable: "\u0411\u0430\u043D\u0430\u043D"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 26f24b4a651a8a94d81f7320c8c38af5, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}
     _secondElement: {fileID: 11400000, guid: 61870218f39b1c0418f6e662f80c52bd, type: 2}

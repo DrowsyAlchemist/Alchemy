@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Batman
   _lable: "\u0411\u044D\u0442\u043C\u0435\u043D"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 16affc588d1e9214e865d6b668a555c2, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 55ccd401d3fc7f546b75a295a70d6622, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}

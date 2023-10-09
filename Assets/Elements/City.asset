@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: City
   _lable: "\u0413\u043E\u0440\u043E\u0434"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 1faf911a83ac8414c99d93d61968333a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 6c9623a310bcdc742bf7780b91589633, type: 2}
     _secondElement: {fileID: 11400000, guid: 6c9623a310bcdc742bf7780b91589633, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
+    _result: {fileID: 11400000, guid: 308e076627bdb9b4397932205f3a1f44, type: 2}

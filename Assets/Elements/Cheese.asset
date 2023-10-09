@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Cheese
   _lable: "\u0421\u044B\u0440"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: eeee4f124cce1c041aa9c4a0c1b9e366, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
     _secondElement: {fileID: 11400000, guid: 7c081a78d6d8abf428f9260c1afbaa76, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
+    _result: {fileID: 11400000, guid: 42b2fd3776c240a4fba9b693e141dd5b, type: 2}

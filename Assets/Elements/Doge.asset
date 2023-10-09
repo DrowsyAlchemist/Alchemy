@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Doge
   _lable: "\u0414\u043E\u0433\u0435"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: a433002c4de48694e858745838fc1d22, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 93cd71a8580f6cf478781a7a60d92447, type: 2}
     _secondElement: {fileID: 11400000, guid: dbfa9430efce4fe4f9ce4f347b5fd751, type: 2}

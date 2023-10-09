@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Baker
   _lable: "\u041F\u0435\u043A\u0430\u0440\u044C"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 07646969b39a450409cbda4623545299, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 4096541e6af17ef42ac8f49d8abedfe6, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
+    _result: {fileID: 11400000, guid: 94ceb4e9dfe052a478a09a7ea16a0e30, type: 2}

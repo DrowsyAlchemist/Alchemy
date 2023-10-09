@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Light buld
   _lable: "\u041B\u0430\u043C\u043F\u043E\u0447\u043A\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 76cbfa192b808044ea39ddceb4910d96, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 158e079c518ceba4a95a18b7d314f6c5, type: 2}
     _secondElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: e4878fa6998cc9345b983f34f2b859bc, type: 2}

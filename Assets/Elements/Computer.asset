@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Computer
   _lable: "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: ccb5a5cccb89c1c4fb26a5e3fdf93587, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
     _secondElement: {fileID: 11400000, guid: 4460400019dc60a4dbf8041a68359132, type: 2}
@@ -22,4 +22,18 @@ MonoBehaviour:
     _secondElement: {fileID: 11400000, guid: 4460400019dc60a4dbf8041a68359132, type: 2}
   - _firstElement: {fileID: 11400000, guid: a4c7c4b107bc62b45b3864701879c4e6, type: 2}
     _secondElement: {fileID: 11400000, guid: 4460400019dc60a4dbf8041a68359132, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: dbfa9430efce4fe4f9ce4f347b5fd751, type: 2}
+    _result: {fileID: 11400000, guid: 9e4fa224400ec14478aa172186b90954, type: 2}
+  - _secondElement: {fileID: 11400000}
+    _result: {fileID: 11400000, guid: 93cd71a8580f6cf478781a7a60d92447, type: 2}
+  - _secondElement: {fileID: 11400000, guid: a4c7c4b107bc62b45b3864701879c4e6, type: 2}
+    _result: {fileID: 11400000, guid: 93cd71a8580f6cf478781a7a60d92447, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 06607cf1fa3487f44acd087f2410a361, type: 2}
+    _result: {fileID: 11400000, guid: 93cd71a8580f6cf478781a7a60d92447, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 42b2fd3776c240a4fba9b693e141dd5b, type: 2}
+    _result: {fileID: 11400000, guid: 42103fb5f76badb48b06b59175ec9d7b, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}
+    _result: {fileID: 11400000, guid: 129ad0387fed22445a2bcb9d98727668, type: 2}
+  - _secondElement: {fileID: 11400000, guid: f223aeeccae59534eb7f4573b4fda8ec, type: 2}
+    _result: {fileID: 11400000, guid: fdf580eac0d28b24e83c3d2dd25e1db8, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Mountain Range
   _lable: "\u0413\u043E\u0440\u043D\u044B\u0439 \u0445\u0440\u0435\u0431\u0435\u0442"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 1b8360bd765bb8d48bd1a647f91b9bc5, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 3659d2203c3214b4b8e70e7413967f35, type: 2}
     _secondElement: {fileID: 11400000, guid: 3659d2203c3214b4b8e70e7413967f35, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Aurora
   _lable: "\u0421\u0435\u0432\u0435\u0440\u043D\u043E\u0435 \u0441\u0438\u044F\u043D\u0438\u0435"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 93d98122b6898ce4492b22c783513dcc, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}
     _secondElement: {fileID: 11400000, guid: c8513eb7a21863c458fdb717184ea646, type: 2}

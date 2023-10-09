@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Bacteria
   _lable: "\u0411\u0430\u043A\u0442\u0435\u0440\u0438\u044F"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 09d356d44f52e3d4aa012360a2d53fc4, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5049d9451a522f04dbad2d899ed209d5, type: 2}
     _secondElement: {fileID: 11400000, guid: d695aa551ea721d4d8139893cda895bb, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: 966e2db607fcf954bbf31229f89c4fc7, type: 2}

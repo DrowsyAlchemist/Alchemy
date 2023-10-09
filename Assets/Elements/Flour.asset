@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Flour
   _lable: "\u041C\u0443\u043A\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 592a86515e44e4a419f1895f74f248b7, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}
     _secondElement: {fileID: 11400000, guid: 6f1f7ff7135292a4aa48f2c93197bb3b, type: 2}
@@ -22,4 +22,8 @@ MonoBehaviour:
     _secondElement: {fileID: 11400000, guid: 6f1f7ff7135292a4aa48f2c93197bb3b, type: 2}
   - _firstElement: {fileID: 11400000, guid: 0b8ca67436bdd9247b4f918eb4646b40, type: 2}
     _secondElement: {fileID: 11400000, guid: 6f1f7ff7135292a4aa48f2c93197bb3b, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 7c081a78d6d8abf428f9260c1afbaa76, type: 2}
+    _result: {fileID: 11400000, guid: 6f11ff92311b1fe4b924ff9f5aa87536, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
+    _result: {fileID: 11400000, guid: a7cc456e627395443a3dcf554d44d689, type: 2}

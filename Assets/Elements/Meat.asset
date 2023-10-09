@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Meat
   _lable: "\u041C\u044F\u0441\u043E"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 291f3f34564e1794dad424b2d2ad45bb, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2c0a7c16c8156834d8666193432b975e, type: 2}
     _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
@@ -28,4 +28,10 @@ MonoBehaviour:
     _secondElement: {fileID: 11400000, guid: 20392d3695b38a34a8e84e4322f95cb2, type: 2}
   - _firstElement: {fileID: 11400000, guid: 8d3f6d7717bf28142b9846a2090f6ab9, type: 2}
     _secondElement: {fileID: 11400000, guid: c508d5b57a19ae74f89952cfafa0145d, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 11f3200454621474ab3fd2eb17861224, type: 2}
+    _result: {fileID: 11400000, guid: dabd5c9843511594784077a24d4a8fe7, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: 8d3f6d7717bf28142b9846a2090f6ab9, type: 2}
+  - _secondElement: {fileID: 11400000, guid: dabd5c9843511594784077a24d4a8fe7, type: 2}
+    _result: {fileID: 11400000, guid: 176aeb4841cb517429fecab94ddc3462, type: 2}

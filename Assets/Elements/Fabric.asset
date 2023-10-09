@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Fabric
   _lable: "\u0422\u043A\u0430\u043D\u044C"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: d88317cc788be164e8cfe3021579c034, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
     _secondElement: {fileID: 11400000, guid: db279d7dec673db4f85a6eaf74f46362, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 82f3cf76587328c408cfa3cc1060907f, type: 2}
+    _result: {fileID: 11400000, guid: 4aa9a899ac9bf634ba42718fa08043aa, type: 2}

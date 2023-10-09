@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Bank
   _lable: "\u0411\u0430\u043D\u043A"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: ea83da666b3878244916b6c5eb312ff7, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
     _secondElement: {fileID: 11400000, guid: ed6497642af7bd54688bb82cc8d62ae3, type: 2}

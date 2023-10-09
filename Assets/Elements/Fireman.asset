@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Fireman
   _lable: "\u041F\u043E\u0436\u0430\u0440\u043D\u044B\u0439"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: b906a97b1b0f8e743b7992afca1ee4d6, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: f12006ce6fd48504bbcb11afe1ea5720, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 5b147f1257991d149a0eead78d3e299e, type: 2}
+    _result: {fileID: 11400000, guid: f12006ce6fd48504bbcb11afe1ea5720, type: 2}
