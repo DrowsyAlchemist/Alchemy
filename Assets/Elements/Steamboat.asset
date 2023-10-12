@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
+  m_Name: Steamboat
+  m_EditorClassIdentifier: 
+  _id: Steamboat
+  _lable: "\u041F\u0430\u0440\u043E\u0445\u043E\u0434"
+  _sprite: {fileID: 0}
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: 5c2d62e985296f944ab8c3881c7e8ae1, type: 2}
+    _secondElement: {fileID: 11400000, guid: 7475f173c83c55f449ed34d8108d73fd, type: 2}
+  _recipesWithElement: []

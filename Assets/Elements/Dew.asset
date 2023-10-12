@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
+  m_Name: Dew
+  m_EditorClassIdentifier: 
+  _id: Dew
+  _lable: "\u0420\u043E\u0441\u0430"
+  _sprite: {fileID: 21300000, guid: 2e0f40e54825b6c468c500cbc05732c7, type: 3}
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: ca88cc2b2b6fafd438d5475115bbf9b6, type: 2}
+    _secondElement: {fileID: 11400000, guid: 0ff280c20f14be6489dd8a2a2fc9601a, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
+    _secondElement: {fileID: 11400000, guid: 0ff280c20f14be6489dd8a2a2fc9601a, type: 2}
+  _recipesWithElement: []

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
+  m_Name: Wrapping Paper
+  m_EditorClassIdentifier: 
+  _id: Wrapping Paper
+  _lable: "\u0423\u043F\u0430\u043A\u043E\u0432\u043E\u0447\u043D\u0430\u044F \u0431\u0443\u043C\u0430\u0433\u0430"
+  _sprite: {fileID: 0}
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: 14512c61d15b115439c928b4cd5d5b7c, type: 2}
+    _secondElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}
+  _recipesWithElement: []

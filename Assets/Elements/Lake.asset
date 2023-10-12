@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
+  m_Name: Lake
+  m_EditorClassIdentifier: 
+  _id: Lake
+  _lable: "\u041E\u0437\u0435\u0440\u043E"
+  _sprite: {fileID: 21300000, guid: 46ba18ca0f7db2d4b8c38bc00bbc87b3, type: 3}
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
+    _secondElement: {fileID: 11400000, guid: d7a84d2e7ad973642b87ea3a0498478c, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 9cd97d0b8adb45147b39eaa4769059d4, type: 2}
+    _secondElement: {fileID: 11400000, guid: a0ecca8d8440e8a42aff449a0dbea18b, type: 2}
+  _recipesWithElement: []

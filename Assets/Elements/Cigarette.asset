@@ -15,5 +15,7 @@ MonoBehaviour:
   _id: Cigarette
   _lable: "\u0421\u0438\u0433\u0430\u0440\u0435\u0442\u0430"
   _sprite: {fileID: 21300000, guid: c2433a60eec0afa4c88beaea89269624, type: 3}
-  _creationRecipies: []
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: 3b926778641a4274f8d9c15dec9edb0a, type: 2}
+    _secondElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}
   _recipesWithElement: []

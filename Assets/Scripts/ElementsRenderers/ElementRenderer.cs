@@ -14,7 +14,7 @@ public abstract class ElementRenderer : MonoBehaviour, IHasElement
         Element = element;
         _image.sprite = element.Sprite;
         _lableText.text = element.Lable;
-        _lableText.color = (Element.Recipies.Count == 0) ? Color.yellow : Color.white;
+        _lableText.color = HasLockedRecipies(element) ? Color.white : Color.yellow;
     }
 
     protected void RenderClosed(Element element)
@@ -31,5 +31,14 @@ public abstract class ElementRenderer : MonoBehaviour, IHasElement
         _image.sprite = sprite;
         _lableText.text = lable;
         _lableText.color = Color.white;
+    }
+
+    private bool HasLockedRecipies(Element element)
+    {
+        foreach (var recipie in Element.Recipies)
+            if (recipie.Result.IsOpened == false)
+                return true;
+
+        return false;
     }
 }

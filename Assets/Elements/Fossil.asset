@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
+  m_Name: Fossil
+  m_EditorClassIdentifier: 
+  _id: Fossil
+  _lable: "\u0418\u0441\u043A\u043E\u043F\u0430\u0435\u043C\u043E\u0435"
+  _sprite: {fileID: 21300000, guid: cc0f20601260a1040ae48789849422bf, type: 3}
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: e201df0e1a6f0034ea14dd7a2602f8b4, type: 2}
+    _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
+  - _firstElement: {fileID: 11400000, guid: e201df0e1a6f0034ea14dd7a2602f8b4, type: 2}
+    _secondElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}
+  - _firstElement: {fileID: 11400000, guid: e201df0e1a6f0034ea14dd7a2602f8b4, type: 2}
+    _secondElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}
+  _recipesWithElement: []

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -57,8 +58,16 @@ namespace RecipiesChecker
 
         private void AddRecipies(CreationRecipie creationRecipie, Element result)
         {
-            creationRecipie.FirstElement.CheckAndAddRecipe(creationRecipie.SecondElement, result);
-            creationRecipie.SecondElement.CheckAndAddRecipe(creationRecipie.FirstElement, result);
+            try
+            {
+                creationRecipie.FirstElement.CheckAndAddRecipe(creationRecipie.SecondElement, result);
+                creationRecipie.SecondElement.CheckAndAddRecipe(creationRecipie.FirstElement, result);
+            }
+            catch (Exception e)
+            {
+                Debug.LogException(e);
+                Debug.Log("Result: " + result.Id);
+            }
         }
     }
 }

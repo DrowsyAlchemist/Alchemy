@@ -36,10 +36,10 @@ public sealed class Element : ScriptableObject
     public void CheckAndAddRecipe(Element secondElement, Element result)
     {
         if (secondElement == null)
-            throw new ArgumentNullException(nameof(secondElement));
+            throw new ArgumentNullException(nameof(secondElement) + " of " + _id + "; result: " + result._id);
 
         if (result == null)
-            throw new ArgumentNullException(nameof(result));
+            throw new ArgumentNullException(nameof(result) + " of " + _id);
 
         var recipieToCheck = new Recipe(secondElement, result);
 

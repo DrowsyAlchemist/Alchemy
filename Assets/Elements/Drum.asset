@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
+  m_Name: Drum
+  m_EditorClassIdentifier: 
+  _id: Drum
+  _lable: "\u0411\u0430\u0440\u0430\u0431\u0430\u043D"
+  _sprite: {fileID: 21300000, guid: df02490e1911157408eac813fcdbc65b, type: 3}
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
+    _secondElement: {fileID: 11400000, guid: 860796fc767292c4d9461ebb960495fc, type: 2}
+  _recipesWithElement: []

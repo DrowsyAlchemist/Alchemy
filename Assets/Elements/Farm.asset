@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
+  m_Name: Farm
+  m_EditorClassIdentifier: 
+  _id: Farm
+  _lable: "\u0424\u0435\u0440\u043C\u0430"
+  _sprite: {fileID: 21300000, guid: 5714a70faaf7a794191ba327337d5bb2, type: 3}
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: ada2fa01b72a1064396df1fe5cdf4b01, type: 2}
+    _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
+  - _firstElement: {fileID: 11400000, guid: ada2fa01b72a1064396df1fe5cdf4b01, type: 2}
+    _secondElement: {fileID: 11400000, guid: 8dea871fdaeba994ca58914ffd9a47a0, type: 2}
+  _recipesWithElement: []
