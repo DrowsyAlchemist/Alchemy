@@ -22,7 +22,7 @@ public class OpenedElementRenderer : ElementRenderer, IBeginDragHandler, IDragHa
         if (_isInitialized == false)
             throw new System.InvalidOperationException("Object is not initialized");
 
-        var mergeableElementRenderer = Instantiate(_mergeableElementRendererTemplate, transform.position, Quaternion.identity, _gameField.transform);
+        var mergeableElementRenderer = Instantiate(_mergeableElementRendererTemplate, transform.position, Quaternion.identity, _gameField.ElementsContainer);
         mergeableElementRenderer.Init(_mergeHandler);
         mergeableElementRenderer.Render(Element);
         eventData.pointerDrag = mergeableElementRenderer.gameObject;

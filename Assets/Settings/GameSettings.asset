@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0aa1226bb9cbc448ba373510d38be33, type: 3}
   m_Name: GameSettings
   m_EditorClassIdentifier: 
-  _pointsForOpenedElements: 5
+  _pointsForOpenedElements: 1

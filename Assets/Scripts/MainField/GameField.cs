@@ -3,6 +3,9 @@ using UnityEngine;
 public class GameField : MonoBehaviour
 {
     [SerializeField] private UIButton _clearButton;
+    [SerializeField] private RectTransform _elementsContainer;
+
+    public RectTransform ElementsContainer => _elementsContainer;
 
     public void Awake()
     {
@@ -11,7 +14,7 @@ public class GameField : MonoBehaviour
 
     public void Clear()
     {
-        for (int i = 0; i < transform.childCount; i++)
-            Destroy(transform.GetChild(i).gameObject);
+        for (int i = 0; i < _elementsContainer.childCount; i++)
+            Destroy(_elementsContainer.GetChild(i).gameObject);
     }
 }

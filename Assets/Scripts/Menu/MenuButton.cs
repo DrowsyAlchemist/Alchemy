@@ -9,8 +9,9 @@ public class MenuButton : UIButton
 
     public Action<MenuButton> Clicked;
 
-    private void Init()
+    private void InitMenuButton()
     {
+        base.Init();
         base.AssignOnClickAction(OnClick);
         _isInitialized = true;
     }
@@ -18,7 +19,7 @@ public class MenuButton : UIButton
     public void OpenPanel()
     {
         if (_isInitialized == false)
-            Init();
+            InitMenuButton();
 
         Button.interactable = false;
         _openedPanel.Activate();
@@ -27,7 +28,7 @@ public class MenuButton : UIButton
     public void ClosePanel()
     {
         if (_isInitialized == false)
-            Init();
+            InitMenuButton();
 
         Button.interactable = true;
         _openedPanel.Deactivate();

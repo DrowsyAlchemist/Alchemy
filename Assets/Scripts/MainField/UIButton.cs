@@ -6,12 +6,22 @@ using UnityEngine.UI;
 public class UIButton : MonoBehaviour
 {
     private Action _onClick;
+    private bool _isInitialized;
+
     protected Button Button { get; private set; }
+
+    public void Init()
+    {
+        if (_isInitialized == false)
+        {
+            Button = GetComponent<Button>();
+            Button.AddListener(OnButtonClick);
+        }
+    }
 
     private void Awake()
     {
-        Button = GetComponent<Button>();
-        Button.AddListener(OnButtonClick);
+        Init();
     }
 
     private void OnDestroy()
