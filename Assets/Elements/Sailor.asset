@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sailor
   _lable: "\u041C\u043E\u0440\u044F\u043A"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: d83c55daec5dc87419359c1be504505b, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 7475f173c83c55f449ed34d8108d73fd, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
   - _firstElement: {fileID: 11400000, guid: 8305491b4652eef449704a463da500e9, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 2621517271405c64389d106ba804fc2e, type: 2}
+    _result: {fileID: 11400000, guid: 3d23ad8d848a3b041ad3d804a44dd014, type: 2}

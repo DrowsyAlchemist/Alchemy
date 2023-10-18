@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Snowmobile
   _lable: "\u0421\u043D\u0435\u0433\u043E\u0445\u043E\u0434"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 30350f91ac756b34ba200af98a8a815c, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 03011f76348e980498d3b2f31e56ceb2, type: 2}
     _secondElement: {fileID: 11400000, guid: 1c76d10c69aa84e479cc3ba26c4470ec, type: 2}

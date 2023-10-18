@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Spaghetti
   _lable: "\u0421\u043F\u0430\u0433\u0435\u0442\u0442\u0438"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: df41d89f0dada5442a3ad07e71defcea, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: fb2b5de7dfd9e42478cc1c14b4c8e604, type: 2}
     _secondElement: {fileID: 11400000, guid: db279d7dec673db4f85a6eaf74f46362, type: 2}

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Water Lily
   m_EditorClassIdentifier: 
   _id: Water Lily
-  _lable: "\u041A\u0443\u0432\u0448\u0438\u043D\u043A\u0430"
-  _sprite: {fileID: 0}
+  _lable: "\u0412\u043E\u0434\u044F\u043D\u0430\u044F \u043B\u0438\u043B\u0438\u044F"
+  _sprite: {fileID: 21300000, guid: 83513caf73f24b24ea24e3219ec31382, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: d7a84d2e7ad973642b87ea3a0498478c, type: 2}
     _secondElement: {fileID: 11400000, guid: 622571748d2a8dd45b475b042f3addb4, type: 2}

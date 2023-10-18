@@ -15,8 +15,20 @@ MonoBehaviour:
   _id: Pottery
   _lable: "\u041A\u0435\u0440\u0430\u043C\u0438\u0447\u0435\u0441\u043A\u0430\u044F
     \u043F\u043E\u0441\u0443\u0434\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: f7cc79b13dadce2479390b8e7b117d4e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
     _secondElement: {fileID: 11400000, guid: 365f6d16601d380408e92269fede7428, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
+    _result: {fileID: 11400000, guid: 9911be42d0dce794ba799625dae7f04a, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 622571748d2a8dd45b475b042f3addb4, type: 2}
+    _result: {fileID: 11400000, guid: 9911be42d0dce794ba799625dae7f04a, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
+    _result: {fileID: 11400000, guid: 23bd289e377598a4ab2df54b6bc97148, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ed6497642af7bd54688bb82cc8d62ae3, type: 2}
+    _result: {fileID: 11400000, guid: c489d071c2bac504aac30998a8cc6c7c, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 20392d3695b38a34a8e84e4322f95cb2, type: 2}
+    _result: {fileID: 11400000, guid: c489d071c2bac504aac30998a8cc6c7c, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 98afd116610730748b4f041f0a0314db, type: 2}
+    _result: {fileID: 11400000, guid: ef791550e0fb7584da700ed79d7f6330, type: 2}

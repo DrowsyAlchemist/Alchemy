@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Tank
   _lable: "\u0422\u0430\u043D\u043A"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: a8805b192904b4641a2fffca7b28fdff, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5b147f1257991d149a0eead78d3e299e, type: 2}
     _secondElement: {fileID: 11400000, guid: 23f2a993a092e1c48aeac253a10060f4, type: 2}

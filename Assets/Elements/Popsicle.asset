@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Popsicle
   _lable: "\u0424\u0440\u0443\u043A\u0442\u043E\u0432\u044B\u0439 \u043B\u0451\u0434"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 04a5dc96df8d9f645ac4dbd696b61ad9, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 6b6e4faac3ae3484eb63825d5b215e3b, type: 2}
     _secondElement: {fileID: 11400000, guid: f186281a2a3d5f24db563e9052d98546, type: 2}

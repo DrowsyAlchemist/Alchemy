@@ -14,8 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Squirrel
   _lable: "\u0411\u0435\u043B\u043A\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: f833ef01b2667be4798188a175b821ea, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 42b2fd3776c240a4fba9b693e141dd5b, type: 2}
     _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
+    _result: {fileID: 11400000, guid: c164ddd77d1ea2840aa46f24f1c4ce94, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 9f0d97070c0818543adcb8fa68d51192, type: 2}
+    _result: {fileID: 11400000, guid: c164ddd77d1ea2840aa46f24f1c4ce94, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 8a82418096ba94647ad543838ac7b2e7, type: 2}
+    _result: {fileID: 11400000, guid: c164ddd77d1ea2840aa46f24f1c4ce94, type: 2}
+  - _secondElement: {fileID: 11400000, guid: c65a240c878b56c47a7cb9c04358076e, type: 2}
+    _result: {fileID: 11400000, guid: c164ddd77d1ea2840aa46f24f1c4ce94, type: 2}
+  - _secondElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}
+    _result: {fileID: 11400000, guid: 57042ef5e7efa534d8c3f2a012bfe118, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
+    _result: {fileID: 11400000, guid: 57042ef5e7efa534d8c3f2a012bfe118, type: 2}

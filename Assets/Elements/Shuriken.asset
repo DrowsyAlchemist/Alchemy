@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Shuriken
   _lable: "\u0421\u044E\u0440\u0438\u043A\u0435\u043D"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 68282814a9a754643b6c52375289270e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5cc14ab8b084f124c9c07b14abaa1e04, type: 2}
     _secondElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: b9f58927924a9df47b7c939d69118ebc, type: 2}

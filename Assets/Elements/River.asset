@@ -14,10 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: River
   _lable: "\u0420\u0435\u043A\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 60520610a24a7754783e5a45125dddab, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 3659d2203c3214b4b8e70e7413967f35, type: 2}
     _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
   - _firstElement: {fileID: 11400000, guid: 3659d2203c3214b4b8e70e7413967f35, type: 2}
     _secondElement: {fileID: 11400000, guid: bb425f3a78827f549b847208e99056b5, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 3de50a3430bf436458f560d55537a229, type: 2}
+    _result: {fileID: 11400000, guid: 9a99a12ce39cc4e47a6a33d164d807a6, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 3659d2203c3214b4b8e70e7413967f35, type: 2}
+    _result: {fileID: 11400000, guid: e624ba7ec17c9454a81f1e7348c190e8, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 2fde0860edc0d6447af142a195680b08, type: 2}
+    _result: {fileID: 11400000, guid: 0b8ca67436bdd9247b4f918eb4646b40, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 10469bb1fb36cd74fafb846f583bc9f1, type: 2}
+    _result: {fileID: 11400000, guid: 1638052b89d2f944a8d066e2bfefe521, type: 2}
+  - _secondElement: {fileID: 11400000, guid: d4d0ab333f7c93046a6c4d71ff40bcfa, type: 2}
+    _result: {fileID: 11400000, guid: a0ecca8d8440e8a42aff449a0dbea18b, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 7be785ceef6fbb24c8f4f70f78ac0cd2, type: 2}
+    _result: {fileID: 11400000, guid: a0ecca8d8440e8a42aff449a0dbea18b, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
+    _result: {fileID: 11400000, guid: 6ddbb3ce20f909a4fa518ad51f86a45b, type: 2}
+  - _secondElement: {fileID: 11400000, guid: a0ecca8d8440e8a42aff449a0dbea18b, type: 2}
+    _result: {fileID: 11400000, guid: 081a97cd623803043b8a5c1e72ab1b11, type: 2}

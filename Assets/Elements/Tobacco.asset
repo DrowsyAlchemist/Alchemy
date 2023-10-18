@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Tobacco
   _lable: "\u0422\u0430\u0431\u0430\u043A"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 91f09eeb2341c8f43abcb93a3da5a6b5, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}
+    _result: {fileID: 11400000, guid: 1496e8a92c070c0468937b4c7a3cd4e9, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
+    _result: {fileID: 11400000, guid: bf5dbd0970e28894fba9842611a4571b, type: 2}

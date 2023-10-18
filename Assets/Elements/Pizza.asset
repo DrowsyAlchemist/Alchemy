@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Pizza
   _lable: "\u041F\u0438\u0446\u0446\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 4055518f9a0f2184787d9aeb31d619a7, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 055d1a856f7d27845908a8074cf42202, type: 2}
     _secondElement: {fileID: 11400000, guid: a7cc456e627395443a3dcf554d44d689, type: 2}

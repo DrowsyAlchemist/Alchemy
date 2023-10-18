@@ -14,10 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Pumpkin
   _lable: "\u0422\u044B\u043A\u0432\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 71718181ea61edf4189f8eaf0e129f50, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: c8e92553c60f5754ea36b7708fcd42c6, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
   - _firstElement: {fileID: 11400000, guid: c8e92553c60f5754ea36b7708fcd42c6, type: 2}
     _secondElement: {fileID: 11400000, guid: 6c91102b7cd458a4187367eb594a0e19, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+    _result: {fileID: 11400000, guid: a1107de80d9bc4647a9b8c6a6c5622d4, type: 2}
+  - _secondElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
+    _result: {fileID: 11400000, guid: a1107de80d9bc4647a9b8c6a6c5622d4, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 9c3b8d2363b398a44bb3b8d4752cade4, type: 2}
+    _result: {fileID: 11400000, guid: a1107de80d9bc4647a9b8c6a6c5622d4, type: 2}

@@ -14,10 +14,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Star
   _lable: "\u0417\u0432\u0435\u0437\u0434\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: c95be4eb4cdb9d249846731bc5e5725c, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 9f0d97070c0818543adcb8fa68d51192, type: 2}
     _secondElement: {fileID: 11400000, guid: 30c0549f0afb2b747abacbf8e5e8a732, type: 2}
   - _firstElement: {fileID: 11400000, guid: f777755a66386f4419fb820ed5c2f9b2, type: 2}
     _secondElement: {fileID: 11400000, guid: 30c0549f0afb2b747abacbf8e5e8a732, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000}
+    _result: {fileID: 11400000, guid: ba8f1953340e80b45a59fb519afb9628, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
+    _result: {fileID: 11400000, guid: 74a9773feccb13141b7472fa9f528ceb, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 9f0d97070c0818543adcb8fa68d51192, type: 2}
+    _result: {fileID: 11400000, guid: 144c04e8596d08844b1bb28613e94103, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}
+    _result: {fileID: 11400000, guid: 144c04e8596d08844b1bb28613e94103, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 779ecbf5c09925540b98dbacf97b00ff, type: 2}
+    _result: {fileID: 11400000, guid: 144c04e8596d08844b1bb28613e94103, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 3203e04fde19c9347bfd6219beb787cf, type: 2}
+    _result: {fileID: 11400000, guid: a809129616b787a40ba84fa840a58a99, type: 2}
+  - _secondElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}
+    _result: {fileID: 11400000, guid: a809129616b787a40ba84fa840a58a99, type: 2}
+  - _secondElement: {fileID: 11400000, guid: bebaefc52908c9c4f809dc9f68c8022f, type: 2}
+    _result: {fileID: 11400000, guid: a809129616b787a40ba84fa840a58a99, type: 2}
+  - _secondElement: {fileID: 11400000, guid: f90057cbf413a7c4fb294ca4a06476bb, type: 2}
+    _result: {fileID: 11400000, guid: 81fd8bc9948d27f4ca3bec2acae00187, type: 2}
+  - _secondElement: {fileID: 11400000}
+    _result: {fileID: 11400000, guid: 449385e26b7658348b6c6e17ce2da103, type: 2}
+  - _secondElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
+    _result: {fileID: 11400000, guid: 19d1bacc928cfcd41a0f157ace968dc7, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}
+    _result: {fileID: 11400000, guid: f777755a66386f4419fb820ed5c2f9b2, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ec21e2563dda2a547b4f5a989e7b0f9b, type: 2}
+    _result: {fileID: 11400000, guid: 236de10252f6e1f47991cbfa4034d969, type: 2}

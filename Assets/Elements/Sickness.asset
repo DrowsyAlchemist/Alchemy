@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sickness
   _lable: "\u0411\u043E\u043B\u0435\u0437\u043D\u044C"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 9d6b24aa38a3c854bafaa5d3ee319745, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: bb425f3a78827f549b847208e99056b5, type: 2}
@@ -22,4 +22,20 @@ MonoBehaviour:
     _secondElement: {fileID: 11400000, guid: 32f8a61c70e00874692c992534b4752a, type: 2}
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 4e7567297eb1ff14faa8b39f40cc98b6, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
+    _result: {fileID: 11400000, guid: 3a32e109fe467de429ca72b2886efdbd, type: 2}
+  - _secondElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}
+    _result: {fileID: 11400000, guid: bff83ea51624a594ea624d70d11e9619, type: 2}
+  - _secondElement: {fileID: 11400000, guid: bebaefc52908c9c4f809dc9f68c8022f, type: 2}
+    _result: {fileID: 11400000, guid: bff83ea51624a594ea624d70d11e9619, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 7475f173c83c55f449ed34d8108d73fd, type: 2}
+    _result: {fileID: 11400000, guid: bff83ea51624a594ea624d70d11e9619, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 255aa08112f70764a9b0cf1f34c4be6d, type: 2}
+    _result: {fileID: 11400000, guid: bff83ea51624a594ea624d70d11e9619, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 8305491b4652eef449704a463da500e9, type: 2}
+    _result: {fileID: 11400000, guid: bff83ea51624a594ea624d70d11e9619, type: 2}
+  - _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
+    _result: {fileID: 11400000, guid: bcb222f68ef225343889bf7ecdd811b9, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 50352e8cdc821cd46a26c3beee9207a0, type: 2}
+    _result: {fileID: 11400000, guid: bcb222f68ef225343889bf7ecdd811b9, type: 2}

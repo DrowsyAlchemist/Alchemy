@@ -14,10 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Rose
   _lable: "\u0420\u043E\u0437\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: f5fe47a037d3f5847bca7c346b933538, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: cfc748bb54293d34482c9d60c30cb416, type: 2}
     _secondElement: {fileID: 11400000, guid: 622571748d2a8dd45b475b042f3addb4, type: 2}
   - _firstElement: {fileID: 11400000, guid: cfc748bb54293d34482c9d60c30cb416, type: 2}
     _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 3796662a1e80935409226844cca428a7, type: 2}
+    _result: {fileID: 11400000, guid: 4210363b2351f0545baa31bc474264e5, type: 2}
+  - _secondElement: {fileID: 11400000, guid: c27f4b9e0111b2540b594be6c48f1286, type: 2}
+    _result: {fileID: 11400000, guid: 4210363b2351f0545baa31bc474264e5, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
+    _result: {fileID: 11400000, guid: 4210363b2351f0545baa31bc474264e5, type: 2}

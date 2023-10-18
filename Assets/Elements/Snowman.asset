@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Snowman
   _lable: "\u0421\u043D\u0435\u0433\u043E\u0432\u0438\u043A"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 9355f75b15d1c884ba7f53640715d109, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 1c76d10c69aa84e479cc3ba26c4470ec, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
@@ -22,4 +22,12 @@ MonoBehaviour:
     _secondElement: {fileID: 11400000, guid: de01616a504024a4c831fe4a1550ae74, type: 2}
   - _firstElement: {fileID: 11400000, guid: 1c76d10c69aa84e479cc3ba26c4470ec, type: 2}
     _secondElement: {fileID: 11400000, guid: 6cd7b13f3defcca4d837bb422f2c9045, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}
+    _result: {fileID: 11400000, guid: e371e27392c8a8a4b9493418bf5aac67, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 0db6f5297d6300346a20a771bebd5d92, type: 2}
+    _result: {fileID: 11400000, guid: e371e27392c8a8a4b9493418bf5aac67, type: 2}
+  - _secondElement: {fileID: 11400000, guid: c8e92553c60f5754ea36b7708fcd42c6, type: 2}
+    _result: {fileID: 11400000, guid: 6cd7b13f3defcca4d837bb422f2c9045, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}
+    _result: {fileID: 11400000, guid: f12ba965e360ea24b8cf4edf1496562e, type: 2}

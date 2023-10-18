@@ -14,8 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Planet
   _lable: "\u041F\u043B\u0430\u043D\u0435\u0442\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 2a570b49258989a42bdd7bae421ca2d2, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}
     _secondElement: {fileID: 11400000, guid: 144c04e8596d08844b1bb28613e94103, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 63a465bef7f3a404d9b757b69b26f8f9, type: 2}
+    _result: {fileID: 11400000, guid: fa88b9e4b15e4474492194394f68e59e, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 81668e2597190414a92632ae1510dfae, type: 2}
+    _result: {fileID: 11400000, guid: f1a92718898a4ae44b3a587a6ad7e788, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}
+    _result: {fileID: 11400000, guid: d7dcf1a8d92d4cc47b98840ba10da24f, type: 2}

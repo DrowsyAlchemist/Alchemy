@@ -14,10 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Pilot
   _lable: "\u041F\u0438\u043B\u043E\u0442"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 3f6be6e14995e654e8f02e5ae8b32613, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: c65a240c878b56c47a7cb9c04358076e, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
   - _firstElement: {fileID: 11400000, guid: b161c85d2c846a549adf9f7f8cf3b236, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: ddc85a30a1db7ac43a097c0ce94a8505, type: 2}
+    _result: {fileID: 11400000, guid: 1177d8040aec8634d82e877ab978867a, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 5501437f99813584184daabae131acaa, type: 2}
+    _result: {fileID: 11400000, guid: 1177d8040aec8634d82e877ab978867a, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sewing Machine
   _lable: "\u0428\u0432\u0435\u0439\u043D\u0430\u044F \u043C\u0430\u0448\u0438\u043D\u043A\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 31b86bca5b127084f842d7976389793b, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: de5093797cafb004691f6a006cd1b36b, type: 2}
     _secondElement: {fileID: 11400000, guid: 158e079c518ceba4a95a18b7d314f6c5, type: 2}

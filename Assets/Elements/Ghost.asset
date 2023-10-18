@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Ghost
   _lable: "\u041F\u0440\u0438\u0432\u0435\u0434\u0435\u043D\u0438\u0435"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 3138f588de16e7a49b70978cc9b3eb57, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: f2ca58e1839954a4ea3a62069bd81bb9, type: 2}
     _secondElement: {fileID: 11400000, guid: 30c0549f0afb2b747abacbf8e5e8a732, type: 2}

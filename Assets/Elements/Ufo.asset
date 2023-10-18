@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Ufo
   _lable: "\u041D\u041B\u041E"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 9b8789f93f617b748ad94f4616b7b9ee, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 0c1729aa1b8c06c4ea4b9e1765d5ecd9, type: 2}
     _secondElement: {fileID: 11400000, guid: c65a240c878b56c47a7cb9c04358076e, type: 2}

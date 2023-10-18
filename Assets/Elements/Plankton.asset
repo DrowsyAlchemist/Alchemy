@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Plankton
   _lable: "\u041F\u043B\u0430\u043D\u043A\u0442\u043E\u043D"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: cb8007a209e400d408ad20ae7766e4c8, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5049d9451a522f04dbad2d899ed209d5, type: 2}
     _secondElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}

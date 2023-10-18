@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Swordfish
   _lable: "\u0420\u044B\u0431\u0430-\u043C\u0435\u0447"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 0452d142656737f498cd31f74add7edf, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 3203e04fde19c9347bfd6219beb787cf, type: 2}
     _secondElement: {fileID: 11400000, guid: 2621517271405c64389d106ba804fc2e, type: 2}

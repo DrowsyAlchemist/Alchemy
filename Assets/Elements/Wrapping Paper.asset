@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wrapping Paper
   _lable: "\u0423\u043F\u0430\u043A\u043E\u0432\u043E\u0447\u043D\u0430\u044F \u0431\u0443\u043C\u0430\u0433\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: d288695230abffb4c9f9e8ab0db77406, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 14512c61d15b115439c928b4cd5d5b7c, type: 2}
     _secondElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}

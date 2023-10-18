@@ -14,10 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wheat
   _lable: "\u041F\u0448\u0435\u043D\u0438\u0446\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: e0ad6a025e8813a41bc8ab9895c8391a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ada2fa01b72a1064396df1fe5cdf4b01, type: 2}
     _secondElement: {fileID: 11400000, guid: 21a1e89e0de17e640a577f9c0b265757, type: 2}
   - _firstElement: {fileID: 11400000, guid: ada2fa01b72a1064396df1fe5cdf4b01, type: 2}
     _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
+    _result: {fileID: 11400000, guid: ae69d684606ffcb47bfe11153422a959, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}
+    _result: {fileID: 11400000, guid: 6c62807331e9cfe43bf04007e30f6778, type: 2}
+  - _secondElement: {fileID: 11400000, guid: b48a606b3d7c4ff4a9fa010cd2541c58, type: 2}
+    _result: {fileID: 11400000, guid: 6c62807331e9cfe43bf04007e30f6778, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 0b8ca67436bdd9247b4f918eb4646b40, type: 2}
+    _result: {fileID: 11400000, guid: 6c62807331e9cfe43bf04007e30f6778, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 3796662a1e80935409226844cca428a7, type: 2}
+    _result: {fileID: 11400000, guid: bc0617cefc0706241a339e93011de06d, type: 2}

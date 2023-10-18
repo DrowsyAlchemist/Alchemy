@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Moth
   _lable: "\u041C\u043E\u043B\u044C"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: ae357e0079eef004186d6d6e149734da, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 779ecbf5c09925540b98dbacf97b00ff, type: 2}
     _secondElement: {fileID: 11400000, guid: eb37d7a37ba51db4dbc3faaf2a52c573, type: 2}

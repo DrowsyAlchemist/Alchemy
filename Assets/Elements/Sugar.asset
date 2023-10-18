@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sugar
   _lable: "\u0421\u0430\u0445\u0430\u0440"
-  _sprite: {fileID: 21300000, guid: 9feb2d88d39174240a20615f29614b79, type: 3}
+  _sprite: {fileID: 21300000, guid: b22a99e0c9de5944cb653ce7ec1b7448, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}
     _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
@@ -22,4 +22,26 @@ MonoBehaviour:
     _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
   - _firstElement: {fileID: 11400000, guid: f186281a2a3d5f24db563e9052d98546, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: f186281a2a3d5f24db563e9052d98546, type: 2}
+    _result: {fileID: 11400000, guid: 1c85f9d2a25ea534684ee088c0f31fd8, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+    _result: {fileID: 11400000, guid: ff9432d522f62ea4281adbb332e03003, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 74a9773feccb13141b7472fa9f528ceb, type: 2}
+    _result: {fileID: 11400000, guid: 01045cdff4d6c444db7700311c306a43, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 11f3200454621474ab3fd2eb17861224, type: 2}
+    _result: {fileID: 11400000, guid: cf2556e9550d84449a117ed6820708b3, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
+    _result: {fileID: 11400000, guid: 0dac2b9334ac4e94bbbbd9a8e19aebb5, type: 2}
+  - _secondElement: {fileID: 11400000, guid: a7cc456e627395443a3dcf554d44d689, type: 2}
+    _result: {fileID: 11400000, guid: 6a5f3fb75409b7a43b6f0dabd0977108, type: 2}
+  - _secondElement: {fileID: 11400000, guid: a7cc456e627395443a3dcf554d44d689, type: 2}
+    _result: {fileID: 11400000, guid: 556778023c8275b41af7026252da6417, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 30fa52d09f5e1d841b9035548e9dd9e9, type: 2}
+    _result: {fileID: 11400000, guid: 524dbfd6d02c14e41b4c98b04b092bef, type: 2}
+  - _secondElement: {fileID: 11400000, guid: f5d6fc443435bfa4199d26140683fc3b, type: 2}
+    _result: {fileID: 11400000, guid: 524dbfd6d02c14e41b4c98b04b092bef, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 158e079c518ceba4a95a18b7d314f6c5, type: 2}
+    _result: {fileID: 11400000, guid: 4e5ec118f895fa44f826850b215e311f, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 85728691054b8be47ad8631598473d65, type: 2}
+    _result: {fileID: 11400000, guid: 4e5ec118f895fa44f826850b215e311f, type: 2}

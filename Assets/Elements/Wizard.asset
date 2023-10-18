@@ -14,8 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wizard
   _lable: "\u0412\u043E\u043B\u0448\u0435\u0431\u043D\u0438\u043A"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: beb4724ee465ec64eaf379f18c6b351c, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: af2836be3a54a9c468821f10dd32de63, type: 2}
+    _result: {fileID: 11400000, guid: eed53aa0c55aa754cabedf71b3f69401, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
+    _result: {fileID: 11400000, guid: 74bcf4ce80b67104bb0c49b7f2131c28, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
+    _result: {fileID: 11400000, guid: a0727c2755929b84e922f0d0462271d1, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}
+    _result: {fileID: 11400000, guid: fe79d51dc8414844b828f7128059c6f7, type: 2}

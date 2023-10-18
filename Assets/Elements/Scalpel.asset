@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Scalpel
   _lable: "\u0421\u043A\u0430\u043B\u044C\u043F\u0435\u043B\u044C"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 8235353a5afeb94449771ee6bfdc853e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
     _secondElement: {fileID: 11400000, guid: 68b8831cb62f1cc4eabd7081bb733239, type: 2}

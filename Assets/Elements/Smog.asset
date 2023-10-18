@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Smog
   _lable: "\u0421\u043C\u043E\u0433"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 2dcbdec5054075d4bbc1c726f2dda1ff, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 641ac9dfe4a8b394cbcc65db90244f29, type: 2}
     _secondElement: {fileID: 11400000, guid: ca88cc2b2b6fafd438d5475115bbf9b6, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: bb425f3a78827f549b847208e99056b5, type: 2}
+    _result: {fileID: 11400000, guid: c9388d0eaecd8eb4ca888524fd449f27, type: 2}

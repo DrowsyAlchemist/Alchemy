@@ -14,10 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wool
   _lable: "\u0428\u0435\u0440\u0441\u0442\u044C"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 4c8e7c0e04de80d4c92d1cf15a55103e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2314dc53a54a7ff4687c35581335359e, type: 2}
     _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
   - _firstElement: {fileID: 11400000, guid: 2314dc53a54a7ff4687c35581335359e, type: 2}
     _secondElement: {fileID: 11400000, guid: ca40b2160965d4e4a9b7bafdd7a930f3, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 2fde0860edc0d6447af142a195680b08, type: 2}
+    _result: {fileID: 11400000, guid: db279d7dec673db4f85a6eaf74f46362, type: 2}
+  - _secondElement: {fileID: 11400000, guid: c965b1c3a6f832449bc033cb08d25d72, type: 2}
+    _result: {fileID: 11400000, guid: d7ca1a6aa1b27404db4609d2cedf563e, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
+    _result: {fileID: 11400000, guid: 55bc74b12ce82cf4bb283cc5bb3e7702, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: 55bc74b12ce82cf4bb283cc5bb3e7702, type: 2}

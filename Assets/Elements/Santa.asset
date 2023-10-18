@@ -14,8 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Santa
   _lable: "\u0414\u0435\u0434 \u041C\u043E\u0440\u043E\u0437"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: da4760a91cdf5c64dbee674378f9b74a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 74a9773feccb13141b7472fa9f528ceb, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 74a9773feccb13141b7472fa9f528ceb, type: 2}
+    _result: {fileID: 11400000, guid: 14512c61d15b115439c928b4cd5d5b7c, type: 2}
+  - _secondElement: {fileID: 11400000, guid: d7ca1a6aa1b27404db4609d2cedf563e, type: 2}
+    _result: {fileID: 11400000, guid: 14512c61d15b115439c928b4cd5d5b7c, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 556778023c8275b41af7026252da6417, type: 2}
+    _result: {fileID: 11400000, guid: 14512c61d15b115439c928b4cd5d5b7c, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 5529b45cefaf2614ab139d8917b6a0f6, type: 2}
+    _result: {fileID: 11400000, guid: 14512c61d15b115439c928b4cd5d5b7c, type: 2}
+  - _secondElement: {fileID: 11400000, guid: c965b1c3a6f832449bc033cb08d25d72, type: 2}
+    _result: {fileID: 11400000, guid: 14512c61d15b115439c928b4cd5d5b7c, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
+    _result: {fileID: 11400000, guid: 0e7e44fd1f33e5543a6effeed5c9bdff, type: 2}
+  - _secondElement: {fileID: 11400000, guid: c508d5b57a19ae74f89952cfafa0145d, type: 2}
+    _result: {fileID: 11400000, guid: 0e7e44fd1f33e5543a6effeed5c9bdff, type: 2}

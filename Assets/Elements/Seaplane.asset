@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Seaplane
   _lable: "\u0413\u0438\u0434\u0440\u043E\u0441\u0430\u043C\u043E\u043B\u0451\u0442"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: e584cc08d1806d04387a2d5137cc42d6, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: c65a240c878b56c47a7cb9c04358076e, type: 2}
     _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
@@ -22,4 +22,6 @@ MonoBehaviour:
     _secondElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}
   - _firstElement: {fileID: 11400000, guid: c65a240c878b56c47a7cb9c04358076e, type: 2}
     _secondElement: {fileID: 11400000, guid: bebaefc52908c9c4f809dc9f68c8022f, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: 5304c26dcddb5e34fbc169dc2d594c55, type: 2}

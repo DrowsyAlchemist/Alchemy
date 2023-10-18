@@ -14,10 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Grave
   _lable: "\u041C\u043E\u0433\u0438\u043B\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: f70d56f6d4e925242bdb74ca62dbd8d2, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: b743de88eff6d7544b03f0c42ed0c949, type: 2}
     _secondElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}
   - _firstElement: {fileID: 11400000, guid: cd21883b495bd1e4b86cdd2779fd8e8c, type: 2}
     _secondElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000}
+    _result: {fileID: 11400000, guid: f2ca58e1839954a4ea3a62069bd81bb9, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}
+    _result: {fileID: 11400000, guid: 65f0396dadd161047b230e376e05cd8c, type: 2}

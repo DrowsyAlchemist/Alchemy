@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Steamboat
   _lable: "\u041F\u0430\u0440\u043E\u0445\u043E\u0434"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 61c37c1fa31dd8343a49da9c9636c101, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5c2d62e985296f944ab8c3881c7e8ae1, type: 2}
     _secondElement: {fileID: 11400000, guid: 7475f173c83c55f449ed34d8108d73fd, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 2d0b8e24ec8e66040b3fa60303a687e0, type: 2}
+    _result: {fileID: 11400000, guid: bff83ea51624a594ea624d70d11e9619, type: 2}

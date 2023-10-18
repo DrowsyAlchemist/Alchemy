@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Umbrella
   _lable: "\u0417\u043E\u043D\u0442\u0438\u043A"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 63374825c3f8a1c40aab62ea34d02934, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
     _secondElement: {fileID: 11400000, guid: bb425f3a78827f549b847208e99056b5, type: 2}
   - _firstElement: {fileID: 11400000, guid: ddc85a30a1db7ac43a097c0ce94a8505, type: 2}
     _secondElement: {fileID: 11400000, guid: bb425f3a78827f549b847208e99056b5, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 5304c26dcddb5e34fbc169dc2d594c55, type: 2}
+    _result: {fileID: 11400000, guid: 1177d8040aec8634d82e877ab978867a, type: 2}

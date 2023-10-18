@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Smoothie
   _lable: "\u0421\u043C\u0443\u0437\u0438"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: b69789888998e324792a853227624fba, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ed763e9cd6e5baa47b5050981b91fd6a, type: 2}
     _secondElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}

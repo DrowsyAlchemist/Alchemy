@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Twilight
   _lable: "\u0421\u0443\u043C\u0435\u0440\u043A\u0438"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 348ff03d7a5e88b44a785e3d0ba5a07a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 8fa9e46f26c57eb4ea91d229d2767020, type: 2}
     _secondElement: {fileID: 11400000, guid: 30c0549f0afb2b747abacbf8e5e8a732, type: 2}

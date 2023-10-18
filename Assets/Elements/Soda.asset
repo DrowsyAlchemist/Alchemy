@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Soda
   _lable: "\u0413\u0430\u0437\u0438\u0440\u043E\u0432\u043A\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: b6cdd0de009f81d4585053044a464193, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
     _secondElement: {fileID: 11400000, guid: a199436e68840dc40b3aeb80235d7e36, type: 2}

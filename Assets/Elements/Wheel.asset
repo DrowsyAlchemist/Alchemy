@@ -14,8 +14,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wheel
   _lable: "\u041A\u043E\u043B\u0435\u0441\u043E"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: b5eb33489c3874d4bbaf0c0c31a7a4b0, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
     _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000}
+    _result: {fileID: 11400000, guid: 34de91cbe41bf4d46b3267cec7e209e4, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 8a82418096ba94647ad543838ac7b2e7, type: 2}
+    _result: {fileID: 11400000, guid: b48a606b3d7c4ff4a9fa010cd2541c58, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
+    _result: {fileID: 11400000, guid: 0b8ca67436bdd9247b4f918eb4646b40, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 9cd97d0b8adb45147b39eaa4769059d4, type: 2}
+    _result: {fileID: 11400000, guid: 0b8ca67436bdd9247b4f918eb4646b40, type: 2}
+  - _secondElement: {fileID: 11400000, guid: a2fa5d1cee492d9428f08209bce22b97, type: 2}
+    _result: {fileID: 11400000, guid: 98afd116610730748b4f041f0a0314db, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
+    _result: {fileID: 11400000, guid: 5b147f1257991d149a0eead78d3e299e, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4a3c5c9195646924a8c142788a30e045, type: 2}
+    _result: {fileID: 11400000, guid: db279d7dec673db4f85a6eaf74f46362, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ff90e561a9ffb2c419d3c26d1ec45b2c, type: 2}
+    _result: {fileID: 11400000, guid: 5c2d62e985296f944ab8c3881c7e8ae1, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 055d1a856f7d27845908a8074cf42202, type: 2}
+    _result: {fileID: 11400000, guid: fe86e2ff71e22744a8eedcb0dda8d136, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 5c2d62e985296f944ab8c3881c7e8ae1, type: 2}
+    _result: {fileID: 11400000, guid: ed59cf7bf0adf29408f982d29c7d0671, type: 2}
+  - _secondElement: {fileID: 11400000, guid: a7cc456e627395443a3dcf554d44d689, type: 2}
+    _result: {fileID: 11400000, guid: b1d7276203735b341912e4b0ea571b49, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 6a5f3fb75409b7a43b6f0dabd0977108, type: 2}
+    _result: {fileID: 11400000, guid: b1d7276203735b341912e4b0ea571b49, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 9d4aa768b0f0fb940b4607ff6b0b3882, type: 2}
+    _result: {fileID: 11400000, guid: 1de4b0d2cffb0e14abe97f0125f89a5d, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
+    _result: {fileID: 11400000, guid: 81ed12d52443dba49b13fad3567fe3a3, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 42b2fd3776c240a4fba9b693e141dd5b, type: 2}
+    _result: {fileID: 11400000, guid: 00807b38a03ed2b42926b37039c284be, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
+    _result: {fileID: 11400000, guid: 0dce544b6b3073e4d9643eb818f791c3, type: 2}

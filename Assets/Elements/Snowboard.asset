@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Snowboard
   _lable: "\u0421\u043D\u043E\u0443\u0431\u043E\u0440\u0434"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 1155696d19723bc41b411b3eaf0f77d0, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 1c76d10c69aa84e479cc3ba26c4470ec, type: 2}
     _secondElement: {fileID: 11400000, guid: 2f47595610cfcec489acb0cc6c20c91b, type: 2}
   - _firstElement: {fileID: 11400000, guid: 1c76d10c69aa84e479cc3ba26c4470ec, type: 2}
     _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 2fde0860edc0d6447af142a195680b08, type: 2}
+    _result: {fileID: 11400000, guid: 1de4b0d2cffb0e14abe97f0125f89a5d, type: 2}

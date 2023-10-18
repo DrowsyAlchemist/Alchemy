@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Seaweed
   _lable: "\u041C\u043E\u0440\u0441\u043A\u0438\u0435 \u0432\u043E\u0434\u043E\u0440\u043E\u0441\u043B\u0438"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: c466622737e873944a0d32ae9240308c, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}
     _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
   - _firstElement: {fileID: 11400000, guid: bebaefc52908c9c4f809dc9f68c8022f, type: 2}
     _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 3203e04fde19c9347bfd6219beb787cf, type: 2}
+    _result: {fileID: 11400000, guid: c9722c4a3fa4ca0408aec969bd3fbfbd, type: 2}

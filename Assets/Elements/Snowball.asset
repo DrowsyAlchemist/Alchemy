@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Snowball
   _lable: "\u0421\u043D\u0435\u0436\u043E\u043A"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 3d231297b38eb7b4c9ec8e12c2439f6c, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 1c76d10c69aa84e479cc3ba26c4470ec, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000}
+    _result: {fileID: 11400000, guid: 1ef4ba1e7c4113b46949421322952c6a, type: 2}

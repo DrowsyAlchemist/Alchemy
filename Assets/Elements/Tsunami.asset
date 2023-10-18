@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Tsunami
   _lable: "\u0426\u0443\u043D\u0430\u043C\u0438"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 841a5937fa334614d9d2ef7d38358d87, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: bebaefc52908c9c4f809dc9f68c8022f, type: 2}
     _secondElement: {fileID: 11400000, guid: fa74ac279d10bd5408c59300b5c647d2, type: 2}

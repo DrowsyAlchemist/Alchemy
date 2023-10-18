@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Prism
   _lable: "\u041F\u0440\u0438\u0437\u043C\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 3b4c9880ca2297846bc24de55bd09e1e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}
     _secondElement: {fileID: 11400000, guid: 30fa52d09f5e1d841b9035548e9dd9e9, type: 2}

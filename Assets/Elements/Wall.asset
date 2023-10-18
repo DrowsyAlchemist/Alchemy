@@ -14,12 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wall
   _lable: "\u0421\u0442\u0435\u043D\u0430"
-  _sprite: {fileID: 21300000, guid: 00de9c7fc5c70b5489f5855db23dae40, type: 3}
+  _sprite: {fileID: 21300000, guid: 84b781eeb2cdeec4f849770c76b8e876, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: d686ea1d16761c74694819355be05264, type: 2}
     _secondElement: {fileID: 11400000, guid: d686ea1d16761c74694819355be05264, type: 2}
   _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 9cd97d0b8adb45147b39eaa4769059d4, type: 2}
+    _result: {fileID: 11400000, guid: a0ecca8d8440e8a42aff449a0dbea18b, type: 2}
   - _secondElement: {fileID: 11400000}
     _result: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
+    _result: {fileID: 11400000, guid: a6076e2c8a7aba94cbf4238a19d23cae, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 11f3200454621474ab3fd2eb17861224, type: 2}
+    _result: {fileID: 11400000, guid: c965b1c3a6f832449bc033cb08d25d72, type: 2}
   - _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
     _result: {fileID: 11400000, guid: 1d32dab83b72e04469466e8422a3f0a0, type: 2}

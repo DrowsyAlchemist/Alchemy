@@ -14,10 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Storm
   _lable: "\u0413\u0440\u043E\u0437\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: d6719eb6bbcccce4fb87b3e1686098b0, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
     _secondElement: {fileID: 11400000, guid: 85728691054b8be47ad8631598473d65, type: 2}
   - _firstElement: {fileID: 11400000, guid: 158e079c518ceba4a95a18b7d314f6c5, type: 2}
     _secondElement: {fileID: 11400000, guid: 85728691054b8be47ad8631598473d65, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 6b6e4faac3ae3484eb63825d5b215e3b, type: 2}
+    _result: {fileID: 11400000, guid: 4d0d5c6963e0d4f4bacee7600227e9b5, type: 2}
+  - _secondElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
+    _result: {fileID: 11400000, guid: 96c09f2f52826824591b86b2e4fba11d, type: 2}

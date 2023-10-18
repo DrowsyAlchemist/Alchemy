@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: X-ray
   _lable: "\u0420\u0435\u043D\u0442\u0433\u0435\u043D"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 1b2c458e22d2cde418d1785b007931f7, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 6c91102b7cd458a4187367eb594a0e19, type: 2}
     _secondElement: {fileID: 11400000, guid: 9ccb973ca4a973e4e85bd884e5e73388, type: 2}

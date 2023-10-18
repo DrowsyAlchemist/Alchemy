@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Snake
   _lable: "\u0417\u043C\u0435\u044F"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: b7ab38adfe94629498df3fc30d84beb2, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
     _secondElement: {fileID: 11400000, guid: a4c7c4b107bc62b45b3864701879c4e6, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: 447ac2ef2aeeb3c46b7a0841f1f77af7, type: 2}

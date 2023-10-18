@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Spider
   _lable: "\u041F\u0430\u0443\u043A"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: fdea9c1e12a48b64996f0b94bb57dc39, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
     _secondElement: {fileID: 11400000, guid: db279d7dec673db4f85a6eaf74f46362, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: db279d7dec673db4f85a6eaf74f46362, type: 2}
+    _result: {fileID: 11400000, guid: 06607cf1fa3487f44acd087f2410a361, type: 2}

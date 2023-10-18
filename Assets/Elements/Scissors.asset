@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Scissors
   _lable: "\u041D\u043E\u0436\u043D\u0438\u0446\u044B"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: cd8799f0e064b4e4eae72482aa571815, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
     _secondElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}
+    _result: {fileID: 11400000, guid: fb70ff1ec79a43742b69d87a68595cf6, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 2314dc53a54a7ff4687c35581335359e, type: 2}
+    _result: {fileID: 11400000, guid: 4a3c5c9195646924a8c142788a30e045, type: 2}

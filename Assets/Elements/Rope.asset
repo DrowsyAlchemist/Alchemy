@@ -14,8 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Rope
   _lable: "\u0412\u0435\u0440\u0451\u0432\u043A\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: f2d41c7fd72a60345ace807dad64a081, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: db279d7dec673db4f85a6eaf74f46362, type: 2}
     _secondElement: {fileID: 11400000, guid: db279d7dec673db4f85a6eaf74f46362, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 2c0a7c16c8156834d8666193432b975e, type: 2}
+    _result: {fileID: 11400000, guid: 87f605ebd8cebce46a6deb9059352f08, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 10469bb1fb36cd74fafb846f583bc9f1, type: 2}
+    _result: {fileID: 11400000, guid: 87f605ebd8cebce46a6deb9059352f08, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 98afd116610730748b4f041f0a0314db, type: 2}
+    _result: {fileID: 11400000, guid: ef791550e0fb7584da700ed79d7f6330, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
+    _result: {fileID: 11400000, guid: d2a14a83f7a6ca849b680092f84e3eaf, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 712d6384182b7354e9630f19dc2bd756, type: 2}
+    _result: {fileID: 11400000, guid: d2a14a83f7a6ca849b680092f84e3eaf, type: 2}

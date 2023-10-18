@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sledge
   _lable: "\u0421\u0430\u043D\u0438"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 4924cd2fc7326d94dbc6ef1beff66cbb, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 1c76d10c69aa84e479cc3ba26c4470ec, type: 2}
     _secondElement: {fileID: 11400000, guid: 81ed12d52443dba49b13fad3567fe3a3, type: 2}

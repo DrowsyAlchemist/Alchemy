@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sweater
   _lable: "\u0421\u0432\u0438\u0442\u0435\u0440"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 01d45fa5592c735448a9f2d9cf39b49c, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4a3c5c9195646924a8c142788a30e045, type: 2}
     _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}

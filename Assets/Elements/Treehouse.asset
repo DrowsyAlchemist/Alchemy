@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Treehouse
   _lable: "\u0414\u043E\u043C\u0438\u043A \u043D\u0430 \u0434\u0435\u0440\u0435\u0432\u0435"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 522678cb385eb7a42b83c0dbfe3bc41b, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
     _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}

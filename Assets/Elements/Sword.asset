@@ -14,10 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sword
   _lable: "\u041C\u0435\u0447"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 53fe335a9db9f2448a3d0a51e3e982f5, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
     _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
   - _firstElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
     _secondElement: {fileID: 11400000, guid: 712d6384182b7354e9630f19dc2bd756, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: f1627004559b44343bae05bd4229060d, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 0b568ec93a46fcb409c653be726cdb19, type: 2}
+    _result: {fileID: 11400000, guid: 3d23ad8d848a3b041ad3d804a44dd014, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 3203e04fde19c9347bfd6219beb787cf, type: 2}
+    _result: {fileID: 11400000, guid: 8c5c1104e99cda242ba52fa8dec57273, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 6c91102b7cd458a4187367eb594a0e19, type: 2}
+    _result: {fileID: 11400000, guid: 533f5b2e1aa5c06499be0c9ad7ba7c49, type: 2}
+  - _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
+    _result: {fileID: 11400000, guid: 533f5b2e1aa5c06499be0c9ad7ba7c49, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 158e079c518ceba4a95a18b7d314f6c5, type: 2}
+    _result: {fileID: 11400000, guid: 533f5b2e1aa5c06499be0c9ad7ba7c49, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4be4701d0db17224b83fef076d5e8f51, type: 2}
+    _result: {fileID: 11400000, guid: 75266aad609f84c4fa35cf1dd69bca17, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}
+    _result: {fileID: 11400000, guid: 1cdf3e790a061f1499fa1005b0b0e344, type: 2}

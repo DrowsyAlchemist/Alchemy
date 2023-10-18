@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wagon
   _lable: "\u041F\u043E\u0432\u043E\u0437\u043A\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: c6d14f5a7cdbd5e42b47646cec7ae691, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 81ed12d52443dba49b13fad3567fe3a3, type: 2}
     _secondElement: {fileID: 11400000, guid: 10469bb1fb36cd74fafb846f583bc9f1, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 5c2d62e985296f944ab8c3881c7e8ae1, type: 2}
+    _result: {fileID: 11400000, guid: ed59cf7bf0adf29408f982d29c7d0671, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 1c76d10c69aa84e479cc3ba26c4470ec, type: 2}
+    _result: {fileID: 11400000, guid: 4e409a9ef2a8bbb41b705d29b99fae51, type: 2}

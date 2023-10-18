@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Skeleton
   _lable: "\u0421\u043A\u0435\u043B\u0435\u0442"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: aa3c053c840d7af408d3084f14830ee5, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: cd21883b495bd1e4b86cdd2779fd8e8c, type: 2}
     _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 6c91102b7cd458a4187367eb594a0e19, type: 2}
+    _result: {fileID: 11400000, guid: c6395597201c34d44bc9ed25fa351b07, type: 2}

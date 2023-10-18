@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Solar System
   _lable: "\u0421\u043E\u043B\u043D\u0435\u0447\u043D\u0430\u044F \u0441\u0438\u0441\u0442\u0435\u043C\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 112fa63f4a4990743aaf9b5ee5905430, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}
     _secondElement: {fileID: 11400000, guid: 2305287657296bb4089ab0fc8b7b83e1, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000}
+    _result: {fileID: 11400000, guid: ba8f1953340e80b45a59fb519afb9628, type: 2}

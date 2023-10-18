@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: The One Ring
   _lable: "\u041A\u043E\u043B\u044C\u0446\u043E \u0412\u0441\u0435\u0432\u043B\u0430\u0441\u0442\u0438\u044F"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 6d96f3d1bd9de684892f92bbec8276be, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 81668e2597190414a92632ae1510dfae, type: 2}
     _secondElement: {fileID: 11400000, guid: 6cefb0d7a6874fa4d8255e1958bab4e0, type: 2}

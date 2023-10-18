@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Cyborg
   _lable: "\u041A\u0438\u0431\u043E\u0440\u0433"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: db644c7130964004b9c007684d4655a3, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 013f31052ecd1cf41aee327c1e599a34, type: 2}

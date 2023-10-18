@@ -14,8 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Vegetable
   _lable: "\u041E\u0432\u043E\u0449"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: cba7d27f4fd444d439c6997042d5a7d7, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 21a1e89e0de17e640a577f9c0b265757, type: 2}
     _secondElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 98afd116610730748b4f041f0a0314db, type: 2}
+    _result: {fileID: 11400000, guid: 7bdab7b2d18247f41ad85156215199a1, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 1ef4ba1e7c4113b46949421322952c6a, type: 2}
+    _result: {fileID: 11400000, guid: 6cd7b13f3defcca4d837bb422f2c9045, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+    _result: {fileID: 11400000, guid: c0cbc8cf82f8baa468c3f3dd586384d4, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 6c91102b7cd458a4187367eb594a0e19, type: 2}
+    _result: {fileID: 11400000, guid: c0cbc8cf82f8baa468c3f3dd586384d4, type: 2}

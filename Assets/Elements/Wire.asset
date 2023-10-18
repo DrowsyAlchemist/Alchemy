@@ -14,8 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wire
   _lable: "\u041F\u0440\u043E\u0432\u043E\u0434"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 5a28021ac1a29f84ebdd2fd10fcb8e0e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 158e079c518ceba4a95a18b7d314f6c5, type: 2}
     _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: c4f234f4bb10e3546a89c7a7a9bf4c9b, type: 2}
+    _result: {fileID: 11400000, guid: e0c15cb2b280c3d48a20467e49b32587, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
+    _result: {fileID: 11400000, guid: 5891cd0793fff574b9afbcc674a06143, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 10c36b5744ff95f4b95c778551770ab0, type: 2}
+    _result: {fileID: 11400000, guid: 93cd71a8580f6cf478781a7a60d92447, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4460400019dc60a4dbf8041a68359132, type: 2}
+    _result: {fileID: 11400000, guid: 10c36b5744ff95f4b95c778551770ab0, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 6c91102b7cd458a4187367eb594a0e19, type: 2}
+    _result: {fileID: 11400000, guid: c6b2c22d5a9bd124a81ec41ac40fc404, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: 18bac9e0a0895124fbfc98dfc57710ba, type: 2}
