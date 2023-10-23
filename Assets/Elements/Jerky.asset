@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Jerky
   _lable: "\u0412\u044F\u043B\u0435\u043D\u043E\u0435 \u043C\u044F\u0441\u043E"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: cb2e49c946f08424aab6669f4390acdc, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2eb88271ce8c0144f85e48dd399c0cff, type: 2}
     _secondElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}

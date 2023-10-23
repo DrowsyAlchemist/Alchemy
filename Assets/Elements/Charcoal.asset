@@ -16,10 +16,10 @@ MonoBehaviour:
   _lable: "\u0414\u0440\u0435\u0432\u0435\u0441\u043D\u044B\u0439 \u0443\u0433\u043E\u043B\u044C"
   _sprite: {fileID: 21300000, guid: fb9e023ca48d0944091824c79ff6f9ad, type: 3}
   _creationRecipies:
-  - _firstElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
-    _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
   - _firstElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 11f3200454621474ab3fd2eb17861224, type: 2}
+    _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
   _recipesWithElement:
   - _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
     _result: {fileID: 11400000, guid: 5e7a7995d420ef643b408a17d417c3e1, type: 2}

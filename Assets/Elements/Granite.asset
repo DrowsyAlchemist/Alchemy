@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Granite
   _lable: "\u0413\u0440\u0430\u043D\u0438\u0442"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 664f8cb8b85724341b07fc9cf6f28fa1, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 945680ad7cc26814b8b61bf7b8458793, type: 2}
     _secondElement: {fileID: 11400000, guid: ec21e2563dda2a547b4f5a989e7b0f9b, type: 2}

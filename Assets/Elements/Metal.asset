@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Metal
   _lable: "\u041C\u0435\u0442\u0430\u043B"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 54460b4b98274574d9a5ef10291dae1e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+  - _firstElement: {fileID: 11400000, guid: a2b0d33ac80308e4eb1564ad7f8de45c, type: 2}
+    _secondElement: {fileID: 11400000, guid: 5e1e20fb413594147a9f9d9d848962b3, type: 2}
   _recipesWithElement:
   - _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
     _result: {fileID: 11400000, guid: 23f2a993a092e1c48aeac253a10060f4, type: 2}

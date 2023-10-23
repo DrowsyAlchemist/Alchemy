@@ -18,6 +18,28 @@ MonoBehaviour:
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}
     _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}
+    _secondElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}
   _recipesWithElement:
   - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _result: {fileID: 11400000, guid: 4460400019dc60a4dbf8041a68359132, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
+    _result: {fileID: 11400000, guid: 725fb525da4fa444485425bbf8da9989, type: 2}
+  - _secondElement: {fileID: 11400000, guid: f90057cbf413a7c4fb294ca4a06476bb, type: 2}
+    _result: {fileID: 11400000, guid: 725fb525da4fa444485425bbf8da9989, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 5104ac7ea63b697468722e421734b00c, type: 2}
+    _result: {fileID: 11400000, guid: 725fb525da4fa444485425bbf8da9989, type: 2}
+  - _secondElement: {fileID: 11400000, guid: d40544dab5999cb4e9047d5ed46fd1bd, type: 2}
+    _result: {fileID: 11400000, guid: 725fb525da4fa444485425bbf8da9989, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 23f2a993a092e1c48aeac253a10060f4, type: 2}
+    _result: {fileID: 11400000, guid: 725fb525da4fa444485425bbf8da9989, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 1c76d10c69aa84e479cc3ba26c4470ec, type: 2}
+    _result: {fileID: 11400000, guid: 09254fc1382011a458769cccb2202d2a, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4e7567297eb1ff14faa8b39f40cc98b6, type: 2}
+    _result: {fileID: 11400000, guid: c51d6117103124a45836ed073deef2d1, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
+    _result: {fileID: 11400000, guid: f2177140ffee134449e5420d4884e844, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}
+    _result: {fileID: 11400000, guid: c80e62064d17ebd42b19036426b2d91c, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 32670aed97089854fb9eabc7204ad7a1, type: 2}
+    _result: {fileID: 11400000, guid: c80e62064d17ebd42b19036426b2d91c, type: 2}

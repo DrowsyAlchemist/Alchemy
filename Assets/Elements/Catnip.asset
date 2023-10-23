@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Catnip
   _lable: "\u041A\u043E\u0448\u0430\u0447\u044C\u044F \u043C\u044F\u0442\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: a510510cc70778c43bc390c8ec8a8a7b, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 21b230eb84dba684494b8462b0196336, type: 2}
     _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}

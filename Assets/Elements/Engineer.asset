@@ -16,6 +16,16 @@ MonoBehaviour:
   _lable: "\u0418\u043D\u0436\u0435\u043D\u0435\u0440"
   _sprite: {fileID: 21300000, guid: b959ff05b58d7404e84523f1f86359b8, type: 3}
   _creationRecipies:
-  - _firstElement: {fileID: 11400000}
+  - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: d696695e226793540b3d58c191fa3123, type: 2}
+    _result: {fileID: 11400000, guid: 725fb525da4fa444485425bbf8da9989, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 2fa5a1f4a6843f541984de3a623aa62c, type: 2}
+    _result: {fileID: 11400000, guid: e4878fa6998cc9345b983f34f2b859bc, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
+    _result: {fileID: 11400000}
+  - _secondElement: {fileID: 11400000, guid: 3659d2203c3214b4b8e70e7413967f35, type: 2}
+    _result: {fileID: 11400000, guid: 0912be35d900b664c8d2dd228c29507b, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}
+    _result: {fileID: 11400000, guid: 11e9abee4fe4ca6499394016a3158922, type: 2}

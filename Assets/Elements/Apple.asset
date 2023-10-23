@@ -14,6 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Apple
   _lable: "\u042F\u0431\u043B\u043E\u043A\u043E"
-  _sprite: {fileID: 0}
-  _creationRecipies: []
-  _recipesWithElement: []
+  _sprite: {fileID: 21300000, guid: af9909c699d6bb54291323858c4689ef, type: 3}
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: a62470eedb433b146a995a9dde7e6567, type: 2}
+    _secondElement: {fileID: 11400000, guid: ada2fa01b72a1064396df1fe5cdf4b01, type: 2}
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: ff9432d522f62ea4281adbb332e03003, type: 2}
+    _result: {fileID: 11400000, guid: 185d9ce98158fce42b743c9e55f04f63, type: 2}
