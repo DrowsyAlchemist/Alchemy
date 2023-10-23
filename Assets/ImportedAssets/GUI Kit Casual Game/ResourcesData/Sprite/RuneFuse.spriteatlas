@@ -72,7 +72,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: d76183b5f944e4bf7b83bfb855b435d0, type: 3}
   - {fileID: 21300000, guid: 576fc5064348447e0b230287640d3b27, type: 3}
   - {fileID: 21300000, guid: c7dede76a0a614e6b920e844d2dcb41b, type: 3}
-  - {fileID: 21300000, guid: d04b5fd68437e4faba7a160858d7b6a6, type: 3}
   - {fileID: 21300000, guid: bbd7b7f6dead14321839feeaba447958, type: 3}
   - {fileID: 21300000, guid: 839a640771fd5411fbd3504279fa28e3, type: 3}
   - {fileID: 21300000, guid: 5b56b238b11c749d2a26759261b7c1a6, type: 3}
@@ -115,7 +114,6 @@ SpriteAtlas:
   - fusion_bg_4
   - rune_sample_8
   - icon_menu2_n
-  - icon_menu2_f
   - rune_sample_22
   - rune_large_sample_3
   - rune_screen_bg
