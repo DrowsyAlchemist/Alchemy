@@ -2,6 +2,7 @@ using Agava.YandexGames;
 using System;
 using System.Text;
 using UnityEngine;
+using PlayerPrefs = UnityEngine.PlayerPrefs;
 
 public class Saver
 {

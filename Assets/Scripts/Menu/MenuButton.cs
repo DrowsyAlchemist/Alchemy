@@ -5,7 +5,7 @@ public class MenuButton : UIButton
 {
     [SerializeField] private RectTransform _openedPanel;
 
-    private bool _isInitialized;
+    private bool _isMenuButtonInitialized;
 
     public Action<MenuButton> Clicked;
 
@@ -13,12 +13,12 @@ public class MenuButton : UIButton
     {
         base.Init();
         base.AssignOnClickAction(OnClick);
-        _isInitialized = true;
+        _isMenuButtonInitialized = true;
     }
 
     public void OpenPanel()
     {
-        if (_isInitialized == false)
+        if (_isMenuButtonInitialized == false)
             InitMenuButton();
 
         Button.interactable = false;
@@ -27,7 +27,7 @@ public class MenuButton : UIButton
 
     public void ClosePanel()
     {
-        if (_isInitialized == false)
+        if (_isMenuButtonInitialized == false)
             InitMenuButton();
 
         Button.interactable = true;
