@@ -2125,7 +2125,7 @@ Animator:
   m_GameObject: {fileID: 388526974}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 89d74c5addf58204d87fd92638a7bfff, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2db8f2013ebd8754e9e22c2c3c507949, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2149,7 +2149,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animator: {fileID: 388526976}
   _timerText: {fileID: 379811393}
-  _secondsBetweenAds: 60
   _initialTime: 5
 --- !u!1 &395196803
 GameObject:
@@ -6819,7 +6818,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameSettings: {fileID: 11400000, guid: 08555ead789d23449bca9a1a1f84f3a6, type: 2}
   _closedElement: {fileID: 11400000, guid: 63753519f4473ba4ca22b17bb0786543, type: 2}
-  _adSettings: {fileID: 11400000, guid: 5e68d4e5cceca684b84790921f33e23c, type: 2}
+  _monetizationSettings: {fileID: 11400000, guid: 5e68d4e5cceca684b84790921f33e23c, type: 2}
   _leaderboardSettings: {fileID: 11400000, guid: 936a7e1334547a24ba96351603eb8c9b, type: 2}
   _coroutineObject: {fileID: 1268661969}
 --- !u!1 &1308791690

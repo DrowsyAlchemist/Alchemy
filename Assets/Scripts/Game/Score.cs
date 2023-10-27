@@ -47,12 +47,12 @@ public class Score : MonoBehaviour
             throw new ArgumentOutOfRangeException();
 
         CurrentScore += amount;
-        CurrentScoreChanged.Invoke(CurrentScore);
+        CurrentScoreChanged?.Invoke(CurrentScore);
 
         if (BestScore < CurrentScore)
         {
             BestScore = CurrentScore;
-            BestScoreChanged.Invoke(BestScore);
+            BestScoreChanged?.Invoke(BestScore);
         }
 
         SaveScore();

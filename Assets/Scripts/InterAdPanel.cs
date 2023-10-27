@@ -6,7 +6,6 @@ public class InterAdPanel : MonoBehaviour
 {
     [SerializeField] private Animator _animator;
     [SerializeField] private TMP_Text _timerText;
-    [SerializeField] private float _secondsBetweenAds = 10;
     [SerializeField] private float _initialTime;
 
     private const string ShowAnimation = "Show";
@@ -21,7 +20,7 @@ public class InterAdPanel : MonoBehaviour
     {
         _elapsedTime += Time.deltaTime;
 
-        if (_elapsedTime > _secondsBetweenAds)
+        if (_elapsedTime > Settings.MonetizationSettings.SecondsBetweenInters)
         {
             _elapsedTime = 0;
             _animator.Play(ShowAnimation);

@@ -1,4 +1,5 @@
 using System;
+using System.Xml.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -59,7 +60,33 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
         if (_clickHandler == null)
             throw new InvalidOperationException("ClickHandler is not assigned");
 
-        base.RenderManual(element, Settings.AdSettings.AdSprite, Settings.AdSettings.AdLable);
+        base.Render(element);
+        _isInteractable = true;
+        _button.interactable = true;
+    }
+
+    public void RenderOpeningForAd(Element element)
+    {
+        if (_isInitialized == false)
+            Init();
+
+        if (_clickHandler == null)
+            throw new InvalidOperationException("ClickHandler is not assigned");
+
+        base.RenderManual(element, Settings.MonetizationSettings.AdSprite, Settings.MonetizationSettings.AdLable);
+        _isInteractable = true;
+        _button.interactable = true;
+    }
+
+    public void RenderOpeningForYan(Element element)
+    {
+        if (_isInitialized == false)
+            Init();
+
+        if (_clickHandler == null)
+            throw new InvalidOperationException("ClickHandler is not assigned");
+
+        base.RenderManual(element, Settings.MonetizationSettings.YanSprite, Settings.MonetizationSettings.YanLable);
         _isInteractable = true;
         _button.interactable = true;
     }

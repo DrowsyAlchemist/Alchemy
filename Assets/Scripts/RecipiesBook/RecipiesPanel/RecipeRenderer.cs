@@ -12,6 +12,7 @@ public class RecipeRenderer : MonoBehaviour
     private void Init()
     {
         _secondElementRenderer.AssignClickHandler(new ElementForAdOpener());
+        _resultElementRenderer.AssignClickHandler(new ElementForYanOpener());
         _isInitialized = true;
     }
 
@@ -26,16 +27,18 @@ public class RecipeRenderer : MonoBehaviour
             _firstElementRenderer.RenderCompletelyClosed(element);
 
         if (recipe.SecondElement.IsOpened && recipe.Result.IsOpened)
-            _secondElementRenderer.RenderOpened(element);
+            _secondElementRenderer.RenderOpened(recipe.SecondElement);
         else if (recipe.SecondElement.IsOpened)
-            _secondElementRenderer.RenderInteractable(element);
+            _secondElementRenderer.RenderOpeningForAd(recipe.SecondElement);
         else
-            _secondElementRenderer.RenderCompletelyClosed(element);
+            _secondElementRenderer.RenderCompletelyClosed(recipe.SecondElement);
 
         if (recipe.Result.IsOpened)
-            _resultElementRenderer.RenderOpened(element);
+            _resultElementRenderer.RenderOpened(recipe.Result);
+        else if (recipe.SecondElement.IsOpened)
+            _resultElementRenderer.RenderOpeningForYan(recipe.Result);
         else
-            _resultElementRenderer.RenderCompletelyClosed(element);
+            _resultElementRenderer.RenderCompletelyClosed(recipe.Result);
     }
 
     public void RenderCreationRecipie(Element element, CreationRecipie creationRecipie)
