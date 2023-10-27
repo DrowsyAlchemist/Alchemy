@@ -14,6 +14,6 @@ public class ElementForAdOpener : IElementClickHandler
 
     private void OnRewarded(BookElementRenderer elementRenderer)
     {
-        elementRenderer.Render(elementRenderer.Element, isInteractable: false, isClosed: false);
+        elementRenderer.RenderOpened(elementRenderer.Element);
     }
 }

@@ -165,7 +165,6 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 20d5f0e76d790ca4383036cd7eefe43a, type: 3}
     - {fileID: 2800000, guid: 291f3f34564e1794dad424b2d2ad45bb, type: 3}
     - {fileID: 2800000, guid: 9b0fba508392fdd43a6f6d2660f73595, type: 3}
-    - {fileID: 2800000, guid: 509057e6be8bdaf499cee988b01cc24b, type: 3}
     - {fileID: 2800000, guid: 25c12ece075078c49a573d4f7871364e, type: 3}
     - {fileID: 2800000, guid: 442bedd7682b97f408b18937760c2316, type: 3}
     - {fileID: 2800000, guid: c594f10e6e3dce1429165b24efda737b, type: 3}
@@ -314,7 +313,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: cb42b5b6f7690e54d9c9950a94357312, type: 3}
   - {fileID: 21300000, guid: 7aa429c60f31e7946ba56cb79735e405, type: 3}
   - {fileID: 21300000, guid: 7b2ccbd6f0d3ffb4ba912a80e3cb59ea, type: 3}
-  - {fileID: 21300000, guid: 509057e6be8bdaf499cee988b01cc24b, type: 3}
   - {fileID: 21300000, guid: 87de7b37e0d8ee94bbf696a4f880de76, type: 3}
   - {fileID: 21300000, guid: a4683457b89ca0e4583330a3e0f35a42, type: 3}
   - {fileID: 21300000, guid: c0452a57d8dfc4547ac48ced1ad92158, type: 3}
@@ -497,7 +495,7 @@ SpriteAtlas:
   - gold
   - library
   - igloo
-  - farming
+  - field
   - volcano-eruption
   - gingerbread-house
   - leather
@@ -510,7 +508,6 @@ SpriteAtlas:
   - milk-shake
   - Mailman
   - flashlight
-  - mermaid
   - family
   - leaf
   - Light Bulb

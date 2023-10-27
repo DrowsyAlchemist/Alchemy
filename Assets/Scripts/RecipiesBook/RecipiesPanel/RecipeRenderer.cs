@@ -21,30 +21,38 @@ public class RecipeRenderer : MonoBehaviour
             Init();
 
         if (element.IsOpened)
-            _firstElementRenderer.Render(element, isInteractable: false, isClosed: false);
+            _firstElementRenderer.RenderOpened(element);
         else
-            _firstElementRenderer.Render(element, isInteractable: false, isClosed: true);
+            _firstElementRenderer.RenderCompletelyClosed(element);
 
         if (recipe.SecondElement.IsOpened && recipe.Result.IsOpened)
-            _secondElementRenderer.Render(recipe.SecondElement, isInteractable: false, isClosed: false);
+            _secondElementRenderer.RenderOpened(element);
         else if (recipe.SecondElement.IsOpened)
-            _secondElementRenderer.Render(recipe.SecondElement, isInteractable: true, isClosed: true);
+            _secondElementRenderer.RenderInteractable(element);
         else
-            _secondElementRenderer.Render(recipe.SecondElement, isInteractable: false, isClosed: true);
+            _secondElementRenderer.RenderCompletelyClosed(element);
 
         if (recipe.Result.IsOpened)
-            _resultElementRenderer.Render(recipe.Result, isInteractable: false, isClosed: false);
+            _resultElementRenderer.RenderOpened(element);
         else
-            _resultElementRenderer.Render(recipe.Result, isInteractable: false, isClosed: true);
+            _resultElementRenderer.RenderCompletelyClosed(element);
     }
 
-    public void Render(Element element, CreationRecipie creationRecipie)
+    public void RenderCreationRecipie(Element element, CreationRecipie creationRecipie)
     {
         if (element.IsOpened == false)
             throw new InvalidOperationException();
 
-        _firstElementRenderer.Render(creationRecipie.FirstElement, isInteractable: false, isClosed: creationRecipie.FirstElement.IsOpened == false);
-        _secondElementRenderer.Render(creationRecipie.SecondElement, isInteractable: false, isClosed: creationRecipie.FirstElement.IsOpened == false);
-        _resultElementRenderer.Render(element, isInteractable: false, isClosed: false);
+        if (creationRecipie.FirstElement.IsOpened)
+        {
+            _firstElementRenderer.RenderOpened(creationRecipie.FirstElement);
+            _secondElementRenderer.RenderOpened(creationRecipie.SecondElement);
+        }
+        else
+        {
+            _firstElementRenderer.RenderCompletelyClosed(creationRecipie.FirstElement);
+            _secondElementRenderer.RenderCompletelyClosed(creationRecipie.SecondElement);
+        }
+        _resultElementRenderer.RenderOpened(element);
     }
 }

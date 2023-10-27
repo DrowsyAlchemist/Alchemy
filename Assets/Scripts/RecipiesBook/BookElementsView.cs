@@ -30,7 +30,7 @@ public class BookElementsView : ElementsView
 
         var renderer = Instantiate(_bookElementTemplate, _container);
         renderer.AssignClickHandler(_elementClickHandler);
-        renderer.Render(element, isInteractable: true);
+        renderer.RenderInteractable(element);
         OpenedElementRenderers.Add(renderer);
     }
 

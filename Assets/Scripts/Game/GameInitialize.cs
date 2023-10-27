@@ -72,11 +72,11 @@ public sealed class GameInitialize : MonoBehaviour, IMergeHandler
         _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
         _score.Init(isPlayerAuthorized);
         _leaderboardView.Init(isPlayerAuthorized, _score);
-        YandexGamesSdk.GameReady();
 
 #if UNITY_EDITOR
         return;
 #endif
+        YandexGamesSdk.GameReady();
         string systemLang = YandexGamesSdk.Environment.GetCurrentLang();
         LeanLocalization.SetCurrentLanguageAll(systemLang);
     }

@@ -31,28 +31,37 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
         _clickHandler = clickHandler;
     }
 
-    public void Render(Element element, bool isInteractable, bool isClosed = false)
+    public void RenderOpened(Element element)
     {
         if (_isInitialized == false)
             Init();
 
-        if (isInteractable && _clickHandler == null)
+        base.Render(element);
+        _isInteractable = false;
+        _button.interactable = false;
+    }
+
+    public void RenderCompletelyClosed(Element element)
+    {
+        if (_isInitialized == false)
+            Init();
+
+        base.RenderClosed(element);
+        _isInteractable = false;
+        _button.interactable = false;
+    }
+
+    public void RenderInteractable(Element element)
+    {
+        if (_isInitialized == false)
+            Init();
+
+        if (_clickHandler == null)
             throw new InvalidOperationException("ClickHandler is not assigned");
 
-        if (isClosed)
-        {
-            if (isInteractable)
-                base.RenderManual(element, Settings.AdSettings.AdSprite, Settings.AdSettings.AdLable);
-            else
-                base.RenderClosed(element);
-        }
-        else
-        {
-            base.Render(element);
-        }
-
-        _isInteractable = isInteractable;
-        _button.interactable = isInteractable;
+        base.RenderManual(element, Settings.AdSettings.AdSprite, Settings.AdSettings.AdLable);
+        _isInteractable = true;
+        _button.interactable = true;
     }
 
     public void OnPointerEnter(PointerEventData eventData)

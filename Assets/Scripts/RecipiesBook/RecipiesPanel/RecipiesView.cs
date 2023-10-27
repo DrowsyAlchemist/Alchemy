@@ -60,7 +60,7 @@ public class RecipiesView : MonoBehaviour
             if ((i + 1) > _creationRecipiesRenderers.Count)
                 AddCreationRecipie(element, recipie);
             else
-                _creationRecipiesRenderers[i].Render(element, recipie);
+                _creationRecipiesRenderers[i].RenderCreationRecipie(element, recipie);
 
             i++;
         }
@@ -82,7 +82,7 @@ public class RecipiesView : MonoBehaviour
     private void AddCreationRecipie(Element element, CreationRecipie recipie)
     {
         var recipieRenderer = Instantiate(_recipieRendererTemplate, _creationRecipiesContainer);
-        recipieRenderer.Render(element, recipie);
+        recipieRenderer.RenderCreationRecipie(element, recipie);
         _creationRecipiesRenderers.Add(recipieRenderer);
     }
 
