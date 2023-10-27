@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Bonsai Tree
   m_EditorClassIdentifier: 
   _id: Bonsai Tree
-  _lable: "\u041A\u0430\u0440\u043B\u0438\u043A\u043E\u0432\u043E\u0435 \u0434\u0435\u0440\u0435\u0432\u043E"
+  _lable: "\u0411\u043E\u043D\u0441\u0430\u0439"
   _sprite: {fileID: 21300000, guid: 4065a32b4b1d19f44b65843068d30129, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: e596b43e1acfa8c43b49d5bb05c41157, type: 2}
+    _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
+  - _firstElement: {fileID: 11400000, guid: ca40b2160965d4e4a9b7bafdd7a930f3, type: 2}
     _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
   _recipesWithElement: []

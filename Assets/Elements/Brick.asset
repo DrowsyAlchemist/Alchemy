@@ -17,7 +17,9 @@ MonoBehaviour:
   _sprite: {fileID: 21300000, guid: beb062cdc3f25c5418760e39318e8824, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
-    _secondElement: {fileID: 11400000, guid: 85ea3114226562f4f8910a34ef7b7670, type: 2}
+    _secondElement: {fileID: 11400000, guid: 365f6d16601d380408e92269fede7428, type: 2}
+  - _firstElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}
+    _secondElement: {fileID: 11400000, guid: 365f6d16601d380408e92269fede7428, type: 2}
   _recipesWithElement:
   - _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
     _result: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}

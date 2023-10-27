@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fruit Tree
   m_EditorClassIdentifier: 
   _id: Fruit Tree
-  _lable: "\u0424\u0440\u0443\u043A\u0442\u043E\u0432\u043E\u0435 \u0434\u0435\u0440\u0435\u0432\u043E"
+  _lable: "\u041F\u043B\u043E\u0434\u043E\u0432\u043E\u0435 \u0434\u0435\u0440\u0435\u0432\u043E"
   _sprite: {fileID: 21300000, guid: b6ad3236b7942f74399fb127d992c248, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}

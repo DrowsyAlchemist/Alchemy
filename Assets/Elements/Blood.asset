@@ -14,8 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Blood
   _lable: "\u041A\u0440\u043E\u0432\u044C"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 95e173703e3b2b8439896612285d4543, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: ddc85a30a1db7ac43a097c0ce94a8505, type: 2}
+    _result: {fileID: 11400000, guid: 4aa9a899ac9bf634ba42718fa08043aa, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: 7d0c8af2fb14571458b271227723f167, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 3203e04fde19c9347bfd6219beb787cf, type: 2}
+    _result: {fileID: 11400000, guid: b2302783f7a73664e97cdf3163aafd8f, type: 2}

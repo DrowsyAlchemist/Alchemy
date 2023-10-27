@@ -18,6 +18,8 @@ MonoBehaviour:
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
+  - _firstElement: {fileID: 11400000, guid: cde21fec23564644f9177584277e216c, type: 2}
+    _secondElement: {fileID: 11400000, guid: 9ccb973ca4a973e4e85bd884e5e73388, type: 2}
   _recipesWithElement:
   - _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
     _result: {fileID: 11400000, guid: cde21fec23564644f9177584277e216c, type: 2}
@@ -25,3 +27,9 @@ MonoBehaviour:
     _result: {fileID: 11400000, guid: 9e4fa224400ec14478aa172186b90954, type: 2}
   - _secondElement: {fileID: 11400000, guid: 10c36b5744ff95f4b95c778551770ab0, type: 2}
     _result: {fileID: 11400000, guid: 9e4fa224400ec14478aa172186b90954, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
+    _result: {fileID: 11400000, guid: 4710fc91ad72fc748b060d25873b7b68, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 1c76d10c69aa84e479cc3ba26c4470ec, type: 2}
+    _result: {fileID: 11400000, guid: 45691241377ad374b947972fa64625fa, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 6b6e4faac3ae3484eb63825d5b215e3b, type: 2}
+    _result: {fileID: 11400000, guid: 45691241377ad374b947972fa64625fa, type: 2}

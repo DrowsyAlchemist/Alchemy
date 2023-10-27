@@ -15,5 +15,7 @@ MonoBehaviour:
   _id: Fortune Cookie
   _lable: "\u041F\u0435\u0447\u0435\u043D\u044C\u0435 \u0441 \u043F\u0440\u0435\u0434\u0441\u043A\u0430\u0437\u0430\u043D\u0438\u0435\u043C"
   _sprite: {fileID: 21300000, guid: faf3000c96b0517429c9ebf3420a553c, type: 3}
-  _creationRecipies: []
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}
+    _secondElement: {fileID: 11400000, guid: 556778023c8275b41af7026252da6417, type: 2}
   _recipesWithElement: []

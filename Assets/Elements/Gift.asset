@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Gift
   _lable: "\u041F\u043E\u0434\u0430\u0440\u043E\u043A"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 7e3000109e73112468a5ab070ce15197, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: e8c5f8dc37899b740816375492dc50eb, type: 2}
     _secondElement: {fileID: 11400000, guid: 74a9773feccb13141b7472fa9f528ceb, type: 2}
   - _firstElement: {fileID: 11400000, guid: e8c5f8dc37899b740816375492dc50eb, type: 2}
     _secondElement: {fileID: 11400000, guid: d7ca1a6aa1b27404db4609d2cedf563e, type: 2}
   - _firstElement: {fileID: 11400000, guid: e8c5f8dc37899b740816375492dc50eb, type: 2}
-    _secondElement: {fileID: 11400000, guid: 556778023c8275b41af7026252da6417, type: 2}
-  - _firstElement: {fileID: 11400000, guid: e8c5f8dc37899b740816375492dc50eb, type: 2}
     _secondElement: {fileID: 11400000, guid: 5529b45cefaf2614ab139d8917b6a0f6, type: 2}
   - _firstElement: {fileID: 11400000, guid: e8c5f8dc37899b740816375492dc50eb, type: 2}
     _secondElement: {fileID: 11400000, guid: c965b1c3a6f832449bc033cb08d25d72, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}
+    _result: {fileID: 11400000, guid: 2dba97efaef35c049b7f24a7e566f823, type: 2}

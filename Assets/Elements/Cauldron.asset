@@ -20,4 +20,8 @@ MonoBehaviour:
     _secondElement: {fileID: 11400000, guid: eed53aa0c55aa754cabedf71b3f69401, type: 2}
   - _firstElement: {fileID: 11400000, guid: 712d6384182b7354e9630f19dc2bd756, type: 2}
     _secondElement: {fileID: 11400000, guid: eed53aa0c55aa754cabedf71b3f69401, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 11f3200454621474ab3fd2eb17861224, type: 2}
+    _secondElement: {fileID: 11400000, guid: eed53aa0c55aa754cabedf71b3f69401, type: 2}
+  - _firstElement: {fileID: 11400000, guid: c965b1c3a6f832449bc033cb08d25d72, type: 2}
+    _secondElement: {fileID: 11400000, guid: eed53aa0c55aa754cabedf71b3f69401, type: 2}
   _recipesWithElement: []

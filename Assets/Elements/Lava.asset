@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Lava
   _lable: "\u041B\u0430\u0432\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 154587bdc24688e44a398778b4df5855, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}

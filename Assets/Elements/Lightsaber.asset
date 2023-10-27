@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Lightsaber
   _lable: "\u0421\u0432\u0435\u0442\u043E\u0432\u043E\u0439 \u043C\u0435\u0447"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: ccee6c82d110b9342a4c5211653f46d3, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 6c91102b7cd458a4187367eb594a0e19, type: 2}
     _secondElement: {fileID: 11400000, guid: 2621517271405c64389d106ba804fc2e, type: 2}

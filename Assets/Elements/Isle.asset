@@ -20,6 +20,14 @@ MonoBehaviour:
     _secondElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}
   - _firstElement: {fileID: 11400000, guid: 6cefb0d7a6874fa4d8255e1958bab4e0, type: 2}
     _secondElement: {fileID: 11400000, guid: bebaefc52908c9c4f809dc9f68c8022f, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}
+    _secondElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}
+  - _firstElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}
+    _secondElement: {fileID: 11400000, guid: bebaefc52908c9c4f809dc9f68c8022f, type: 2}
+  - _firstElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
+    _secondElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}
+  - _firstElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
+    _secondElement: {fileID: 11400000, guid: bebaefc52908c9c4f809dc9f68c8022f, type: 2}
   _recipesWithElement:
   - _secondElement: {fileID: 11400000}
     _result: {fileID: 11400000, guid: 8d72a6ce7d197e24d920d6cfd070c51b, type: 2}
