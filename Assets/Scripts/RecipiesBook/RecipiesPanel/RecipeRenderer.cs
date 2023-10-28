@@ -47,15 +47,15 @@ public class RecipeRenderer : MonoBehaviour
             throw new InvalidOperationException();
 
         if (creationRecipie.FirstElement.IsOpened)
-        {
             _firstElementRenderer.RenderOpened(creationRecipie.FirstElement);
-            _secondElementRenderer.RenderOpened(creationRecipie.SecondElement);
-        }
         else
-        {
             _firstElementRenderer.RenderCompletelyClosed(creationRecipie.FirstElement);
+
+        if (creationRecipie.SecondElement.IsOpened)
+            _secondElementRenderer.RenderOpened(creationRecipie.SecondElement);
+        else
             _secondElementRenderer.RenderCompletelyClosed(creationRecipie.SecondElement);
-        }
+
         _resultElementRenderer.RenderOpened(element);
     }
 }

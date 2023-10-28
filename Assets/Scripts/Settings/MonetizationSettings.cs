@@ -19,6 +19,6 @@ public class MonetizationSettings : ScriptableObject
     public Sprite AdSprite => _adSprite;
     public string AdLable => LeanLocalization.GetFirstCurrentLanguage().Equals("ru") ? _adLable : _adLableEn;
 
-    public Sprite YanSprite => _adSprite;
+    public Sprite YanSprite => _yanSprite;
     public string YanLable => LeanLocalization.GetFirstCurrentLanguage().Equals("ru") ? _yanLable : _yanLableEn;
 }

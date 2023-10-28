@@ -16,6 +16,6 @@ MonoBehaviour:
   _adSprite: {fileID: 21300000, guid: 391584432233c4e0a864435a50a098c5, type: 3}
   _adLable: "\u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C"
   _adLableEn: Peep
-  _yanSprite: {fileID: 0}
+  _yanSprite: {fileID: 21300000, guid: b0c3f12f0c2011f4bba8184003b3b0a2, type: 3}
   _yanLable: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
   _yanLableEn: Open
