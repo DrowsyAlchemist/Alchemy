@@ -4,6 +4,7 @@ using Lean.Localization;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public sealed class GameInitialize : MonoBehaviour, IMergeHandler
 {
@@ -22,6 +23,8 @@ public sealed class GameInitialize : MonoBehaviour, IMergeHandler
     [SerializeField] private RecipiesView _recipiesWithElementView;
 
     [SerializeField] private List<Element> _initialElements;
+
+    [SerializeField] private Image _fadeImage;
 
     private static GameInitialize _instance;
     private Saver _saver;
@@ -44,8 +47,8 @@ public sealed class GameInitialize : MonoBehaviour, IMergeHandler
         while (YandexGamesSdk.IsInitialized == false)
             yield return YandexGamesSdk.Initialize();
 
-        InterstitialAd.Show(onOpenCallback: () => Sound.Mute(), onCloseCallback: (_) => Sound.TurnOn());
         GameAnalytics.Initialize();
+        InterstitialAd.Show(onOpenCallback: () => Sound.Mute(), onCloseCallback: (_) => Sound.TurnOn());
         Init();
     }
 
@@ -72,6 +75,7 @@ public sealed class GameInitialize : MonoBehaviour, IMergeHandler
         _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
         _score.Init(isPlayerAuthorized);
         _leaderboardView.Init(isPlayerAuthorized, _score);
+        _fadeImage.Deactivate();
 
 #if UNITY_EDITOR
         return;

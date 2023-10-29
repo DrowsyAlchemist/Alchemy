@@ -32,10 +32,19 @@ public class Score : MonoBehaviour
     {
         _isPlayerAuthorized = isPlayerAuthorized;
 
-        if (isPlayerAuthorized)
-            Leaderboard.GetPlayerEntry(Settings.LeaderboardSettings.LeaderboardName, GetScoreFromLeaderboard, OnLeaderboardError);
-        else
-            GetScoreFromPrefs();
+        try
+        {
+
+            if (isPlayerAuthorized)
+                Leaderboard.GetPlayerEntry(Settings.LeaderboardSettings.LeaderboardName, GetScoreFromLeaderboard, OnLeaderboardError);
+            else
+                GetScoreFromPrefs();
+        }
+        catch (Exception e)
+        {
+            Debug.Log("ScoreInitError: " + e.Message + e.StackTrace);
+            _playerExtraData = new PlayerExtraData();
+        }
 
         foreach (var scoreRenderer in _scoreRenderers)
             scoreRenderer.Init(this);
@@ -54,7 +63,6 @@ public class Score : MonoBehaviour
             BestScore = CurrentScore;
             BestScoreChanged?.Invoke(BestScore);
         }
-
         SaveScore();
     }
 
@@ -89,24 +97,29 @@ public class Score : MonoBehaviour
 
     private void GetScoreFromLeaderboard(LeaderboardEntryResponse entry)
     {
-        BestScore = entry.score;
-        string jsonExtraData = entry.extraData;
+        if (entry != null)
+        {
+            BestScore = entry.score;
+            string jsonExtraData = entry.extraData;
 
-        if (string.IsNullOrEmpty(jsonExtraData))
-            OnLeaderboardError("jsonExtraData is null or empty");
+            if (string.IsNullOrEmpty(jsonExtraData))
+                OnLeaderboardError("jsonExtraData is null or empty");
 
-        var playerExtraData = JsonUtility.FromJson<PlayerExtraData>(entry.extraData);
+            var playerExtraData = JsonUtility.FromJson<PlayerExtraData>(entry.extraData);
 
-        if (playerExtraData == null)
-            OnLeaderboardError("playerExtraData is null");
+            if (playerExtraData == null)
+                OnLeaderboardError("playerExtraData is null");
 
-        _playerExtraData = playerExtraData ?? new PlayerExtraData();
+            _playerExtraData = playerExtraData;
+        }
+        _playerExtraData ??= new PlayerExtraData();
         CurrentScore = _playerExtraData.CurrentScore;
     }
 
     private void OnLeaderboardError(string error)
     {
         Debug.Log("Leaderboard error: " + error);
+        _playerExtraData = new PlayerExtraData();
     }
 
     private void GetScoreFromPrefs()

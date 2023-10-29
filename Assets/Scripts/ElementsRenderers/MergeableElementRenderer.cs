@@ -38,6 +38,7 @@ public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragH
                 {
                     _mergeHandler.TryMergeElements(this, otherElementRenderer);
                     needDestroy = false;
+                    break;
                 }
             }
         }

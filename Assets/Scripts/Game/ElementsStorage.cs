@@ -18,7 +18,20 @@ public class ElementsStorage : MonoBehaviour, IProgressHolder
 
     public void Init()
     {
-#if !UNITY_EDITOR
+        SortElements(_elements);
+
+        foreach (var element in _elements)
+        {
+            if (element.IsOpened)
+                _sortedOpenedElements.Add(element);
+
+            element.Opened += OnElementOpened;
+        }
+        CurrentCountChanged?.Invoke(CurrentCount);
+
+#if UNITY_EDITOR
+        return;
+#endif
         Billing.GetPurchasedProducts(onSuccessCallback: (response) =>
         {
             foreach (var product in response.purchasedProducts)
@@ -37,17 +50,6 @@ public class ElementsStorage : MonoBehaviour, IProgressHolder
                 }
             }
         });
-#endif
-        SortElements(_elements);
-
-        foreach (var element in _elements)
-        {
-            if (element.IsOpened)
-                _sortedOpenedElements.Add(element);
-
-            element.Opened += OnElementOpened;
-        }
-        CurrentCountChanged?.Invoke(CurrentCount);
     }
 
     public void ResetOpenedElements()

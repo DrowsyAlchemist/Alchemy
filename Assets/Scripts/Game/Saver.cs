@@ -62,27 +62,54 @@ public class Saver
 
     private void Save()
     {
+        var saves = new SavedElements();
+        saves.Elements = _saveDataBuilder.ToString();
+        string jsonData = JsonUtility.ToJson(saves);
+
         if (_isPlayerAuthorized)
         {
-            PlayerAccount.SetCloudSaveData(_saveDataBuilder.ToString());
+            PlayerAccount.SetCloudSaveData(jsonData);
         }
         else
         {
-            PlayerPrefs.SetString(SavesStorage, _saveDataBuilder.ToString());
+            PlayerPrefs.SetString(SavesStorage, jsonData);
             PlayerPrefs.Save();
         }
     }
 
     private void Load()
     {
-        string saves = string.Empty;
+        string jsonSaves = string.Empty;
 
         if (_isPlayerAuthorized)
-            PlayerAccount.GetCloudSaveData(onSuccessCallback: (result) => saves = result, onErrorCallback: (error) => Debug.Log("Saves load error: " + error));
+            PlayerAccount.GetCloudSaveData(onSuccessCallback: (result) => jsonSaves = result, onErrorCallback: (error) => Debug.Log("Saves load error: " + error));
         else
-            saves = PlayerPrefs.GetString(SavesStorage);
+            jsonSaves = PlayerPrefs.GetString(SavesStorage);
 
-        if (string.IsNullOrEmpty(saves) == false)
-            _saveDataBuilder.Append(saves);
+        try
+        {
+
+            var savedElements = JsonUtility.FromJson<SavedElements>(jsonSaves);
+
+            if (savedElements == null)
+                Debug.Log("savedElements is null");
+            else
+                Debug.Log("Savedelements: " + savedElements.Elements);
+
+            if (string.IsNullOrEmpty(jsonSaves) == false)
+                _saveDataBuilder.Append(savedElements.Elements);
+            else
+                Debug.Log("jsonData is null or empty");
+        }
+        catch (Exception e)
+        {
+            Debug.Log("CATCHED. Exeption: " + e.Message + e.StackTrace);
+        }
+    }
+
+    [Serializable]
+    private class SavedElements
+    {
+        public string Elements;
     }
 }
