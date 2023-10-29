@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
+  m_Name: Gunkan
+  m_EditorClassIdentifier: 
+  _id: Gunkan
+  _lable: "\u0413\u0443\u043D\u043A\u0430\u043D"
+  _sprite: {fileID: 21300000, guid: 4ed0d305f361ae84ab147162166af977, type: 3}
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: 7a8684762d496c84d8557ab59ca480fd, type: 2}
+    _secondElement: {fileID: 11400000, guid: e186e787b1ddf0d42ad52e6a5ae58b6a, type: 2}
+  _recipesWithElement: []

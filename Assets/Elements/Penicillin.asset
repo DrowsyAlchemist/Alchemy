@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Penicillin
   _lable: "\u041F\u0435\u043D\u0438\u0446\u0438\u043B\u043B\u0438\u043D"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: f4dc2c482c81eb44a8d7df99ae1a56e9, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 68b8831cb62f1cc4eabd7081bb733239, type: 2}
     _secondElement: {fileID: 11400000, guid: 9eb04233d56418140b8a96c7b7588851, type: 2}

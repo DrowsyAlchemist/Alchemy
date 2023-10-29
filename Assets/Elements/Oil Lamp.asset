@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Oil Lamp
   _lable: "\u041C\u0430\u0441\u043B\u044F\u043D\u0430\u044F \u043B\u0430\u043C\u043F\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 44b8435bd75b82149adcba143b065344, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 98afd116610730748b4f041f0a0314db, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
@@ -26,6 +26,4 @@ MonoBehaviour:
     _secondElement: {fileID: 11400000, guid: c11f1bbaed64c8744bd16870744b106b, type: 2}
   - _firstElement: {fileID: 11400000, guid: 98afd116610730748b4f041f0a0314db, type: 2}
     _secondElement: {fileID: 11400000, guid: e596b43e1acfa8c43b49d5bb05c41157, type: 2}
-  - _firstElement: {fileID: 11400000, guid: 98afd116610730748b4f041f0a0314db, type: 2}
-    _secondElement: {fileID: 11400000, guid: 365f6d16601d380408e92269fede7428, type: 2}
   _recipesWithElement: []

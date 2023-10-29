@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Smoke Signal
   m_EditorClassIdentifier: 
   _id: Smoke Signal
-  _lable: "\u0421\u0438\u0433\u043D\u0430\u043B\u044C\u043D\u044B\u0439 \u043A\u043E\u0441\u0442\u0451\u0440"
-  _sprite: {fileID: 0}
+  _lable: "\u0414\u044B\u043C\u043E\u0432\u043E\u0439 \u0441\u0438\u0433\u043D\u0430\u043B"
+  _sprite: {fileID: 21300000, guid: 2d17a31242156f249aea3b306f787bb4, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 641ac9dfe4a8b394cbcc65db90244f29, type: 2}
     _secondElement: {fileID: 11400000, guid: ddc85a30a1db7ac43a097c0ce94a8505, type: 2}

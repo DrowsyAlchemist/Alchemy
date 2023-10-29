@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Philosophy
   _lable: "\u0424\u0438\u043B\u043E\u0441\u043E\u0444\u0438\u044F"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: f973d8fe728048341b9a1b20f0f86e82, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: a96507007ab1aa14392343f935f535ee, type: 2}
     _secondElement: {fileID: 11400000, guid: c764b195afbcb9f4691a4c9598f794e0, type: 2}

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
+  m_Name: Rolls
+  m_EditorClassIdentifier: 
+  _id: Rolls
+  _lable: "\u0420\u043E\u043B\u043B"
+  _sprite: {fileID: 21300000, guid: dde4982a4803c2a46a768312c458ef48, type: 3}
+  _creationRecipies:
+  - _firstElement: {fileID: 11400000, guid: c9722c4a3fa4ca0408aec969bd3fbfbd, type: 2}
+    _secondElement: {fileID: 11400000, guid: 7a8684762d496c84d8557ab59ca480fd, type: 2}
+  _recipesWithElement: []

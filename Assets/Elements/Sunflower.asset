@@ -18,6 +18,8 @@ MonoBehaviour:
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}
     _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
+  - _firstElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}
+    _secondElement: {fileID: 11400000, guid: 622571748d2a8dd45b475b042f3addb4, type: 2}
   _recipesWithElement:
   - _secondElement: {fileID: 11400000, guid: ec21e2563dda2a547b4f5a989e7b0f9b, type: 2}
     _result: {fileID: 11400000, guid: 98afd116610730748b4f041f0a0314db, type: 2}

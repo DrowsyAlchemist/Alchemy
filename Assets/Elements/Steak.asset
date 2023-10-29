@@ -19,5 +19,5 @@ MonoBehaviour:
   - _firstElement: {fileID: 11400000, guid: dabd5c9843511594784077a24d4a8fe7, type: 2}
     _secondElement: {fileID: 11400000, guid: 2eb88271ce8c0144f85e48dd399c0cff, type: 2}
   - _firstElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
-    _secondElement: {fileID: 11400000, guid: 2c0a7c16c8156834d8666193432b975e, type: 2}
+    _secondElement: {fileID: 11400000, guid: 2eb88271ce8c0144f85e48dd399c0cff, type: 2}
   _recipesWithElement: []

@@ -21,8 +21,6 @@ MonoBehaviour:
   - _firstElement: {fileID: 11400000, guid: 5d200edd44d6337478d8ce4909155884, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
   _recipesWithElement:
-  - _secondElement: {fileID: 11400000, guid: 21b230eb84dba684494b8462b0196336, type: 2}
-    _result: {fileID: 11400000, guid: ed174517482c8464daa39a71391eaa09, type: 2}
   - _secondElement: {fileID: 11400000, guid: 938ecac5a609a0247b1491d1a5c23521, type: 2}
     _result: {fileID: 11400000, guid: d057730ef6f37a648aa53105c444d30b, type: 2}
   - _secondElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}
