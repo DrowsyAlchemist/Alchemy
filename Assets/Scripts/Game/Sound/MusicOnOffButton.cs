@@ -27,17 +27,17 @@ public class MusicOnOffButton : MonoBehaviour
     {
         if (Sound.MusicIsOn)
         {
-            Sound.OffMusic();
+            Sound.PauseMusic();
             _image.sprite = Sound.MuteSprite;
         }
         else
         {
-            Sound.OnMusic();
+            Sound.ResumeMusic();
             _image.sprite = Sound.TurnedOnSprite;
         }
     }
 
-    private void OnSoundConditionChanged(bool isOn)
+    private void OnSoundConditionChanged()
     {
         if (Sound.MusicIsOn)
             _image.sprite = Sound.TurnedOnSprite;

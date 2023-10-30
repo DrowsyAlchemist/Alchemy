@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public sealed class GameInitialize : MonoBehaviour, IMergeHandler
+public sealed class GameInitialize : MonoBehaviour
 {
     [SerializeField] private ElementsStorage _elementsStorage;
     [SerializeField] private MainOpenedElementsView _openedElementsView;
@@ -29,6 +29,7 @@ public sealed class GameInitialize : MonoBehaviour, IMergeHandler
     private static GameInitialize _instance;
     private Saver _saver;
     private RecipiesBook _recipiesBook;
+    private ElementsMerger _elementsMerger;
 
     private void Awake()
     {
@@ -69,7 +70,9 @@ public sealed class GameInitialize : MonoBehaviour, IMergeHandler
         _elementsStorage.Init();
         _menu.Init();
         _progress.Init(_elementsStorage);
-        _openedElementsView.Init(_gameField, this);
+        _score.Init(isPlayerAuthorized);
+        _elementsMerger = new ElementsMerger(_openedElementsView, _score, _elementsStorage);
+        _openedElementsView.Init(_gameField, _elementsMerger);
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
         _alphabeticalIndex.Init();
 
@@ -77,7 +80,6 @@ public sealed class GameInitialize : MonoBehaviour, IMergeHandler
         _openRecipiesBookButton.AssignOnClickAction(onButtonClick: OpenRecipiesBook);
 
         _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
-        _score.Init(isPlayerAuthorized);
         _leaderboardView.Init(isPlayerAuthorized, _score);
 
 #if UNITY_EDITOR
@@ -98,6 +100,11 @@ public sealed class GameInitialize : MonoBehaviour, IMergeHandler
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
     }
 
+    private void OpenRecipiesBook()
+    {
+        _recipiesBook.Open();
+    }
+
     private void ResetProgress()
     {
         _saver.ResetSaves();
@@ -106,52 +113,6 @@ public sealed class GameInitialize : MonoBehaviour, IMergeHandler
         OpenInitialElements();
 
         _gameField.Clear();
-        _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
-    }
-
-    public void TryMergeElements(MergeableElementRenderer firstRenderer, MergeableElementRenderer secondRenderer)
-    {
-        var results = new List<Element>();
-
-        foreach (var recipe in firstRenderer.Element.Recipies)
-            if (recipe.SecondElement.Equals(secondRenderer.Element))
-                results.Add(recipe.Result);
-
-        Merge(firstRenderer, secondRenderer, results);
-    }
-
-    public void OpenRecipiesBook()
-    {
-        _recipiesBook.Open();
-    }
-
-    private void Merge(MergeableElementRenderer firstRenderer, MergeableElementRenderer secondRenderer, List<Element> results)
-    {
-        for (var i = 0; i < results.Count; i++)
-        {
-            if (results[i].IsOpened == false)
-                OpenNewElement(results[i]);
-
-            if (i == 0)
-                firstRenderer.Render(results[0]);
-
-            if (i == 1)
-                secondRenderer.Render(results[1]);
-
-            if (i > 1)
-            {
-                var newRenderer = Instantiate(firstRenderer, firstRenderer.transform.position, Quaternion.identity, firstRenderer.transform.parent);
-                newRenderer.Render(results[i]);
-            }
-        }
-        if (results.Count == 1)
-            Destroy(secondRenderer.gameObject);
-    }
-
-    private void OpenNewElement(Element element)
-    {
-        element.Open();
-        _score.AddScore(Settings.GameSettings.PointsForOpenedElement);
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
     }
 

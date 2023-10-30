@@ -21,6 +21,8 @@ public class Sound : MonoBehaviour
     [SerializeField] private AudioSource _correctAnswerSound;
 
     private static Sound _instance;
+    private const float ValuePower = 0.3f;
+    private float _musicNormalizedVolume = 1;
 
     public static bool IsOn { get; private set; }
     public static bool MusicIsOn { get; private set; }
@@ -30,7 +32,7 @@ public class Sound : MonoBehaviour
     public static AudioSource ClickSound => _instance._clickSound;
     public static AudioSource CorrectAnswerSound => _instance._correctAnswerSound;
 
-    public static event Action<bool> ConditionChanged;
+    public static event Action ConditionChanged;
 
     private void Awake()
     {
@@ -47,9 +49,9 @@ public class Sound : MonoBehaviour
         else
             TurnOn();
 
-        OnMusic();
+        ResumeMusic();
         WebApplication.InBackgroundChangeEvent += OnBackgroundChanged;
-        ConditionChanged?.Invoke(false);
+        ConditionChanged?.Invoke();
     }
 
     private void OnDestroy()
@@ -61,26 +63,39 @@ public class Sound : MonoBehaviour
     {
         _instance.TurnSoundOn();
         IsOn = true;
-        ConditionChanged?.Invoke(true);
+        ConditionChanged?.Invoke();
     }
 
     public static void Mute()
     {
         _instance.TurnSoundOff();
         IsOn = false;
-        ConditionChanged?.Invoke(false);
+        ConditionChanged?.Invoke();
     }
 
-    public static void OnMusic()
+    public static void SetGeneralVolume(float normalizedValue)
     {
-        _instance._mixer.SetFloat(_instance._musicVolumeName, _instance._maxValue);
-        MusicIsOn = true;
+        _instance.SetVolume(_instance._masterVolumeName, normalizedValue);
     }
 
-    public static void OffMusic()
+    public static void SetMusicVolume(float normalizedValue)
     {
-        _instance._mixer.SetFloat(_instance._musicVolumeName, _instance._minValue);
+        _instance._musicNormalizedVolume = normalizedValue;
+        _instance.SetVolume(_instance._musicVolumeName, normalizedValue);
+    }
+
+    public static void PauseMusic()
+    {
+        _instance.SetVolume(_instance._musicVolumeName, 0);
         MusicIsOn = false;
+        ConditionChanged?.Invoke();
+    }
+
+    public static void ResumeMusic()
+    {
+        _instance.SetVolume(_instance._musicVolumeName, _instance._musicNormalizedVolume);
+        MusicIsOn = true;
+        ConditionChanged?.Invoke();
     }
 
     private void OnBackgroundChanged(bool isOut)
@@ -98,11 +113,17 @@ public class Sound : MonoBehaviour
 
     private void TurnSoundOn()
     {
-        _instance._mixer.SetFloat(_instance._masterVolumeName, _instance._maxValue);
+        _mixer.SetFloat(_instance._masterVolumeName, _instance._maxValue);
     }
 
     private void TurnSoundOff()
     {
-        _instance._mixer.SetFloat(_instance._masterVolumeName, _instance._minValue);
+        _mixer.SetFloat(_instance._masterVolumeName, _instance._minValue);
+    }
+
+    private void SetVolume(string volumeName, float normalizedValue)
+    {
+        float poweredValue = Mathf.Pow(normalizedValue, ValuePower);
+        _mixer.SetFloat(volumeName, Mathf.Lerp(_minValue, _maxValue, poweredValue));
     }
 }

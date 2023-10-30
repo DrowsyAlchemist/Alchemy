@@ -37,7 +37,7 @@ public class SoundOnOffButton : MonoBehaviour
         }
     }
 
-    private void OnSoundConditionChanged(bool isOn)
+    private void OnSoundConditionChanged()
     {
         if (Sound.IsOn)
             _image.sprite = Sound.TurnedOnSprite;

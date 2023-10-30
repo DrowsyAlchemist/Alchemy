@@ -14,12 +14,8 @@ public class Menu : MonoBehaviour
             button.Clicked += OnButtonClick;
             button.ClosePanel();
         }
-        Close();
-    }
-
-    private void OnEnable()
-    {
         OnButtonClick(_menuButtons[0]);
+        Close();
     }
 
     public void Open()
