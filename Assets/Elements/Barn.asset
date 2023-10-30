@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Barn
   _lable: "\u0410\u043C\u0431\u0430\u0440"
-  _sprite: {fileID: 21300000, guid: 2e0f8671e751e19439bbe5091c64b1d8, type: 3}
+  _sprite: {fileID: 21300000, guid: 0988e4817004cbd4fb0167127015af40, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
     _secondElement: {fileID: 11400000, guid: c508d5b57a19ae74f89952cfafa0145d, type: 2}
@@ -22,4 +22,6 @@ MonoBehaviour:
     _secondElement: {fileID: 11400000, guid: 2c0a7c16c8156834d8666193432b975e, type: 2}
   - _firstElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
     _secondElement: {fileID: 11400000, guid: b0937334f0f479546bc69fb7838ca906, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: ada2fa01b72a1064396df1fe5cdf4b01, type: 2}
+    _result: {fileID: 11400000, guid: 8935b22303389bb458023104912fbdc2, type: 2}

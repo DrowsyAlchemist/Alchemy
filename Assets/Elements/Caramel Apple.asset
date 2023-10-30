@@ -15,7 +15,7 @@ MonoBehaviour:
   _id: Caramel Apple
   _lable: "\u041A\u0430\u0440\u0430\u043C\u0435\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u0435
     \u044F\u0431\u043B\u043E\u043A\u043E"
-  _sprite: {fileID: 21300000, guid: 224238837f8d932498abd8aec693b24e, type: 3}
+  _sprite: {fileID: 21300000, guid: 4186fbc17c35290418daad35821766b8, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ff9432d522f62ea4281adbb332e03003, type: 2}
     _secondElement: {fileID: 11400000, guid: 7097e2de6b32fa7428a8a04770b73835, type: 2}

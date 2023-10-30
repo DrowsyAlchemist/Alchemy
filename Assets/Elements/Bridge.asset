@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Bridge
   _lable: "\u041C\u043E\u0441\u0442"
-  _sprite: {fileID: 21300000, guid: 1252c72f1f616f74287c23c65050e1f2, type: 3}
+  _sprite: {fileID: 21300000, guid: cb1144fa610ba074a827eaadc6044e52, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 9cd97d0b8adb45147b39eaa4769059d4, type: 2}
     _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}

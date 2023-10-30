@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Antarctica
   m_EditorClassIdentifier: 
   _id: Antarctica
-  _lable: "\u0410\u043D\u0442\u0430\u0440\u043A\u0442\u0438\u0434\u0430"
-  _sprite: {fileID: 21300000, guid: 17559110f35ae6b4e84c87e3d1ba494e, type: 3}
+  _lable: "\u0410\u043D\u0442\u0430\u0440\u043A\u0442\u0438\u043A\u0430"
+  _sprite: {fileID: 21300000, guid: 57d162a9d1c10b547bda018c710f9a82, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 1c76d10c69aa84e479cc3ba26c4470ec, type: 2}
     _secondElement: {fileID: 11400000, guid: e8ed961991c20674ab1887fbdaa7ec34, type: 2}

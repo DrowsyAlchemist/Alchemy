@@ -14,8 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Castle
   _lable: "\u0417\u0430\u043C\u043E\u043A"
-  _sprite: {fileID: 21300000, guid: 363290fccd23f5d48beb5a6118d2911c, type: 3}
+  _sprite: {fileID: 21300000, guid: 4037a15643ec82f42b11a4752b1e8d1e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
     _secondElement: {fileID: 11400000, guid: 22423c05b2de9f04dacb473f70cf8270, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: fdaffbc9be794d147a75218e135bd858, type: 2}
+  - _secondElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
+    _result: {fileID: 11400000, guid: 223d0046e432be54f8eee11625ef1363, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 30c0549f0afb2b747abacbf8e5e8a732, type: 2}
+    _result: {fileID: 11400000, guid: fc212b6f76ee8d74a9573f6b51b7beb0, type: 2}
+  - _secondElement: {fileID: 11400000, guid: c4f234f4bb10e3546a89c7a7a9bf4c9b, type: 2}
+    _result: {fileID: 11400000, guid: 8a636698e67a3114b96695347cb78e89, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
+    _result: {fileID: 11400000, guid: 3fcc662c6a7734540950817839082964, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 2caf182d3b5faf5409f69be315e97ccc, type: 2}
+    _result: {fileID: 11400000, guid: f190ed2b54596ff4fbc55131fb8dd700, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Beehive
   _lable: "\u0423\u043B\u0435\u0439"
-  _sprite: {fileID: 21300000, guid: fb561c25d70f7b641aa220ad6f954a01, type: 3}
+  _sprite: {fileID: 21300000, guid: adb7bb571949635488ea76cc1a195b1f, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: c6cddc18d62d4a647bdff51a2d31b279, type: 2}
     _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}

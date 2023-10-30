@@ -15,8 +15,10 @@ MonoBehaviour:
   _id: Christmas Stocking
   _lable: "\u0420\u043E\u0436\u0434\u0435\u0441\u0442\u0432\u0435\u043D\u0441\u043A\u0438\u0439
     \u0447\u0443\u043B\u043E\u043A"
-  _sprite: {fileID: 21300000, guid: e5ef5c31bfa863843b2e27c36407b3f5, type: 3}
+  _sprite: {fileID: 21300000, guid: 380592b8f98ab8241a3e0740c9ea0255, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4a3c5c9195646924a8c142788a30e045, type: 2}
     _secondElement: {fileID: 11400000, guid: c965b1c3a6f832449bc033cb08d25d72, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: e8c5f8dc37899b740816375492dc50eb, type: 2}
+    _result: {fileID: 11400000, guid: 14512c61d15b115439c928b4cd5d5b7c, type: 2}

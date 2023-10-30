@@ -40,8 +40,8 @@ public sealed class GameInitialize : MonoBehaviour, IMergeHandler
 
     private IEnumerator Start()
     {
-#if !UNITY_WEBGL || UNITY_EDITOR
-        Init();
+#if UNITY_EDITOR
+        Settings.CoroutineObject.StartCoroutine(Init());
         yield break;
 #endif
         while (YandexGamesSdk.IsInitialized == false)
@@ -49,10 +49,10 @@ public sealed class GameInitialize : MonoBehaviour, IMergeHandler
 
         GameAnalytics.Initialize();
         InterstitialAd.Show(onOpenCallback: () => Sound.Mute(), onCloseCallback: (_) => Sound.TurnOn());
-        Init();
+        Settings.CoroutineObject.StartCoroutine(Init());
     }
 
-    private void Init()
+    private IEnumerator Init()
     {
 #if UNITY_EDITOR
         bool isPlayerAuthorized = false;
@@ -61,6 +61,10 @@ public sealed class GameInitialize : MonoBehaviour, IMergeHandler
 
 #endif
         _saver = Saver.Create(_elementsStorage, isPlayerAuthorized);
+
+        while (_saver.IsReady == false)
+            yield return null;
+
         OpenInitialElements();
         _elementsStorage.Init();
         _menu.Init();
@@ -75,14 +79,15 @@ public sealed class GameInitialize : MonoBehaviour, IMergeHandler
         _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
         _score.Init(isPlayerAuthorized);
         _leaderboardView.Init(isPlayerAuthorized, _score);
-        _fadeImage.Deactivate();
 
 #if UNITY_EDITOR
-        return;
+        _fadeImage.Deactivate();
+        yield break;
 #endif
-        YandexGamesSdk.GameReady();
         string systemLang = YandexGamesSdk.Environment.GetCurrentLang();
         LeanLocalization.SetCurrentLanguageAll(systemLang);
+        _fadeImage.Deactivate();
+        YandexGamesSdk.GameReady();
     }
 
     public void OpenAllElements()
@@ -145,8 +150,8 @@ public sealed class GameInitialize : MonoBehaviour, IMergeHandler
 
     private void OpenNewElement(Element element)
     {
-        _score.AddScore(Settings.GameSettings.PointsForOpenedElement);
         element.Open();
+        _score.AddScore(Settings.GameSettings.PointsForOpenedElement);
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
     }
 

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Cactus
   _lable: "\u041A\u0430\u043A\u0442\u0443\u0441"
-  _sprite: {fileID: 21300000, guid: 027ea19ffc59d554eb5d02e8842304e9, type: 3}
+  _sprite: {fileID: 21300000, guid: 286d759700689be4d99b1a97e927ca97, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
     _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}

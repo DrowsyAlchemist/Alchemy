@@ -14,14 +14,17 @@ public class Saver
     private readonly ElementsStorage _elementsStorage;
     private readonly StringBuilder _saveDataBuilder = new();
 
+    public bool IsReady { get; private set; } = false;
+
     private Saver(ElementsStorage elementsStorage, bool isPlayerAuthorized)
     {
         _isPlayerAuthorized = isPlayerAuthorized;
         _elementsStorage = elementsStorage;
-        Load();
 
         foreach (var element in _elementsStorage.SortedElements)
             element.Opened += OnElementOpened;
+
+        Load();
     }
 
     public static Saver Create(ElementsStorage elementsStorage, bool isPlayerAuthorizedge)
@@ -69,6 +72,7 @@ public class Saver
         if (_isPlayerAuthorized)
         {
             PlayerAccount.SetCloudSaveData(jsonData);
+            Debug.Log("Saved: " + jsonData);
         }
         else
         {
@@ -79,32 +83,27 @@ public class Saver
 
     private void Load()
     {
-        string jsonSaves = string.Empty;
-
         if (_isPlayerAuthorized)
-            PlayerAccount.GetCloudSaveData(onSuccessCallback: (result) => jsonSaves = result, onErrorCallback: (error) => Debug.Log("Saves load error: " + error));
+            PlayerAccount.GetCloudSaveData(onSuccessCallback: (result) => SetLoadedData(result), onErrorCallback: (error) => Debug.Log("Saves load error: " + error));
         else
-            jsonSaves = PlayerPrefs.GetString(SavesStorage);
+            SetLoadedData(PlayerPrefs.GetString(SavesStorage));
+    }
 
-        try
-        {
+    private void SetLoadedData(string jsonData)
+    {
+        var savedElements = JsonUtility.FromJson<SavedElements>(jsonData);
 
-            var savedElements = JsonUtility.FromJson<SavedElements>(jsonSaves);
+        if (savedElements == null)
+            Debug.Log("savedElements is null");
+        else
+            Debug.Log("Savedelements: " + savedElements.Elements);
 
-            if (savedElements == null)
-                Debug.Log("savedElements is null");
-            else
-                Debug.Log("Savedelements: " + savedElements.Elements);
+        if (string.IsNullOrEmpty(jsonData) == false)
+            _saveDataBuilder.Append(savedElements.Elements);
+        else
+            Debug.Log("jsonData is null or empty");
 
-            if (string.IsNullOrEmpty(jsonSaves) == false)
-                _saveDataBuilder.Append(savedElements.Elements);
-            else
-                Debug.Log("jsonData is null or empty");
-        }
-        catch (Exception e)
-        {
-            Debug.Log("CATCHED. Exeption: " + e.Message + e.StackTrace);
-        }
+        IsReady = true;
     }
 
     [Serializable]

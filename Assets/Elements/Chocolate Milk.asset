@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Chocolate Milk
   _lable: "\u0428\u043E\u043A\u043E\u043B\u0430\u0434\u043D\u043E\u0435 \u043C\u043E\u043B\u043E\u043A\u043E"
-  _sprite: {fileID: 21300000, guid: 4bd9a3ee71b5d134b8734ade10991973, type: 3}
+  _sprite: {fileID: 21300000, guid: 95e7825ac803aa74591f0dce7ff9749b, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 193a7078bd2168248bb2c75a1bfafb97, type: 2}
     _secondElement: {fileID: 11400000, guid: 7c081a78d6d8abf428f9260c1afbaa76, type: 2}

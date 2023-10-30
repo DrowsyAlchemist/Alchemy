@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Chimney
   _lable: "\u0414\u044B\u043C\u043E\u0445\u043E\u0434"
-  _sprite: {fileID: 21300000, guid: a53b72f077c4b7748a6a6fad721874c3, type: 3}
+  _sprite: {fileID: 21300000, guid: b4405f124744b6d498929de43cc4e49a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
     _secondElement: {fileID: 11400000, guid: 11f3200454621474ab3fd2eb17861224, type: 2}
@@ -22,4 +22,6 @@ MonoBehaviour:
     _secondElement: {fileID: 11400000, guid: d686ea1d16761c74694819355be05264, type: 2}
   - _firstElement: {fileID: 11400000, guid: c965b1c3a6f832449bc033cb08d25d72, type: 2}
     _secondElement: {fileID: 11400000, guid: d686ea1d16761c74694819355be05264, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: e8c5f8dc37899b740816375492dc50eb, type: 2}
+    _result: {fileID: 11400000, guid: 14512c61d15b115439c928b4cd5d5b7c, type: 2}

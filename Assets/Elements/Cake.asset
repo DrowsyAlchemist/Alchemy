@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Cake
   _lable: "\u0422\u043E\u0440\u0442"
-  _sprite: {fileID: 21300000, guid: 9408057291f88e34e9bbcedf0c41bd75, type: 3}
+  _sprite: {fileID: 21300000, guid: 1945edd71974d8c4ba6a4f743084eba3, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: a7cc456e627395443a3dcf554d44d689, type: 2}
     _secondElement: {fileID: 11400000, guid: 9c3b8d2363b398a44bb3b8d4752cade4, type: 2}

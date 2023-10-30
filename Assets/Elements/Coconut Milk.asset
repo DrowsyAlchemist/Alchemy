@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Coconut Milk
   _lable: "\u041A\u043E\u043A\u043E\u0441\u043E\u0432\u043E\u0435 \u043C\u043E\u043B\u043E\u043A\u043E"
-  _sprite: {fileID: 21300000, guid: b6b3461a2f3965d45bcb3de5af33164d, type: 3}
+  _sprite: {fileID: 21300000, guid: 350dced604d19394ba89336554701bee, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 0817a63286c40b84aa59356398289c7c, type: 2}
     _secondElement: {fileID: 11400000, guid: 7c081a78d6d8abf428f9260c1afbaa76, type: 2}

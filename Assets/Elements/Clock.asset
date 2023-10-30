@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Clock
   _lable: "\u0427\u0430\u0441\u044B"
-  _sprite: {fileID: 21300000, guid: 8d82d25f580270841bdac786bc1fac4d, type: 3}
+  _sprite: {fileID: 21300000, guid: b7bd6b13619221e47a003a5ec19a92e1, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
     _secondElement: {fileID: 11400000, guid: 158e079c518ceba4a95a18b7d314f6c5, type: 2}
@@ -27,3 +27,7 @@ MonoBehaviour:
     _result: {fileID: 11400000, guid: 8619379c9b782984798d1e1a9dabe56e, type: 2}
   - _secondElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
     _result: {fileID: 11400000, guid: 8760eec2f8043fe49aadecd026cee9e6, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: f55b53a8148b6e749bdbf0f2bf556d9e, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}
+    _result: {fileID: 11400000, guid: efaa8350b9e8b574a83862c9a4bef7bf, type: 2}

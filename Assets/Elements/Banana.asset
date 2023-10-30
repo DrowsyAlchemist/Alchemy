@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Banana
   _lable: "\u0411\u0430\u043D\u0430\u043D"
-  _sprite: {fileID: 21300000, guid: 26f24b4a651a8a94d81f7320c8c38af5, type: 3}
+  _sprite: {fileID: 21300000, guid: e26dca3dd3350c84788846fc8f78167b, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}
     _secondElement: {fileID: 11400000, guid: 61870218f39b1c0418f6e662f80c52bd, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 4096541e6af17ef42ac8f49d8abedfe6, type: 2}
+    _result: {fileID: 11400000, guid: 8815c85b467e8af498b7ebb84a855162, type: 2}

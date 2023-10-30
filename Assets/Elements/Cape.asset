@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Cape
   _lable: "\u041F\u043B\u0430\u0449"
-  _sprite: {fileID: 21300000, guid: c52fb9670095c48469c71933eebec3d3, type: 3}
+  _sprite: {fileID: 21300000, guid: a33c89db050b67748bc70066c648e299, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 965c1df2e4fcc0041a475448f8562fde, type: 2}
     _secondElement: {fileID: 11400000, guid: ddc85a30a1db7ac43a097c0ce94a8505, type: 2}

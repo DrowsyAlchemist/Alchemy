@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Cart
   _lable: "\u0422\u0435\u043B\u0435\u0436\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: 6c2a80b6063612c48b1f85142ee5fcbf, type: 3}
+  _sprite: {fileID: 21300000, guid: 629a92cde671d0e48a6fe7b56fe48a27, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2fde0860edc0d6447af142a195680b08, type: 2}
     _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}

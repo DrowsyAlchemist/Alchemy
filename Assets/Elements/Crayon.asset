@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Crayon
   _lable: "\u0426\u0432\u0435\u0442\u043D\u044B\u0435 \u043A\u0430\u0440\u0430\u043D\u0434\u0430\u0448\u0438"
-  _sprite: {fileID: 21300000, guid: bc0eaf629b93a5c418e590d13656acd6, type: 3}
+  _sprite: {fileID: 21300000, guid: 3e1358cacefd94748a00de064c0c9527, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5e7a7995d420ef643b408a17d417c3e1, type: 2}
     _secondElement: {fileID: 11400000, guid: 30fa52d09f5e1d841b9035548e9dd9e9, type: 2}
   - _firstElement: {fileID: 11400000, guid: 1b2958aea0c73c54999fd9ab3663cab0, type: 2}
     _secondElement: {fileID: 11400000, guid: 30fa52d09f5e1d841b9035548e9dd9e9, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
+    _result: {fileID: 11400000, guid: 099c2fed0c62f5b4181b6ceb4c11f221, type: 2}

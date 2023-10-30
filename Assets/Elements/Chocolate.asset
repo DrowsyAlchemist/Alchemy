@@ -14,8 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Chocolate
   _lable: "\u0428\u043E\u043A\u043E\u043B\u0430\u0434"
-  _sprite: {fileID: 21300000, guid: 44051e7dd997ad940a9276ee9794264d, type: 3}
+  _sprite: {fileID: 21300000, guid: 4fe41b12b45a00444b0465b3c9a017d4, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 597aa2bcf45379a4dacb20c41fa2725a, type: 2}
     _secondElement: {fileID: 11400000, guid: 05151ed70e48bd049b580bf76c91ef87, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: a7cc456e627395443a3dcf554d44d689, type: 2}
+    _result: {fileID: 11400000, guid: 6a5f3fb75409b7a43b6f0dabd0977108, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 7c081a78d6d8abf428f9260c1afbaa76, type: 2}
+    _result: {fileID: 11400000, guid: 4621826aa7f30ab4f84ef6aba107af5f, type: 2}
+  - _secondElement: {fileID: 11400000, guid: a96507007ab1aa14392343f935f535ee, type: 2}
+    _result: {fileID: 11400000, guid: 05cc247e68918d443b05ac1e04d5d25c, type: 2}

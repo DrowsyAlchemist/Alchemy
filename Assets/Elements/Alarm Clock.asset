@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Alarm Clock
   _lable: "\u0411\u0443\u0434\u0438\u043B\u044C\u043D\u0438\u043A"
-  _sprite: {fileID: 21300000, guid: 1101bcb1eb145054bb8947497bae3d09, type: 3}
+  _sprite: {fileID: 21300000, guid: 34dcdcec37bdf6a40a19085249db8363, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 0dce544b6b3073e4d9643eb818f791c3, type: 2}
     _secondElement: {fileID: 11400000, guid: 7dc3b83afc0a65645ae5d1c2c134c818, type: 2}

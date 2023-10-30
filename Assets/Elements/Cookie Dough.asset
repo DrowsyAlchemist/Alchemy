@@ -14,14 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Cookie Dough
   _lable: "\u0422\u0435\u0441\u0442\u043E \u0434\u043B\u044F \u043F\u0435\u0447\u0435\u043D\u044C\u044F"
-  _sprite: {fileID: 21300000, guid: f9e4e95bb071b3845b060ed80b315028, type: 3}
+  _sprite: {fileID: 21300000, guid: 7a94e739ec348184186cfe6a75dfa4a4, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: a7cc456e627395443a3dcf554d44d689, type: 2}
     _secondElement: {fileID: 11400000, guid: 05151ed70e48bd049b580bf76c91ef87, type: 2}
   - _firstElement: {fileID: 11400000, guid: a7cc456e627395443a3dcf554d44d689, type: 2}
     _secondElement: {fileID: 11400000, guid: 193a7078bd2168248bb2c75a1bfafb97, type: 2}
   _recipesWithElement:
-  - _secondElement: {fileID: 11400000, guid: 98afd116610730748b4f041f0a0314db, type: 2}
-    _result: {fileID: 11400000, guid: b1d7276203735b341912e4b0ea571b49, type: 2}
-  - _secondElement: {fileID: 11400000, guid: 2fde0860edc0d6447af142a195680b08, type: 2}
-    _result: {fileID: 11400000, guid: b1d7276203735b341912e4b0ea571b49, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 05151ed70e48bd049b580bf76c91ef87, type: 2}
+    _result: {fileID: 11400000, guid: 556778023c8275b41af7026252da6417, type: 2}

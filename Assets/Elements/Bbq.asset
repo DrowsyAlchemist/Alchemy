@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: BBQ
   _lable: "\u0411\u0430\u0440\u0431\u0435\u043A\u044E"
-  _sprite: {fileID: 21300000, guid: dbe45027a90d2e94192821407bfaa3e3, type: 3}
+  _sprite: {fileID: 21300000, guid: 796af40ea56503d4bba5f34b9e02e3db, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 11f3200454621474ab3fd2eb17861224, type: 2}
     _secondElement: {fileID: 11400000, guid: 2eb88271ce8c0144f85e48dd399c0cff, type: 2}

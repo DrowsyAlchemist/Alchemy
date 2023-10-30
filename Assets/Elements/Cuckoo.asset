@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Cuckoo
   _lable: "\u041A\u0443\u043A\u0443\u0448\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: a66df1c06d7801f4e80a61dc17dca910, type: 3}
+  _sprite: {fileID: 21300000, guid: 0d2585dccb7d1ad42ae58b6564247578, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
     _secondElement: {fileID: 11400000, guid: 0dce544b6b3073e4d9643eb818f791c3, type: 2}

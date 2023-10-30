@@ -14,8 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Carbon Dioxide
   _lable: "\u0423\u0433\u043B\u0435\u043A\u0438\u0441\u043B\u044B\u0439 \u0433\u0430\u0437"
-  _sprite: {fileID: 21300000, guid: ccf69273ec6550449a2573fd8300c7fd, type: 3}
+  _sprite: {fileID: 21300000, guid: d521fdcfb112114499f369e5aaf3fd5a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 5868d95352437a04dacbe37690249429, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
+    _result: {fileID: 11400000, guid: 425fc6923d4419747a51865970de8536, type: 2}
+  - _secondElement: {fileID: 11400000, guid: f186281a2a3d5f24db563e9052d98546, type: 2}
+    _result: {fileID: 11400000, guid: 425fc6923d4419747a51865970de8536, type: 2}
+  - _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
+    _result: {fileID: 11400000, guid: 5868d95352437a04dacbe37690249429, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+    _result: {fileID: 11400000, guid: 95a5e8071b7d3a94a97fded8af57da4d, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ec21e2563dda2a547b4f5a989e7b0f9b, type: 2}
+    _result: {fileID: 11400000, guid: 95a5e8071b7d3a94a97fded8af57da4d, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
+    _result: {fileID: 11400000, guid: 95a5e8071b7d3a94a97fded8af57da4d, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 32f8a61c70e00874692c992534b4752a, type: 2}
+    _result: {fileID: 11400000, guid: 6e35d44353cff734db201773d57cdabe, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 6b6e4faac3ae3484eb63825d5b215e3b, type: 2}
+    _result: {fileID: 11400000, guid: 6e35d44353cff734db201773d57cdabe, type: 2}

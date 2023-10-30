@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Bandage
   _lable: "\u0411\u0438\u043D\u0442"
-  _sprite: {fileID: 21300000, guid: 50ec63ff5a7ba7c42a566399632fd618, type: 3}
+  _sprite: {fileID: 21300000, guid: 75040bfdc75f3ff498baa09444e40d76, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 82f3cf76587328c408cfa3cc1060907f, type: 2}
     _secondElement: {fileID: 11400000, guid: ddc85a30a1db7ac43a097c0ce94a8505, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: cd21883b495bd1e4b86cdd2779fd8e8c, type: 2}
+    _result: {fileID: 11400000, guid: 2503a9688fd608346819fd092e4a6c71, type: 2}

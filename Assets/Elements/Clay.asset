@@ -14,8 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Clay
   _lable: "\u0413\u043B\u0438\u043D\u0430"
-  _sprite: {fileID: 21300000, guid: 39648e95fe55da748acc578b437a5124, type: 3}
+  _sprite: {fileID: 21300000, guid: d65d5f4b54d75704190d9776d479ff53, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
     _secondElement: {fileID: 11400000, guid: 85ea3114226562f4f8910a34ef7b7670, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+    _result: {fileID: 11400000, guid: e596b43e1acfa8c43b49d5bb05c41157, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 2fde0860edc0d6447af142a195680b08, type: 2}
+    _result: {fileID: 11400000, guid: e596b43e1acfa8c43b49d5bb05c41157, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
+    _result: {fileID: 11400000, guid: e596b43e1acfa8c43b49d5bb05c41157, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 5049d9451a522f04dbad2d899ed209d5, type: 2}
+    _result: {fileID: 11400000, guid: 57130ce83cf27884bb52bdfbb7c2cc88, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
+    _result: {fileID: 11400000, guid: d686ea1d16761c74694819355be05264, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}
+    _result: {fileID: 11400000, guid: d686ea1d16761c74694819355be05264, type: 2}

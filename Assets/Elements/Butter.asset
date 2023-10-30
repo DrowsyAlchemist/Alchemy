@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Butter
   _lable: "\u041C\u0430\u0441\u043B\u043E"
-  _sprite: {fileID: 21300000, guid: 72f8d926b06c64040bb148bbbc8d73aa, type: 3}
+  _sprite: {fileID: 21300000, guid: f818a09199465894184f697c25d792d7, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 7c081a78d6d8abf428f9260c1afbaa76, type: 2}
     _secondElement: {fileID: 11400000, guid: ec21e2563dda2a547b4f5a989e7b0f9b, type: 2}

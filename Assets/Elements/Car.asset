@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Car
   _lable: "\u041C\u0430\u0448\u0438\u043D\u0430"
-  _sprite: {fileID: 21300000, guid: b3977636a7f09ce4faef3c27040e337a, type: 3}
+  _sprite: {fileID: 21300000, guid: 77614ad8a51c32246949d079bbc964f7, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2fde0860edc0d6447af142a195680b08, type: 2}
     _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
   _recipesWithElement:
+  - _secondElement: {fileID: 11400000}
+    _result: {fileID: 11400000, guid: 2e0fab7c0fa8b3040bdd66c23cb1572f, type: 2}
   - _secondElement: {fileID: 11400000, guid: b00fcb370e640424ba4e0232bed0dd14, type: 2}
     _result: {fileID: 11400000, guid: 16b56720113c7514581f224c104ac475, type: 2}
   - _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}

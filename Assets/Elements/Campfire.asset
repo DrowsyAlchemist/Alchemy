@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Campfire
   _lable: "\u041A\u043E\u0441\u0442\u0451\u0440"
-  _sprite: {fileID: 21300000, guid: 368ca0cbf4da0be41a004e61ec8f0120, type: 3}
+  _sprite: {fileID: 21300000, guid: d5f89c2663f9dd645ae42c0f89cf6d36, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
     _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
@@ -23,15 +23,21 @@ MonoBehaviour:
     _result: {fileID: 11400000, guid: dabd5c9843511594784077a24d4a8fe7, type: 2}
   - _secondElement: {fileID: 11400000, guid: 4f9aad5770c5d0e44a75c12060faaca2, type: 2}
     _result: {fileID: 11400000, guid: dabd5c9843511594784077a24d4a8fe7, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
+    _result: {fileID: 11400000, guid: 3f7160e06df4a57418c76d5c38e31f6d, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ddc85a30a1db7ac43a097c0ce94a8505, type: 2}
+    _result: {fileID: 11400000, guid: 00c9cb0cbe289a749b78d4220257cc09, type: 2}
   - _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
     _result: {fileID: 11400000, guid: 5529b45cefaf2614ab139d8917b6a0f6, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: 2caf182d3b5faf5409f69be315e97ccc, type: 2}
   - _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
     _result: {fileID: 11400000, guid: c965b1c3a6f832449bc033cb08d25d72, type: 2}
   - _secondElement: {fileID: 11400000, guid: d686ea1d16761c74694819355be05264, type: 2}
     _result: {fileID: 11400000, guid: c965b1c3a6f832449bc033cb08d25d72, type: 2}
   - _secondElement: {fileID: 11400000, guid: 7be785ceef6fbb24c8f4f70f78ac0cd2, type: 2}
     _result: {fileID: 11400000, guid: c965b1c3a6f832449bc033cb08d25d72, type: 2}
+  - _secondElement: {fileID: 11400000, guid: eed53aa0c55aa754cabedf71b3f69401, type: 2}
+    _result: {fileID: 11400000, guid: 2d61f5306ac698f4c80b80052fab852f, type: 2}
   - _secondElement: {fileID: 11400000, guid: 05151ed70e48bd049b580bf76c91ef87, type: 2}
     _result: {fileID: 11400000, guid: cf2556e9550d84449a117ed6820708b3, type: 2}
-  - _secondElement: {fileID: 11400000, guid: ddc85a30a1db7ac43a097c0ce94a8505, type: 2}
-    _result: {fileID: 11400000, guid: 00c9cb0cbe289a749b78d4220257cc09, type: 2}

@@ -2,13 +2,15 @@ using UnityEngine;
 using UnityEngine.Audio;
 using Agava.WebUtility;
 using System;
+using UnityEditor;
 
 public class Sound : MonoBehaviour
 {
     [SerializeField] private bool _muteOnAwake;
     [SerializeField] private AudioMixer _mixer;
     [SerializeField] private string _masterVolumeName = "MasterVolume";
-    [SerializeField] private float _maxValue = -20;
+    [SerializeField] private string _musicVolumeName = "MusicVolume";
+    [SerializeField] private float _maxValue = 0;
     [SerializeField] private float _minValue = -80;
 
     [SerializeField] private Sprite _turnedOnSprite;
@@ -16,24 +18,17 @@ public class Sound : MonoBehaviour
 
     [SerializeField] private AudioSource _backgroundMusic;
     [SerializeField] private AudioSource _clickSound;
-    [SerializeField] private AudioSource _sellSound;
     [SerializeField] private AudioSource _correctAnswerSound;
-    [SerializeField] private AudioSource _wrongAnswerSound;
-    [SerializeField] private AudioSource _wheelSound;
-    [SerializeField] private AudioSource _winPrizeSound;
 
     private static Sound _instance;
 
     public static bool IsOn { get; private set; }
+    public static bool MusicIsOn { get; private set; }
     public static Sprite TurnedOnSprite => _instance._turnedOnSprite;
     public static Sprite MuteSprite => _instance._muteSprite;
     public static AudioSource BackgroundMusic => _instance._backgroundMusic;
     public static AudioSource ClickSound => _instance._clickSound;
-    public static AudioSource SellSound => _instance._sellSound;
     public static AudioSource CorrectAnswerSound => _instance._correctAnswerSound;
-    public static AudioSource WrongAnswerSound => _instance._wrongAnswerSound;
-    public static AudioSource WheelSound => _instance._wheelSound;
-    public static AudioSource WinPrizeSound => _instance._winPrizeSound;
 
     public static event Action<bool> ConditionChanged;
 
@@ -52,6 +47,7 @@ public class Sound : MonoBehaviour
         else
             TurnOn();
 
+        OnMusic();
         WebApplication.InBackgroundChangeEvent += OnBackgroundChanged;
         ConditionChanged?.Invoke(false);
     }
@@ -73,6 +69,18 @@ public class Sound : MonoBehaviour
         _instance.TurnSoundOff();
         IsOn = false;
         ConditionChanged?.Invoke(false);
+    }
+
+    public static void OnMusic()
+    {
+        _instance._mixer.SetFloat(_instance._musicVolumeName, _instance._maxValue);
+        MusicIsOn = true;
+    }
+
+    public static void OffMusic()
+    {
+        _instance._mixer.SetFloat(_instance._musicVolumeName, _instance._minValue);
+        MusicIsOn = false;
     }
 
     private void OnBackgroundChanged(bool isOut)

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Chain
   _lable: "\u0426\u0435\u043F\u044C"
-  _sprite: {fileID: 21300000, guid: e0fb7e257d340744bb91be6046d1439f, type: 3}
+  _sprite: {fileID: 21300000, guid: f2b6799dcd7c048489d191010df28bd8, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
     _secondElement: {fileID: 11400000, guid: c11f1bbaed64c8744bd16870744b106b, type: 2}

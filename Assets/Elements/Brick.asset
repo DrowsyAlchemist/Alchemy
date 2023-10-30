@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Brick
   _lable: "\u041A\u0438\u0440\u043F\u0438\u0447"
-  _sprite: {fileID: 21300000, guid: beb062cdc3f25c5418760e39318e8824, type: 3}
+  _sprite: {fileID: 21300000, guid: d3da6e2ea5e143640943e0e6fbfcf511, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
     _secondElement: {fileID: 11400000, guid: 365f6d16601d380408e92269fede7428, type: 2}

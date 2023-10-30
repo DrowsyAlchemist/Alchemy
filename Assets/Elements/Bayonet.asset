@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Bayonet
   _lable: "\u0428\u0442\u044B\u043A"
-  _sprite: {fileID: 21300000, guid: b5f9ff79362a4874fa1bdfbe240abfdf, type: 3}
+  _sprite: {fileID: 21300000, guid: c2cbdf17749e7d549a724756ac5a9c9f, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4be4701d0db17224b83fef076d5e8f51, type: 2}
     _secondElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}

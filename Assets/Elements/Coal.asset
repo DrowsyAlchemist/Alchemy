@@ -14,10 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Coal
   _lable: "\u0423\u0433\u043E\u043B\u044C"
-  _sprite: {fileID: 21300000, guid: 67a7b09923a4d3e439ac995d33838a04, type: 3}
+  _sprite: {fileID: 21300000, guid: 7fcfe32241d2cab42ae5d8b7c9a90180, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
     _secondElement: {fileID: 11400000, guid: ec21e2563dda2a547b4f5a989e7b0f9b, type: 2}
   _recipesWithElement:
   - _secondElement: {fileID: 11400000, guid: ec21e2563dda2a547b4f5a989e7b0f9b, type: 2}
     _result: {fileID: 11400000, guid: b0aa5cf4a684f074980f2968646d8a67, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
+    _result: {fileID: 11400000, guid: b0aa5cf4a684f074980f2968646d8a67, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
+    _result: {fileID: 11400000, guid: 5e7a7995d420ef643b408a17d417c3e1, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
+    _result: {fileID: 11400000, guid: 712d6384182b7354e9630f19dc2bd756, type: 2}

@@ -14,12 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Cookie
   _lable: "\u041F\u0435\u0447\u0435\u043D\u044C\u0435"
-  _sprite: {fileID: 21300000, guid: d331c6b556e46d647930cd9006796d53, type: 3}
+  _sprite: {fileID: 21300000, guid: edcae0249c586ee4da3ac464d6ac361a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 6a5f3fb75409b7a43b6f0dabd0977108, type: 2}
     _secondElement: {fileID: 11400000, guid: 05151ed70e48bd049b580bf76c91ef87, type: 2}
   _recipesWithElement:
-  - _secondElement: {fileID: 11400000, guid: a7cc456e627395443a3dcf554d44d689, type: 2}
-    _result: {fileID: 11400000, guid: 6a5f3fb75409b7a43b6f0dabd0977108, type: 2}
-  - _secondElement: {fileID: 11400000, guid: e8c5f8dc37899b740816375492dc50eb, type: 2}
-    _result: {fileID: 11400000, guid: 14512c61d15b115439c928b4cd5d5b7c, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}
+    _result: {fileID: 11400000, guid: 4840c7b64904e5740b7d9623501eb97a, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Alligator
   _lable: "\u0410\u043B\u043B\u0438\u0433\u0430\u0442\u043E\u0440"
-  _sprite: {fileID: 21300000, guid: 7332eb2535aed5149b320558afc336b6, type: 3}
+  _sprite: {fileID: 21300000, guid: 6416043499f894249ab151505d8afb82, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 3de50a3430bf436458f560d55537a229, type: 2}
     _secondElement: {fileID: 11400000, guid: d695aa551ea721d4d8139893cda895bb, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Black hole
   _lable: "\u0427\u0451\u0440\u043D\u0430\u044F \u0434\u044B\u0440\u0430"
-  _sprite: {fileID: 21300000, guid: 412a59e275369c24f921a4ecd39cb0ab, type: 3}
+  _sprite: {fileID: 21300000, guid: e45c54b49ef13954984dca059172a2ca, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5cc14ab8b084f124c9c07b14abaa1e04, type: 2}
     _secondElement: {fileID: 11400000, guid: ec21e2563dda2a547b4f5a989e7b0f9b, type: 2}

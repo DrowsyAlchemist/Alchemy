@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Cookbook
   _lable: "\u041A\u0443\u043B\u0438\u043D\u0430\u0440\u043D\u0430\u044F \u043A\u043D\u0438\u0433\u0430"
-  _sprite: {fileID: 21300000, guid: e3c087760961f284ea18213a686289e7, type: 3}
+  _sprite: {fileID: 21300000, guid: 013eb4adfef446245b374f210bbcdaa7, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: a039adb921323974f94d21265d136dde, type: 2}
     _secondElement: {fileID: 11400000, guid: a039adb921323974f94d21265d136dde, type: 2}

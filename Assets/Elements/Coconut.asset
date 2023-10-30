@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Coconut
   _lable: "\u041A\u043E\u043A\u043E\u0441"
-  _sprite: {fileID: 21300000, guid: c6779d80db0cfe6488ec3849d22f4c5d, type: 3}
+  _sprite: {fileID: 21300000, guid: 3ea6d8eb83f98834690fa19d060c0c4d, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}
     _secondElement: {fileID: 11400000, guid: f2c305ae26e69734ba69032e5b9b9355, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 7c081a78d6d8abf428f9260c1afbaa76, type: 2}
+    _result: {fileID: 11400000, guid: 2e1aad90c4edbc54cbe09d79339548ea, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
+    _result: {fileID: 11400000, guid: 2e1aad90c4edbc54cbe09d79339548ea, type: 2}

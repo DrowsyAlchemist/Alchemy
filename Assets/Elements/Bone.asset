@@ -14,12 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Bone
   _lable: "\u041A\u043E\u0441\u0442\u044C"
-  _sprite: {fileID: 21300000, guid: 965782ed639fe274b9efd6dbbb8bc56e, type: 3}
+  _sprite: {fileID: 21300000, guid: 81040e9a2b441c648a2e44d00bf7553d, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: cd21883b495bd1e4b86cdd2779fd8e8c, type: 2}
     _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
   _recipesWithElement:
-  - _secondElement: {fileID: 11400000, guid: c764b195afbcb9f4691a4c9598f794e0, type: 2}
-    _result: {fileID: 11400000, guid: 06ad00d5144d4dd4495d54f9b6bb2efa, type: 2}
   - _secondElement: {fileID: 11400000, guid: 6c91102b7cd458a4187367eb594a0e19, type: 2}
     _result: {fileID: 11400000, guid: c6395597201c34d44bc9ed25fa351b07, type: 2}
+  - _secondElement: {fileID: 11400000}
+    _result: {fileID: 11400000, guid: 0f89350a09f168045811837acf7296b1, type: 2}
+  - _secondElement: {fileID: 11400000, guid: cde21fec23564644f9177584277e216c, type: 2}
+    _result: {fileID: 11400000, guid: dbfa9430efce4fe4f9ce4f347b5fd751, type: 2}

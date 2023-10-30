@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Confetti
   _lable: "\u041A\u043E\u043D\u0444\u0435\u0442\u0442\u0438"
-  _sprite: {fileID: 21300000, guid: bef799ae5b30c7a4fbafc291f3748250, type: 3}
+  _sprite: {fileID: 21300000, guid: 9a86272f8462f6f44a1c01724d22d54a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}
     _secondElement: {fileID: 11400000, guid: ca40b2160965d4e4a9b7bafdd7a930f3, type: 2}

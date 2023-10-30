@@ -14,19 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Airplane
   _lable: "\u0421\u0430\u043C\u043E\u043B\u0451\u0442"
-  _sprite: {fileID: 21300000, guid: cc15f4c83f51aed498da9a2d637d31c3, type: 3}
+  _sprite: {fileID: 21300000, guid: 57dfbcba64280684fbe8ba6311f76d77, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
     _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
   - _firstElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
     _secondElement: {fileID: 11400000, guid: 712d6384182b7354e9630f19dc2bd756, type: 2}
   _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 456b7efa58993634ab7152429ad3e512, type: 2}
+    _result: {fileID: 11400000, guid: c164ddd77d1ea2840aa46f24f1c4ce94, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}
+    _result: {fileID: 11400000, guid: bf94f79582093b947b6b0a645e9ae87d, type: 2}
+  - _secondElement: {fileID: 11400000, guid: ff8e966b5b5952644ba0670b13adfb53, type: 2}
+    _result: {fileID: 11400000, guid: bf94f79582093b947b6b0a645e9ae87d, type: 2}
+  - _secondElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
+    _result: {fileID: 11400000, guid: 65ab93268f0ccc049a39ca2b7608e446, type: 2}
+  - _secondElement: {fileID: 11400000, guid: b48a606b3d7c4ff4a9fa010cd2541c58, type: 2}
+    _result: {fileID: 11400000, guid: 65ab93268f0ccc049a39ca2b7608e446, type: 2}
   - _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
     _result: {fileID: 11400000, guid: b161c85d2c846a549adf9f7f8cf3b236, type: 2}
   - _secondElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}
     _result: {fileID: 11400000, guid: b161c85d2c846a549adf9f7f8cf3b236, type: 2}
   - _secondElement: {fileID: 11400000, guid: bebaefc52908c9c4f809dc9f68c8022f, type: 2}
     _result: {fileID: 11400000, guid: b161c85d2c846a549adf9f7f8cf3b236, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 013f31052ecd1cf41aee327c1e599a34, type: 2}
+    _result: {fileID: 11400000, guid: 2913604e35031ee44ac63ff2ca7d01e2, type: 2}
   - _secondElement: {fileID: 11400000, guid: 81f6e7d94f4cff5409c23eae7be5a4fc, type: 2}
     _result: {fileID: 11400000, guid: 5e0c1bc81c097a54398fdee047045fbe, type: 2}
   - _secondElement: {fileID: 11400000, guid: 0c1729aa1b8c06c4ea4b9e1765d5ecd9, type: 2}

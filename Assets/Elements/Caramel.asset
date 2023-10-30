@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Caramel
   _lable: "\u041A\u0430\u0440\u0430\u043C\u0435\u043B\u044C"
-  _sprite: {fileID: 21300000, guid: 7fec4da2703d49d4b829baf8ee4d2bac, type: 3}
+  _sprite: {fileID: 21300000, guid: 19a7b0942a097454a822b475857a4662, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 05151ed70e48bd049b580bf76c91ef87, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 7097e2de6b32fa7428a8a04770b73835, type: 2}
+    _result: {fileID: 11400000, guid: 185d9ce98158fce42b743c9e55f04f63, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Bicycle
   _lable: "\u0412\u0435\u043B\u043E\u0441\u0438\u043F\u0435\u0434"
-  _sprite: {fileID: 21300000, guid: e79864f82a68e0747877d14f673b1591, type: 3}
+  _sprite: {fileID: 21300000, guid: 57fa1d265926ba540bd04189edf029fc, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2fde0860edc0d6447af142a195680b08, type: 2}
     _secondElement: {fileID: 11400000, guid: 2fde0860edc0d6447af142a195680b08, type: 2}
@@ -22,6 +22,4 @@ MonoBehaviour:
   - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _result: {fileID: 11400000, guid: 092792658d5369143bfc6c34448a5d2e, type: 2}
   - _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
-    _result: {fileID: 11400000, guid: 03011f76348e980498d3b2f31e56ceb2, type: 2}
-  - _secondElement: {fileID: 11400000, guid: 712d6384182b7354e9630f19dc2bd756, type: 2}
     _result: {fileID: 11400000, guid: 03011f76348e980498d3b2f31e56ceb2, type: 2}

@@ -14,8 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Bee
   _lable: "\u041F\u0447\u0435\u043B\u0430"
-  _sprite: {fileID: 21300000, guid: 45772d56b7dfebd448efb15ad9313a4d, type: 3}
+  _sprite: {fileID: 21300000, guid: 57e6f28c14776a745b59e0620f16d8d2, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 622571748d2a8dd45b475b042f3addb4, type: 2}
     _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: d9e1cb8d21a87cc4d934c40af3eddd05, type: 2}
+    _result: {fileID: 11400000, guid: 1b2958aea0c73c54999fd9ab3663cab0, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 622571748d2a8dd45b475b042f3addb4, type: 2}
+    _result: {fileID: 11400000, guid: 530b4e3f320fd594aae6338005c7499c, type: 2}
+  - _secondElement: {fileID: 11400000, guid: d9e1cb8d21a87cc4d934c40af3eddd05, type: 2}
+    _result: {fileID: 11400000, guid: 530b4e3f320fd594aae6338005c7499c, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
+    _result: {fileID: 11400000, guid: d9e1cb8d21a87cc4d934c40af3eddd05, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
+    _result: {fileID: 11400000, guid: d9e1cb8d21a87cc4d934c40af3eddd05, type: 2}

@@ -14,8 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Butterfly
   _lable: "\u0411\u0430\u0431\u043E\u0447\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: 9dff7f5c8e3fe0048b7e6ffbcdfca7d8, type: 3}
+  _sprite: {fileID: 21300000, guid: 4ad9c1841d0471345966b3102f0ba9c9, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 622571748d2a8dd45b475b042f3addb4, type: 2}
     _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 779ecbf5c09925540b98dbacf97b00ff, type: 2}
+    _result: {fileID: 11400000, guid: f4055062dc092fe418179fd2f93091a8, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 30c0549f0afb2b747abacbf8e5e8a732, type: 2}
+    _result: {fileID: 11400000, guid: f4055062dc092fe418179fd2f93091a8, type: 2}

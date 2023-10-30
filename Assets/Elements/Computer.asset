@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Computer
   _lable: "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440"
-  _sprite: {fileID: 21300000, guid: ccb5a5cccb89c1c4fb26a5e3fdf93587, type: 3}
+  _sprite: {fileID: 21300000, guid: 4e54f6e8c4e20a248adff50cd05edb53, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
     _secondElement: {fileID: 11400000, guid: 4460400019dc60a4dbf8041a68359132, type: 2}

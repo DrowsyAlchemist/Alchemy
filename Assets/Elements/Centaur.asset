@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Centaur
   _lable: "\u041A\u0435\u043D\u0442\u0430\u0432\u0440"
-  _sprite: {fileID: 21300000, guid: f7d8608cd9927a048b805765a59b9377, type: 3}
+  _sprite: {fileID: 21300000, guid: 2a1a587a3ecb3d84cbf6836835238cd2, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 10469bb1fb36cd74fafb846f583bc9f1, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}

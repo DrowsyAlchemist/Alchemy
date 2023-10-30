@@ -14,10 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Alcohol
   _lable: "\u0410\u043B\u043A\u043E\u0433\u043E\u043B\u044C"
-  _sprite: {fileID: 21300000, guid: d94070b4f0a2c874d8f4ef9cbd738b34, type: 3}
+  _sprite: {fileID: 21300000, guid: 78b6186d535956744a107ad275873c86, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}
     _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
   - _firstElement: {fileID: 11400000, guid: f186281a2a3d5f24db563e9052d98546, type: 2}
     _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}
+    _result: {fileID: 11400000, guid: 73060e7daf7a88845841d60705db6830, type: 2}
+  - _secondElement: {fileID: 11400000, guid: f186281a2a3d5f24db563e9052d98546, type: 2}
+    _result: {fileID: 11400000, guid: 73060e7daf7a88845841d60705db6830, type: 2}
+  - _secondElement: {fileID: 11400000, guid: d9f4335a956339b44a9c53c5f6b12305, type: 2}
+    _result: {fileID: 11400000, guid: 4210363b2351f0545baa31bc474264e5, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 622571748d2a8dd45b475b042f3addb4, type: 2}
+    _result: {fileID: 11400000, guid: 4210363b2351f0545baa31bc474264e5, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 6f1f7ff7135292a4aa48f2c93197bb3b, type: 2}
+    _result: {fileID: 11400000, guid: bc0617cefc0706241a339e93011de06d, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: 1d2babebf823e4f47a34e537feee50a9, type: 2}

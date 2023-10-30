@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Bacon
   _lable: "\u0411\u0435\u043A\u043E\u043D"
-  _sprite: {fileID: 21300000, guid: ff9afec56017d274db1129a85dc3eb67, type: 3}
+  _sprite: {fileID: 21300000, guid: 4f964760213749e46b6f87dc2c3c86f0, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 20392d3695b38a34a8e84e4322f95cb2, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 4096541e6af17ef42ac8f49d8abedfe6, type: 2}
+    _result: {fileID: 11400000, guid: cefa92bdcfbadb44c9a5deef4ba8e769, type: 2}

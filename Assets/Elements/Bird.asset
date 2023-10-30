@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Bird
   _lable: "\u041F\u0442\u0438\u0446\u0430"
-  _sprite: {fileID: 21300000, guid: bbdb10cf951ed3c439b666404e6c7805, type: 3}
+  _sprite: {fileID: 21300000, guid: 7a56f4969b143fe46902f61a2ba3846a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 9f0d97070c0818543adcb8fa68d51192, type: 2}
     _secondElement: {fileID: 11400000, guid: 5049d9451a522f04dbad2d899ed209d5, type: 2}
@@ -30,6 +30,8 @@ MonoBehaviour:
   - _secondElement: {fileID: 11400000, guid: 456b7efa58993634ab7152429ad3e512, type: 2}
     _result: {fileID: 11400000, guid: c164ddd77d1ea2840aa46f24f1c4ce94, type: 2}
   - _secondElement: {fileID: 11400000, guid: 21a1e89e0de17e640a577f9c0b265757, type: 2}
+    _result: {fileID: 11400000, guid: 7897e39d4a772934a8f9d8d8727be3e4, type: 2}
+  - _secondElement: {fileID: 11400000, guid: d13b4af4169cb2941a4bf21992d2a3ba, type: 2}
     _result: {fileID: 11400000, guid: 7897e39d4a772934a8f9d8d8727be3e4, type: 2}
   - _secondElement: {fileID: 11400000, guid: b0937334f0f479546bc69fb7838ca906, type: 2}
     _result: {fileID: 11400000, guid: 04ceb103c0b594442b934664894d5fc3, type: 2}
@@ -91,8 +93,6 @@ MonoBehaviour:
     _result: {fileID: 11400000, guid: ab24ddc2fbbb4224987bfc1f14686065, type: 2}
   - _secondElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
     _result: {fileID: 11400000, guid: ab24ddc2fbbb4224987bfc1f14686065, type: 2}
-  - _secondElement: {fileID: 11400000, guid: 30fa52d09f5e1d841b9035548e9dd9e9, type: 2}
-    _result: {fileID: 11400000, guid: ef4bf78f29cf63c42ba99faefa7c7fa5, type: 2}
   - _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
     _result: {fileID: 11400000, guid: a1c443070d336ed48b09741009015116, type: 2}
   - _secondElement: {fileID: 11400000, guid: 081a97cd623803043b8a5c1e72ab1b11, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Cashmere
   _lable: "\u041A\u0430\u0448\u0435\u043C\u0438\u0440"
-  _sprite: {fileID: 21300000, guid: 8ca8f248aa6a35749856b6f3df395a9c, type: 3}
+  _sprite: {fileID: 21300000, guid: 3f0da66c8f010c5428ebf0831b0703ec, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5331b659194944b41a72ac4f98bafc53, type: 2}
     _secondElement: {fileID: 11400000, guid: db279d7dec673db4f85a6eaf74f46362, type: 2}

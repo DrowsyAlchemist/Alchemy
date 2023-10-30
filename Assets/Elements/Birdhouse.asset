@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Birdhouse
   _lable: "\u0421\u043A\u0432\u043E\u0440\u0435\u0447\u043D\u0438\u043A"
-  _sprite: {fileID: 21300000, guid: 454c892194a08c4498bea50447c7189d, type: 3}
+  _sprite: {fileID: 21300000, guid: 7ce2ece4ee7d9cc4ea7d20df4ac93ca6, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
     _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}

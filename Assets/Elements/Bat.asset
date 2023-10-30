@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Bat
   _lable: "\u041B\u0435\u0442\u0443\u0447\u0430\u044F \u043C\u044B\u0448\u044C"
-  _sprite: {fileID: 21300000, guid: e1807db8f8815c34686b3868ade2ff90, type: 3}
+  _sprite: {fileID: 21300000, guid: d1af27229bef60e419deab414c095d05, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 42b2fd3776c240a4fba9b693e141dd5b, type: 2}
     _secondElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}

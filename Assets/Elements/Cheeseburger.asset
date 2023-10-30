@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Cheeseburger
   _lable: "\u0427\u0438\u0437\u0431\u0443\u0440\u0433\u0435\u0440"
-  _sprite: {fileID: 21300000, guid: a3cc237ce80576d4290ce36e5542c1de, type: 3}
+  _sprite: {fileID: 21300000, guid: 70a42f01530ad5b4ba719ee0180a6fe3, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 055d1a856f7d27845908a8074cf42202, type: 2}
     _secondElement: {fileID: 11400000, guid: be143d47f20771d49a597c48d722f3af, type: 2}

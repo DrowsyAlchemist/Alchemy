@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Ambulance
   _lable: "\u0421\u043A\u043E\u0440\u0430\u044F \u043F\u043E\u043C\u043E\u0449\u044C"
-  _sprite: {fileID: 21300000, guid: b4dcf68ecac4515459a12f6940f29ecc, type: 3}
+  _sprite: {fileID: 21300000, guid: c714536675b89d141b07359ea3ace134, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5b147f1257991d149a0eead78d3e299e, type: 2}
     _secondElement: {fileID: 11400000, guid: 3a32e109fe467de429ca72b2886efdbd, type: 2}

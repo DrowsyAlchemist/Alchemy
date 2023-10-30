@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Beef Wellington
   _lable: "\u0413\u043E\u0432\u044F\u0434\u0438\u043D\u0430 \u0412\u0435\u043B\u043B\u0438\u043D\u0433\u0442\u043E\u043D"
-  _sprite: {fileID: 21300000, guid: e5c5d1cabdf01224f9e0b7423ef2e717, type: 3}
+  _sprite: {fileID: 21300000, guid: 1c2bb435b18656744bc17e26a2513fb9, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2eb88271ce8c0144f85e48dd399c0cff, type: 2}
     _secondElement: {fileID: 11400000, guid: a7cc456e627395443a3dcf554d44d689, type: 2}

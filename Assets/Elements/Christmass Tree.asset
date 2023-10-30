@@ -12,12 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
   m_Name: Christmass Tree
   m_EditorClassIdentifier: 
-  _id: Christmass Tree
+  _id: Christmas Tree
   _lable: "\u0401\u043B\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: fe3283dbbda84134d984b1a5fa76fefe, type: 3}
+  _sprite: {fileID: 21300000, guid: c9a9a3797d112054ebd3f87403ef1f4d, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2fa5a1f4a6843f541984de3a623aa62c, type: 2}
     _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
   - _firstElement: {fileID: 11400000, guid: 5cc14ab8b084f124c9c07b14abaa1e04, type: 2}
     _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 05151ed70e48bd049b580bf76c91ef87, type: 2}
+    _result: {fileID: 11400000, guid: 01045cdff4d6c444db7700311c306a43, type: 2}
+  - _secondElement: {fileID: 11400000, guid: e8c5f8dc37899b740816375492dc50eb, type: 2}
+    _result: {fileID: 11400000, guid: 14512c61d15b115439c928b4cd5d5b7c, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000, guid: e8c5f8dc37899b740816375492dc50eb, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}
+    _result: {fileID: 11400000, guid: f12ba965e360ea24b8cf4edf1496562e, type: 2}

@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Caviar
   _lable: "\u0421\u043E\u043B\u0451\u043D\u0430\u044F \u0438\u043A\u0440\u0430"
-  _sprite: {fileID: 21300000, guid: 107811e89fc22f94aba63730f996310a, type: 3}
+  _sprite: {fileID: 21300000, guid: 6763d2b5562aed644a7b8409d6c4990e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: eb6aa1e7be3b3d744b8af6fc11c329aa, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
   - _firstElement: {fileID: 11400000, guid: eb6aa1e7be3b3d744b8af6fc11c329aa, type: 2}
     _secondElement: {fileID: 11400000, guid: d22f18deba8d1b040b6d53881ae24a88, type: 2}
-  _recipesWithElement: []
+  _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 7a8684762d496c84d8557ab59ca480fd, type: 2}
+    _result: {fileID: 11400000, guid: 3079048cd971c2d47967e296372a18b5, type: 2}
