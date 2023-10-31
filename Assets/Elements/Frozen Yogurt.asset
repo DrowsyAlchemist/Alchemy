@@ -15,7 +15,7 @@ MonoBehaviour:
   _id: Frozen Yogurt
   _lable: "\u0417\u0430\u043C\u043E\u0440\u043E\u0436\u0435\u043D\u043D\u044B\u0439
     \u0439\u043E\u0433\u0443\u0440\u0442"
-  _sprite: {fileID: 21300000, guid: b97b4d8dc8352534d93d49898ec619aa, type: 3}
+  _sprite: {fileID: 21300000, guid: 8876d695db8f0c546a583c8df4e7fabd, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 31da5d2f52daf2948a333dae2e2ef351, type: 2}
     _secondElement: {fileID: 11400000, guid: 32f8a61c70e00874692c992534b4752a, type: 2}

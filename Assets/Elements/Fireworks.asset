@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Fireworks
   _lable: "\u0424\u0435\u0439\u0435\u0440\u0432\u0435\u0440\u043A"
-  _sprite: {fileID: 21300000, guid: 137a39906946b8a45b97e3f99ccafa79, type: 3}
+  _sprite: {fileID: 21300000, guid: 115615cc2db721f48be2dfe2bfe6540c, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: f90057cbf413a7c4fb294ca4a06476bb, type: 2}
     _secondElement: {fileID: 11400000, guid: 9f0d97070c0818543adcb8fa68d51192, type: 2}

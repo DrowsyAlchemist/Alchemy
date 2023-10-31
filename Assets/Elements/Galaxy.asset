@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Galaxy
   _lable: "\u0413\u0430\u043B\u0430\u043A\u0442\u0438\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: 4f5e6b514f5ca4449a628f5c875f7fee, type: 3}
+  _sprite: {fileID: 21300000, guid: de1320a4a16450a41aebcdd28d84b6e4, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5cc14ab8b084f124c9c07b14abaa1e04, type: 2}
     _secondElement: {fileID: 11400000, guid: 5cc14ab8b084f124c9c07b14abaa1e04, type: 2}

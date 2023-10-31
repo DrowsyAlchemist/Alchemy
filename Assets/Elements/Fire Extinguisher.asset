@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Fire Extinguisher
   _lable: "\u041E\u0433\u043D\u0435\u0442\u0443\u0448\u0438\u0442\u0435\u043B\u044C"
-  _sprite: {fileID: 21300000, guid: db3ad9fce674c3241adf2cc107e6d827, type: 3}
+  _sprite: {fileID: 21300000, guid: 132acf792008287439cdd7b7c0994e20, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
     _secondElement: {fileID: 11400000, guid: a199436e68840dc40b3aeb80235d7e36, type: 2}

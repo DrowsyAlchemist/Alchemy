@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Gnome
   _lable: "\u0413\u043D\u043E\u043C"
-  _sprite: {fileID: 21300000, guid: e071f9edc5891cf498497127bfaaa730, type: 3}
+  _sprite: {fileID: 21300000, guid: 2b941c438f031b14d83d172a53c0744b, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4f9aad5770c5d0e44a75c12060faaca2, type: 2}
     _secondElement: {fileID: 11400000, guid: ddcdda85e61445e42b0fb9e741996174, type: 2}

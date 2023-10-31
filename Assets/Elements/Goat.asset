@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Goat
   _lable: "\u041A\u043E\u0437\u0451\u043B"
-  _sprite: {fileID: 21300000, guid: b226c352d36aa6f49af81c18eeb94dac, type: 3}
+  _sprite: {fileID: 21300000, guid: a33b0083e7bccf94ebcfca8679da3437, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: c508d5b57a19ae74f89952cfafa0145d, type: 2}
     _secondElement: {fileID: 11400000, guid: 3659d2203c3214b4b8e70e7413967f35, type: 2}

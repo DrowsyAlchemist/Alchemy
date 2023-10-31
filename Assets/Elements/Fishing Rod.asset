@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Fishing Rod
   _lable: "\u0423\u0434\u043E\u0447\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: f5df0773c59fb224f8b4a15ecfa88eaa, type: 3}
+  _sprite: {fileID: 21300000, guid: 44935caae7394b340ab06bd75f4a3dd8, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
     _secondElement: {fileID: 11400000, guid: 3203e04fde19c9347bfd6219beb787cf, type: 2}

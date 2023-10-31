@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Electricity
   _lable: "\u042D\u043B\u0435\u043A\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u043E"
-  _sprite: {fileID: 21300000, guid: 106217215a1a8da4eaf153b547bd412d, type: 3}
+  _sprite: {fileID: 21300000, guid: 01d46eddce751ca489696c0475e62442, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
     _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}

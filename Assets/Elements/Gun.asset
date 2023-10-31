@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Gun
   _lable: "\u041E\u0440\u0443\u0436\u0438\u0435"
-  _sprite: {fileID: 21300000, guid: c6e70a7ea8b84f2438e36a8c9bf9f020, type: 3}
+  _sprite: {fileID: 21300000, guid: 3fcb22db20b14b04fb09bc13b9cc8817, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
     _secondElement: {fileID: 11400000, guid: 7010e2c44c7e5ed4bb7df1672822efef, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Fridge
   _lable: "\u0425\u043E\u043B\u043E\u0434\u0438\u043B\u044C\u043D\u0438\u043A"
-  _sprite: {fileID: 21300000, guid: 1d5c0f927b4cbde43ae5a2ce85c496f5, type: 3}
+  _sprite: {fileID: 21300000, guid: a8004aa8d1278b84bad1e1a799354c9c, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
     _secondElement: {fileID: 11400000, guid: 32f8a61c70e00874692c992534b4752a, type: 2}

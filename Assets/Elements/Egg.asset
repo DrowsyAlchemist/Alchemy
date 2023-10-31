@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Egg
   _lable: "\u042F\u0439\u0446\u043E"
-  _sprite: {fileID: 21300000, guid: 6d093ca3b070f9440a198234ed2457d3, type: 3}
+  _sprite: {fileID: 21300000, guid: 2d2bcbf47934b954abc3771f04c7bb5c, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5049d9451a522f04dbad2d899ed209d5, type: 2}
     _secondElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}

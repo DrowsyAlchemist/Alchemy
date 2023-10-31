@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Grim Reaper
   _lable: "\u0421\u043C\u0435\u0440\u0442\u044C"
-  _sprite: {fileID: 21300000, guid: 25769a79592c90c4093f3946b1b5f53b, type: 3}
+  _sprite: {fileID: 21300000, guid: 3ff9703d701766c468ea21ee18b3b64b, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: ae69d684606ffcb47bfe11153422a959, type: 2}

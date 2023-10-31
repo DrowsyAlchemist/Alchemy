@@ -7,6 +7,7 @@ using PlayerPrefs = UnityEngine.PlayerPrefs;
 public class Saver
 {
     private const string SavesStorage = "Saves";
+    private const char SavesDevideSymbol = '0';
 
     private static Saver _instance;
 
@@ -45,7 +46,7 @@ public class Saver
 
     public bool IsElementOpened(Element element)
     {
-        return _saveDataBuilder.ToString().Contains(element.Id);
+        return _saveDataBuilder.ToString().Contains(element.Id + SavesDevideSymbol);
     }
 
     public void ResetSaves()
@@ -58,7 +59,7 @@ public class Saver
     {
         if (IsElementOpened(element) == false)
         {
-            _saveDataBuilder.Append(element.Id);
+            _saveDataBuilder.Append(element.Id + SavesDevideSymbol);
             Save();
         }
     }

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Frankenstein
   _lable: "\u0424\u0440\u0430\u043D\u043A\u0435\u043D\u0448\u0442\u0435\u0439\u043D"
-  _sprite: {fileID: 21300000, guid: d37e0f62fddcdb544bf51607e28b3e1f, type: 3}
+  _sprite: {fileID: 21300000, guid: a399936ca2df9c24a88ed0acb5a1f328, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 0ae51799d2c5e2b4a99c2a35f6031bc5, type: 2}
     _secondElement: {fileID: 11400000, guid: 158e079c518ceba4a95a18b7d314f6c5, type: 2}

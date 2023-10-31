@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Grave
   _lable: "\u041C\u043E\u0433\u0438\u043B\u0430"
-  _sprite: {fileID: 21300000, guid: f70d56f6d4e925242bdb74ca62dbd8d2, type: 3}
+  _sprite: {fileID: 21300000, guid: d2bca6575fff6f44090eb029d45942b5, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: b743de88eff6d7544b03f0c42ed0c949, type: 2}
     _secondElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}

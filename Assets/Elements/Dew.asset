@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Dew
   _lable: "\u0420\u043E\u0441\u0430"
-  _sprite: {fileID: 21300000, guid: 2e0f40e54825b6c468c500cbc05732c7, type: 3}
+  _sprite: {fileID: 21300000, guid: 2d3ec0e0e54d39f42a67fef090e1a428, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ca88cc2b2b6fafd438d5475115bbf9b6, type: 2}
     _secondElement: {fileID: 11400000, guid: 0ff280c20f14be6489dd8a2a2fc9601a, type: 2}

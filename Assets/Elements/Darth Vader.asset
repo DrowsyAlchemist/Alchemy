@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Darth Vader
   _lable: "\u0414\u0430\u0440\u0442 \u0412\u0435\u0439\u0434\u0435\u0440"
-  _sprite: {fileID: 21300000, guid: ade0b6dee0c09dc4b8bef57e079bc7d4, type: 3}
+  _sprite: {fileID: 21300000, guid: 988ea8c6087f0264686ddc6a5c27772d, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 7025445fe7752364bb9afaec4c74d9b8, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}

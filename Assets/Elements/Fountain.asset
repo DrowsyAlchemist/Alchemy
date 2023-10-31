@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Fountain
   _lable: "\u0424\u043E\u043D\u0442\u0430\u043D"
-  _sprite: {fileID: 21300000, guid: c4409adb743b9794b83dee712aea53b4, type: 3}
+  _sprite: {fileID: 21300000, guid: 703c87432570de548a8c94fab93a0ef6, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ddcdda85e61445e42b0fb9e741996174, type: 2}
     _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}

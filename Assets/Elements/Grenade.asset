@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Grenade
   _lable: "\u0413\u0440\u0430\u043D\u0430\u0442\u0430"
-  _sprite: {fileID: 21300000, guid: 8291de2d7b1cd934f8d720f934e787c8, type: 3}
+  _sprite: {fileID: 21300000, guid: d1e3629edcaee4441ae4fc7fe8b68592, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: f90057cbf413a7c4fb294ca4a06476bb, type: 2}
     _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}

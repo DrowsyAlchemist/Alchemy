@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Garden
   _lable: "\u0421\u0430\u0434"
-  _sprite: {fileID: 21300000, guid: 02f9f3f7a365906468aa88986463332e, type: 3}
+  _sprite: {fileID: 21300000, guid: 537ba00233721e245847a55d9b002fc7, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
     _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}

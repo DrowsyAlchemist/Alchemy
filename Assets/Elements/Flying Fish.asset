@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Flying Fish
   _lable: "\u041B\u0435\u0442\u0443\u0447\u0430\u044F \u0440\u044B\u0431\u0430"
-  _sprite: {fileID: 21300000, guid: f257aad5c3f12d14288c79fa200d2d07, type: 3}
+  _sprite: {fileID: 21300000, guid: 13c65f42deb93d040a6a3bc08e3cd870, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
     _secondElement: {fileID: 11400000, guid: 3203e04fde19c9347bfd6219beb787cf, type: 2}

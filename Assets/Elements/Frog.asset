@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Frog
   _lable: "\u041B\u044F\u0433\u0443\u0448\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: a441e83813ec627498ea46cc9bf78601, type: 3}
+  _sprite: {fileID: 21300000, guid: c61d133b056782c4a930cc402d6727fc, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: d7a84d2e7ad973642b87ea3a0498478c, type: 2}
     _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Dinosaur
   _lable: "\u0414\u0438\u043D\u043E\u0437\u0430\u0432\u0440"
-  _sprite: {fileID: 21300000, guid: 28de770e6f3fa93468ba2ae7c12c746c, type: 3}
+  _sprite: {fileID: 21300000, guid: da4ce2638da4472479b0a53bb324bea3, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 3de50a3430bf436458f560d55537a229, type: 2}
     _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}

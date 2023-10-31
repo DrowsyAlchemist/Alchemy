@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Doctor
   _lable: "\u0414\u043E\u043A\u0442\u043E\u0440"
-  _sprite: {fileID: 21300000, guid: 0e9742ae7d7ea0243b0a29f774a35c40, type: 3}
+  _sprite: {fileID: 21300000, guid: 3d6632faea942b84787169671b8a2c41, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 3a32e109fe467de429ca72b2886efdbd, type: 2}

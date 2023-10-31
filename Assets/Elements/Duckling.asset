@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Duckling
   _lable: "\u0423\u0442\u0451\u043D\u043E\u043A"
-  _sprite: {fileID: 21300000, guid: 5941e43ec281ce34581543059a325a55, type: 3}
+  _sprite: {fileID: 21300000, guid: 368f4035e0d730c4a98a30c700d2c02f, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: a96507007ab1aa14392343f935f535ee, type: 2}
     _secondElement: {fileID: 11400000, guid: a1c443070d336ed48b09741009015116, type: 2}

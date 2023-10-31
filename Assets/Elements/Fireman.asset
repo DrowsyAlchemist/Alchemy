@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Fireman
   _lable: "\u041F\u043E\u0436\u0430\u0440\u043D\u044B\u0439"
-  _sprite: {fileID: 21300000, guid: b906a97b1b0f8e743b7992afca1ee4d6, type: 3}
+  _sprite: {fileID: 21300000, guid: cbe69353720d1824ca9fb4666eab3985, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}

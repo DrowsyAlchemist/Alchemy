@@ -105,6 +105,7 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
 
     private void OnClick()
     {
+        Sound.PlayClick();
         _clickHandler.OnElementClick(this);
         _highlightedImage.gameObject.SetActive(false);
     }

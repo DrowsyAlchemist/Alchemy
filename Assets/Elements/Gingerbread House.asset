@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Gingerbread House
   _lable: "\u041F\u0440\u044F\u043D\u0438\u0447\u043D\u044B\u0439 \u0434\u043E\u043C\u0438\u043A"
-  _sprite: {fileID: 21300000, guid: 51f0f29569becce4e9e580f9838bfa87, type: 3}
+  _sprite: {fileID: 21300000, guid: 2ccd8e219fd8c354d9a9886434b155e8, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
     _secondElement: {fileID: 11400000, guid: a7cc456e627395443a3dcf554d44d689, type: 2}

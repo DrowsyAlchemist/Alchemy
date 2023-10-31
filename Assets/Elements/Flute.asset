@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Flute
   _lable: "\u0424\u043B\u0435\u0439\u0442\u0430"
-  _sprite: {fileID: 21300000, guid: 7f9ed4f389fe4c64ba3f81e818814e1b, type: 3}
+  _sprite: {fileID: 21300000, guid: 3f1df3669f84b1c43882235b0820487c, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
     _secondElement: {fileID: 11400000, guid: 8a82418096ba94647ad543838ac7b2e7, type: 2}

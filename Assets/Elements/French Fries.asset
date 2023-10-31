@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: French Fries
   _lable: "\u041A\u0430\u0440\u0442\u043E\u0448\u043A\u0430 \u0444\u0440\u0438"
-  _sprite: {fileID: 21300000, guid: c7a7eafc6a835a74b9ec835640da6c1b, type: 3}
+  _sprite: {fileID: 21300000, guid: 80d9cd42b932bcd4793af5609648f021, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: c8e92553c60f5754ea36b7708fcd42c6, type: 2}
     _secondElement: {fileID: 11400000, guid: 98afd116610730748b4f041f0a0314db, type: 2}

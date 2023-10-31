@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Dragon
   _lable: "\u0414\u0440\u0430\u043A\u043E\u043D"
-  _sprite: {fileID: 21300000, guid: 55d9c02f82b26d14f94be61f2138c200, type: 3}
+  _sprite: {fileID: 21300000, guid: fadd9916575c629499cab83f86d160ad, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 3de50a3430bf436458f560d55537a229, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}

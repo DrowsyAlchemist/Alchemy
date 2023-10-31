@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Email
   _lable: "\u042D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u043D\u0430\u044F \u043F\u043E\u0447\u0442\u0430"
-  _sprite: {fileID: 21300000, guid: df057040901256843a0f73452fc01453, type: 3}
+  _sprite: {fileID: 21300000, guid: bd880545dd18f3e43ada392d9f18ee84, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 10c36b5744ff95f4b95c778551770ab0, type: 2}
     _secondElement: {fileID: 11400000, guid: f223aeeccae59534eb7f4573b4fda8ec, type: 2}

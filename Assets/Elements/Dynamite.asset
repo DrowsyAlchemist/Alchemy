@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Dynamite
   _lable: "\u0414\u0438\u043D\u0430\u043C\u0438\u0442"
-  _sprite: {fileID: 21300000, guid: edd73bcdcf52a1e489f4500b0fb1af03, type: 3}
+  _sprite: {fileID: 21300000, guid: 5176b146fb7797f48836eac9d099431b, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: c4f234f4bb10e3546a89c7a7a9bf4c9b, type: 2}
     _secondElement: {fileID: 11400000, guid: a4c7c4b107bc62b45b3864701879c4e6, type: 2}

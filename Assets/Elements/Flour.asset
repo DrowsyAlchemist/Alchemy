@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Flour
   _lable: "\u041C\u0443\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: 592a86515e44e4a419f1895f74f248b7, type: 3}
+  _sprite: {fileID: 21300000, guid: 4c5a3579cbe1d884184ab835994d0eb2, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}
     _secondElement: {fileID: 11400000, guid: 6f1f7ff7135292a4aa48f2c93197bb3b, type: 2}

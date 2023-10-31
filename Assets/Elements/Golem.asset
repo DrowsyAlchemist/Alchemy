@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Golem
   _lable: "\u0413\u043E\u043B\u0435\u043C"
-  _sprite: {fileID: 21300000, guid: 5362d55b640b3f241b95ae2e9c7213ef, type: 3}
+  _sprite: {fileID: 21300000, guid: a0ddf2c7f26a7bf48bbf50b71eef2531, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 365f6d16601d380408e92269fede7428, type: 2}
     _secondElement: {fileID: 11400000, guid: 5049d9451a522f04dbad2d899ed209d5, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Flamethrower
   _lable: "\u041E\u0433\u043D\u0435\u043C\u0451\u0442"
-  _sprite: {fileID: 21300000, guid: f88b26b1705ecbb40abe5e6e6df9f438, type: 3}
+  _sprite: {fileID: 21300000, guid: 88d6e8a0d47e2344081b8ea76ae4e0c3, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
     _secondElement: {fileID: 11400000, guid: 4be4701d0db17224b83fef076d5e8f51, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Drum
   _lable: "\u0411\u0430\u0440\u0430\u0431\u0430\u043D"
-  _sprite: {fileID: 21300000, guid: df02490e1911157408eac813fcdbc65b, type: 3}
+  _sprite: {fileID: 21300000, guid: ee8c24b5468245646bbb842ea2dd6e88, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
     _secondElement: {fileID: 11400000, guid: 860796fc767292c4d9461ebb960495fc, type: 2}

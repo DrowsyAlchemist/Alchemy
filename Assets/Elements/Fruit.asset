@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Fruit
   _lable: "\u0424\u0440\u0443\u043A\u0442"
-  _sprite: {fileID: 21300000, guid: a88195023c01e604b818a303cab10807, type: 3}
+  _sprite: {fileID: 21300000, guid: 377f7876b0470684b80795e87bac5870, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
     _secondElement: {fileID: 11400000, guid: ada2fa01b72a1064396df1fe5cdf4b01, type: 2}

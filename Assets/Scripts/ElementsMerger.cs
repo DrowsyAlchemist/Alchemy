@@ -35,8 +35,10 @@ public class ElementsMerger : IMergeHandler
                 OpenNewElement(results[i]);
 
             if (i == 0)
+            {
                 firstRenderer.Render(results[0]);
-
+                Sound.PlayMerge();
+            }
             if (i == 1)
                 secondRenderer.Render(results[1]);
 

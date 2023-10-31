@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Fog
   _lable: "\u0422\u0443\u043C\u0430\u043D"
-  _sprite: {fileID: 21300000, guid: 6b0bf81b25c94654181ca1315e0b6691, type: 3}
+  _sprite: {fileID: 21300000, guid: 91e84e6785507ce46a87966cf0e03a46, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 85728691054b8be47ad8631598473d65, type: 2}
     _secondElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}

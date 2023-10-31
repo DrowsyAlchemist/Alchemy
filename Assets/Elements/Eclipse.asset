@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Eclipse
   _lable: "\u0417\u0430\u0442\u043C\u0435\u043D\u0438\u0435"
-  _sprite: {fileID: 21300000, guid: a22c6e1e5e9132645a34b1260a5fc8be, type: 3}
+  _sprite: {fileID: 21300000, guid: ac902be3b9663e54ca46cf7ebef71c35, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}
     _secondElement: {fileID: 11400000, guid: 779ecbf5c09925540b98dbacf97b00ff, type: 2}

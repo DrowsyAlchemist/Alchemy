@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Farm
   _lable: "\u0424\u0435\u0440\u043C\u0430"
-  _sprite: {fileID: 21300000, guid: 5714a70faaf7a794191ba327337d5bb2, type: 3}
+  _sprite: {fileID: 21300000, guid: 47fb881d829f47a44b1eb59a11e4c99a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ada2fa01b72a1064396df1fe5cdf4b01, type: 2}
     _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}

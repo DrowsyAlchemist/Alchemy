@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Gunpowder
   _lable: "\u041F\u043E\u0440\u043E\u0445"
-  _sprite: {fileID: 21300000, guid: eeb0f8322d81df443ad73c9e022bc422, type: 3}
+  _sprite: {fileID: 21300000, guid: a51897300d187264b91338ae74fcd362, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4971fcf875cdafb4db004ac27ecc4ecb, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
