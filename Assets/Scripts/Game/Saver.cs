@@ -7,6 +7,7 @@ using PlayerPrefs = UnityEngine.PlayerPrefs;
 public class Saver
 {
     private const string SavesStorage = "Saves";
+    private const string StickyAdName = "StickyAd";
     private const char SavesDevideSymbol = '0';
 
     private static Saver _instance;
@@ -16,9 +17,11 @@ public class Saver
     private readonly StringBuilder _saveDataBuilder = new();
 
     public bool IsReady { get; private set; } = false;
+    public bool IsStickyAdAllowed => _saveDataBuilder.ToString().Contains(StickyAdName) == false;
 
     private Saver(ElementsStorage elementsStorage, bool isPlayerAuthorized)
     {
+        IsReady = false;
         _isPlayerAuthorized = isPlayerAuthorized;
         _elementsStorage = elementsStorage;
 
@@ -47,6 +50,12 @@ public class Saver
     public bool IsElementOpened(Element element)
     {
         return _saveDataBuilder.ToString().Contains(element.Id + SavesDevideSymbol);
+    }
+
+    public void HideStickyAd()
+    {
+        _saveDataBuilder.Append(StickyAdName);
+        Save();
     }
 
     public void ResetSaves()

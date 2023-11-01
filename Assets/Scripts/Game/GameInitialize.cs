@@ -18,6 +18,7 @@ public sealed class GameInitialize : MonoBehaviour
     [SerializeField] private Progress _progress;
     [SerializeField] private Score _score;
     [SerializeField] private LeaderboardView _leaderboardView;
+    [SerializeField] private InterAdPanel _interAdPanel;
 
     [SerializeField] private BookElementsView _bookGridView;
     [SerializeField] private RecipiesView _recipiesWithElementView;
@@ -49,7 +50,6 @@ public sealed class GameInitialize : MonoBehaviour
             yield return YandexGamesSdk.Initialize();
 
         GameAnalytics.Initialize();
-        InterstitialAd.Show(onOpenCallback: () => Sound.Mute(), onCloseCallback: (_) => Sound.TurnOn());
         Settings.CoroutineObject.StartCoroutine(Init());
     }
 
@@ -66,9 +66,18 @@ public sealed class GameInitialize : MonoBehaviour
         while (_saver.IsReady == false)
             yield return null;
 
+#if !UNITY_EDITOR
+        if (_saver.IsStickyAdAllowed)
+        {
+            StickyAd.Show();
+            InterstitialAd.Show(onOpenCallback: () => Sound.Mute(), onCloseCallback: (_) => Sound.TurnOn());
+        }
+#endif
         OpenInitialElements();
         _elementsStorage.Init();
         _menu.Init();
+        _gameField.Init(_saver);
+        _interAdPanel.Init(_saver);
         _progress.Init(_elementsStorage);
         _score.Init(isPlayerAuthorized);
         _elementsMerger = new ElementsMerger(_openedElementsView, _score, _elementsStorage);

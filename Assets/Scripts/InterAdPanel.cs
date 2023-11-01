@@ -9,6 +9,7 @@ public class InterAdPanel : MonoBehaviour
     [SerializeField] private float _initialTime;
 
     private const string ShowAnimation = "Show";
+    private Saver _saver;
     private float _elapsedTime;
 
     private void Awake()
@@ -27,6 +28,11 @@ public class InterAdPanel : MonoBehaviour
         }
     }
 
+    public void Init(Saver saver)
+    {
+        _saver = saver;
+    }
+
     private void SetTimerString(string str)
     {
         _timerText.text = str;
@@ -34,9 +40,7 @@ public class InterAdPanel : MonoBehaviour
 
     private void ShowInter()
     {
-#if UNITY_EDITOR
-        return;
-#endif
-        InterstitialAd.Show();
+        if (_saver.IsStickyAdAllowed)
+            InterstitialAd.Show();
     }
 }
