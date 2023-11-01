@@ -7,6 +7,8 @@ using System.Linq;
 public class ElementsStorage : MonoBehaviour, IProgressHolder
 {
     [SerializeField] private List<Element> _elements = new();
+
+    private const string OffAdProductId = "OffAd";
     private List<Element> _sortedOpenedElements = new();
 
     public IReadOnlyCollection<Element> SortedElements => _elements;
@@ -16,7 +18,7 @@ public class ElementsStorage : MonoBehaviour, IProgressHolder
 
     public event Action<int> CurrentCountChanged;
 
-    public void Init()
+    public void Init(Saver saver)
     {
         SortElements(_elements);
 
@@ -36,6 +38,11 @@ public class ElementsStorage : MonoBehaviour, IProgressHolder
         {
             foreach (var product in response.purchasedProducts)
             {
+                if (product.productID.Contains(OffAdProductId) && saver.IsStickyAdAllowed)
+                {
+                    saver.OffAd();
+                    continue;
+                }
                 Debug.Log("DeveloperPayload: " + product.developerPayload);
                 var purchasedElement = _elements.FirstOrDefault((element) => element.Id.Equals(product.developerPayload));
 

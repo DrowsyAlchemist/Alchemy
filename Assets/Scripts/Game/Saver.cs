@@ -52,7 +52,7 @@ public class Saver
         return _saveDataBuilder.ToString().Contains(element.Id + SavesDevideSymbol);
     }
 
-    public void HideStickyAd()
+    public void OffAd()
     {
         _saveDataBuilder.Append(StickyAdName);
         Save();

@@ -30,7 +30,7 @@ public class GameField : MonoBehaviour
         Billing.PurchaseProduct(OffAdProductId, onSuccessCallback: (response) =>
         {
             StickyAd.Hide();
-            _saver.HideStickyAd();
+            _saver.OffAd();
         });
     }
 }
