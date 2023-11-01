@@ -74,7 +74,7 @@ public sealed class GameInitialize : MonoBehaviour
         }
 #endif
         OpenInitialElements();
-        _elementsStorage.Init();
+        _elementsStorage.Init(_saver);
         _menu.Init();
         _gameField.Init(_saver);
         _interAdPanel.Init(_saver);
