@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Motorcycle
   _lable: "\u041C\u043E\u0442\u043E\u0446\u0438\u043A\u043B"
-  _sprite: {fileID: 21300000, guid: 591042a3df32ddc409129ca5cd7c6f0f, type: 3}
+  _sprite: {fileID: 21300000, guid: b695072ed812b6e47b6f0a4dd02c0352, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 34de91cbe41bf4d46b3267cec7e209e4, type: 2}
     _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}

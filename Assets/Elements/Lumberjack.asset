@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Lumberjack
   _lable: "\u041B\u0435\u0441\u043E\u0440\u0443\u0431"
-  _sprite: {fileID: 21300000, guid: bbd90461d71833d4790578d4ae946858, type: 3}
+  _sprite: {fileID: 21300000, guid: b38f51264a23d05419c7c0dec21b96cf, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 3cc3f9a2b9b0c8d479b62374405ebadd, type: 2}

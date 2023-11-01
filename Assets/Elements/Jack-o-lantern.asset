@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Jack-o'-lantern
   _lable: "\u0422\u044B\u043A\u0432\u0435\u043D\u043D\u044B\u0439 \u0444\u043E\u043D\u0430\u0440\u0438\u043A"
-  _sprite: {fileID: 21300000, guid: 5e6ffeceda1d89a428a08b677a1118a2, type: 3}
+  _sprite: {fileID: 21300000, guid: 82922c3874b55cb49983935322177f6b, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: c0cbc8cf82f8baa468c3f3dd586384d4, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}

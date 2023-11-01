@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Meteoroid
   _lable: "\u041C\u0435\u0442\u0435\u043E\u0440\u043E\u0438\u0434"
-  _sprite: {fileID: 21300000, guid: 442bedd7682b97f408b18937760c2316, type: 3}
+  _sprite: {fileID: 21300000, guid: 81c3911bcf9ab3e4a8552036771ec332, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}
     _secondElement: {fileID: 11400000, guid: 144c04e8596d08844b1bb28613e94103, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Music
   _lable: "\u041C\u0443\u0437\u044B\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: 027197fcc7c05e545904248f6d4ffd14, type: 3}
+  _sprite: {fileID: 21300000, guid: 8c3cfb41c10bebe4f92dd2be6ac1be9d, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 7dc3b83afc0a65645ae5d1c2c134c818, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}

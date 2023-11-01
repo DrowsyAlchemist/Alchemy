@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Mermaid
   _lable: "\u0420\u0443\u0441\u0430\u043B\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: 6450c8b318f5a0346b02996c67a7ec78, type: 3}
+  _sprite: {fileID: 21300000, guid: e4aea2ebc9fd61241b9d2357e67be167, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 3203e04fde19c9347bfd6219beb787cf, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}

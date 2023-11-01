@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Life
   _lable: "\u0416\u0438\u0437\u043D\u044C"
-  _sprite: {fileID: 21300000, guid: e3a8194279b534244800e6c5802fd43d, type: 3}
+  _sprite: {fileID: 21300000, guid: 9925f87bf296ff5419f3a16b551e18e4, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: d695aa551ea721d4d8139893cda895bb, type: 2}
     _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}

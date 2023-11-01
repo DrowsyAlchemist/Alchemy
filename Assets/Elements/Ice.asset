@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Ice
   _lable: "\u041B\u0451\u0434"
-  _sprite: {fileID: 21300000, guid: 0c72fbc04fc4c9e47be2e48d0cc5ea40, type: 3}
+  _sprite: {fileID: 21300000, guid: 7aa9e333434fe3140870bcddd57f89cb, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
     _secondElement: {fileID: 11400000, guid: 32f8a61c70e00874692c992534b4752a, type: 2}

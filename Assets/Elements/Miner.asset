@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Miner
   _lable: "\u0428\u0430\u0445\u0442\u0451\u0440"
-  _sprite: {fileID: 21300000, guid: 9e02f2e76d6e56548b7a2065414c6a79, type: 3}
+  _sprite: {fileID: 21300000, guid: 7c2e913e2d5b7674b827e8c0e1d57cc2, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: a2b0d33ac80308e4eb1564ad7f8de45c, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}

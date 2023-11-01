@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Medusa
   _lable: "\u041C\u0435\u0434\u0443\u0437\u0430 \u0413\u043E\u0440\u0433\u043E\u043D\u0430"
-  _sprite: {fileID: 21300000, guid: 9b0fba508392fdd43a6f6d2660f73595, type: 3}
+  _sprite: {fileID: 21300000, guid: 93cd2a6db154ddd498f5997b1fc9fb3a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 5891cd0793fff574b9afbcc674a06143, type: 2}

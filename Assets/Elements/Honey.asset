@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Honey
   _lable: "\u041C\u0451\u0434"
-  _sprite: {fileID: 21300000, guid: 7a36f1096e1686c4b84eb48c7082caa6, type: 3}
+  _sprite: {fileID: 21300000, guid: 87306d02d288a3f4f8546e1c3ca5dc22, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: c6cddc18d62d4a647bdff51a2d31b279, type: 2}
     _secondElement: {fileID: 11400000, guid: 622571748d2a8dd45b475b042f3addb4, type: 2}

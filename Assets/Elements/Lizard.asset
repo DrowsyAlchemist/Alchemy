@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Lizard
   _lable: "\u042F\u0449\u0435\u0440\u0438\u0446\u0430"
-  _sprite: {fileID: 21300000, guid: 9e1ddcdc773449d45a7ea1d20a750890, type: 3}
+  _sprite: {fileID: 21300000, guid: edf7c2b764219cc4798a8fe57d054866, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: a96507007ab1aa14392343f935f535ee, type: 2}
     _secondElement: {fileID: 11400000, guid: d695aa551ea721d4d8139893cda895bb, type: 2}

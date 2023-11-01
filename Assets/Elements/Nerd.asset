@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Nerd
   _lable: "\u0411\u043E\u0442\u0430\u043D\u0438\u043A"
-  _sprite: {fileID: 21300000, guid: ebfccabdcd8d291498faba65ecf78133, type: 3}
+  _sprite: {fileID: 21300000, guid: 20788555f134cd94f84d9e0b41ab4fc1, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: d696695e226793540b3d58c191fa3123, type: 2}

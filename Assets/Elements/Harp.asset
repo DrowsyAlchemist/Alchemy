@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Harp
   _lable: "\u0410\u0440\u0444\u0430"
-  _sprite: {fileID: 21300000, guid: 34df13cba4b4b144680b594b16dccf01, type: 3}
+  _sprite: {fileID: 21300000, guid: 60eb86d47fbaea04a8e518e7bc7288fb, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 938ecac5a609a0247b1491d1a5c23521, type: 2}
     _secondElement: {fileID: 11400000, guid: 6eaeccb02ba2bc3489951f5ab346e510, type: 2}

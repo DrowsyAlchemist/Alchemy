@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Pencil
   _lable: "\u041A\u0430\u0440\u0430\u043D\u0434\u0430\u0448"
-  _sprite: {fileID: 21300000, guid: 2e4a0750dde223c47b8e7a37833458c2, type: 3}
+  _sprite: {fileID: 21300000, guid: 354eba4f16ff9454c9382b5b17047c1a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 3f7160e06df4a57418c76d5c38e31f6d, type: 2}
     _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}

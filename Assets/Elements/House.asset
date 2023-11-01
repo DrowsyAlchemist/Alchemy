@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: House
   _lable: "\u0414\u043E\u043C"
-  _sprite: {fileID: 21300000, guid: 42043dd7444080a47b8b315ed5c4ed2e, type: 3}
+  _sprite: {fileID: 21300000, guid: 179be53450635cd48adc99beee91fc44, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 7be785ceef6fbb24c8f4f70f78ac0cd2, type: 2}
     _secondElement: {fileID: 11400000, guid: 7be785ceef6fbb24c8f4f70f78ac0cd2, type: 2}

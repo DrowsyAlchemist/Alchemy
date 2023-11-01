@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Needle
   _lable: "\u0418\u0433\u043B\u0430"
-  _sprite: {fileID: 21300000, guid: 75965d4b55648c147b58c2ab01e49add, type: 3}
+  _sprite: {fileID: 21300000, guid: 3ed5e87f0d75da34b927fdea2899151f, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
     _secondElement: {fileID: 11400000, guid: db279d7dec673db4f85a6eaf74f46362, type: 2}

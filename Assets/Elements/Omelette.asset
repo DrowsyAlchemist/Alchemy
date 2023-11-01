@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Omelette
   _lable: "\u041E\u043C\u043B\u0435\u0442"
-  _sprite: {fileID: 21300000, guid: 757d91918fac8d544b29adfe3bbf778f, type: 3}
+  _sprite: {fileID: 21300000, guid: e5412bf4ada97e8458e56dbf64158776, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: a96507007ab1aa14392343f935f535ee, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}

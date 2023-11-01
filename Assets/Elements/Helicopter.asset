@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Helicopter
   _lable: "\u0412\u0435\u0440\u0442\u043E\u043B\u0451\u0442"
-  _sprite: {fileID: 21300000, guid: 17b1b07a42a5f7a49a61ccbb695f439e, type: 3}
+  _sprite: {fileID: 21300000, guid: a111538300bdc27488e3a4c93354b7a2, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
     _secondElement: {fileID: 11400000, guid: c65a240c878b56c47a7cb9c04358076e, type: 2}

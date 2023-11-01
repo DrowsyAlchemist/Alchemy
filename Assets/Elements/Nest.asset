@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Nest
   _lable: "\u0413\u043D\u0435\u0437\u0434\u043E"
-  _sprite: {fileID: 21300000, guid: 477be8c9446cfb746bd0115d9eb86e98, type: 3}
+  _sprite: {fileID: 21300000, guid: 0985a999c0f22b64fbab822a00a61925, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: a96507007ab1aa14392343f935f535ee, type: 2}
     _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Metal
   _lable: "\u041C\u0435\u0442\u0430\u043B"
-  _sprite: {fileID: 21300000, guid: 54460b4b98274574d9a5ef10291dae1e, type: 3}
+  _sprite: {fileID: 21300000, guid: c44cb7a17d486d64989b969259112b39, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}

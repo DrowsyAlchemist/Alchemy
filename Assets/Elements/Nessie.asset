@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Nessie
   _lable: "\u041B\u043E\u0445-\u043D\u0435\u0441\u0441\u043A\u043E\u0435 \u0447\u0443\u0434\u043E\u0432\u0438\u0449\u0435"
-  _sprite: {fileID: 21300000, guid: 2fd48be7909fd894e80767292a753fb2, type: 3}
+  _sprite: {fileID: 21300000, guid: e7bef5263877790488fa9d3685cf2cde, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2caf182d3b5faf5409f69be315e97ccc, type: 2}
     _secondElement: {fileID: 11400000, guid: 081a97cd623803043b8a5c1e72ab1b11, type: 2}

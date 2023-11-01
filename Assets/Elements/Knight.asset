@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Knight
   _lable: "\u0420\u044B\u0446\u0430\u0440\u044C"
-  _sprite: {fileID: 21300000, guid: 944524e51c1340f418a1eff4996c08b7, type: 3}
+  _sprite: {fileID: 21300000, guid: ebc05b962fe19db45983f59f6ecb7f3d, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 23f2a993a092e1c48aeac253a10060f4, type: 2}

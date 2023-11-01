@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Mars
   _lable: "\u041C\u0430\u0440\u0441"
-  _sprite: {fileID: 21300000, guid: caad04a9caa048842ae07b62a7973741, type: 3}
+  _sprite: {fileID: 21300000, guid: a02b58de4fc4c7e4ea68905ff85810f6, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2305287657296bb4089ab0fc8b7b83e1, type: 2}
     _secondElement: {fileID: 11400000, guid: 63a465bef7f3a404d9b757b69b26f8f9, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Nori
   _lable: "\u041D\u043E\u0440\u0438"
-  _sprite: {fileID: 21300000, guid: 6957c68a4713d7342bb2bbc2307fcfbe, type: 3}
+  _sprite: {fileID: 21300000, guid: b7f1920b79c63ed439a13b80a9a80f23, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4d32e563e69d07d47bee654aea3ef3fd, type: 2}
     _secondElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}

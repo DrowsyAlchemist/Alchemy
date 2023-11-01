@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Meteor
   _lable: "\u041C\u0435\u0442\u0435\u043E\u0440"
-  _sprite: {fileID: 21300000, guid: 25c12ece075078c49a573d4f7871364e, type: 3}
+  _sprite: {fileID: 21300000, guid: 4cce3399f336b2b4a9903beb31205eaa, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 1da6cd6b3ca1c6f48af94e4c7b016af3, type: 2}
     _secondElement: {fileID: 11400000, guid: 4c11197faf77d6240892e2439d709b3d, type: 2}

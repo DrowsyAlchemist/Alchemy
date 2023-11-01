@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Mouse
   _lable: "\u041C\u044B\u0448\u044C"
-  _sprite: {fileID: 21300000, guid: fc2b1ade396479442a3371710489f91d, type: 3}
+  _sprite: {fileID: 21300000, guid: f10bb3479ab60194181408d804c8344e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
     _secondElement: {fileID: 11400000, guid: 055d1a856f7d27845908a8074cf42202, type: 2}

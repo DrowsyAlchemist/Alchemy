@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Night
   _lable: "\u041D\u043E\u0447\u044C"
-  _sprite: {fileID: 21300000, guid: 556c0392d703dc047a23ecfb79543493, type: 3}
+  _sprite: {fileID: 21300000, guid: da7419747e4161245a0350715cde5c7d, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 8fa9e46f26c57eb4ea91d229d2767020, type: 2}
     _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}

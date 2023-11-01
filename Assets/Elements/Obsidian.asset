@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Obsidian
   _lable: "\u041E\u0431\u0441\u0438\u0434\u0438\u0430\u043D"
-  _sprite: {fileID: 21300000, guid: 9a7e26bb56dd7dc4eb9f98a4501a1861, type: 3}
+  _sprite: {fileID: 21300000, guid: e007bb82285e0a9498d96b4fc312efc0, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 945680ad7cc26814b8b61bf7b8458793, type: 2}
     _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}

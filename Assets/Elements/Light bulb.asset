@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Light bulb
   _lable: "\u041B\u0430\u043C\u043F\u043E\u0447\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: c0452a57d8dfc4547ac48ced1ad92158, type: 3}
+  _sprite: {fileID: 21300000, guid: 680a1b36391fc204081514925ef352f3, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 158e079c518ceba4a95a18b7d314f6c5, type: 2}
     _secondElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}

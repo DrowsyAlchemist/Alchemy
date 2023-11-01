@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Horse
   _lable: "\u041B\u043E\u0448\u0430\u0434\u044C"
-  _sprite: {fileID: 21300000, guid: af3ca5ed7c81c9b4ea4412ecfef9f40b, type: 3}
+  _sprite: {fileID: 21300000, guid: a32feaaede780d2418e9030853a8ad98, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: b0937334f0f479546bc69fb7838ca906, type: 2}
     _secondElement: {fileID: 11400000, guid: c508d5b57a19ae74f89952cfafa0145d, type: 2}

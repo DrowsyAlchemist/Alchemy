@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Map
   _lable: "\u041A\u0430\u0440\u0442\u0430"
-  _sprite: {fileID: 21300000, guid: 8b1c17320c05a7047afffd89f18fa3f7, type: 3}
+  _sprite: {fileID: 21300000, guid: 3ce424acad81831498bd21246da1931d, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}
     _secondElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}

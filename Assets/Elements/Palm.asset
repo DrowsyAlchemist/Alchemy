@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Palm
   _lable: "\u041F\u0430\u043B\u044C\u043C\u0430"
-  _sprite: {fileID: 21300000, guid: d0a5e0840e39eea49b2e27e8e1b5e34b, type: 3}
+  _sprite: {fileID: 21300000, guid: 5420f898a278aa24787a8991959877fc, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: a507677f41beafa4f8242b857bbe1234, type: 2}
     _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}

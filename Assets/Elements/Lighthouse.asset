@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Lighthouse
   _lable: "\u041C\u0430\u044F\u043A"
-  _sprite: {fileID: 21300000, guid: d715bb872a412f84f9bd20d05033cf4e, type: 3}
+  _sprite: {fileID: 21300000, guid: 1f057d8b0e9c7dc43a5c85e8f0b0ea0d, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 6c91102b7cd458a4187367eb594a0e19, type: 2}
     _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}

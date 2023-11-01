@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Meat
   _lable: "\u041C\u044F\u0441\u043E"
-  _sprite: {fileID: 21300000, guid: 291f3f34564e1794dad424b2d2ad45bb, type: 3}
+  _sprite: {fileID: 21300000, guid: c42180edae8107549b304ef9b61c09e0, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2c0a7c16c8156834d8666193432b975e, type: 2}
     _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}

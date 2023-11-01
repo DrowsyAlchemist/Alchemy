@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Ice Cream
   _lable: "\u041C\u043E\u0440\u043E\u0436\u0435\u043D\u043E\u0435"
-  _sprite: {fileID: 21300000, guid: d0cd870158fd41c44bfd4a957ff32934, type: 3}
+  _sprite: {fileID: 21300000, guid: 840764cf6a544d3499e64c2ceb8f62cf, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 7c081a78d6d8abf428f9260c1afbaa76, type: 2}
     _secondElement: {fileID: 11400000, guid: 32f8a61c70e00874692c992534b4752a, type: 2}

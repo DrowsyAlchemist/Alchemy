@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Mac And Cheese
   _lable: "\u041C\u0430\u043A\u0430\u0440\u043E\u043D\u044B \u0441 \u0441\u044B\u0440\u043E\u043C"
-  _sprite: {fileID: 21300000, guid: 96a4f0440ca78854db1f762bcd97cc92, type: 3}
+  _sprite: {fileID: 21300000, guid: edeedc5527b3bee4c8dc700d827dca0b, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 055d1a856f7d27845908a8074cf42202, type: 2}
     _secondElement: {fileID: 11400000, guid: fb2b5de7dfd9e42478cc1c14b4c8e604, type: 2}

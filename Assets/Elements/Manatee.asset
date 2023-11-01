@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Manatee
   _lable: "\u041B\u0430\u043C\u0430\u043D\u0442\u0438\u043D"
-  _sprite: {fileID: 21300000, guid: 6a225b6d256aded44ba75d2d3365d176, type: 3}
+  _sprite: {fileID: 21300000, guid: cfd80f7c1bb1cf44a8821e2de57a6a61, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2c0a7c16c8156834d8666193432b975e, type: 2}
     _secondElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}

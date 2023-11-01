@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Lemonade
   _lable: "\u041B\u0438\u043C\u043E\u043D\u0430\u0434"
-  _sprite: {fileID: 21300000, guid: 910ad2db1620f9e4ea5c005c3bb28613, type: 3}
+  _sprite: {fileID: 21300000, guid: 3e161c422f1a86c4e8d0f794f8135c27, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}
     _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}

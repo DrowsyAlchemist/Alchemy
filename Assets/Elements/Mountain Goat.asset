@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Mountain Goat
   _lable: "\u0413\u043E\u0440\u043D\u044B\u0439 \u043A\u043E\u0437\u0451\u043B"
-  _sprite: {fileID: 21300000, guid: 197bccc1f2f2d3945828d93d6aebcaca, type: 3}
+  _sprite: {fileID: 21300000, guid: d58eb2e406904e94d886db4e5cd983f6, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 3659d2203c3214b4b8e70e7413967f35, type: 2}
     _secondElement: {fileID: 11400000, guid: 7886c0c118f3cef4598fe08c43eb9c3f, type: 2}

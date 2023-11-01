@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Mud
   _lable: "\u0413\u0440\u044F\u0437\u044C"
-  _sprite: {fileID: 21300000, guid: d56d9c4b52a7e64418f40dd0e5e823e6, type: 3}
+  _sprite: {fileID: 0}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}
     _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}

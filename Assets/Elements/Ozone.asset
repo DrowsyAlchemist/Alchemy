@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Ozone
   _lable: "\u041E\u0437\u043E\u043D"
-  _sprite: {fileID: 21300000, guid: cc327f956f7ef7e4c94870fe4b717961, type: 3}
+  _sprite: {fileID: 21300000, guid: 6928d5f72184ec44191a57648558d20a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5868d95352437a04dacbe37690249429, type: 2}
     _secondElement: {fileID: 11400000, guid: 5868d95352437a04dacbe37690249429, type: 2}

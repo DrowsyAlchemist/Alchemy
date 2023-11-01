@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Iceberg
   _lable: "\u0410\u0439\u0441\u0431\u0435\u0440\u0433"
-  _sprite: {fileID: 21300000, guid: 3cee1fd0a74ac194c96e51531fdd2d0b, type: 3}
+  _sprite: {fileID: 21300000, guid: e9bd71bc63236374bbe86be74e98c81c, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}
     _secondElement: {fileID: 11400000, guid: 6b6e4faac3ae3484eb63825d5b215e3b, type: 2}

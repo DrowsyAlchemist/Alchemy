@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Milk Shake
   _lable: "\u041C\u043E\u043B\u043E\u0447\u043D\u044B\u0439 \u043A\u043E\u043A\u0442\u0435\u0439\u043B\u044C"
-  _sprite: {fileID: 21300000, guid: cb42b5b6f7690e54d9c9950a94357312, type: 3}
+  _sprite: {fileID: 21300000, guid: 3d3af1b0d085b8e428791c031bc6cfbc, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 7c081a78d6d8abf428f9260c1afbaa76, type: 2}
     _secondElement: {fileID: 11400000, guid: b00fcb370e640424ba4e0232bed0dd14, type: 2}

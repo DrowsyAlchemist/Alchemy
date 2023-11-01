@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Ostrich
   _lable: "\u0421\u0442\u0440\u0430\u0443\u0441"
-  _sprite: {fileID: 21300000, guid: 6a14647d181c13b4e9e5e8c1fbc2064d, type: 3}
+  _sprite: {fileID: 21300000, guid: 263fd554d8666e242809459a51649a29, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
     _secondElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}

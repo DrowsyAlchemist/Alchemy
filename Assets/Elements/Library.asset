@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Library
   _lable: "\u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: 2fea32e42f0b34a43af29400fc3ffb18, type: 3}
+  _sprite: {fileID: 21300000, guid: a625aea444513e64c9413b51d07216f8, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
     _secondElement: {fileID: 11400000, guid: 27999d0dbdea6b940bf6f9403cbb61cc, type: 2}

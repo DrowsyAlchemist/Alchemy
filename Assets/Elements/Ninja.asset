@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Ninja
   _lable: "\u041D\u0438\u043D\u0434\u0437\u044F"
-  _sprite: {fileID: 21300000, guid: 952706a87eadd0148a95bd08a1be1464, type: 3}
+  _sprite: {fileID: 21300000, guid: 574cd8f44e420174db6f632b28929e50, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 19d1bacc928cfcd41a0f157ace968dc7, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}

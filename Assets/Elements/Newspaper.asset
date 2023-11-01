@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Newspaper
   _lable: "\u0413\u0430\u0437\u0435\u0442\u0430"
-  _sprite: {fileID: 21300000, guid: 5275fe832b0d1ef4cbd3e5b945fb7f13, type: 3}
+  _sprite: {fileID: 21300000, guid: f646825b8d9f6384cb08ee3ae9c38283, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}
     _secondElement: {fileID: 11400000, guid: 491f9d605d2fae8458bdfd71855fc661, type: 2}

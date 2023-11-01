@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Hedge
   _lable: "\u0416\u0438\u0432\u0430\u044F \u0438\u0437\u0433\u043E\u0440\u043E\u0434\u044C"
-  _sprite: {fileID: 21300000, guid: db845cebc957620458870aae4d5264b9, type: 3}
+  _sprite: {fileID: 21300000, guid: de656558695857145aeb19edb7334ad7, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
     _secondElement: {fileID: 11400000, guid: a6076e2c8a7aba94cbf4238a19d23cae, type: 2}

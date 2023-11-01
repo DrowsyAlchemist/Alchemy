@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Marshmallows
   _lable: "\u041C\u0430\u0440\u0448\u043C\u0435\u043B\u043B\u043E\u0443"
-  _sprite: {fileID: 21300000, guid: 46a2e5e7d024c3b419db8ca4916ca39f, type: 3}
+  _sprite: {fileID: 21300000, guid: 9e9782357ebb7ee4ca548989a583fbd9, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 05151ed70e48bd049b580bf76c91ef87, type: 2}
     _secondElement: {fileID: 11400000, guid: 11f3200454621474ab3fd2eb17861224, type: 2}

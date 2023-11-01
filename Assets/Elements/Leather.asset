@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Leather
   _lable: "\u041A\u043E\u0436\u0430"
-  _sprite: {fileID: 21300000, guid: fb79b99530a97c04d8830e57514a35c1, type: 3}
+  _sprite: {fileID: 21300000, guid: 117c2534723b7724791eceb55e9e9fee, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2c0a7c16c8156834d8666193432b975e, type: 2}
     _secondElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}

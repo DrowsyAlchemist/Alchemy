@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Hummingbird
   _lable: "\u041A\u043E\u043B\u0438\u0431\u0440\u0438"
-  _sprite: {fileID: 21300000, guid: b99991a33713e024285489862f5c8424, type: 3}
+  _sprite: {fileID: 21300000, guid: d986e7bc04bf3634f8a3d0d85b52596f, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
     _secondElement: {fileID: 11400000, guid: 622571748d2a8dd45b475b042f3addb4, type: 2}

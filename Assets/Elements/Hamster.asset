@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Hamster
   _lable: "\u0425\u043E\u043C\u044F\u043A"
-  _sprite: {fileID: 21300000, guid: f0a51d5c67f4dc24d93d5fec95c432e7, type: 3}
+  _sprite: {fileID: 21300000, guid: 77cbbae87a5a5cf4190cb0eae56c7b96, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2fde0860edc0d6447af142a195680b08, type: 2}
     _secondElement: {fileID: 11400000, guid: 42b2fd3776c240a4fba9b693e141dd5b, type: 2}

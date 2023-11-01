@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Parachute
   _lable: "\u041F\u0430\u0440\u0430\u0448\u044E\u0442"
-  _sprite: {fileID: 21300000, guid: 3ba1ee9ca6456fc43ba697a49b1c0b1b, type: 3}
+  _sprite: {fileID: 21300000, guid: c78b5ca0e3890b945851473e90edd4ab, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5304c26dcddb5e34fbc169dc2d594c55, type: 2}
     _secondElement: {fileID: 11400000, guid: ddc85a30a1db7ac43a097c0ce94a8505, type: 2}

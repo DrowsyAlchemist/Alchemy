@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Lasso
   _lable: "\u041B\u0430\u0441\u0441\u043E"
-  _sprite: {fileID: 21300000, guid: cda5ebb0305cf2e42b7114f76d4d60ec, type: 3}
+  _sprite: {fileID: 21300000, guid: 782c25787ea37ec4b8b532da0e50b553, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: c11f1bbaed64c8744bd16870744b106b, type: 2}
     _secondElement: {fileID: 11400000, guid: 2c0a7c16c8156834d8666193432b975e, type: 2}
