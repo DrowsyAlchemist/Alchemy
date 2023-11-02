@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Piggy Bank
   _lable: "\u041A\u043E\u043F\u0438\u043B\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: 7f234abc3cda910488cf64346a76eb66, type: 3}
+  _sprite: {fileID: 21300000, guid: 027e92c5c3d883746a15aee1b85af7e9, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 20392d3695b38a34a8e84e4322f95cb2, type: 2}
     _secondElement: {fileID: 11400000, guid: ed6497642af7bd54688bb82cc8d62ae3, type: 2}

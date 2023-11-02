@@ -17,6 +17,9 @@ public class GameField : MonoBehaviour
         _saver = saver;
         _clearButton.AssignOnClickAction(Clear);
         _hideAdForYanButton.AssignOnClickAction(HideStickyAd);
+
+        if (_saver.IsAdAllowed == false)
+            _hideAdForYanButton.Deactivate();
     }
 
     public void Clear()
@@ -31,6 +34,7 @@ public class GameField : MonoBehaviour
         {
             StickyAd.Hide();
             _saver.OffAd();
+            _hideAdForYanButton.Deactivate();
         });
     }
 }

@@ -17,7 +17,7 @@ public class Saver
     private readonly StringBuilder _saveDataBuilder = new();
 
     public bool IsReady { get; private set; } = false;
-    public bool IsStickyAdAllowed => _saveDataBuilder.ToString().Contains(StickyAdName) == false;
+    public bool IsAdAllowed => _saveDataBuilder.ToString().Contains(StickyAdName) == false;
 
     private Saver(ElementsStorage elementsStorage, bool isPlayerAuthorized)
     {
@@ -54,14 +54,25 @@ public class Saver
 
     public void OffAd()
     {
-        _saveDataBuilder.Append(StickyAdName);
-        Save();
+        if (IsAdAllowed)
+        {
+            _saveDataBuilder.Append(StickyAdName);
+            Save();
+        }
     }
 
     public void ResetSaves()
     {
         _saveDataBuilder.Clear();
         Save();
+    }
+
+    public void Load()
+    {
+        if (_isPlayerAuthorized)
+            PlayerAccount.GetCloudSaveData(onSuccessCallback: (result) => SetLoadedData(result), onErrorCallback: (error) => Debug.Log("Saves load error: " + error));
+        else
+            SetLoadedData(PlayerPrefs.GetString(SavesStorage));
     }
 
     private void OnElementOpened(Element element)
@@ -91,14 +102,6 @@ public class Saver
         }
     }
 
-    private void Load()
-    {
-        if (_isPlayerAuthorized)
-            PlayerAccount.GetCloudSaveData(onSuccessCallback: (result) => SetLoadedData(result), onErrorCallback: (error) => Debug.Log("Saves load error: " + error));
-        else
-            SetLoadedData(PlayerPrefs.GetString(SavesStorage));
-    }
-
     private void SetLoadedData(string jsonData)
     {
         var savedElements = JsonUtility.FromJson<SavedElements>(jsonData);
@@ -113,6 +116,7 @@ public class Saver
         else
             Debug.Log("jsonData is null or empty");
 
+        Save();
         IsReady = true;
     }
 

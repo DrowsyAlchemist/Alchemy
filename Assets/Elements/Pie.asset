@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Pie
   _lable: "\u041F\u0438\u0440\u043E\u0433"
-  _sprite: {fileID: 21300000, guid: 219867f6a8be6ad42b8dd056da0d560c, type: 3}
+  _sprite: {fileID: 21300000, guid: 6ea79b542832f2b47b254914d69a8dab, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: a7cc456e627395443a3dcf554d44d689, type: 2}
     _secondElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}

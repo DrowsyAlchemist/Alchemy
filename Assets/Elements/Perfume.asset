@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Perfume
   _lable: "\u0414\u0443\u0445\u0438"
-  _sprite: {fileID: 21300000, guid: 0bc63bd2e0b6f1645ba06c9e16828fbe, type: 3}
+  _sprite: {fileID: 21300000, guid: e1f9924e6eb3bae4384fdc9dbecc1c0e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: d9f4335a956339b44a9c53c5f6b12305, type: 2}
     _secondElement: {fileID: 11400000, guid: 3796662a1e80935409226844cca428a7, type: 2}

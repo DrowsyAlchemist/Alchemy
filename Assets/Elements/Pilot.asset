@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Pilot
   _lable: "\u041F\u0438\u043B\u043E\u0442"
-  _sprite: {fileID: 21300000, guid: 3f6be6e14995e654e8f02e5ae8b32613, type: 3}
+  _sprite: {fileID: 21300000, guid: c7ccaef9f1622c14eafd8be3617970b2, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: c65a240c878b56c47a7cb9c04358076e, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}

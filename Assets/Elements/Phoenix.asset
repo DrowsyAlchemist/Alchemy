@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Phoenix
   _lable: "\u0424\u0435\u043D\u0438\u043A\u0441"
-  _sprite: {fileID: 21300000, guid: 50613819a55f7154f856b131e69cd7f6, type: 3}
+  _sprite: {fileID: 21300000, guid: 805f8cf1de230ab46828cba4cd698561, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}

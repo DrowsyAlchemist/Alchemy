@@ -38,7 +38,7 @@ public class ElementsStorage : MonoBehaviour, IProgressHolder
         {
             foreach (var product in response.purchasedProducts)
             {
-                if (product.productID.Contains(OffAdProductId) && saver.IsStickyAdAllowed)
+                if (product.productID.Contains(OffAdProductId) && saver.IsAdAllowed)
                 {
                     saver.OffAd();
                     continue;

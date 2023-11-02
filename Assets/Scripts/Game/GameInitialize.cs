@@ -66,13 +66,6 @@ public sealed class GameInitialize : MonoBehaviour
         while (_saver.IsReady == false)
             yield return null;
 
-#if !UNITY_EDITOR
-        if (_saver.IsStickyAdAllowed)
-        {
-            StickyAd.Show();
-            InterstitialAd.Show(onOpenCallback: () => Sound.Mute(), onCloseCallback: (_) => Sound.TurnOn());
-        }
-#endif
         OpenInitialElements();
         _elementsStorage.Init(_saver);
         _menu.Init();
@@ -89,12 +82,21 @@ public sealed class GameInitialize : MonoBehaviour
         _openRecipiesBookButton.AssignOnClickAction(onButtonClick: OpenRecipiesBook);
 
         _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
-        _leaderboardView.Init(isPlayerAuthorized, _score);
+        _leaderboardView.Init(isPlayerAuthorized, _score, _saver);
 
 #if UNITY_EDITOR
         _fadeImage.Deactivate();
         yield break;
 #endif
+        if (_saver.IsAdAllowed)
+        {
+            StickyAd.Show();
+            InterstitialAd.Show(onOpenCallback: () => Sound.Mute(), onCloseCallback: (_) => Sound.TurnOn());
+        }
+        else
+        {
+            StickyAd.Hide();
+        }
         string systemLang = YandexGamesSdk.Environment.GetCurrentLang();
         LeanLocalization.SetCurrentLanguageAll(systemLang);
         _fadeImage.Deactivate();

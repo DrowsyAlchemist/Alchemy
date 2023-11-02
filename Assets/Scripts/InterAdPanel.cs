@@ -40,7 +40,7 @@ public class InterAdPanel : MonoBehaviour
 
     private void ShowInter()
     {
-        if (_saver.IsStickyAdAllowed)
+        if (_saver.IsAdAllowed)
             InterstitialAd.Show();
     }
 }

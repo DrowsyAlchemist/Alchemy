@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Pig
   _lable: "\u0421\u0432\u0438\u043D\u044C\u044F"
-  _sprite: {fileID: 21300000, guid: e6c9e3feee490fa43b18545b98e97639, type: 3}
+  _sprite: {fileID: 21300000, guid: d7d5195852622c043a1bee370728b357, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: c508d5b57a19ae74f89952cfafa0145d, type: 2}
     _secondElement: {fileID: 11400000, guid: 85ea3114226562f4f8910a34ef7b7670, type: 2}

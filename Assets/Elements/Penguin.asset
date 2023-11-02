@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Penguin
   _lable: "\u041F\u0438\u043D\u0433\u0432\u0438\u043D"
-  _sprite: {fileID: 21300000, guid: 94f3e2c8fc6c0ba47aa2b46b00ae292a, type: 3}
+  _sprite: {fileID: 21300000, guid: f26980efcbeb6ca4faf34415372cd863, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 6b6e4faac3ae3484eb63825d5b215e3b, type: 2}
     _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}

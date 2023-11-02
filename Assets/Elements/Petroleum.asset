@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Petroleum
   _lable: "\u041D\u0435\u0444\u0442\u044C"
-  _sprite: {fileID: 21300000, guid: 04c529e4cdfe04d49a2b29104da99c4c, type: 3}
+  _sprite: {fileID: 21300000, guid: b690e82e49ad3af44bff40781034883f, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: abb9eaee7f8d6334db4ebf11a62a283a, type: 2}
     _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}

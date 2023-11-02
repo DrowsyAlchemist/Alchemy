@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Pillow
   _lable: "\u041F\u043E\u0434\u0443\u0448\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: 18c87ca8d48f18249b8000a82b26a4c4, type: 3}
+  _sprite: {fileID: 21300000, guid: 6f5e27d80ed9db8479260ac6bc4bae73, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: e6dae279216e4184287c101603ae93e1, type: 2}
     _secondElement: {fileID: 11400000, guid: ddc85a30a1db7ac43a097c0ce94a8505, type: 2}
