@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Skeleton
   _lable: "\u0421\u043A\u0435\u043B\u0435\u0442"
-  _sprite: {fileID: 21300000, guid: aa3c053c840d7af408d3084f14830ee5, type: 3}
+  _sprite: {fileID: 21300000, guid: 8b63ddc1e24c8834da5c3d96f48a46b8, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: cd21883b495bd1e4b86cdd2779fd8e8c, type: 2}
     _secondElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
