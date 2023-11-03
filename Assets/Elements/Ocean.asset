@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Ocean
   _lable: "\u041E\u043A\u0435\u0430\u043D"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 1c3434f277b432449843e46cc268ce63, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}
     _secondElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}

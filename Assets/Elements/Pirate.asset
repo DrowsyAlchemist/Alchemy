@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Pirate
   _lable: "\u041F\u0438\u0440\u0430\u0442"
-  _sprite: {fileID: 21300000, guid: 545655b304c834646a1bd96fb9f9317d, type: 3}
+  _sprite: {fileID: 21300000, guid: 3db07f388e3b1db448a05a5f4d75c984, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 0b568ec93a46fcb409c653be726cdb19, type: 2}
     _secondElement: {fileID: 11400000, guid: 2621517271405c64389d106ba804fc2e, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Rat
   _lable: "\u041A\u0440\u044B\u0441\u0430"
-  _sprite: {fileID: 21300000, guid: 155dec47a8c72eb459cab19f31ef992c, type: 3}
+  _sprite: {fileID: 21300000, guid: f66f842765b724e47b6d3f784551cbf9, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
     _secondElement: {fileID: 11400000, guid: 2bb1b3d5bfaeaed4fb99bfd96abeba7c, type: 2}

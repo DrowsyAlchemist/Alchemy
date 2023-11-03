@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Seagull
   _lable: "\u0427\u0430\u0439\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: 236ff32527a1a95429118666403c243b, type: 3}
+  _sprite: {fileID: 21300000, guid: 8bffcf467a19b604d9def98e30ec6375, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
     _secondElement: {fileID: 11400000, guid: 32670aed97089854fb9eabc7204ad7a1, type: 2}

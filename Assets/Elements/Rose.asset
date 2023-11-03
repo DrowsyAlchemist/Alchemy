@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Rose
   _lable: "\u0420\u043E\u0437\u0430"
-  _sprite: {fileID: 21300000, guid: f5fe47a037d3f5847bca7c346b933538, type: 3}
+  _sprite: {fileID: 21300000, guid: 3caaec5b7e9670b4382118fbf63a2009, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: cfc748bb54293d34482c9d60c30cb416, type: 2}
     _secondElement: {fileID: 11400000, guid: 622571748d2a8dd45b475b042f3addb4, type: 2}

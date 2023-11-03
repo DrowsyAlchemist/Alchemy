@@ -9,9 +9,11 @@ public class MainOpenedElementsView : ElementsView
 
     private GameField _gameField;
     private IMergeHandler _mergeHandler;
+    private ElementsStorage _elementsStorage;
 
-    public void Init(GameField gameField, IMergeHandler mergeHandler)
+    public void InitMainView(GameField gameField, IMergeHandler mergeHandler, ElementsStorage elementsStorage)
     {
+        base.Init(elementsStorage);
         _gameField = gameField ?? throw new ArgumentNullException();
         _mergeHandler = mergeHandler ?? throw new ArgumentNullException();
         IsInitialized = true;

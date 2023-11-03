@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Science
   _lable: "\u041D\u0430\u0443\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: 555919dd61463604a822f890c714c75f, type: 3}
+  _sprite: {fileID: 21300000, guid: c67b587fa0196c649bc4120cd1a4d430, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: f777755a66386f4419fb820ed5c2f9b2, type: 2}

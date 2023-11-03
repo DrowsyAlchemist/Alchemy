@@ -10,7 +10,7 @@ public sealed class RecipiesBook : IElementClickHandler
         _gridView = gridView;
         _recipiesView = recipiesView;
 
-        _gridView.Init(this);
+        _gridView.InitBookView(this, elementsStorage);
         _gridView.Deactivate();
         _recipiesView.Deactivate();
     }

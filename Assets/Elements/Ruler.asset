@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Ruler
   _lable: "\u041B\u0438\u043D\u0435\u0439\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: 85d5d0c8fbcc1734da5c86fafa1f4263, type: 3}
+  _sprite: {fileID: 21300000, guid: 7e2708e571d4a7d46a55dfbe17605ab0, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
     _secondElement: {fileID: 11400000, guid: 5e7a7995d420ef643b408a17d417c3e1, type: 2}

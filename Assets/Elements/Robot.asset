@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Robot
   _lable: "\u0420\u043E\u0431\u043E\u0442"
-  _sprite: {fileID: 21300000, guid: 036a608a8f9bf4141be3245c9efdc7b3, type: 3}
+  _sprite: {fileID: 21300000, guid: 663f2f0494a27a849a6a466120f35cec, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
     _secondElement: {fileID: 11400000, guid: 5049d9451a522f04dbad2d899ed209d5, type: 2}

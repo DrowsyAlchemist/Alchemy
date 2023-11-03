@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Santa
   _lable: "\u0421\u0430\u043D\u0442\u0430"
-  _sprite: {fileID: 21300000, guid: da4760a91cdf5c64dbee674378f9b74a, type: 3}
+  _sprite: {fileID: 21300000, guid: ae3b9d362a4a2fd4c819d4878d316d9d, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 74a9773feccb13141b7472fa9f528ceb, type: 2}

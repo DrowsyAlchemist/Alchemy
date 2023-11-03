@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sandwich
   _lable: "\u0411\u0443\u0442\u0435\u0440\u0431\u0440\u043E\u0434"
-  _sprite: {fileID: 21300000, guid: 792bd75e2ab067944a9216a1f95a8a1b, type: 3}
+  _sprite: {fileID: 21300000, guid: dc9be328e2a8be84c989977a39dc8708, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4096541e6af17ef42ac8f49d8abedfe6, type: 2}
     _secondElement: {fileID: 11400000, guid: 0b5c41ecd525676468f59153817281f2, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sailboat
   _lable: "\u041F\u0430\u0440\u0443\u0441\u043D\u0438\u043A"
-  _sprite: {fileID: 21300000, guid: bbaf70f782b63774987d2a2a6950c7f6, type: 3}
+  _sprite: {fileID: 21300000, guid: 974334c672edb6545b96ba2a0d3e3a95, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 7475f173c83c55f449ed34d8108d73fd, type: 2}
     _secondElement: {fileID: 11400000, guid: 8a82418096ba94647ad543838ac7b2e7, type: 2}

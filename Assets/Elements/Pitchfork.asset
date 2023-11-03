@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Pitchfork
   _lable: "\u0412\u0438\u043B\u044B"
-  _sprite: {fileID: 21300000, guid: 4c403e039bea90e45b773924798c163e, type: 3}
+  _sprite: {fileID: 21300000, guid: 9e3b62fa90162fe409eeaeba018220a5, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
     _secondElement: {fileID: 11400000, guid: b0937334f0f479546bc69fb7838ca906, type: 2}

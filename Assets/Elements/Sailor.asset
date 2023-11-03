@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sailor
   _lable: "\u041C\u043E\u0440\u044F\u043A"
-  _sprite: {fileID: 21300000, guid: d83c55daec5dc87419359c1be504505b, type: 3}
+  _sprite: {fileID: 21300000, guid: cbe13c7045f30934a9d29f75215c09d7, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 7475f173c83c55f449ed34d8108d73fd, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}

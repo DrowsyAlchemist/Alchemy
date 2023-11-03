@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Ruins
   _lable: "\u0420\u0443\u0438\u043D\u044B"
-  _sprite: {fileID: 21300000, guid: 1348a42af5351434fad7361b864b5dfc, type: 3}
+  _sprite: {fileID: 21300000, guid: 19ac7895702d7174abfdff02f4897ee6, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 309dd33f736fa7441bd3f612e20b5794, type: 2}
     _secondElement: {fileID: 11400000, guid: a1032a57154be83479cad041dba9389b, type: 2}

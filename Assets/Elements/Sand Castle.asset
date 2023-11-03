@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sand Castle
   _lable: "\u041F\u0435\u0441\u0447\u0430\u043D\u044B\u0439 \u0437\u0430\u043C\u043E\u043A"
-  _sprite: {fileID: 21300000, guid: ea8d3c6ae538d4f489ba593583dd202b, type: 3}
+  _sprite: {fileID: 21300000, guid: 444fa2c14153f7846a4de28a5e2374f5, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
     _secondElement: {fileID: 11400000, guid: a1032a57154be83479cad041dba9389b, type: 2}

@@ -16,8 +16,9 @@ public class BookElementsView : ElementsView
         _scrollView.normalizedPosition = new Vector2(0, 1);
     }
 
-    public void Init(IElementClickHandler elementClickHandler)
+    public void InitBookView(IElementClickHandler elementClickHandler,ElementsStorage elementsStorage)
     {
+        base.Init(elementsStorage);
         _elementClickHandler = elementClickHandler;
         _closeButton.AssignOnClickAction(Close);
         IsInitialized = true;

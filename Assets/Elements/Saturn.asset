@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Saturn
   _lable: "\u0421\u0430\u0442\u0443\u0440\u043D"
-  _sprite: {fileID: 21300000, guid: 0021a23105a8bdf48ac8a6e2d1736b93, type: 3}
+  _sprite: {fileID: 21300000, guid: 5d1a47cbba1d6f74ba5739426179b706, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2305287657296bb4089ab0fc8b7b83e1, type: 2}
     _secondElement: {fileID: 11400000, guid: 81668e2597190414a92632ae1510dfae, type: 2}

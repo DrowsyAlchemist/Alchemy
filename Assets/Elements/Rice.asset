@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Rice
   _lable: "\u0420\u0438\u0441"
-  _sprite: {fileID: 21300000, guid: 0535ea687801cda419e0e97404d9746a, type: 3}
+  _sprite: {fileID: 21300000, guid: ab3f5f67681371843b0e9d8d6d6779d1, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 21a1e89e0de17e640a577f9c0b265757, type: 2}
     _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Ring
   _lable: "\u041A\u043E\u043B\u044C\u0446\u043E"
-  _sprite: {fileID: 21300000, guid: 53d5cef2ffc63e2459c2e778b187e5b9, type: 3}
+  _sprite: {fileID: 21300000, guid: cb1b039f56a64c546bf281589457d067, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: b0aa5cf4a684f074980f2968646d8a67, type: 2}
     _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}

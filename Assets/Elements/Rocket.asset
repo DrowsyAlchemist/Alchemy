@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Rocket
   _lable: "\u0420\u0430\u043A\u0435\u0442\u0430"
-  _sprite: {fileID: 21300000, guid: f7e44a36a12cde042933854b72c3ff2b, type: 3}
+  _sprite: {fileID: 21300000, guid: c1a87fb76cbe7744b87daeca33705b01, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: c65a240c878b56c47a7cb9c04358076e, type: 2}
     _secondElement: {fileID: 11400000, guid: 144c04e8596d08844b1bb28613e94103, type: 2}

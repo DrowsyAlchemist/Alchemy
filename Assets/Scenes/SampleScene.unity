@@ -4259,7 +4259,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.6
+  m_fontSize: 32.25
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6295,7 +6295,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.65
+  m_fontSize: 30
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6943,6 +6943,7 @@ MonoBehaviour:
   _elementsContainer: {fileID: 1008326063}
   _clearButton: {fileID: 2123566951}
   _hideAdForYanButton: {fileID: 1125679034}
+  _openElementForYanButton: {fileID: 1584145525}
 --- !u!114 &1173410267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7924,9 +7925,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d08f44e1bf9e84abea3bc6bd4b101b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _authorizePanel: {fileID: 0}
+  _authorizeButton: {fileID: 0}
   _entryRendererTemplate: {fileID: 3647809803252938448, guid: 60c118245ebf6464aba52859637a9fac, type: 3}
-  _container: {fileID: 639927700}
   _playerRenderer: {fileID: 2144799131}
+  _container: {fileID: 639927700}
 --- !u!1 &1348850613
 GameObject:
   m_ObjectHideFlags: 0
@@ -8012,7 +8015,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.4
+  m_fontSize: 32.25
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9311,7 +9314,7 @@ GameObject:
   - component: {fileID: 1584145526}
   - component: {fileID: 1584145525}
   m_Layer: 5
-  m_Name: OpenElementButton (1)
+  m_Name: OpenElementButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10146,7 +10149,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.65
+  m_fontSize: 32.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

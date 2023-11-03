@@ -4,9 +4,24 @@ using UnityEngine;
 
 public abstract class ElementsView : MonoBehaviour
 {
+    private ElementsStorage _elementsStorage;
     protected List<ElementRenderer> OpenedElementRenderers = new();
 
     protected bool IsInitialized { get; set; }
+
+    public void Init(ElementsStorage elementsStorage)
+    {
+        _elementsStorage = elementsStorage;
+
+        foreach (var element in elementsStorage.SortedElements)
+            element.Opened += OnElementOpened;
+    }
+
+    private void OnDestroy()
+    {
+        foreach (var element in _elementsStorage.SortedElements)
+            element.Opened -= OnElementOpened;
+    }
 
     public void Fill(IReadOnlyCollection<Element> elements)
     {
@@ -32,4 +47,9 @@ public abstract class ElementsView : MonoBehaviour
     }
 
     protected abstract void AddElement(Element element);
+
+    private void OnElementOpened(Element _)
+    {
+        Fill(_elementsStorage.SortedOpenedElements);
+    }
 }

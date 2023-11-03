@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Rv
   _lable: "\u0414\u043E\u043D \u043D\u0430 \u043A\u043E\u043B\u0451\u0441\u0430\u0445"
-  _sprite: {fileID: 21300000, guid: b1591294a840dbc4290e314adf8d8714, type: 3}
+  _sprite: {fileID: 21300000, guid: f7da8978ca212ed47bebafb49702f14a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5b147f1257991d149a0eead78d3e299e, type: 2}
     _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}

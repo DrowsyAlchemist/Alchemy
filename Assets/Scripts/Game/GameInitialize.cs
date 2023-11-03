@@ -69,12 +69,12 @@ public sealed class GameInitialize : MonoBehaviour
         OpenInitialElements();
         _elementsStorage.Init(_saver);
         _menu.Init();
-        _gameField.Init(_saver);
+        _gameField.Init(_saver, _elementsStorage);
         _interAdPanel.Init(_saver);
         _progress.Init(_elementsStorage);
         _score.Init(isPlayerAuthorized);
         _elementsMerger = new ElementsMerger(_openedElementsView, _score, _elementsStorage);
-        _openedElementsView.Init(_gameField, _elementsMerger);
+        _openedElementsView.InitMainView(_gameField, _elementsMerger,_elementsStorage);
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
         _alphabeticalIndex.Init();
 

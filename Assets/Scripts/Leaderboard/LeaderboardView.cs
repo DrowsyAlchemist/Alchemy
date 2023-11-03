@@ -35,11 +35,13 @@ public class LeaderboardView : MonoBehaviour
 
     public void Init(bool isPlayerAuthorized, Score score, Saver saver)
     {
+        /*
         _isPlayerAuthorized = isPlayerAuthorized;
         _score = score ?? throw new ArgumentNullException();
         _saver = saver ?? throw new ArgumentNullException();
         _authorizeButton.AssignOnClickAction(OnAuthorizationButtonClick);
         _isInitialized = true;
+        */
     }
 
     public void RenderLeaders()

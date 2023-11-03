@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Reindeer
   _lable: "\u0421\u0435\u0432\u0435\u0440\u043D\u044B\u0439 \u043E\u043B\u0435\u043D\u044C"
-  _sprite: {fileID: 21300000, guid: ed79a74e1ca5e4e45bef949c5d255d1f, type: 3}
+  _sprite: {fileID: 21300000, guid: 51180e25051b2944fabe9124ee21566c, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: e8c5f8dc37899b740816375492dc50eb, type: 2}
     _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}

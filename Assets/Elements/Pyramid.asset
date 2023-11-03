@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Pyramid
   _lable: "\u041F\u0438\u0440\u0430\u043C\u0438\u0434\u0430"
-  _sprite: {fileID: 21300000, guid: 4965c9984354aab45be0f65969aa4e7d, type: 3}
+  _sprite: {fileID: 21300000, guid: 1f616bd22c3a2824a9592e1165aa36cd, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: e8ed961991c20674ab1887fbdaa7ec34, type: 2}
     _secondElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}

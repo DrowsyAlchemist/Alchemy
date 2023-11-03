@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Safety Glasses
   _lable: "\u0417\u0430\u0449\u0438\u0442\u043D\u044B\u0435 \u043E\u0447\u043A\u0438"
-  _sprite: {fileID: 21300000, guid: 449731e5f58d1c34d94416d759d380d4, type: 3}
+  _sprite: {fileID: 21300000, guid: 43cb0632cd00dff45b3084c1e51a8bc5, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
     _secondElement: {fileID: 11400000, guid: d696695e226793540b3d58c191fa3123, type: 2}

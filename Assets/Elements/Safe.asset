@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Safe
   _lable: "\u0421\u0435\u0439\u0444"
-  _sprite: {fileID: 21300000, guid: f2561b030dc553742a9c407aa2208244, type: 3}
+  _sprite: {fileID: 21300000, guid: 951aa89bb15fa6143a31571ff0624ea7, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ed6497642af7bd54688bb82cc8d62ae3, type: 2}
     _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}

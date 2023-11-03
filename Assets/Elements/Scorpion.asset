@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Scorpion
   _lable: "\u0421\u043A\u043E\u0440\u043F\u0438\u043E\u043D"
-  _sprite: {fileID: 21300000, guid: c964ff7955e1cf74b8c7b7e4ec5598e4, type: 3}
+  _sprite: {fileID: 21300000, guid: 09d9ffa4cde7e4349a8083d45406d167, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
     _secondElement: {fileID: 11400000, guid: a1b7ad737f57b3740a0e2f5b122464e8, type: 2}

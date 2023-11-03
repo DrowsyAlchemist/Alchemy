@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sandstorm
   _lable: "\u041F\u0435\u0441\u0447\u0430\u043D\u0430\u044F \u0431\u0443\u0440\u044F"
-  _sprite: {fileID: 21300000, guid: e284f7ed7f0fe594696c76ee177b5625, type: 3}
+  _sprite: {fileID: 21300000, guid: 618879fbab49e6f4ba2785b95473421e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
     _secondElement: {fileID: 11400000, guid: d99ce7268ab849142a9142c5fcc1cc14, type: 2}

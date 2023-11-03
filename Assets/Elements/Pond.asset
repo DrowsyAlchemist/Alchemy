@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Pond
   _lable: "\u041F\u0440\u0443\u0434"
-  _sprite: {fileID: 21300000, guid: d0b054296313a284fa40f0aa0bd518c8, type: 3}
+  _sprite: {fileID: 21300000, guid: ff115dcc1b069c94b82b248cedd5e314, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
     _secondElement: {fileID: 11400000, guid: 4f9aad5770c5d0e44a75c12060faaca2, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Quicksand
   _lable: "\u0417\u044B\u0431\u0443\u0447\u0438\u0435 \u043F\u0435\u0441\u043A\u0438"
-  _sprite: {fileID: 21300000, guid: 82c28da5a0727f44d929a5f537082f51, type: 3}
+  _sprite: {fileID: 21300000, guid: ac3b56d790857bd4fa37dcb7dd09fd0e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
     _secondElement: {fileID: 11400000, guid: d695aa551ea721d4d8139893cda895bb, type: 2}

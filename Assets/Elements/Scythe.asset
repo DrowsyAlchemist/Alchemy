@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Scythe
   _lable: "\u041A\u043E\u0441\u0430"
-  _sprite: {fileID: 21300000, guid: db428c16ae20e6244a9439fe65ba16a7, type: 3}
+  _sprite: {fileID: 21300000, guid: 6c7e6640502e33f4d95f41b8be4833a9, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
     _secondElement: {fileID: 11400000, guid: 0ff280c20f14be6489dd8a2a2fc9601a, type: 2}

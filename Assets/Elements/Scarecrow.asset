@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Scarecrow
   _lable: "\u0427\u0443\u0447\u0435\u043B\u043E"
-  _sprite: {fileID: 21300000, guid: b9e024cb9f38d56498e3e15500752b7c, type: 3}
+  _sprite: {fileID: 21300000, guid: ab67ee5b9a7075e4493f002ba061cf6f, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: b0937334f0f479546bc69fb7838ca906, type: 2}
