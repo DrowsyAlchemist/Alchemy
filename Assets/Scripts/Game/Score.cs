@@ -34,7 +34,6 @@ public class Score : MonoBehaviour
 
         try
         {
-
             if (isPlayerAuthorized)
                 Leaderboard.GetPlayerEntry(Settings.LeaderboardSettings.LeaderboardName, GetScoreFromLeaderboard, OnLeaderboardError);
             else

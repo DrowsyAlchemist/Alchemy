@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Horizon
   _lable: "\u0413\u043E\u0440\u0438\u0437\u043E\u043D\u0442"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: a3c789d31c8995643bb75e2cebe61dfd, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 9f0d97070c0818543adcb8fa68d51192, type: 2}
     _secondElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}

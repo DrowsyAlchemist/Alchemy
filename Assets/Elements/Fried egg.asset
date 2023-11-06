@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
-  m_Name: Banana Bread
+  m_Name: Fried egg
   m_EditorClassIdentifier: 
-  _id: Banana Bread
-  _lable: "\u0411\u0430\u043D\u0430\u043D\u043E\u0432\u044B\u0439 \u0445\u043B\u0435\u0431"
-  _sprite: {fileID: 21300000, guid: cef7015cacea5c6418439ee4607549de, type: 3}
+  _id: Fried egg
+  _lable: "\u0413\u043B\u0430\u0437\u0443\u043D\u044C\u044F"
+  _sprite: {fileID: 21300000, guid: 55a84aebb2a54894da37c34334d82358, type: 3}
   _creationRecipies:
-  - _firstElement: {fileID: 11400000, guid: 716c69b138a694e4188560e6f814421c, type: 2}
-    _secondElement: {fileID: 11400000, guid: 4096541e6af17ef42ac8f49d8abedfe6, type: 2}
+  - _firstElement: {fileID: 11400000, guid: a96507007ab1aa14392343f935f535ee, type: 2}
+    _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
   _recipesWithElement: []

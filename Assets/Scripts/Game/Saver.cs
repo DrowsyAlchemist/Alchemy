@@ -104,6 +104,13 @@ public class Saver
 
     private void SetLoadedData(string jsonData)
     {
+        if (string.IsNullOrEmpty(jsonData) == false)
+        {
+            Debug.Log("jsonData is null or empty");
+            Save();
+            IsReady = true;
+            return;
+        }
         var savedElements = JsonUtility.FromJson<SavedElements>(jsonData);
 
         if (savedElements == null)
@@ -111,11 +118,7 @@ public class Saver
         else
             Debug.Log("Savedelements: " + savedElements.Elements);
 
-        if (string.IsNullOrEmpty(jsonData) == false)
-            _saveDataBuilder.Append(savedElements.Elements);
-        else
-            Debug.Log("jsonData is null or empty");
-
+        _saveDataBuilder.Append(savedElements.Elements);
         Save();
         IsReady = true;
     }

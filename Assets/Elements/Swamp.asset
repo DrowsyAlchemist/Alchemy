@@ -14,12 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Swamp
   _lable: "\u0411\u043E\u043B\u043E\u0442\u043E"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 6f6ef581b12af4b44a1f6f2100a057fa, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 85ea3114226562f4f8910a34ef7b7670, type: 2}
     _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
   - _firstElement: {fileID: 11400000, guid: 85ea3114226562f4f8910a34ef7b7670, type: 2}
     _secondElement: {fileID: 11400000, guid: 0ff280c20f14be6489dd8a2a2fc9601a, type: 2}
   _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 3de50a3430bf436458f560d55537a229, type: 2}
+    _result: {fileID: 11400000, guid: 9a99a12ce39cc4e47a6a33d164d807a6, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 5049d9451a522f04dbad2d899ed209d5, type: 2}
+    _result: {fileID: 11400000, guid: 4e7567297eb1ff14faa8b39f40cc98b6, type: 2}
   - _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
     _result: {fileID: 11400000, guid: 5049d9451a522f04dbad2d899ed209d5, type: 2}
+  - _secondElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
+    _result: {fileID: 11400000, guid: bf30eb57b03f82b48bcf614819689088, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 7025445fe7752364bb9afaec4c74d9b8, type: 2}
+    _result: {fileID: 11400000, guid: 3c13b6267b1347d43ad8ba5580dfbd86, type: 2}
+  - _secondElement: {fileID: 11400000, guid: a96507007ab1aa14392343f935f535ee, type: 2}
+    _result: {fileID: 11400000, guid: 3de50a3430bf436458f560d55537a229, type: 2}
