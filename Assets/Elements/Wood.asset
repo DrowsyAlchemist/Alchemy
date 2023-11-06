@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wood
   _lable: "\u0414\u0435\u0440\u0435\u0432\u043E"
-  _sprite: {fileID: 21300000, guid: ec3d054a96d508a4781480a263c53c36, type: 3}
+  _sprite: {fileID: 21300000, guid: ee0606e10d7cb714eb605d6b2b423e7d, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}
     _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}

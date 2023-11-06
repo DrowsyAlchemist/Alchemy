@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Turtle
   _lable: "\u0427\u0435\u0440\u0435\u043F\u0430\u0445\u0430"
-  _sprite: {fileID: 21300000, guid: aac24ef8843291545abc7b32367921b6, type: 3}
+  _sprite: {fileID: 21300000, guid: f90025950f95d9440b73a594d816571f, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: a96507007ab1aa14392343f935f535ee, type: 2}
     _secondElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}

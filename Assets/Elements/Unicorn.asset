@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Unicorn
   _lable: "\u0415\u0434\u0438\u043D\u043E\u0440\u043E\u0433"
-  _sprite: {fileID: 21300000, guid: 6fd9000716b3e8a4385fe2c1f1412201, type: 3}
+  _sprite: {fileID: 21300000, guid: bca698d63baa9d6439a5e5d7caa0505b, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 30fa52d09f5e1d841b9035548e9dd9e9, type: 2}
     _secondElement: {fileID: 11400000, guid: 10469bb1fb36cd74fafb846f583bc9f1, type: 2}

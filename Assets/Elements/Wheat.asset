@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wheat
   _lable: "\u041F\u0448\u0435\u043D\u0438\u0446\u0430"
-  _sprite: {fileID: 21300000, guid: e0ad6a025e8813a41bc8ab9895c8391a, type: 3}
+  _sprite: {fileID: 21300000, guid: 7b0afb459102759408c8592cfb4ae41b, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ada2fa01b72a1064396df1fe5cdf4b01, type: 2}
     _secondElement: {fileID: 11400000, guid: 21a1e89e0de17e640a577f9c0b265757, type: 2}

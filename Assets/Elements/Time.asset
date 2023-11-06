@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Time
   _lable: "\u0412\u0440\u0435\u043C\u044F"
-  _sprite: {fileID: 21300000, guid: 1fc15a62f5e84ac468c6a55d2ee393d9, type: 3}
+  _sprite: {fileID: 21300000, guid: 70df60f6692661141a45fc1975b9372b, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}
     _secondElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}

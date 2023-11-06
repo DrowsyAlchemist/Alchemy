@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Storm
   _lable: "\u0413\u0440\u043E\u0437\u0430"
-  _sprite: {fileID: 21300000, guid: d6719eb6bbcccce4fb87b3e1686098b0, type: 3}
+  _sprite: {fileID: 21300000, guid: 138f2020ce73f7f4fa93bb4a7e1fe14e, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}
     _secondElement: {fileID: 11400000, guid: 85728691054b8be47ad8631598473d65, type: 2}

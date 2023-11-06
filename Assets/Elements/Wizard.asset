@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wizard
   _lable: "\u0412\u043E\u043B\u0448\u0435\u0431\u043D\u0438\u043A"
-  _sprite: {fileID: 21300000, guid: beb4724ee465ec64eaf379f18c6b351c, type: 3}
+  _sprite: {fileID: 21300000, guid: 6a7b5963f4907564585ea8a29c1d465d, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: bafc5f10893718d4c83397ea4775043b, type: 2}

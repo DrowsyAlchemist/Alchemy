@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wire
   _lable: "\u041F\u0440\u043E\u0432\u043E\u0434"
-  _sprite: {fileID: 21300000, guid: 5a28021ac1a29f84ebdd2fd10fcb8e0e, type: 3}
+  _sprite: {fileID: 21300000, guid: e0b74c0d30757a340860b3df2bd42ce5, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 158e079c518ceba4a95a18b7d314f6c5, type: 2}
     _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}

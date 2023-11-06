@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sword
   _lable: "\u041C\u0435\u0447"
-  _sprite: {fileID: 21300000, guid: 53fe335a9db9f2448a3d0a51e3e982f5, type: 3}
+  _sprite: {fileID: 21300000, guid: 9149f29570dc31242be406db9902fe64, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: fc5367cb1ff38594fa49262ec26da730, type: 2}
     _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}

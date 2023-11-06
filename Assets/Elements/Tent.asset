@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Tent
   _lable: "\u041F\u0430\u043B\u0430\u0442\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: 4aab1896547ffa941865f72046f73630, type: 3}
+  _sprite: {fileID: 21300000, guid: f4ce2dbb89005f14fae620cc1cd7abed, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
     _secondElement: {fileID: 11400000, guid: ddc85a30a1db7ac43a097c0ce94a8505, type: 2}

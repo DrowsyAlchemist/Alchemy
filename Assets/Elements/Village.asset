@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Village
   _lable: "\u0421\u0435\u043B\u043E"
-  _sprite: {fileID: 21300000, guid: 3e3aeb51a5ec056449c5667bc65754cd, type: 3}
+  _sprite: {fileID: 21300000, guid: 406293ae1ab7f03438b6c0da2c229d8f, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
     _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}

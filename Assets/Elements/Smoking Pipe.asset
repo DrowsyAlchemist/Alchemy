@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Smoking Pipe
   _lable: "\u0422\u0440\u0443\u0431\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: 42e495ae16cf91a4b93b25cb63b8eeb1, type: 3}
+  _sprite: {fileID: 21300000, guid: 88da7a98e5b270f4e90d547fd255dde3, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 3b926778641a4274f8d9c15dec9edb0a, type: 2}
     _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}

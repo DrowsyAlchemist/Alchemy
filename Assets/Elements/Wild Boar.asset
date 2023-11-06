@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wild Boar
   _lable: "\u0414\u0438\u043A\u0438\u0439 \u043A\u0430\u0431\u0430\u043D"
-  _sprite: {fileID: 21300000, guid: cf95bc30ac08dc040824bd3bae4a3100, type: 3}
+  _sprite: {fileID: 21300000, guid: 5a196c90c5e891a4890154c9745d241a, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 20392d3695b38a34a8e84e4322f95cb2, type: 2}
     _secondElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}

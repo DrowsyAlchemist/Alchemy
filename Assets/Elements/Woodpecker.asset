@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Woodpecker
   _lable: "\u0414\u044F\u0442\u0435\u043B"
-  _sprite: {fileID: 21300000, guid: ec3d054a96d508a4781480a263c53c36, type: 3}
+  _sprite: {fileID: 21300000, guid: fcb1e53e5c481b847b8f0e9f4fb6727f, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
     _secondElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}

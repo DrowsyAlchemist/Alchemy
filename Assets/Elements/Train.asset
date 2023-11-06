@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Train
   _lable: "\u041F\u043E\u0435\u0437\u0434"
-  _sprite: {fileID: 21300000, guid: 784d90d3ec61f634c8a8577e63041f98, type: 3}
+  _sprite: {fileID: 21300000, guid: 5d794f9d82b59ee40865b5a49a467f03, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5c2d62e985296f944ab8c3881c7e8ae1, type: 2}
     _secondElement: {fileID: 11400000, guid: 712d6384182b7354e9630f19dc2bd756, type: 2}

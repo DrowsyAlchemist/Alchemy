@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wax
   _lable: "\u0412\u043E\u0441\u043A"
-  _sprite: {fileID: 21300000, guid: 510dd68bae1187744a603890ff3fa12e, type: 3}
+  _sprite: {fileID: 21300000, guid: d3be7686c6014664ea9e3d6ff903fcce, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: c6cddc18d62d4a647bdff51a2d31b279, type: 2}
     _secondElement: {fileID: 11400000, guid: d9e1cb8d21a87cc4d934c40af3eddd05, type: 2}

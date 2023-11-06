@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Story
   _lable: "\u0418\u0441\u0442\u043E\u0440\u0438\u044F"
-  _sprite: {fileID: 21300000, guid: ffc5488312ad9ab4eb3d1bebf4b7559f, type: 3}
+  _sprite: {fileID: 21300000, guid: bba4d71a7bb30be43b60c6bae370cd68, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: 11f3200454621474ab3fd2eb17861224, type: 2}

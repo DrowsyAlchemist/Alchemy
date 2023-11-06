@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sundial
   _lable: "\u0421\u043E\u043B\u043D\u0435\u0447\u043D\u044B\u0435 \u0447\u0430\u0441\u044B"
-  _sprite: {fileID: 21300000, guid: 21291109064fa8d439e7bf02f8a04ce0, type: 3}
+  _sprite: {fileID: 21300000, guid: 65036cb4ce41fb44a863526f65233624, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 0dce544b6b3073e4d9643eb818f791c3, type: 2}
     _secondElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}

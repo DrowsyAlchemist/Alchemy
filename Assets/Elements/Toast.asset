@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Toast
   _lable: "\u0422\u043E\u0441\u0442"
-  _sprite: {fileID: 21300000, guid: 0e5e04c97ad331d44ae0ca906ab2544f, type: 3}
+  _sprite: {fileID: 21300000, guid: a5f1256520949c94f8205acf8b8687ba, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4096541e6af17ef42ac8f49d8abedfe6, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}

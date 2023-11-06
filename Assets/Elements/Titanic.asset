@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Titanic
   _lable: "\u0422\u0438\u0442\u0430\u043D\u0438\u043A"
-  _sprite: {fileID: 21300000, guid: 84972807bc26cd241941832f3dac6a39, type: 3}
+  _sprite: {fileID: 21300000, guid: d13c0ad7c79ba1642a48f37f9a516c03, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 255aa08112f70764a9b0cf1f34c4be6d, type: 2}
     _secondElement: {fileID: 11400000, guid: 45cb0a29eefbf284396e77795aaad2c2, type: 2}

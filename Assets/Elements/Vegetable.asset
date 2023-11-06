@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Vegetable
   _lable: "\u041E\u0432\u043E\u0449"
-  _sprite: {fileID: 21300000, guid: cba7d27f4fd444d439c6997042d5a7d7, type: 3}
+  _sprite: {fileID: 21300000, guid: 36c70cee2f5129f42a18eed8fe53819d, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 21a1e89e0de17e640a577f9c0b265757, type: 2}
     _secondElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}

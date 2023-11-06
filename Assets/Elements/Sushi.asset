@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sushi
   _lable: "\u0421\u0443\u0448\u0438"
-  _sprite: {fileID: 21300000, guid: 843a2a8a5a3f2ce47a1dd1270478b406, type: 3}
+  _sprite: {fileID: 21300000, guid: baf76d7ce169a2845b5f73190ac71bc0, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 3203e04fde19c9347bfd6219beb787cf, type: 2}
     _secondElement: {fileID: 11400000, guid: aad025cae04a92c42b1d3770ca91d975, type: 2}

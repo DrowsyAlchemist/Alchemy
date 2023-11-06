@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Space
   _lable: "\u041A\u043E\u0441\u043C\u043E\u0441"
-  _sprite: {fileID: 21300000, guid: d7e52e91a3f488842920cb049236b7a1, type: 3}
+  _sprite: {fileID: 21300000, guid: 4ae5f27edff788d42a9fa33ca7d54b53, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 9f0d97070c0818543adcb8fa68d51192, type: 2}
     _secondElement: {fileID: 11400000, guid: 5cc14ab8b084f124c9c07b14abaa1e04, type: 2}

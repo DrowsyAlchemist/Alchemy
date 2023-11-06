@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Tunnel
   _lable: "\u0422\u043E\u043D\u043D\u0435\u043B\u044C"
-  _sprite: {fileID: 21300000, guid: ff931570fb977dd4585a99e67fa11b8d, type: 3}
+  _sprite: {fileID: 21300000, guid: 1341574b65a137e479a1fa35b3ec4d93, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 5104ac7ea63b697468722e421734b00c, type: 2}
     _secondElement: {fileID: 11400000, guid: 3659d2203c3214b4b8e70e7413967f35, type: 2}

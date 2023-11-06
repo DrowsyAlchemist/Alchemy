@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Soap
   _lable: "\u041C\u044B\u043B\u043E"
-  _sprite: {fileID: 21300000, guid: d81e362c6eb054b4580eb4b7c3af9902, type: 3}
+  _sprite: {fileID: 21300000, guid: 672b0b75fb9ba044080243922c0a29d6, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 98afd116610730748b4f041f0a0314db, type: 2}
     _secondElement: {fileID: 11400000, guid: 93ab9480156da3b498164bb8d71ee84b, type: 2}

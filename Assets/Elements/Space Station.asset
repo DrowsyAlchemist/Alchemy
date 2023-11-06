@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Space Station
   _lable: "\u041A\u043E\u0441\u043C\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u0441\u0442\u0430\u043D\u0446\u0438\u044F"
-  _sprite: {fileID: 21300000, guid: 3314dfc0ade942f409cfe386480bbb04, type: 3}
+  _sprite: {fileID: 21300000, guid: 4eda16738fabc9e4b833f1edf2d5f564, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 144c04e8596d08844b1bb28613e94103, type: 2}
     _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}

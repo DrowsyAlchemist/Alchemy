@@ -15,7 +15,7 @@ MonoBehaviour:
   _id: Sunglasses
   _lable: "\u0421\u043E\u043B\u043D\u0446\u0435\u0437\u0430\u0449\u0438\u0442\u043D\u044B\u0435
     \u043E\u0447\u043A\u0438"
-  _sprite: {fileID: 21300000, guid: 119d6f03f0e013648a956739893535f0, type: 3}
+  _sprite: {fileID: 21300000, guid: b0a54b7d88be66f408aac631f6cb5f7f, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ad8a340147bd694468bc3f44e76ea362, type: 2}
     _secondElement: {fileID: 11400000, guid: d696695e226793540b3d58c191fa3123, type: 2}

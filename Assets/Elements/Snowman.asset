@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Snowman
   _lable: "\u0421\u043D\u0435\u0433\u043E\u0432\u0438\u043A"
-  _sprite: {fileID: 21300000, guid: 9355f75b15d1c884ba7f53640715d109, type: 3}
+  _sprite: {fileID: 21300000, guid: c41521ee49270e648886e65f81c1d4ab, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 1c76d10c69aa84e479cc3ba26c4470ec, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}

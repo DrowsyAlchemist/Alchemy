@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wine
   _lable: "\u0412\u0438\u043D\u043E"
-  _sprite: {fileID: 21300000, guid: ff3d2a63cdbaffa4589411e0c0dc61cc, type: 3}
+  _sprite: {fileID: 21300000, guid: 40dba8b49625ef347aae3b47ef23ecf1, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: d8c03d6b52897544bbcb422c24269d87, type: 2}
     _secondElement: {fileID: 11400000, guid: 3796662a1e80935409226844cca428a7, type: 2}

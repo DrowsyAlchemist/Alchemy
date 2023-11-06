@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Witch
   _lable: "\u0412\u0435\u0434\u044C\u043C\u0430"
-  _sprite: {fileID: 21300000, guid: e5deccda339a3504fa6a5a22603c49b1, type: 3}
+  _sprite: {fileID: 21300000, guid: 859037764397ecc40aa838aed97dde33, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: af2836be3a54a9c468821f10dd32de63, type: 2}

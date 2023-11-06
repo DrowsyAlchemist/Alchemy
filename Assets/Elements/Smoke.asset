@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Smoke
   _lable: "\u0414\u044B\u043C"
-  _sprite: {fileID: 21300000, guid: 06e92a2bcd2f8ef45b7568390d9140bb, type: 3}
+  _sprite: {fileID: 21300000, guid: ed73cb4851710f24a8d30e33a2f1d505, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}
     _secondElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}

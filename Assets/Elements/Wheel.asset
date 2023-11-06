@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wheel
   _lable: "\u041A\u043E\u043B\u0435\u0441\u043E"
-  _sprite: {fileID: 21300000, guid: b5eb33489c3874d4bbaf0c0c31a7a4b0, type: 3}
+  _sprite: {fileID: 21300000, guid: 5611a208dd01f1a4b9938d8d0593b641, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 4bf26f6868b11d14786a24d03b702164, type: 2}
     _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}

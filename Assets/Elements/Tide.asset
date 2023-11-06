@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Tide
   _lable: "\u041F\u0440\u0438\u043B\u0438\u0432"
-  _sprite: {fileID: 21300000, guid: bcf48d7181d625b4893a534073a2d1d3, type: 3}
+  _sprite: {fileID: 21300000, guid: 0250a444ccf8667448ef5553ebe83307, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}
     _secondElement: {fileID: 11400000, guid: 779ecbf5c09925540b98dbacf97b00ff, type: 2}

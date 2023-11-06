@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wagon
   _lable: "\u041F\u043E\u0432\u043E\u0437\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: c6d14f5a7cdbd5e42b47646cec7ae691, type: 3}
+  _sprite: {fileID: 21300000, guid: 83c541a240dc3c6439a50edccacf1a79, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 81ed12d52443dba49b13fad3567fe3a3, type: 2}
     _secondElement: {fileID: 11400000, guid: 10469bb1fb36cd74fafb846f583bc9f1, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Yogurt
   _lable: "\u0419\u043E\u0433\u0443\u0440\u0442"
-  _sprite: {fileID: 21300000, guid: cf9454d4298cb234e8164a6f86f444f6, type: 3}
+  _sprite: {fileID: 21300000, guid: 87c76c1c07fffe64b916deff4534a4b7, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 7c081a78d6d8abf428f9260c1afbaa76, type: 2}
     _secondElement: {fileID: 11400000, guid: 4e7567297eb1ff14faa8b39f40cc98b6, type: 2}

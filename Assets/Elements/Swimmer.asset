@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Swimmer
   _lable: "\u041F\u043B\u043E\u0432\u0435\u0446"
-  _sprite: {fileID: 21300000, guid: 898480dcd006b234c9c9fbf0337452b4, type: 3}
+  _sprite: {fileID: 21300000, guid: bc61284af8e79f64ea4216c6cfbe847b, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: f2177140ffee134449e5420d4884e844, type: 2}
     _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}

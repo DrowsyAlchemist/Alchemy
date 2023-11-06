@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Tobacco
   _lable: "\u0422\u0430\u0431\u0430\u043A"
-  _sprite: {fileID: 21300000, guid: 91f09eeb2341c8f43abcb93a3da5a6b5, type: 3}
+  _sprite: {fileID: 21300000, guid: 69e379f185117f34bbcb17ff2b4f46c3, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
     _secondElement: {fileID: 11400000, guid: ee16aea50cc9b144b8f45cededa633bd, type: 2}

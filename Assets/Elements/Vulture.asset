@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Vulture
   _lable: "\u0421\u0442\u0435\u0440\u0432\u044F\u0442\u043D\u0438\u043A"
-  _sprite: {fileID: 21300000, guid: 49d8165345f7d2d4ea14075c86eb0758, type: 3}
+  _sprite: {fileID: 21300000, guid: 7dfc4d489e330414a8af08f1aa36a9a5, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}
     _secondElement: {fileID: 11400000, guid: cd21883b495bd1e4b86cdd2779fd8e8c, type: 2}

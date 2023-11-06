@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Wool
   _lable: "\u0428\u0435\u0440\u0441\u0442\u044C"
-  _sprite: {fileID: 21300000, guid: 4c8e7c0e04de80d4c92d1cf15a55103e, type: 3}
+  _sprite: {fileID: 21300000, guid: 0d613dc945e65bc4aa78b5b1109f0d73, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 2314dc53a54a7ff4687c35581335359e, type: 2}
     _secondElement: {fileID: 11400000, guid: 23a0f2c847b5dff4c8c1281567a1750e, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Telescope
   _lable: "\u0422\u0435\u043B\u0435\u0441\u043A\u043E\u043F"
-  _sprite: {fileID: 21300000, guid: 6ddb4eff4cd5ed644821c591f3902285, type: 3}
+  _sprite: {fileID: 21300000, guid: 5cf64498e89e7e34384cdd800bd9ed39, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}
     _secondElement: {fileID: 11400000, guid: 9f0d97070c0818543adcb8fa68d51192, type: 2}
