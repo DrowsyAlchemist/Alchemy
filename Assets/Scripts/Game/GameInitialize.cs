@@ -83,7 +83,7 @@ public sealed class GameInitialize : MonoBehaviour
         _openRecipiesBookButton.AssignOnClickAction(onButtonClick: OpenRecipiesBook);
 
         _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
-        _leaderboardView.Init(isPlayerAuthorized, _score, _saver);
+        _leaderboardView.Init(_score, _saver);
         _achievementsMenu.Init(_score);
 
 #if UNITY_EDITOR

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a6ddcdff8127214a9c878bcf4d1302f, type: 3}
   m_Name: 4 Test Achievement
   m_EditorClassIdentifier: 
-  _scoreRequired: 4
+  _scoreRequired: 7
   _icon: {fileID: 0}
-  _lableEn: 4 test
-  _lableRu: "4 \u0442\u0435\u0441\u0442"
-  _descriptionEn: "For 4 opened elements\t\t"
-  _descriptionRu: "\u0417\u0430 4 \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u0445
+  _lableEn: 7 test
+  _lableRu: "7 \u0442\u0435\u0441\u0442"
+  _descriptionEn: "For 7 opened elements\t\t"
+  _descriptionRu: "\u0417\u0430 7 \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u0445
     \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432"

@@ -13,7 +13,6 @@ public class LeaderboardView : MonoBehaviour
     [SerializeField] private RectTransform _container;
 
     private bool _isInitialized;
-    private bool _isPlayerAuthorized;
     private Score _score;
     private Saver _saver;
     private List<EntryRenderer> _entryRenderers = new();
@@ -34,15 +33,12 @@ public class LeaderboardView : MonoBehaviour
         }
     }
 
-    public void Init(bool isPlayerAuthorized, Score score, Saver saver)
+    public void Init(Score score, Saver saver)
     {
-        /*
-        _isPlayerAuthorized = isPlayerAuthorized;
         _score = score ?? throw new ArgumentNullException();
         _saver = saver ?? throw new ArgumentNullException();
         _authorizeButton.AssignOnClickAction(OnAuthorizationButtonClick);
         _isInitialized = true;
-        */
     }
 
     public void RenderLeaders()
@@ -50,11 +46,8 @@ public class LeaderboardView : MonoBehaviour
         if (_isInitialized == false)
             throw new InvalidOperationException("Leaderboard is not initialized");
 
-        if (_isPlayerAuthorized == false)
-        {
-            _playerRenderer.Render(_score.BestScore);
-            return;
-        }
+        _authorizePanel.Deactivate();
+
         Leaderboard.GetPlayerEntry(Settings.LeaderboardSettings.LeaderboardName,
             onSuccessCallback: (entry) => _playerRenderer.Render(entry),
             onErrorCallback: (error) => _playerRenderer.Render(_score.BestScore));
