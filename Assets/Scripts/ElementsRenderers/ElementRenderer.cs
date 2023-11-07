@@ -14,15 +14,15 @@ public abstract class ElementRenderer : MonoBehaviour, IHasElement
         Element = element;
         _image.sprite = element.Sprite;
         _lableText.text = element.Lable;
-        _lableText.color = HasLockedRecipies() ? Color.white : Color.yellow;
+        _lableText.color = HasRecipies() ? Settings.Elements.DefaultElementColor : Settings.Elements.ElementWithoutRecipiesColor;
     }
 
     protected void RenderClosed(Element element)
     {
         Element = element;
-        _image.sprite = Settings.ClosedElement.Sprite;
-        _lableText.text = Settings.ClosedElement.Lable;
-        _lableText.color = Color.white;
+        _image.sprite = Settings.Elements.ClosedElement.Sprite;
+        _lableText.text = Settings.Elements.ClosedElement.Lable;
+        _lableText.color = Settings.Elements.DefaultElementColor;
     }
 
     protected void RenderManual(Element element, Sprite sprite, string lable)
@@ -30,15 +30,11 @@ public abstract class ElementRenderer : MonoBehaviour, IHasElement
         Element = element;
         _image.sprite = sprite;
         _lableText.text = lable;
-        _lableText.color = Color.white;
+        _lableText.color = Settings.Elements.DefaultElementColor;
     }
 
-    private bool HasLockedRecipies()
+    private bool HasRecipies()
     {
-        foreach (var recipie in Element.Recipies)
-            if (recipie.Result.IsOpened == false)
-                return true;
-
-        return false;
+        return Element.Recipies.Count > 0;
     }
 }

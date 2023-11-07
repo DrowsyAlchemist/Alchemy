@@ -11,9 +11,10 @@ public class GameField : MonoBehaviour
 
     private const string OffAdProductId = "OffAd";
     private const string OpenElementForYanId = "OpenElement";
+    private const string OpenLastElementsForYanId = "OpenLastElements";
+    private const int LastElementsCount = 20;
     private Saver _saver;
     private ElementsStorage _elementsStorage;
-    private ElementForAdOpener _elementForAdOpener;
 
     public RectTransform ElementsContainer => _elementsContainer;
 
@@ -21,10 +22,9 @@ public class GameField : MonoBehaviour
     {
         _saver = saver;
         _elementsStorage = elementsStorage;
-        _elementForAdOpener = new ElementForAdOpener();
         _clearButton.AssignOnClickAction(Clear);
         _hideAdForYanButton.AssignOnClickAction(HideStickyAd);
-        _openElementForYanButton.AssignOnClickAction(OpenElementForAd);
+        _openElementForYanButton.AssignOnClickAction(OpenElementForYan);
 
         if (_saver.IsAdAllowed == false)
             _hideAdForYanButton.Deactivate();
@@ -51,20 +51,18 @@ public class GameField : MonoBehaviour
             _openElementForYanButton.Deactivate();
     }
 
-    private void OpenElementForAd()
+    private void OpenElementForYan()
     {
-#if UNITY_EDITOR
         List<Element> elementsForOpenening = FindElementsForOpening();
         Element elementForOpenenig = elementsForOpenening[Random.Range(0, elementsForOpenening.Count)];
+#if UNITY_EDITOR
         elementForOpenenig.Open();
         return;
 #endif
-        Billing.PurchaseProduct(OffAdProductId, onSuccessCallback: (response) =>
-        {
-            List<Element> elementsForOpenening = FindElementsForOpening();
-            Element elementForOpenenig = elementsForOpenening[Random.Range(0, elementsForOpenening.Count)];
-            elementForOpenenig.Open();
-        });
+        if (elementsForOpenening.Count <= LastElementsCount)
+            Billing.PurchaseProduct(OpenLastElementsForYanId, onSuccessCallback: (_) => elementForOpenenig.Open());
+        else
+            Billing.PurchaseProduct(OpenElementForYanId, onSuccessCallback: (_) => elementForOpenenig.Open());
     }
 
     private List<Element> FindElementsForOpening()

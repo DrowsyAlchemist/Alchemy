@@ -10,6 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0aa1226bb9cbc448ba373510d38be33, type: 3}
-  m_Name: GameSettings
+  m_Name: ElementsSettings
   m_EditorClassIdentifier: 
   _pointsForOpenedElements: 1
+  _defaultElementColor: {r: 1, g: 1, b: 1, a: 1}
+  _elementWithoutRecipiesColor: {r: 1, g: 0.82431376, b: 0.15471691, a: 1}
+  _closedElement: {fileID: 11400000, guid: 63753519f4473ba4ca22b17bb0786543, type: 2}

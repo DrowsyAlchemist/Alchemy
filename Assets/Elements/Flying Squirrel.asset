@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Flying Squirrel
   _lable: "\u0411\u0435\u043B\u043A\u0430-\u043B\u0435\u0442\u044F\u0433\u0430"
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 7f1a01179f817154ebe1e1637ef3fc21, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 456b7efa58993634ab7152429ad3e512, type: 2}
     _secondElement: {fileID: 11400000, guid: ab3d0ce7f4b9ef14ab9228a4ce92eb7f, type: 2}

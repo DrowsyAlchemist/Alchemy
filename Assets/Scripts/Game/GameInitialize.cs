@@ -18,6 +18,7 @@ public sealed class GameInitialize : MonoBehaviour
     [SerializeField] private Progress _progress;
     [SerializeField] private Score _score;
     [SerializeField] private LeaderboardView _leaderboardView;
+    [SerializeField] private AchievementsMenu _achievementsMenu;
     [SerializeField] private InterAdPanel _interAdPanel;
 
     [SerializeField] private BookElementsView _bookGridView;
@@ -74,7 +75,7 @@ public sealed class GameInitialize : MonoBehaviour
         _progress.Init(_elementsStorage);
         _score.Init(isPlayerAuthorized);
         _elementsMerger = new ElementsMerger(_openedElementsView, _score, _elementsStorage);
-        _openedElementsView.InitMainView(_gameField, _elementsMerger,_elementsStorage);
+        _openedElementsView.InitMainView(_gameField, _elementsMerger, _elementsStorage);
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
         _alphabeticalIndex.Init();
 
@@ -83,6 +84,7 @@ public sealed class GameInitialize : MonoBehaviour
 
         _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
         _leaderboardView.Init(isPlayerAuthorized, _score, _saver);
+        _achievementsMenu.Init(_score);
 
 #if UNITY_EDITOR
         _fadeImage.Deactivate();
@@ -109,6 +111,13 @@ public sealed class GameInitialize : MonoBehaviour
             element.Open();
 
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
+    }
+
+    public void ResetSaves()
+    {
+        ResetProgress();
+        UnityEngine.PlayerPrefs.DeleteAll();
+        UnityEngine.PlayerPrefs.Save();
     }
 
     private void OpenRecipiesBook()

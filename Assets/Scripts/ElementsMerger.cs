@@ -55,6 +55,6 @@ public class ElementsMerger : IMergeHandler
     private void OpenNewElement(Element element)
     {
         element.Open();
-        _score.AddScore(Settings.GameSettings.PointsForOpenedElement);
+        _score.AddScore(Settings.Elements.PointsForOpenedElement);
     }
 }
