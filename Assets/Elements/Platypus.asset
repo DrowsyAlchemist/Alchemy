@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Platypus
   _lable: "\u0423\u0442\u043A\u043E\u043D\u043E\u0441"
-  _sprite: {fileID: 21300000, guid: a59f2531d8923a74bafb84012d6862df, type: 3}
+  _sprite: {fileID: 21300000, guid: baa63c64f6c0f5b4b811e1aa3fb361cf, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: d4d0ab333f7c93046a6c4d71ff40bcfa, type: 2}
     _secondElement: {fileID: 11400000, guid: a1c443070d336ed48b09741009015116, type: 2}

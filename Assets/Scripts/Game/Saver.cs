@@ -104,10 +104,9 @@ public class Saver
 
     private void SetLoadedData(string jsonData)
     {
-        if (string.IsNullOrEmpty(jsonData) == false)
+        if (string.IsNullOrEmpty(jsonData))
         {
             Debug.Log("jsonData is null or empty");
-            Save();
             IsReady = true;
             return;
         }

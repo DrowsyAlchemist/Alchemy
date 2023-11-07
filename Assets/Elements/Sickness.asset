@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Sickness
   _lable: "\u0411\u043E\u043B\u0435\u0437\u043D\u044C"
-  _sprite: {fileID: 21300000, guid: ffdbe5f39f0a4d14f954e2316474f13e, type: 3}
+  _sprite: {fileID: 21300000, guid: 0fac084dd8dff23498f0f6dd42e2f7ef, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000, guid: bb425f3a78827f549b847208e99056b5, type: 2}
@@ -25,6 +25,10 @@ MonoBehaviour:
   - _firstElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _secondElement: {fileID: 11400000}
   _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
+    _result: {fileID: 11400000, guid: bcb222f68ef225343889bf7ecdd811b9, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 50352e8cdc821cd46a26c3beee9207a0, type: 2}
+    _result: {fileID: 11400000, guid: bcb222f68ef225343889bf7ecdd811b9, type: 2}
   - _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
     _result: {fileID: 11400000, guid: 3a32e109fe467de429ca72b2886efdbd, type: 2}
   - _secondElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}
@@ -37,7 +41,5 @@ MonoBehaviour:
     _result: {fileID: 11400000, guid: bff83ea51624a594ea624d70d11e9619, type: 2}
   - _secondElement: {fileID: 11400000, guid: 8305491b4652eef449704a463da500e9, type: 2}
     _result: {fileID: 11400000, guid: bff83ea51624a594ea624d70d11e9619, type: 2}
-  - _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
-    _result: {fileID: 11400000, guid: bcb222f68ef225343889bf7ecdd811b9, type: 2}
-  - _secondElement: {fileID: 11400000, guid: 50352e8cdc821cd46a26c3beee9207a0, type: 2}
-    _result: {fileID: 11400000, guid: bcb222f68ef225343889bf7ecdd811b9, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
+    _result: {fileID: 11400000}

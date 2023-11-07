@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Squirrel
   _lable: "\u0411\u0435\u043B\u043A\u0430"
-  _sprite: {fileID: 21300000, guid: f833ef01b2667be4798188a175b821ea, type: 3}
+  _sprite: {fileID: 21300000, guid: b88c9b10934183b47b4815fb854c76ea, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 42b2fd3776c240a4fba9b693e141dd5b, type: 2}
     _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Shark
   _lable: "\u0410\u043A\u0443\u043B\u0430"
-  _sprite: {fileID: 21300000, guid: f75a43c3e2b2b60429442edc6c522a03, type: 3}
+  _sprite: {fileID: 21300000, guid: 6aa8f7ecb004c9347a61b1ced745d684, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 8eb22965996a81249af9bc171ab104b6, type: 2}
     _secondElement: {fileID: 11400000, guid: e45c8ff9b2fd32e47b4c388a3c85e341, type: 2}

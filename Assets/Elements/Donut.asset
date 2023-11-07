@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Donut
   _lable: "\u041F\u043E\u043D\u0447\u0438\u043A"
-  _sprite: {fileID: 21300000, guid: d6e7469a2606ee743ba7c57b8d8bdaeb, type: 3}
+  _sprite: {fileID: 21300000, guid: 9f65a25c90001b64b9a779a05e5df8aa, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: a7cc456e627395443a3dcf554d44d689, type: 2}
     _secondElement: {fileID: 11400000, guid: 98afd116610730748b4f041f0a0314db, type: 2}

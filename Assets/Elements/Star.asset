@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Star
   _lable: "\u0417\u0432\u0435\u0437\u0434\u0430"
-  _sprite: {fileID: 21300000, guid: c95be4eb4cdb9d249846731bc5e5725c, type: 3}
+  _sprite: {fileID: 21300000, guid: f510380ddeac106408ec43168034af86, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 9f0d97070c0818543adcb8fa68d51192, type: 2}
     _secondElement: {fileID: 11400000, guid: 30c0549f0afb2b747abacbf8e5e8a732, type: 2}

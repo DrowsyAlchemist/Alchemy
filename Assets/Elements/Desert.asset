@@ -14,18 +14,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Desert
   _lable: "\u041F\u0443\u0441\u0442\u044B\u043D\u044F"
-  _sprite: {fileID: 21300000, guid: 841be7c18dd7e854c8bfc6f26192517e, type: 3}
+  _sprite: {fileID: 21300000, guid: 572107692ec1b0546a10f62156e33be4, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
     _secondElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
   - _firstElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
     _secondElement: {fileID: 11400000, guid: 377ad103144ee4c49a1a015f66264f3a, type: 2}
   _recipesWithElement:
-  - _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
-    _result: {fileID: 11400000, guid: 377ad103144ee4c49a1a015f66264f3a, type: 2}
-  - _secondElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}
-    _result: {fileID: 11400000, guid: cdb817e28e1cd0c4abf4fa776d333c48, type: 2}
   - _secondElement: {fileID: 11400000, guid: 1c76d10c69aa84e479cc3ba26c4470ec, type: 2}
     _result: {fileID: 11400000, guid: c8513eb7a21863c458fdb717184ea646, type: 2}
   - _secondElement: {fileID: 11400000, guid: 6b6e4faac3ae3484eb63825d5b215e3b, type: 2}
     _result: {fileID: 11400000, guid: c8513eb7a21863c458fdb717184ea646, type: 2}
+  - _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
+    _result: {fileID: 11400000, guid: 377ad103144ee4c49a1a015f66264f3a, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 10469bb1fb36cd74fafb846f583bc9f1, type: 2}
+    _result: {fileID: 11400000, guid: 745672ebc20d89141ad8e5c859b148c3, type: 2}
+  - _secondElement: {fileID: 11400000, guid: c508d5b57a19ae74f89952cfafa0145d, type: 2}
+    _result: {fileID: 11400000, guid: 745672ebc20d89141ad8e5c859b148c3, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 8a82418096ba94647ad543838ac7b2e7, type: 2}
+    _result: {fileID: 11400000, guid: a1b7ad737f57b3740a0e2f5b122464e8, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
+    _result: {fileID: 11400000, guid: 6c358ff88f62a264c977c5cf76d03ae3, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
+    _result: {fileID: 11400000, guid: 6c358ff88f62a264c977c5cf76d03ae3, type: 2}
+  - _secondElement: {fileID: 11400000, guid: f2c305ae26e69734ba69032e5b9b9355, type: 2}
+    _result: {fileID: 11400000, guid: 6c358ff88f62a264c977c5cf76d03ae3, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 1feca8da4a589314ebd90c4f81985255, type: 2}
+    _result: {fileID: 11400000, guid: cdb817e28e1cd0c4abf4fa776d333c48, type: 2}
+  - _secondElement: {fileID: 11400000, guid: c09e2d6845805e0439bad4186698a73c, type: 2}
+    _result: {fileID: 11400000, guid: cdb817e28e1cd0c4abf4fa776d333c48, type: 2}

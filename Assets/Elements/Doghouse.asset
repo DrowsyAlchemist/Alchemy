@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Doghouse
   _lable: "\u041A\u043E\u043D\u0443\u0440\u0430"
-  _sprite: {fileID: 21300000, guid: cdbdd43c85afbb24dbc71e7cd2ffff4b, type: 3}
+  _sprite: {fileID: 21300000, guid: 03eb4ee34920cd04fabc848c6e8409ff, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: dbfa9430efce4fe4f9ce4f347b5fd751, type: 2}
     _secondElement: {fileID: 11400000, guid: 4ca35e2622b4f16478a1883d611f9379, type: 2}
