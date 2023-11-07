@@ -12,12 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
   m_Name: Light bulb
   m_EditorClassIdentifier: 
-  _id: Light bulb
+  _id: Light Bulb
   _lable: "\u041B\u0430\u043C\u043F\u043E\u0447\u043A\u0430"
   _sprite: {fileID: 21300000, guid: 680a1b36391fc204081514925ef352f3, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 158e079c518ceba4a95a18b7d314f6c5, type: 2}
     _secondElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}
   _recipesWithElement:
+  - _secondElement: {fileID: 11400000, guid: 2b98669545a94954f968ff82de224027, type: 2}
+    _result: {fileID: 11400000, guid: 74a9773feccb13141b7472fa9f528ceb, type: 2}
   - _secondElement: {fileID: 11400000, guid: 08e4734448441a94fb0f0fc184df0371, type: 2}
     _result: {fileID: 11400000, guid: e4878fa6998cc9345b983f34f2b859bc, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 5104ac7ea63b697468722e421734b00c, type: 2}
+    _result: {fileID: 11400000, guid: e4878fa6998cc9345b983f34f2b859bc, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4460400019dc60a4dbf8041a68359132, type: 2}
+    _result: {fileID: 11400000, guid: e4878fa6998cc9345b983f34f2b859bc, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 4a8a3ca2bf137ea48b2f83b5919d2889, type: 2}
+    _result: {fileID: 11400000, guid: 3288d93d466549c45ab4bebd822586ed, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 158e079c518ceba4a95a18b7d314f6c5, type: 2}
+    _result: {fileID: 11400000, guid: 6c91102b7cd458a4187367eb594a0e19, type: 2}

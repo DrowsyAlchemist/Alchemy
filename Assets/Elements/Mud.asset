@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Mud
   _lable: "\u0413\u0440\u044F\u0437\u044C"
-  _sprite: {fileID: 21300000, guid: d56d9c4b52a7e64418f40dd0e5e823e6, type: 3}
+  _sprite: {fileID: 21300000, guid: c7a9b8e96bc7d7d49acae3b1d8734ae4, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 72f972329d1c2464f88294a2c609b9cf, type: 2}
     _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}
   _recipesWithElement:
-  - _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
-    _result: {fileID: 11400000, guid: d695aa551ea721d4d8139893cda895bb, type: 2}
-  - _secondElement: {fileID: 11400000, guid: 0ff280c20f14be6489dd8a2a2fc9601a, type: 2}
-    _result: {fileID: 11400000, guid: d695aa551ea721d4d8139893cda895bb, type: 2}
   - _secondElement: {fileID: 11400000, guid: e2b0226873a70c24c809d32983b91367, type: 2}
     _result: {fileID: 11400000, guid: 365f6d16601d380408e92269fede7428, type: 2}
   - _secondElement: {fileID: 11400000, guid: c508d5b57a19ae74f89952cfafa0145d, type: 2}
     _result: {fileID: 11400000, guid: 20392d3695b38a34a8e84e4322f95cb2, type: 2}
+  - _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}
+    _result: {fileID: 11400000, guid: d695aa551ea721d4d8139893cda895bb, type: 2}
+  - _secondElement: {fileID: 11400000, guid: 0ff280c20f14be6489dd8a2a2fc9601a, type: 2}
+    _result: {fileID: 11400000, guid: d695aa551ea721d4d8139893cda895bb, type: 2}

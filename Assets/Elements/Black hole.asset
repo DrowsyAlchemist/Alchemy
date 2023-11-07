@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddca5b16d5dbb714099212a4ac1ee834, type: 3}
   m_Name: Black hole
   m_EditorClassIdentifier: 
-  _id: Black hole
+  _id: Black Hole
   _lable: "\u0427\u0451\u0440\u043D\u0430\u044F \u0434\u044B\u0440\u0430"
   _sprite: {fileID: 21300000, guid: e45c54b49ef13954984dca059172a2ca, type: 3}
   _creationRecipies:
