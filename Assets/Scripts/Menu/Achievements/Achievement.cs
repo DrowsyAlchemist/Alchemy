@@ -13,15 +13,15 @@ public class Achievement : ScriptableObject
     [SerializeField, TextArea(5, 10)] private string _descriptionEn;
     [SerializeField, TextArea(5, 10)] private string _descriptionRu;
 
+    public bool IsAchieved => CheckAchieved(Score);
     protected ElementsStorage ElementsStorage { get; private set; }
     protected Score Score { get; private set; }
-    public bool IsAchieved => CheckAchieved(Score);
 
     public Sprite Icon => _icon;
     public string Lable => LeanLocalization.GetFirstCurrentLanguage().Equals("ru") ? _lableRu : _lableEn;
     public string Description => LeanLocalization.GetFirstCurrentLanguage().Equals("ru") ? _descriptionRu : _descriptionEn;
 
-    public event Action Achieved;
+    public event Action<int> Achieved;
 
     public void Init(Score score)
     {
@@ -34,7 +34,7 @@ public class Achievement : ScriptableObject
         if (CheckAchieved(Score))
         {
             Score.BestScoreChanged -= OnBestScoreChanged;
-            Achieved?.Invoke();
+            Achieved?.Invoke(Score.BestScore);
         }
     }
 

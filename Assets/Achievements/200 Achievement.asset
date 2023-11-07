@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a6ddcdff8127214a9c878bcf4d1302f, type: 3}
+  m_Name: 200 Achievement
+  m_EditorClassIdentifier: 
+  _scoreRequired: 200
+  _icon: {fileID: 0}
+  _lableEn: 200 Elements
+  _lableRu: "200 \u042D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432"
+  _descriptionEn: Find 200 elements.
+  _descriptionRu: "\u041D\u0430\u0439\u0442\u0438 200 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432"

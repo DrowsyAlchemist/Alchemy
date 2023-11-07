@@ -103,6 +103,7 @@ public sealed class GameInitialize : MonoBehaviour
         LeanLocalization.SetCurrentLanguageAll(systemLang);
         _fadeImage.Deactivate();
         YandexGamesSdk.GameReady();
+        Metrics.SendEvent(MetricEvent.StartGame);
     }
 
     public void OpenAllElements()

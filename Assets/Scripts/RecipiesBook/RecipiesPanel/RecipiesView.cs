@@ -28,6 +28,7 @@ public class RecipiesView : MonoBehaviour
         FillCreationRecipies(element);
         _scrollView.RerenderContent(Settings.CoroutineObject);
         _scrollView.RaiseContent();
+        Metrics.SendEvent(MetricEvent.OpenRecipies);
     }
 
     private void FillRecipiesWithElement(Element element)

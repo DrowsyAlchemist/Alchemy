@@ -14,6 +14,7 @@ public class BookElementsView : ElementsView
     private void OnEnable()
     {
         _scrollView.normalizedPosition = new Vector2(0, 1);
+        Metrics.SendEvent(MetricEvent.OpenBook);
     }
 
     public void InitBookView(IElementClickHandler elementClickHandler,ElementsStorage elementsStorage)

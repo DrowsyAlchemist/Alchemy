@@ -22,6 +22,7 @@ public class LeaderboardView : MonoBehaviour
     {
         if (_isInitialized)
         {
+            Metrics.SendEvent(MetricEvent.OpenLeaderboard);
 #if UNITY_EDITOR
             RenderPlayerOnly();
             return;

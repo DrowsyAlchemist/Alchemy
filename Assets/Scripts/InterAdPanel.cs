@@ -1,4 +1,5 @@
 using Agava.YandexGames;
+using GameAnalyticsSDK;
 using TMPro;
 using UnityEngine;
 
@@ -41,6 +42,9 @@ public class InterAdPanel : MonoBehaviour
     private void ShowInter()
     {
         if (_saver.IsAdAllowed)
+        {
             InterstitialAd.Show();
+            GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "InterAd", 1, "InterAd", "InterAd");
+        }
     }
 }

@@ -1,4 +1,5 @@
 using Agava.YandexGames;
+using GameAnalyticsSDK;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,7 +24,7 @@ public class GameField : MonoBehaviour
         _saver = saver;
         _elementsStorage = elementsStorage;
         _clearButton.AssignOnClickAction(Clear);
-        _hideAdForYanButton.AssignOnClickAction(HideStickyAd);
+        _hideAdForYanButton.AssignOnClickAction(OffAd);
         _openElementForYanButton.AssignOnClickAction(OpenElementForYan);
 
         if (_saver.IsAdAllowed == false)
@@ -53,6 +54,7 @@ public class GameField : MonoBehaviour
 
     private void OpenElementForYan()
     {
+        Metrics.SendEvent(MetricEvent.ClickFieldBuyButton);
         List<Element> elementsForOpenening = FindElementsForOpening();
         Element elementForOpenenig = elementsForOpenening[Random.Range(0, elementsForOpenening.Count)];
 #if UNITY_EDITOR
@@ -60,9 +62,29 @@ public class GameField : MonoBehaviour
         return;
 #endif
         if (elementsForOpenening.Count <= LastElementsCount)
-            Billing.PurchaseProduct(OpenLastElementsForYanId, onSuccessCallback: (_) => elementForOpenenig.Open());
+        {
+            Billing.PurchaseProduct(
+                OpenLastElementsForYanId,
+                onSuccessCallback: (_) =>
+                {
+                    elementForOpenenig.Open();
+                    Metrics.SendEvent(MetricEvent.BuyLastElement);
+                    GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "Yan", 10, "LastElement", "InField");
+                },
+                developerPayload: elementForOpenenig.Id);
+        }
         else
-            Billing.PurchaseProduct(OpenElementForYanId, onSuccessCallback: (_) => elementForOpenenig.Open());
+        {
+            Billing.PurchaseProduct(
+                OpenElementForYanId,
+                onSuccessCallback: (_) =>
+                {
+                    elementForOpenenig.Open();
+                    Metrics.SendEvent(MetricEvent.BuyRandomElement);
+                    GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "Yan", 2, "Element", "InField");
+                },
+                developerPayload: elementForOpenenig.Id);
+        }
     }
 
     private List<Element> FindElementsForOpening()
@@ -86,13 +108,16 @@ public class GameField : MonoBehaviour
         return elementsForOpening;
     }
 
-    private void HideStickyAd()
+    private void OffAd()
     {
+        Metrics.SendEvent(MetricEvent.ClickOffAd);
         Billing.PurchaseProduct(OffAdProductId, onSuccessCallback: (response) =>
         {
             StickyAd.Hide();
             _saver.OffAd();
             _hideAdForYanButton.Deactivate();
+            Metrics.SendEvent(MetricEvent.BuyOffAd);
+            GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "Yan", 20, "OffAd", "OffAd");
         });
     }
 }

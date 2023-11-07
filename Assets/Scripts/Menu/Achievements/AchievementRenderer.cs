@@ -28,7 +28,7 @@ public class AchievementRenderer : MonoBehaviour
         }
     }
 
-    private void OnAchieved()
+    private void OnAchieved(int _)
     {
         _achievement.Achieved -= OnAchieved;
         UnfadeIcon();

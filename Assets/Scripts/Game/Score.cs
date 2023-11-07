@@ -7,14 +7,15 @@ public class Score : MonoBehaviour
 {
     [SerializeField] private ScoreRenderer[] _scoreRenderers;
 
+    private const int InitialScore = 4;
     private const string CurrentScoreStorage = "CurrentScore";
 
     private static Score _instance;
     private bool _isPlayerAuthorized;
     private PlayerExtraData _playerExtraData;
 
-    public int CurrentScore { get; private set; }
-    public int BestScore { get; private set; }
+    public int CurrentScore { get; private set; } = InitialScore;
+    public int BestScore { get; private set; } = InitialScore;
 
     public event Action<int> CurrentScoreChanged;
     public event Action<int> BestScoreChanged;
@@ -42,7 +43,7 @@ public class Score : MonoBehaviour
         catch (Exception e)
         {
             Debug.Log("ScoreInitError: " + e.Message + e.StackTrace);
-            _playerExtraData = new PlayerExtraData();
+            _playerExtraData = new PlayerExtraData() { CurrentScore = InitialScore };
         }
 
         foreach (var scoreRenderer in _scoreRenderers)
@@ -67,7 +68,7 @@ public class Score : MonoBehaviour
 
     public void ResetCurrentScore()
     {
-        CurrentScore = 0;
+        CurrentScore = InitialScore;
         CurrentScoreChanged?.Invoke(CurrentScore);
         SaveScore();
     }
@@ -111,7 +112,7 @@ public class Score : MonoBehaviour
 
             _playerExtraData = playerExtraData;
         }
-        _playerExtraData ??= new PlayerExtraData();
+        _playerExtraData ??= new PlayerExtraData() { CurrentScore = InitialScore };
         CurrentScore = _playerExtraData.CurrentScore;
     }
 
@@ -123,8 +124,8 @@ public class Score : MonoBehaviour
 
     private void GetScoreFromPrefs()
     {
-        BestScore = PlayerPrefs.GetInt(Settings.LeaderboardSettings.LeaderboardName, 0);
-        CurrentScore = PlayerPrefs.GetInt(CurrentScoreStorage, 0);
+        BestScore = PlayerPrefs.GetInt(Settings.LeaderboardSettings.LeaderboardName, InitialScore);
+        CurrentScore = PlayerPrefs.GetInt(CurrentScoreStorage, InitialScore);
     }
 
     [Serializable]
