@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Tea
   _lable: "\u0427\u0430\u0439"
-  _sprite: {fileID: 21300000, guid: ddbb6e43ed34d6b42973179bbf75d747, type: 3}
+  _sprite: {fileID: 21300000, guid: e079797ab40454e4d931fadd4208ad70, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: 50352e8cdc821cd46a26c3beee9207a0, type: 2}
     _secondElement: {fileID: 11400000, guid: 789cb2b53c5c5d74e98d7cc437124f87, type: 2}

@@ -49,6 +49,8 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 63f736a92aff90646bb8b1a485331f19, type: 3}
     - {fileID: 2800000, guid: 87c76c1c07fffe64b916deff4534a4b7, type: 3}
     - {fileID: 2800000, guid: 7f1a01179f817154ebe1e1637ef3fc21, type: 3}
+    - {fileID: 2800000, guid: 045817ac84a9c7149815137ce5064513, type: 3}
+    - {fileID: 2800000, guid: 25d771298f8a36c46a51218d341c66b2, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -56,15 +58,19 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 21300000, guid: 7f1a01179f817154ebe1e1637ef3fc21, type: 3}
   - {fileID: 21300000, guid: 100e47c8b179ba44f9342c95add387b8, type: 3}
+  - {fileID: 21300000, guid: 25d771298f8a36c46a51218d341c66b2, type: 3}
   - {fileID: 21300000, guid: 63f736a92aff90646bb8b1a485331f19, type: 3}
   - {fileID: 21300000, guid: 0d43c2db572ad5e4484b512e440537b4, type: 3}
   - {fileID: 21300000, guid: 87c76c1c07fffe64b916deff4534a4b7, type: 3}
+  - {fileID: 21300000, guid: 045817ac84a9c7149815137ce5064513, type: 3}
   m_PackedSpriteNamesToIndex:
   - flying-squirrel
   - yak
+  - coffee-beans
   - zombie (1)
   - yeti (1)
   - yogurt
+  - coffee-plant
   m_RenderDataMap: {}
   m_Tag: _Elements 10
   m_IsVariant: 0

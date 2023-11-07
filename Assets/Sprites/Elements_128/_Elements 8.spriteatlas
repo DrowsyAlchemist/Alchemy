@@ -97,7 +97,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 2f67efeb41a65574f9afacf7f2316838, type: 3}
     - {fileID: 2800000, guid: ee023889fc674794482c0cdbb2b39847, type: 3}
     - {fileID: 2800000, guid: 786de07f2c6463e49b4c8d0d53989306, type: 3}
-    - {fileID: 2800000, guid: ddbb6e43ed34d6b42973179bbf75d747, type: 3}
+    - {fileID: 21300000, guid: e079797ab40454e4d931fadd4208ad70, type: 3}
     - {fileID: 2800000, guid: 5cf64498e89e7e34384cdd800bd9ed39, type: 3}
     - {fileID: 2800000, guid: e2eba7ad63e7e4f44bc0d2266c46f0a9, type: 3}
     - {fileID: 2800000, guid: 69e379f185117f34bbcb17ff2b4f46c3, type: 3}
@@ -118,7 +118,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 69e379f185117f34bbcb17ff2b4f46c3, type: 3}
   - {fileID: 21300000, guid: e007bb82285e0a9498d96b4fc312efc0, type: 3}
   - {fileID: 21300000, guid: f4c92633329dcaa4f8b4986fc11d3546, type: 3}
-  - {fileID: 21300000, guid: ddbb6e43ed34d6b42973179bbf75d747, type: 3}
   - {fileID: 21300000, guid: 5e2fd8632f95ee84ebd7ec13730560bd, type: 3}
   - {fileID: 21300000, guid: 4eda16738fabc9e4b833f1edf2d5f564, type: 3}
   - {fileID: 21300000, guid: 087ee2e348786e54381936cc3a9cf440, type: 3}
@@ -147,6 +146,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 9d5c231ac76bd4c43b3baabacb118d50, type: 3}
   - {fileID: 21300000, guid: 17f53c1a95facae46a7a03421fad3675, type: 3}
   - {fileID: 21300000, guid: bc61284af8e79f64ea4216c6cfbe847b, type: 3}
+  - {fileID: 21300000, guid: e079797ab40454e4d931fadd4208ad70, type: 3}
   - {fileID: 21300000, guid: d185d74b0e4383c49a9a5b0f18c9fa5b, type: 3}
   - {fileID: 21300000, guid: a4a1cd7b6b2d9354db06b90d74b6ec34, type: 3}
   - {fileID: 21300000, guid: d89bb08b3bfd3194c855c54ec7fdf2ea, type: 3}
@@ -178,7 +178,6 @@ SpriteAtlas:
   - tobacco
   - stone (1)
   - traction-engine
-  - tea-bag
   - starfish
   - space-station
   - solar-cell
@@ -207,6 +206,7 @@ SpriteAtlas:
   - sunflower
   - stone (1) 1
   - swimming (1)
+  - tea
   - snowmobile
   - snowflake
   - steel

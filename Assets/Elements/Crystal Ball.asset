@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Crystal Ball
   _lable: "\u0425\u0440\u0443\u0441\u0442\u0430\u043B\u044C\u043D\u044B\u0439 \u0448\u0430\u0440"
-  _sprite: {fileID: 21300000, guid: 0d36a020cb2f117488cf41cd3492b1f6, type: 3}
+  _sprite: {fileID: 21300000, guid: 0579ca7976f446a4b8af51372af949e9, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: eed53aa0c55aa754cabedf71b3f69401, type: 2}
     _secondElement: {fileID: 11400000, guid: 21f221cf09bb1a546904b0258f2e1021, type: 2}

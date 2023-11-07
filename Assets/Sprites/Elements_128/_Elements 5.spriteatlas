@@ -50,7 +50,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: ee0606e10d7cb714eb605d6b2b423e7d, type: 3}
     - {fileID: 2800000, guid: b38f51264a23d05419c7c0dec21b96cf, type: 3}
     - {fileID: 2800000, guid: edeedc5527b3bee4c8dc700d827dca0b, type: 3}
-    - {fileID: 2800000, guid: 0d36a020cb2f117488cf41cd3492b1f6, type: 3}
+    - {fileID: 2800000, guid: 0579ca7976f446a4b8af51372af949e9, type: 3}
     - {fileID: 2800000, guid: 6129498baef3e2c40a42ef120286eab3, type: 3}
     - {fileID: 2800000, guid: c7ccaef9f1622c14eafd8be3617970b2, type: 3}
     - {fileID: 2800000, guid: e5263b5f486f6bd4a826fc1048140de7, type: 3}
@@ -110,7 +110,6 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: 0d36a020cb2f117488cf41cd3492b1f6, type: 3}
   - {fileID: 21300000, guid: 2596d5809c3ebe64d96a0106f04eea63, type: 3}
   - {fileID: 21300000, guid: 3d3af1b0d085b8e428791c031bc6cfbc, type: 3}
   - {fileID: 21300000, guid: 260590e0486241f44bde6813227e555d, type: 3}
@@ -141,6 +140,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 91e84e6785507ce46a87966cf0e03a46, type: 3}
   - {fileID: 21300000, guid: edf7c2b764219cc4798a8fe57d054866, type: 3}
   - {fileID: 21300000, guid: e432a0686802edb40b40952ce0faad2c, type: 3}
+  - {fileID: 21300000, guid: 0579ca7976f446a4b8af51372af949e9, type: 3}
   - {fileID: 21300000, guid: 4cce3399f336b2b4a9903beb31205eaa, type: 3}
   - {fileID: 21300000, guid: 0985a999c0f22b64fbab822a00a61925, type: 3}
   - {fileID: 21300000, guid: c7a9b8e96bc7d7d49acae3b1d8734ae4, type: 3}
@@ -172,7 +172,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a4ca99bf1cb59f54da4d81da1b03dd2b, type: 3}
   - {fileID: 21300000, guid: 8fe65fff1f112b147846074019c7a6ce, type: 3}
   m_PackedSpriteNamesToIndex:
-  - magic-ball
   - mine
   - milk-shake
   - mummy (1)
@@ -203,9 +202,10 @@ SpriteAtlas:
   - mist
   - lizard
   - mountain-range
+  - crystal-ball
   - meteorite
   - nest
-  - mud
+  - Mud
   - man
   - meat 1
   - olive-oil

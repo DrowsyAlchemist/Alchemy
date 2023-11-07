@@ -9,7 +9,6 @@ public class MainOpenedElementsView : ElementsView
 
     private GameField _gameField;
     private IMergeHandler _mergeHandler;
-    private ElementsStorage _elementsStorage;
 
     public void InitMainView(GameField gameField, IMergeHandler mergeHandler, ElementsStorage elementsStorage)
     {

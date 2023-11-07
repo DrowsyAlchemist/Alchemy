@@ -73,7 +73,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 055210e985068a2459887595c8de7fad, type: 3}
     - {fileID: 2800000, guid: 7a94e739ec348184186cfe6a75dfa4a4, type: 3}
     - {fileID: 2800000, guid: 54c0fdc20e5f82146a021792b5582be0, type: 3}
-    - {fileID: 2800000, guid: 3e1358cacefd94748a00de064c0c9527, type: 3}
+    - {fileID: 2800000, guid: 2e4596633150c7243ac59bf5f6ce03a7, type: 3}
     - {fileID: 2800000, guid: 5813a530f9ff9854e8a0cb7ceaee2e5a, type: 3}
     - {fileID: 2800000, guid: ee8c24b5468245646bbb842ea2dd6e88, type: 3}
     - {fileID: 2800000, guid: 75971dcc8ceaa58438ffbc2f20077f23, type: 3}
@@ -114,6 +114,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 37522bc27a923204c81ed95007f55b9c, type: 3}
   - {fileID: 21300000, guid: 54c0fdc20e5f82146a021792b5582be0, type: 3}
   - {fileID: 21300000, guid: 68a1cde2a45c59346b2a3f190e44b1d5, type: 3}
+  - {fileID: 21300000, guid: 2e4596633150c7243ac59bf5f6ce03a7, type: 3}
   - {fileID: 21300000, guid: bb9e417350f0394459302fe757dd2632, type: 3}
   - {fileID: 21300000, guid: d30d52c3b8694b147bb064d8e433bdea, type: 3}
   - {fileID: 21300000, guid: ac902be3b9663e54ca46cf7ebef71c35, type: 3}
@@ -145,7 +146,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 055210e985068a2459887595c8de7fad, type: 3}
   - {fileID: 21300000, guid: bba4d71a7bb30be43b60c6bae370cd68, type: 3}
   - {fileID: 21300000, guid: b6e11f7abb669aa49a88555f891d96bc, type: 3}
-  - {fileID: 21300000, guid: 3e1358cacefd94748a00de064c0c9527, type: 3}
   - {fileID: 21300000, guid: 3d6632faea942b84787169671b8a2c41, type: 3}
   - {fileID: 21300000, guid: 9925f87bf296ff5419f3a16b551e18e4, type: 3}
   - {fileID: 21300000, guid: 42d7790cb1648634aafa176ca3c29421, type: 3}
@@ -171,6 +171,7 @@ SpriteAtlas:
   - fabric
   - dragon
   - eagle
+  - colored-pencils
   - desk-lamp
   - earth (1)
   - eclipse
@@ -202,7 +203,6 @@ SpriteAtlas:
   - dough (1)
   - fantasy (2)
   - electric
-  - drawing
   - doctor
   - dna
   - cycling

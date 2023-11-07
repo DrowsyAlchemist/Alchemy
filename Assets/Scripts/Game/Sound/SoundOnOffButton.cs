@@ -19,7 +19,7 @@ public class SoundOnOffButton : MonoBehaviour
 
     private void OnDestroy()
     {
-        _button.onClick.RemoveListener(OnButtonClick);
+        _button?.onClick.RemoveListener(OnButtonClick);
         Sound.ConditionChanged -= OnSoundConditionChanged;
     }
 
