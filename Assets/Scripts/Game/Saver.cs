@@ -8,6 +8,7 @@ public class Saver
 {
     private const string SavesStorage = "Saves";
     private const string StickyAdName = "StickyAd";
+    private const string TerminalElementName = "Terminal1";
     private const char SavesDevideSymbol = '0';
 
     private static Saver _instance;
@@ -18,6 +19,7 @@ public class Saver
 
     public bool IsReady { get; private set; } = false;
     public bool IsAdAllowed => _saveDataBuilder.ToString().Contains(StickyAdName) == false;
+    public bool IsTerminalElementOpened => _saveDataBuilder.ToString().Contains(TerminalElementName);
 
     private Saver(ElementsStorage elementsStorage, bool isPlayerAuthorized)
     {
@@ -54,11 +56,14 @@ public class Saver
 
     public void OffAd()
     {
-        if (IsAdAllowed)
-        {
-            _saveDataBuilder.Append(StickyAdName);
-            Save();
-        }
+        _saveDataBuilder.Append(StickyAdName);
+        Save();
+    }
+
+    public void OpenTerminateElement()
+    {
+        _saveDataBuilder.Append(TerminalElementName);
+        Save();
     }
 
     public void ResetSaves()
