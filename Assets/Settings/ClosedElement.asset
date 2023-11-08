@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db6611a035fe25f46a1497db3a514074, type: 3}
   m_Name: ClosedElement
   m_EditorClassIdentifier: 
-  _sprite: {fileID: 21300000, guid: 8c4e2c116f2384eb187ccc7d0d12e0f9, type: 3}
+  _sprite: {fileID: 21300000, guid: b692151bf9e592d48a0b56f539a40977, type: 3}
   _lable: "\u0417\u0430\u043A\u0440\u044B\u0442\u043E"
   _lableEn: Closed

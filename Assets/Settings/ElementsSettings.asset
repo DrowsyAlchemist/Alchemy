@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: ElementsSettings
   m_EditorClassIdentifier: 
   _pointsForOpenedElements: 1
-  _defaultElementColor: {r: 1, g: 1, b: 1, a: 1}
-  _elementWithoutRecipiesColor: {r: 1, g: 0.82431376, b: 0.15471691, a: 1}
+  _defaultElementColor: {r: 0, g: 0, b: 0, a: 1}
+  _elementWithoutRecipiesColor: {r: 0.16078432, g: 0.54901963, b: 0.14117648, a: 1}
   _closedElement: {fileID: 11400000, guid: 63753519f4473ba4ca22b17bb0786543, type: 2}

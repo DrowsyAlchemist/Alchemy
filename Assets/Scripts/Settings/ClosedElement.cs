@@ -1,3 +1,4 @@
+using Lean.Localization;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "ClosedElement", menuName = "Settings/ClosedElement", order = 51)]
@@ -8,5 +9,5 @@ public class ClosedElement : ScriptableObject
     [SerializeField] private string _lableEn = "Closed";
 
     public Sprite Sprite => _sprite;
-    public string Lable => _lable;
+    public string Lable => LeanLocalization.GetFirstCurrentLanguage().Equals("ru") ? _lable : _lableEn;
 }

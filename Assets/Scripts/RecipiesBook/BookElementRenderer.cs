@@ -16,7 +16,7 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
     {
         _highlightedImage.gameObject.SetActive(false);
         _button.onClick.AddListener(OnClick);
-        _button.interactable = false;
+        _button.Deactivate();
         _isInitialized = true;
     }
 
@@ -38,7 +38,7 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
 
         base.Render(element);
         _isInteractable = false;
-        _button.interactable = false;
+        _button.Deactivate();
     }
 
     public void RenderCompletelyClosed(Element element)
@@ -48,7 +48,7 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
 
         base.RenderClosed(element);
         _isInteractable = false;
-        _button.interactable = false;
+        _button.Deactivate();
     }
 
     public void RenderInteractable(Element element)
@@ -61,7 +61,7 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
 
         base.Render(element);
         _isInteractable = true;
-        _button.interactable = true;
+        _button.Activate();
     }
 
     public void RenderOpeningForAd(Element element)
@@ -74,7 +74,7 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
 
         base.RenderManual(element, Settings.MonetizationSettings.AdSprite, Settings.MonetizationSettings.AdLable);
         _isInteractable = true;
-        _button.interactable = true;
+        _button.Activate();
     }
 
     public void RenderOpeningForYan(Element element)
@@ -87,7 +87,7 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
 
         base.RenderManual(element, Settings.MonetizationSettings.YanSprite, Settings.MonetizationSettings.YanLable);
         _isInteractable = true;
-        _button.interactable = true;
+        _button.Activate();
     }
 
     public void OnPointerEnter(PointerEventData eventData)

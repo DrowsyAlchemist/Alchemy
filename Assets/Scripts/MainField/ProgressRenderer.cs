@@ -1,6 +1,9 @@
+using Lean.Localization;
 using System.Collections;
 using TMPro;
+using Unity.Burst.Intrinsics;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class ProgressRenderer : MonoBehaviour
 {
@@ -19,6 +22,9 @@ public class ProgressRenderer : MonoBehaviour
 
     private void RenderCount(int currentProgress)
     {
-        _text.text = "Открыто " + currentProgress + " из " + _maxCount;
+        if (LeanLocalization.GetFirstCurrentLanguage().Equals("ru"))
+            _text.text = $"Открыто {currentProgress} из {_maxCount}";
+        else
+            _text.text = $"{currentProgress} out of {_maxCount} are open";
     }
 }

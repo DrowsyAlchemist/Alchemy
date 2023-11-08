@@ -13,7 +13,7 @@ public class MusicOnOffButton : MonoBehaviour
         _button = GetComponent<Button>();
         _button.onClick.AddListener(OnButtonClick);
 
-        _image.sprite = (Sound.MusicIsOn) ? Sound.TurnedOnSprite : Sound.MuteSprite;
+        _image.sprite = (Sound.MusicIsOn) ? Sound.TurnedOnMusicSprite : Sound.MuteMusicSprite;
         Sound.ConditionChanged += OnSoundConditionChanged;
     }
 
@@ -28,20 +28,20 @@ public class MusicOnOffButton : MonoBehaviour
         if (Sound.MusicIsOn)
         {
             Sound.PauseMusic();
-            _image.sprite = Sound.MuteSprite;
+            _image.sprite = Sound.MuteMusicSprite;
         }
         else
         {
             Sound.ResumeMusic();
-            _image.sprite = Sound.TurnedOnSprite;
+            _image.sprite = Sound.TurnedOnMusicSprite;
         }
     }
 
     private void OnSoundConditionChanged()
     {
         if (Sound.MusicIsOn)
-            _image.sprite = Sound.TurnedOnSprite;
+            _image.sprite = Sound.TurnedOnMusicSprite;
         else
-            _image.sprite = Sound.MuteSprite;
+            _image.sprite = Sound.MuteMusicSprite;
     }
 }

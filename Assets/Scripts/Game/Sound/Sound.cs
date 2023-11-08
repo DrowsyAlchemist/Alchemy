@@ -16,6 +16,9 @@ public class Sound : MonoBehaviour
     [SerializeField] private Sprite _turnedOnSprite;
     [SerializeField] private Sprite _muteSprite;
 
+    [SerializeField] private Sprite _turnedOnMusicSprite;
+    [SerializeField] private Sprite _muteMusicSprite;
+
     [SerializeField] private AudioSource _backgroundMusic;
     [SerializeField] private AudioSource _clickSound;
     [SerializeField] private AudioSource _mergeSound;
@@ -28,6 +31,8 @@ public class Sound : MonoBehaviour
     public static bool MusicIsOn { get; private set; }
     public static Sprite TurnedOnSprite => _instance._turnedOnSprite;
     public static Sprite MuteSprite => _instance._muteSprite;
+    public static Sprite TurnedOnMusicSprite => _instance._turnedOnMusicSprite;
+    public static Sprite MuteMusicSprite => _instance._muteMusicSprite;
     public static AudioSource BackgroundMusic => _instance._backgroundMusic;
     public static AudioSource ClickSound => _instance._clickSound;
     public static AudioSource MergeSound => _instance._mergeSound;
