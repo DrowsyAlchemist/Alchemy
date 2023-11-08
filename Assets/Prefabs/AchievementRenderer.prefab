@@ -267,6 +267,8 @@ MonoBehaviour:
   _iconImage: {fileID: 663736769146116837}
   _lableText: {fileID: 663736768774015289}
   _descriptionText: {fileID: 663736769995366979}
+  _normalColor: {r: 1, g: 1, b: 1, a: 1}
+  _fadeColor: {r: 0.8207547, g: 0.8207547, b: 0.8207547, a: 0.74509805}
 --- !u!1 &663736769995367357
 GameObject:
   m_ObjectHideFlags: 0

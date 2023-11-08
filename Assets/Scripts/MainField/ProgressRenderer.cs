@@ -1,9 +1,6 @@
 using Lean.Localization;
-using System.Collections;
 using TMPro;
-using Unity.Burst.Intrinsics;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class ProgressRenderer : MonoBehaviour
 {

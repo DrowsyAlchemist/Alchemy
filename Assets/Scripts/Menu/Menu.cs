@@ -23,6 +23,12 @@ public class Menu : MonoBehaviour
         _menuPanel.Activate();
     }
 
+    public void OpenAchievements()
+    {
+        OnButtonClick(_menuButtons[2]);
+        Open();
+    }
+
     public void Close()
     {
         _menuPanel.Deactivate();

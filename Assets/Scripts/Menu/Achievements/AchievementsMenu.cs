@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class AchievementsMenu : MonoBehaviour
@@ -5,6 +6,8 @@ public class AchievementsMenu : MonoBehaviour
     [SerializeField] private Achievement[] _achievements;
     [SerializeField] private AchievementRenderer _achievementRendererTemplate;
     [SerializeField] private RectTransform _container;
+
+    public event Action<Achievement> Achieved;     
 
     private void Start()
     {
@@ -28,23 +31,25 @@ public class AchievementsMenu : MonoBehaviour
             achievement.Achieved -= OnAchieved;
     }
 
-    private void OnAchieved(int newScore)
+    private void OnAchieved(Achievement achievement)
     {
-        if (newScore == 5)
+        if (achievement.ScoreRequired == 5)
             Metrics.SendEvent(MetricEvent.MakeFirstElement);
-        else if (newScore == 50)
+        else if (achievement.ScoreRequired == 50)
             Metrics.SendEvent(MetricEvent.MakeFiftyElements);
-        else if (newScore == 100)
+        else if (achievement.ScoreRequired == 100)
             Metrics.SendEvent(MetricEvent.MakeOneHundredElements);
-        else if (newScore == 200)
+        else if (achievement.ScoreRequired == 200)
             Metrics.SendEvent(MetricEvent.MakeTwoHundredElements);
-        else if (newScore == 300)
+        else if (achievement.ScoreRequired == 300)
             Metrics.SendEvent(MetricEvent.MakeThreeHundredElements);
-        else if (newScore == 400)
+        else if (achievement.ScoreRequired == 400)
             Metrics.SendEvent(MetricEvent.MakeFourHundredElements);
-        else if (newScore == 500)
+        else if (achievement.ScoreRequired == 500)
             Metrics.SendEvent(MetricEvent.MakeFiveHundredElements);
-        else if (newScore == 600)
+        else if (achievement.ScoreRequired == 600)
             Metrics.SendEvent(MetricEvent.MakeSixHundredElements);
+
+        Achieved?.Invoke(achievement);
     }
 }

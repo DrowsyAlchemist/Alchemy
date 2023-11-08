@@ -19,6 +19,7 @@ public sealed class GameInitialize : MonoBehaviour
     [SerializeField] private Score _score;
     [SerializeField] private LeaderboardView _leaderboardView;
     [SerializeField] private AchievementsMenu _achievementsMenu;
+    [SerializeField] private AchievementWindow _achievementWindow;
     [SerializeField] private InterAdPanel _interAdPanel;
 
     [SerializeField] private BookElementsView _bookGridView;
@@ -85,6 +86,7 @@ public sealed class GameInitialize : MonoBehaviour
         _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
         _leaderboardView.Init(_score, _saver);
         _achievementsMenu.Init(_score);
+        _achievementWindow.Init(_achievementsMenu);
 
 #if UNITY_EDITOR
         _fadeImage.Deactivate();
