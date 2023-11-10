@@ -9,6 +9,7 @@ public class Saver
     private const string SavesStorage = "Saves";
     private const string StickyAdName = "StickyAd";
     private const string TerminalElementName = "Terminal1";
+    private const string NotFirstGameName = "NotFirstGame1";
     private const char SavesDevideSymbol = '0';
 
     private static Saver _instance;
@@ -20,6 +21,7 @@ public class Saver
     public bool IsReady { get; private set; } = false;
     public bool IsAdAllowed => _saveDataBuilder.ToString().Contains(StickyAdName) == false;
     public bool IsTerminalElementOpened => _saveDataBuilder.ToString().Contains(TerminalElementName);
+    public bool IsFirstGame => _saveDataBuilder.ToString().Contains(NotFirstGameName) == false;
 
     private Saver(ElementsStorage elementsStorage, bool isPlayerAuthorized)
     {
@@ -63,6 +65,12 @@ public class Saver
     public void OpenTerminateElement()
     {
         _saveDataBuilder.Append(TerminalElementName);
+        Save();
+    }
+
+    public void SetNotFirstGameFlag()
+    {
+        _saveDataBuilder.Append(NotFirstGameName);
         Save();
     }
 

@@ -31,7 +31,7 @@ public class UIButton : MonoBehaviour
 
     public void AssignOnClickAction(Action onButtonClick)
     {
-        _onClick = onButtonClick;
+        _onClick += onButtonClick;
     }
 
     private void OnButtonClick()

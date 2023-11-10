@@ -10,10 +10,12 @@ public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragH
 
     private IMergeHandler _mergeHandler;
     private float _lastClickTime;
+    private bool _trainingMode;
 
-    public void Init(IMergeHandler mergeHandler)
+    public void Init(IMergeHandler mergeHandler, bool trainingMode = false)
     {
         _mergeHandler = mergeHandler;
+        _trainingMode = trainingMode;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -30,12 +32,20 @@ public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragH
         foreach (var result in results)
         {
             if (result.gameObject.TryGetComponent(out GameField _))
+            {
                 needDestroy = false;
+
+                if (_trainingMode) //
+                    TrainingInitialize.SetElementOnGameField(Element); //
+            }
 
             if (result.gameObject.TryGetComponent(out MergeableElementRenderer otherElementRenderer))
             {
                 if (otherElementRenderer != this)
                 {
+                    if (_trainingMode) //
+                        TrainingInitialize.SetElementCreated(Element, otherElementRenderer.Element); //
+
                     _mergeHandler.TryMergeElements(this, otherElementRenderer);
                     needDestroy = false;
                     break;
@@ -60,6 +70,9 @@ public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragH
     {
         var clone = Instantiate(this, transform.position + new Vector3(XCloneShift, YCloneShift, 0), Quaternion.identity, transform.parent);
         clone.Render(Element);
-        clone.Init(_mergeHandler);
+        clone.Init(_mergeHandler, _trainingMode);
+
+        if (_trainingMode)
+            TrainingInitialize.SetDoubleClick();
     }
 }

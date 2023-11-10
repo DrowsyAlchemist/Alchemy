@@ -13,7 +13,6 @@ public sealed class GameInitialize : MonoBehaviour
     [SerializeField] private AlphabeticalIndex _alphabeticalIndex;
     [SerializeField] private GameField _gameField;
     [SerializeField] private Menu _menu;
-    [SerializeField] private UIButton _resetButton;
     [SerializeField] private UIButton _openRecipiesBookButton;
     [SerializeField] private Progress _progress;
     [SerializeField] private Score _score;
@@ -22,6 +21,7 @@ public sealed class GameInitialize : MonoBehaviour
     [SerializeField] private AchievementWindow _achievementWindow;
     [SerializeField] private TerminalElementWindow _terminalElementWindow;
     [SerializeField] private InterAdPanel _interAdPanel;
+    [SerializeField] private TrainingWindow _trainingWindow;
 
     [SerializeField] private BookElementsView _bookGridView;
     [SerializeField] private RecipiesView _recipiesWithElementView;
@@ -30,21 +30,13 @@ public sealed class GameInitialize : MonoBehaviour
 
     [SerializeField] private Image _fadeImage;
 
-    private static GameInitialize _instance;
     private Saver _saver;
     private RecipiesBook _recipiesBook;
     private ElementsMerger _elementsMerger;
 
-    private void Awake()
-    {
-        if (_instance == null)
-            _instance = this;
-        else
-            Destroy(gameObject);
-    }
-
     private IEnumerator Start()
     {
+        _fadeImage.Activate();
 #if UNITY_EDITOR
         Settings.CoroutineObject.StartCoroutine(Init());
         yield break;
@@ -71,7 +63,7 @@ public sealed class GameInitialize : MonoBehaviour
 
         OpenInitialElements();
         _elementsStorage.Init(_saver);
-        _menu.Init();
+        _menu.Init(this);
         _gameField.Init(_saver, _elementsStorage);
         _interAdPanel.Init(_saver);
         _progress.Init(_elementsStorage);
@@ -81,7 +73,6 @@ public sealed class GameInitialize : MonoBehaviour
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
         _alphabeticalIndex.Init();
 
-        _resetButton.AssignOnClickAction(onButtonClick: ResetProgress);
         _openRecipiesBookButton.AssignOnClickAction(onButtonClick: OpenRecipiesBook);
 
         _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
@@ -89,6 +80,7 @@ public sealed class GameInitialize : MonoBehaviour
         _achievementsMenu.Init(_score);
         _achievementWindow.Init(_achievementsMenu);
         _terminalElementWindow.Init(_elementsStorage, _saver);
+        _trainingWindow.Init(_saver);
 
 #if UNITY_EDITOR
         _fadeImage.Deactivate();
@@ -125,12 +117,7 @@ public sealed class GameInitialize : MonoBehaviour
         UnityEngine.PlayerPrefs.Save();
     }
 
-    private void OpenRecipiesBook()
-    {
-        _recipiesBook.Open();
-    }
-
-    private void ResetProgress()
+    public void ResetProgress()
     {
         _saver.ResetSaves();
         _score.ResetCurrentScore();
@@ -139,6 +126,11 @@ public sealed class GameInitialize : MonoBehaviour
 
         _gameField.Clear();
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
+    }
+
+    private void OpenRecipiesBook()
+    {
+        _recipiesBook.Open();
     }
 
     private void OpenInitialElements()

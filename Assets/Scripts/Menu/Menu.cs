@@ -3,12 +3,15 @@ using UnityEngine;
 public class Menu : MonoBehaviour
 {
     [SerializeField] private RectTransform _menuPanel;
+    [SerializeField] private MainMenuPanel _mainMenuPanel;
     [SerializeField] private MenuButton[] _menuButtons;
 
     private MenuButton _currentButton;
 
-    public void Init()
+    public void Init(GameInitialize gameInitialize)
     {
+        _mainMenuPanel.Init(gameInitialize);
+
         foreach (var button in _menuButtons)
         {
             button.Clicked += OnButtonClick;
