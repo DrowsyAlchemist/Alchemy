@@ -1,12 +1,8 @@
 using Agava.YandexGames;
-using GameAnalyticsSDK;
 using Lean.Localization;
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public sealed class TrainingInitialize : MonoBehaviour
@@ -15,7 +11,13 @@ public sealed class TrainingInitialize : MonoBehaviour
     [SerializeField] private MainOpenedElementsView _openedElementsView;
     [SerializeField] private AlphabeticalIndex _alphabeticalIndex;
     [SerializeField] private GameField _gameField;
+    [SerializeField] private Menu _menu;
+    [SerializeField] private UIButton _openRecipiesBookButton;
     [SerializeField] private Score _score;
+    [SerializeField] private LeaderboardView _leaderboardView;
+    [SerializeField] private AchievementsMenu _achievementsMenu;
+    [SerializeField] private BookElementsView _bookGridView;
+    [SerializeField] private RecipiesView _recipiesWithElementView;
 
     [SerializeField] private List<Element> _initialElements;
 
@@ -23,26 +25,14 @@ public sealed class TrainingInitialize : MonoBehaviour
 
     [SerializeField] private UIButton _nextTaskButton;
     [SerializeField] private Button _clearButton;
-    [SerializeField] private TMP_Text _taskText;
-    [SerializeField] private TaskText[] _tasks;
+    [SerializeField] private Training _training;
 
-    private const string MainSceneName = "Main Scene";
-    private static TrainingInitialize _instance;
     private Saver _saver;
+    private RecipiesBook _recipiesBook;
     private ElementsMerger _elementsMerger;
-    private int _currentTask;
-
-    private void Awake()
-    {
-        if (_instance == null)
-            _instance = this;
-        else
-            throw new InvalidOperationException();
-    }
 
     private void Start()
     {
-        _nextTaskButton.AssignOnClickAction(ShowNextTask);
         Settings.CoroutineObject.StartCoroutine(Init());
     }
 
@@ -55,18 +45,27 @@ public sealed class TrainingInitialize : MonoBehaviour
         bool isPlayerAuthorized = PlayerAccount.IsAuthorized;
 
 #endif
-        _saver = Saver.Create(_elementsStorage, isPlayerAuthorized);
+        _saver = Saver.Create(_elementsStorage, isPlayerAuthorized, isTrainingMode: true);
 
         while (_saver.IsReady == false)
             yield return null;
 
+        _elementsStorage.Init(_saver);
         OpenInitialElements();
-        _gameField.Init(_saver, _elementsStorage);
+        _menu.Init(null); //
+        _gameField.Init(_saver, _elementsStorage, isTrainingMode: true);
         _elementsMerger = new ElementsMerger(_openedElementsView, _score, _elementsStorage);
         _openedElementsView.InitMainView(_gameField, _elementsMerger, _elementsStorage, trainingMode: true);
         _openedElementsView.Fill(_initialElements);
         _alphabeticalIndex.Init();
-        _clearButton.AddListener(OnClearButtonClick);
+
+        _openRecipiesBookButton.AssignOnClickAction(onButtonClick: OpenRecipiesBook);
+
+        _recipiesBook = new RecipiesBook(_elementsStorage, _bookGridView, _recipiesWithElementView);
+        _leaderboardView.Init(_score, _saver);
+        _achievementsMenu.Init(_score);
+        _training.Init(_saver);
+        _training.Begin();
         _fadeImage.Deactivate();
 
 #if UNITY_EDITOR
@@ -83,60 +82,14 @@ public sealed class TrainingInitialize : MonoBehaviour
         _fadeImage.Deactivate();
     }
 
-    public static void SetElementOnGameField(Element element)
+    private void OpenRecipiesBook()
     {
-        if (element.Id.Equals("Fire"))
-            _instance.ShowNextTask();
-    }
-
-    public static void SetElementCreated(Element firstElement, Element secondElement)
-    {
-        if (firstElement.Id.Equals("Fire") && secondElement.Id.Equals("Water")
-            || firstElement.Id.Equals("Water") && secondElement.Id.Equals("Fire"))
-            _instance.ShowNextTask();
-    }
-
-    public static void SetDoubleClick()
-    {
-        _instance.ShowNextTask();
-    }
-
-    private void OnClearButtonClick()
-    {
-        ShowNextTask();
-        _clearButton.RemoveListener(OnClearButtonClick);
-    }
-
-    private void ShowNextTask()
-    {
-        if (_tasks.Length == _currentTask + 1)
-        {
-            SceneManager.LoadScene(MainSceneName);
-            return;
-        }
-
-        _currentTask++;
-        _taskText.text = _tasks[_currentTask].LocalizedText;
-
-        if (_tasks[_currentTask].ObjectsToShow.Length > 0)
-            foreach (var obj in _tasks[_currentTask].ObjectsToShow)
-                obj.Activate();
+        _recipiesBook.Open();
     }
 
     private void OpenInitialElements()
     {
         foreach (var element in _initialElements)
             element.Open();
-    }
-
-    [Serializable]
-    private class TaskText
-    {
-        [SerializeField, TextArea(5, 10)] private string _textRu;
-        [SerializeField, TextArea(5, 10)] private string _textEn;
-        [SerializeField] private RectTransform[] _objectsToShow = { };
-
-        public string LocalizedText => LeanLocalization.GetFirstCurrentLanguage().Equals("ru") ? _textRu : _textEn;
-        public RectTransform[] ObjectsToShow => _objectsToShow;
     }
 }

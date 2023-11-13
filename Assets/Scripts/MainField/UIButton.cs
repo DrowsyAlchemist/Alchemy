@@ -36,6 +36,6 @@ public class UIButton : MonoBehaviour
 
     private void OnButtonClick()
     {
-        _onClick();
+        _onClick?.Invoke();
     }
 }

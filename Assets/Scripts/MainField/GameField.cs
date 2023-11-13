@@ -19,14 +19,17 @@ public class GameField : MonoBehaviour
 
     public RectTransform ElementsContainer => _elementsContainer;
 
-    public void Init(Saver saver, ElementsStorage elementsStorage)
+    public void Init(Saver saver, ElementsStorage elementsStorage, bool isTrainingMode = false)
     {
         _saver = saver;
         _elementsStorage = elementsStorage;
         _clearButton.AssignOnClickAction(Clear);
-        _hideAdForYanButton.AssignOnClickAction(OffAd);
-        _openElementForYanButton.AssignOnClickAction(OpenElementForYan);
 
+        if (isTrainingMode == false)
+        {
+            _hideAdForYanButton.AssignOnClickAction(OffAd);
+            _openElementForYanButton.AssignOnClickAction(OpenElementForYan);
+        }
         if (_saver.IsAdAllowed == false)
             _hideAdForYanButton.Deactivate();
 

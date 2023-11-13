@@ -12,6 +12,7 @@ public class MainMenuPanel : MonoBehaviour
 
     public void Init(GameInitialize gameInitialize)
     {
+        _gameInitialize = gameInitialize;
         _trainingButton.AssignOnClickAction(OnTrainingButtonClick);
         _feedbackButton.AssignOnClickAction(OnFeedbackButtonClick);
         _resetProgressButton.AssignOnClickAction(OnResetButtonClick);

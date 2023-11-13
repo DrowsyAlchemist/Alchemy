@@ -15,7 +15,7 @@ public class TrainingWindow : MonoBehaviour
     {
         _saver = saver ?? throw new ArgumentNullException();
 
-        if (_saver.IsFirstGame)
+        if (_saver.IsTrainingCompleted)
         {
             _startTrainingButton.AssignOnClickAction(OnStartButtonClick);
             _cancelTrainingButton.AssignOnClickAction(OnCancelButtonClick);
@@ -34,7 +34,7 @@ public class TrainingWindow : MonoBehaviour
 
     private void OnCancelButtonClick()
     {
-        _saver.SetNotFirstGameFlag();
+        _saver.SetTrainingCompleted();
         Destroy(gameObject);
     }
 }

@@ -9,7 +9,7 @@ public class Saver
     private const string SavesStorage = "Saves";
     private const string StickyAdName = "StickyAd";
     private const string TerminalElementName = "Terminal1";
-    private const string NotFirstGameName = "NotFirstGame1";
+    private const string TrainingCompletedName = "TrainingCompleted1";
     private const char SavesDevideSymbol = '0';
 
     private static Saver _instance;
@@ -17,15 +17,17 @@ public class Saver
     private readonly bool _isPlayerAuthorized;
     private readonly ElementsStorage _elementsStorage;
     private readonly StringBuilder _saveDataBuilder = new();
+    private bool _isTrainingMode;
 
     public bool IsReady { get; private set; } = false;
     public bool IsAdAllowed => _saveDataBuilder.ToString().Contains(StickyAdName) == false;
     public bool IsTerminalElementOpened => _saveDataBuilder.ToString().Contains(TerminalElementName);
-    public bool IsFirstGame => _saveDataBuilder.ToString().Contains(NotFirstGameName) == false;
+    public bool IsTrainingCompleted => _saveDataBuilder.ToString().Contains(TrainingCompletedName) == false;
 
-    private Saver(ElementsStorage elementsStorage, bool isPlayerAuthorized)
+    private Saver(ElementsStorage elementsStorage, bool isPlayerAuthorized, bool isTrainingMode)
     {
         IsReady = false;
+        _isTrainingMode = isTrainingMode;
         _isPlayerAuthorized = isPlayerAuthorized;
         _elementsStorage = elementsStorage;
 
@@ -35,10 +37,10 @@ public class Saver
         Load();
     }
 
-    public static Saver Create(ElementsStorage elementsStorage, bool isPlayerAuthorizedge)
+    public static Saver Create(ElementsStorage elementsStorage, bool isPlayerAuthorizedge, bool isTrainingMode = false)
     {
         if (_instance == null)
-            _instance = new Saver(elementsStorage, isPlayerAuthorizedge);
+            _instance = new Saver(elementsStorage, isPlayerAuthorizedge, isTrainingMode);
 
         return _instance;
     }
@@ -68,9 +70,9 @@ public class Saver
         Save();
     }
 
-    public void SetNotFirstGameFlag()
+    public void SetTrainingCompleted()
     {
-        _saveDataBuilder.Append(NotFirstGameName);
+        _saveDataBuilder.Append(TrainingCompletedName);
         Save();
     }
 
@@ -82,6 +84,11 @@ public class Saver
 
     public void Load()
     {
+        if (_isTrainingMode)
+        {
+            IsReady = true;
+            return;
+        }
         if (_isPlayerAuthorized)
             PlayerAccount.GetCloudSaveData(onSuccessCallback: (result) => SetLoadedData(result), onErrorCallback: (error) => Debug.Log("Saves load error: " + error));
         else

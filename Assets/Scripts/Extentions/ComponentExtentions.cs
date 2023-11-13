@@ -11,4 +11,9 @@ public static class ComponentExtentions
     {
         component.gameObject.SetActive(false);
     }
+
+    public static void SetActive(this Component component, bool value)
+    {
+        component.gameObject.SetActive(value);
+    }
 }

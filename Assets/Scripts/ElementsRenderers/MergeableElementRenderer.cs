@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -35,16 +36,16 @@ public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragH
             {
                 needDestroy = false;
 
-                if (_trainingMode) //
-                    TrainingInitialize.SetElementOnGameField(Element); //
+                if (_trainingMode)
+                    Training.SetElementOnGameField(Element);
             }
 
             if (result.gameObject.TryGetComponent(out MergeableElementRenderer otherElementRenderer))
             {
                 if (otherElementRenderer != this)
                 {
-                    if (_trainingMode) //
-                        TrainingInitialize.SetElementCreated(Element, otherElementRenderer.Element); //
+                    if (_trainingMode)
+                        Training.SetElementCreated(Element, otherElementRenderer.Element);
 
                     _mergeHandler.TryMergeElements(this, otherElementRenderer);
                     needDestroy = false;
@@ -73,6 +74,6 @@ public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragH
         clone.Init(_mergeHandler, _trainingMode);
 
         if (_trainingMode)
-            TrainingInitialize.SetDoubleClick();
+            Training.SetDoubleClick();
     }
 }
