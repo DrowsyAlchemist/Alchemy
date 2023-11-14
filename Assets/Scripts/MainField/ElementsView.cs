@@ -7,6 +7,7 @@ public abstract class ElementsView : MonoBehaviour
     private ElementsStorage _elementsStorage;
     protected List<ElementRenderer> OpenedElementRenderers = new();
 
+    public IReadOnlyList<ElementRenderer> ElementRenderers => OpenedElementRenderers;
     protected bool IsInitialized { get; set; }
 
     public void Init(ElementsStorage elementsStorage)

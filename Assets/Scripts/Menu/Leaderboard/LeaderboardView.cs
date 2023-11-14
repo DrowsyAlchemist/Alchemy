@@ -2,6 +2,7 @@ using Agava.YandexGames;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LeaderboardView : MonoBehaviour
 {
@@ -88,20 +89,20 @@ public class LeaderboardView : MonoBehaviour
         if (PlayerAccount.HasPersonalProfileDataPermission)
         {
             _saver.Load();
-            RenderLeaders();
+            SceneManager.LoadScene(Settings.MainSceneName);
         }
         else
         {
             PlayerAccount.RequestPersonalProfileDataPermission(
                 onSuccessCallback: () =>
                 {
-                    RenderLeaders();
                     _saver.Load();
+                    SceneManager.LoadScene(Settings.MainSceneName);
                 },
                 onErrorCallback: (error) =>
                 {
-                    Debug.Log("RequestPersonalProfileDataPermission error: " + error);
-                    RenderLeaders();
+                    _saver.Load();
+                    SceneManager.LoadScene(Settings.MainSceneName);
                 });
         }
     }

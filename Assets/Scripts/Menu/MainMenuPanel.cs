@@ -7,7 +7,6 @@ public class MainMenuPanel : MonoBehaviour
     [SerializeField] private UIButton _feedbackButton;
     [SerializeField] private UIButton _resetProgressButton;
 
-    private const string TrainingSceneName = "Training Scene";
     private GameInitialize _gameInitialize;
 
     public void Init(GameInitialize gameInitialize)
@@ -20,7 +19,7 @@ public class MainMenuPanel : MonoBehaviour
 
     private void OnTrainingButtonClick()
     {
-        SceneManager.LoadScene(TrainingSceneName);
+        SceneManager.LoadScene(Settings.TrainingSceneName);
     }
 
     private void OnFeedbackButtonClick()

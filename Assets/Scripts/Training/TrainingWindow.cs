@@ -1,14 +1,15 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TrainingWindow : MonoBehaviour
 {
     [SerializeField] private UIButton _startTrainingButton;
     [SerializeField] private UIButton _cancelTrainingButton;
     [SerializeField] private RectTransform _greetingPanel;
+    [SerializeField] private Image _loadingImage;
 
-    private const string TrainingSceneName = "Training Scene";
     private Saver _saver;
 
     public void Init(Saver saver)
@@ -29,7 +30,8 @@ public class TrainingWindow : MonoBehaviour
 
     private void OnStartButtonClick()
     {
-        SceneManager.LoadScene(TrainingSceneName);
+        _loadingImage.Activate();
+        SceneManager.LoadScene(Settings.TrainingSceneName);
     }
 
     private void OnCancelButtonClick()

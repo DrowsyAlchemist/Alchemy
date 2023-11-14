@@ -45,7 +45,7 @@ public sealed class TrainingInitialize : MonoBehaviour
         bool isPlayerAuthorized = PlayerAccount.IsAuthorized;
 
 #endif
-        _saver = Saver.Create(_elementsStorage, isPlayerAuthorized, isTrainingMode: true);
+        _saver = Saver.Create(_elementsStorage, isPlayerAuthorized, _score, isTrainingMode: true);
 
         while (_saver.IsReady == false)
             yield return null;
@@ -54,7 +54,7 @@ public sealed class TrainingInitialize : MonoBehaviour
         OpenInitialElements();
         _menu.Init(null); //
         _gameField.Init(_saver, _elementsStorage, isTrainingMode: true);
-        _elementsMerger = new ElementsMerger(_openedElementsView, _score, _elementsStorage);
+        _elementsMerger = new ElementsMerger();
         _openedElementsView.InitMainView(_gameField, _elementsMerger, _elementsStorage, trainingMode: true);
         _openedElementsView.Fill(_initialElements);
         _alphabeticalIndex.Init();

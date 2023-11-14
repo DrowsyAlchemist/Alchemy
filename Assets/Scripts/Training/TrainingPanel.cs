@@ -11,9 +11,10 @@ public class TrainingPanel : MonoBehaviour
     [SerializeField] private TMP_Text _noteText;
     [SerializeField] private UIButton _continueButton;
     [SerializeField] private UIButton _cancelButton;
+    [SerializeField] private AnimatedHand _animatedHand;
 
-    [SerializeField] Vector2 _panelLeftPosition;
-    [SerializeField] Vector2 _panelRightPosition;
+    public RectTransform NotePanel => _notePanel;
+    public AnimatedHand AnimatedHand => _animatedHand;
 
     public event Action ContinueButtonClicked;
     public event Action CancelButtonClicked;
@@ -47,20 +48,6 @@ public class TrainingPanel : MonoBehaviour
         _raycastTarget.SetActive(value == false);
     }
 
-    public void SetInLeftCorner()
-    {
-        _notePanel.anchorMax = Vector2.up;
-        _notePanel.anchorMin = Vector2.up;
-        _notePanel.anchoredPosition = _panelLeftPosition;
-    }
-
-    public void SetInRightCorner()
-    {
-        _notePanel.anchorMax = Vector2.one;
-        _notePanel.anchorMin = Vector2.one;
-        _notePanel.anchoredPosition = _panelRightPosition;
-    }
-
     public void SetContinueButtonActive(bool value)
     {
         _continueButton.SetActive(value);
@@ -69,13 +56,5 @@ public class TrainingPanel : MonoBehaviour
     public void SetCancelButtonActive(bool value)
     {
         _cancelButton.SetActive(value);
-    }
-
-    private void OnValidate()
-    {
-       // if (_notePanel.anchorMax == Vector2.up)
-        //    SetInLeftCorner();
-      //  else
-         //   SetInRightCorner();
     }
 }

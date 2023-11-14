@@ -17,6 +17,7 @@ public class Saver
     private readonly bool _isPlayerAuthorized;
     private readonly ElementsStorage _elementsStorage;
     private readonly StringBuilder _saveDataBuilder = new();
+    private Score _score;
     private bool _isTrainingMode;
 
     public bool IsReady { get; private set; } = false;
@@ -24,12 +25,13 @@ public class Saver
     public bool IsTerminalElementOpened => _saveDataBuilder.ToString().Contains(TerminalElementName);
     public bool IsTrainingCompleted => _saveDataBuilder.ToString().Contains(TrainingCompletedName) == false;
 
-    private Saver(ElementsStorage elementsStorage, bool isPlayerAuthorized, bool isTrainingMode)
+    private Saver(ElementsStorage elementsStorage, bool isPlayerAuthorized, Score score, bool isTrainingMode)
     {
         IsReady = false;
         _isTrainingMode = isTrainingMode;
         _isPlayerAuthorized = isPlayerAuthorized;
         _elementsStorage = elementsStorage;
+        _score = score;
 
         foreach (var element in _elementsStorage.SortedElements)
             element.Opened += OnElementOpened;
@@ -37,10 +39,10 @@ public class Saver
         Load();
     }
 
-    public static Saver Create(ElementsStorage elementsStorage, bool isPlayerAuthorizedge, bool isTrainingMode = false)
+    public static Saver Create(ElementsStorage elementsStorage, bool isPlayerAuthorizedge, Score score, bool isTrainingMode = false)
     {
         if (_instance == null)
-            _instance = new Saver(elementsStorage, isPlayerAuthorizedge, isTrainingMode);
+            _instance = new Saver(elementsStorage, isPlayerAuthorizedge, score, isTrainingMode);
 
         return _instance;
     }
@@ -99,6 +101,7 @@ public class Saver
     {
         if (IsElementOpened(element) == false)
         {
+            _score.AddScore(Settings.Elements.PointsForOpenedElement);
             _saveDataBuilder.Append(element.Id + SavesDevideSymbol);
             Save();
         }

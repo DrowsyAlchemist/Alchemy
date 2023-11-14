@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Training : MonoBehaviour
 {
-    [SerializeField] TrainingPanel _trainingPanel;
+    [SerializeField] private TrainingPanel _trainingPanel;
     [SerializeField] private Task[] _tasks;
 
-    private const string MainSceneName = "Main Scene";
     private static Training _instance;
     private int _currentTask;
     private Saver _saver;
@@ -67,7 +67,7 @@ public class Training : MonoBehaviour
     private void StopTraining()
     {
         _saver.SetTrainingCompleted();
-        SceneManager.LoadScene(MainSceneName);
+        SceneManager.LoadScene(Settings.MainSceneName);
         _trainingPanel.Deactivate();
         IsTraining = false;
     }

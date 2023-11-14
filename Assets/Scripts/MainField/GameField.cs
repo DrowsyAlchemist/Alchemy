@@ -18,6 +18,7 @@ public class GameField : MonoBehaviour
     private ElementsStorage _elementsStorage;
 
     public RectTransform ElementsContainer => _elementsContainer;
+    public IReadOnlyList<ElementRenderer> ElementsOnField => _elementsContainer.GetComponentsInChildren<ElementRenderer>();
 
     public void Init(Saver saver, ElementsStorage elementsStorage, bool isTrainingMode = false)
     {

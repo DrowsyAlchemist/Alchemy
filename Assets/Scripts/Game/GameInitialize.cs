@@ -56,19 +56,19 @@ public sealed class GameInitialize : MonoBehaviour
         bool isPlayerAuthorized = PlayerAccount.IsAuthorized;
 
 #endif
-        _saver = Saver.Create(_elementsStorage, isPlayerAuthorized);
+        _saver = Saver.Create(_elementsStorage, isPlayerAuthorized, _score);
 
         while (_saver.IsReady == false)
             yield return null;
 
+        _score.Init(isPlayerAuthorized);
         OpenInitialElements();
         _elementsStorage.Init(_saver);
         _menu.Init(this);
         _gameField.Init(_saver, _elementsStorage);
         _interAdPanel.Init(_saver);
         _progress.Init(_elementsStorage);
-        _score.Init(isPlayerAuthorized);
-        _elementsMerger = new ElementsMerger(_openedElementsView, _score, _elementsStorage);
+        _elementsMerger = new ElementsMerger();
         _openedElementsView.InitMainView(_gameField, _elementsMerger, _elementsStorage);
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
         _alphabeticalIndex.Init();
@@ -112,9 +112,9 @@ public sealed class GameInitialize : MonoBehaviour
 
     public void ResetSaves()
     {
-        ResetProgress();
         UnityEngine.PlayerPrefs.DeleteAll();
         UnityEngine.PlayerPrefs.Save();
+        ResetProgress();
     }
 
     public void ResetProgress()

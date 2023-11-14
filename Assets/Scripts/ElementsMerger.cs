@@ -1,21 +1,9 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
 public class ElementsMerger : IMergeHandler
 {
-    private MainOpenedElementsView _openedElementsView;
-    private Score _score;
-    private ElementsStorage _elementsStorage;
-
-    public ElementsMerger(MainOpenedElementsView openedElementsView, Score score, ElementsStorage elementsStorage)
-    {
-        _openedElementsView = openedElementsView;
-        _score = score;
-        _elementsStorage = elementsStorage;
-    }
-
     public void TryMergeElements(MergeableElementRenderer firstRenderer, MergeableElementRenderer secondRenderer)
     {
         var results = new List<Element>();
@@ -32,7 +20,7 @@ public class ElementsMerger : IMergeHandler
         for (var i = 0; i < results.Count; i++)
         {
             if (results[i].IsOpened == false)
-                OpenNewElement(results[i]);
+                results[i].Open();
 
             if (i == 0)
             {
@@ -50,11 +38,5 @@ public class ElementsMerger : IMergeHandler
         }
         if (results.Count == 1)
             Object.Destroy(secondRenderer.gameObject);
-    }
-
-    private void OpenNewElement(Element element)
-    {
-        element.Open();
-        _score.AddScore(Settings.Elements.PointsForOpenedElement);
     }
 }

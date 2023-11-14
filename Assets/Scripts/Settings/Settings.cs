@@ -7,6 +7,8 @@ public class Settings : MonoBehaviour
     [SerializeField] private LeaderboardSettings _leaderboardSettings;
     [SerializeField] private MonoBehaviour _coroutineObject;
 
+    public const string MainSceneName = "Main Scene";
+    public const string TrainingSceneName = "Training Scene";
     private static Settings _instance;
 
     private void Awake()

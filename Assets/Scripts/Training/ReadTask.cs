@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class ReadTask : Task
 {
     protected override void BeginTask()
@@ -12,5 +14,11 @@ public class ReadTask : Task
     {
         TrainingPanel.ContinueButtonClicked -= Complete;
         base.OnComplete();
+    }
+
+    protected override void SetHand(AnimatedHand animatedHand)
+    {
+        animatedHand.SetPosition(new Vector2(Screen.width / 2, Screen.height / 2));
+        animatedHand.PlayTap();
     }
 }
