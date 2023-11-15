@@ -39,6 +39,7 @@ public sealed class TrainingInitialize : MonoBehaviour
     private IEnumerator Init()
     {
         _fadeImage.Activate();
+        yield return new WaitForEndOfFrame();
 #if UNITY_EDITOR
         bool isPlayerAuthorized = false;
 #else
@@ -50,13 +51,14 @@ public sealed class TrainingInitialize : MonoBehaviour
         while (_saver.IsReady == false)
             yield return null;
 
-        _elementsStorage.Init(_saver);
+        _score.Init(isPlayerAuthorized);
         OpenInitialElements();
+        _elementsStorage.Init(_saver);
         _menu.Init(null); //
         _gameField.Init(_saver, _elementsStorage, isTrainingMode: true);
         _elementsMerger = new ElementsMerger();
         _openedElementsView.InitMainView(_gameField, _elementsMerger, _elementsStorage, trainingMode: true);
-        _openedElementsView.Fill(_initialElements);
+        _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
         _alphabeticalIndex.Init();
 
         _openRecipiesBookButton.AssignOnClickAction(onButtonClick: OpenRecipiesBook);

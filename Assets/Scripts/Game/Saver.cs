@@ -11,6 +11,7 @@ public class Saver
     private const string TerminalElementName = "Terminal1";
     private const string TrainingCompletedName = "TrainingCompleted1";
     private const char SavesDevideSymbol = '0';
+    private const char TrainingSavesDevideSymbol = '1';
 
     private static Saver _instance;
 
@@ -23,7 +24,7 @@ public class Saver
     public bool IsReady { get; private set; } = false;
     public bool IsAdAllowed => _saveDataBuilder.ToString().Contains(StickyAdName) == false;
     public bool IsTerminalElementOpened => _saveDataBuilder.ToString().Contains(TerminalElementName);
-    public bool IsTrainingCompleted => _saveDataBuilder.ToString().Contains(TrainingCompletedName) == false;
+    public bool IsTrainingCompleted => _saveDataBuilder.ToString().Contains(TrainingCompletedName);
 
     private Saver(ElementsStorage elementsStorage, bool isPlayerAuthorized, Score score, bool isTrainingMode)
     {
@@ -41,9 +42,7 @@ public class Saver
 
     public static Saver Create(ElementsStorage elementsStorage, bool isPlayerAuthorizedge, Score score, bool isTrainingMode = false)
     {
-        if (_instance == null)
-            _instance = new Saver(elementsStorage, isPlayerAuthorizedge, score, isTrainingMode);
-
+        _instance = new Saver(elementsStorage, isPlayerAuthorizedge, score, isTrainingMode);
         return _instance;
     }
 
@@ -57,7 +56,8 @@ public class Saver
 
     public bool IsElementOpened(Element element)
     {
-        return _saveDataBuilder.ToString().Contains(element.Id + SavesDevideSymbol);
+        char devider = _isTrainingMode ? TrainingSavesDevideSymbol : SavesDevideSymbol;
+        return _saveDataBuilder.ToString().Contains(element.Id + devider);
     }
 
     public void OffAd()
@@ -74,8 +74,11 @@ public class Saver
 
     public void SetTrainingCompleted()
     {
-        _saveDataBuilder.Append(TrainingCompletedName);
-        Save();
+        if (IsTrainingCompleted == false)
+        {
+            _saveDataBuilder.Append(TrainingCompletedName);
+            Save();
+        }
     }
 
     public void ResetSaves()
@@ -86,11 +89,6 @@ public class Saver
 
     public void Load()
     {
-        if (_isTrainingMode)
-        {
-            IsReady = true;
-            return;
-        }
         if (_isPlayerAuthorized)
             PlayerAccount.GetCloudSaveData(onSuccessCallback: (result) => SetLoadedData(result), onErrorCallback: (error) => Debug.Log("Saves load error: " + error));
         else
@@ -101,8 +99,14 @@ public class Saver
     {
         if (IsElementOpened(element) == false)
         {
-            _score.AddScore(Settings.Elements.PointsForOpenedElement);
+            if (_saveDataBuilder.ToString().Contains(element.Id + SavesDevideSymbol) == false)
+                _score.AddScore(Settings.Elements.PointsForOpenedElement);
+
             _saveDataBuilder.Append(element.Id + SavesDevideSymbol);
+
+            if (_isTrainingMode)
+                _saveDataBuilder.Append(element.Id + TrainingSavesDevideSymbol);
+
             Save();
         }
     }

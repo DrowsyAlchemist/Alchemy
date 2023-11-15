@@ -12,6 +12,7 @@ public abstract class ElementsView : MonoBehaviour
 
     public void Init(ElementsStorage elementsStorage)
     {
+        OpenedElementRenderers = new();
         _elementsStorage = elementsStorage;
 
         foreach (var element in elementsStorage.SortedElements)

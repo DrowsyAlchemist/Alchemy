@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
@@ -8,6 +7,12 @@ public class TerminalElementWindow : MonoBehaviour
     private Animator _animator;
     private ElementsStorage _elementsStorage;
     private Saver _saver;
+
+    private void OnDestroy()
+    {
+        foreach (var element in _elementsStorage.SortedElements)
+            element.Opened -= OnElementOpened;
+    }
 
     public void Init(ElementsStorage elementsStorage, Saver saver)
     {
@@ -29,15 +34,12 @@ public class TerminalElementWindow : MonoBehaviour
         if (element.Recipies.Count == 0)
         {
             _saver.OpenTerminateElement();
-            _animator.Play("Show");
+            _animator.Play(ShowAnimation);
         }
     }
 
     private void Destroy()
     {
-        foreach (var element in _elementsStorage.SortedElements)
-            element.Opened -= OnElementOpened;
-
         Destroy(gameObject);
     }
 }

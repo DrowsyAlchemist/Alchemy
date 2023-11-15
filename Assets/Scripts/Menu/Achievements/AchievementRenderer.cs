@@ -12,6 +12,11 @@ public class AchievementRenderer : MonoBehaviour
 
     private Achievement _achievement;
 
+    private void OnDestroy()
+    {
+        _achievement.Achieved -= OnAchieved;
+    }
+
     public void Render(Achievement achievement)
     {
         _achievement = achievement ?? throw new System.ArgumentNullException();

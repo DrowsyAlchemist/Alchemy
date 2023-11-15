@@ -15,19 +15,19 @@ public class ElementForYanOpener : IElementClickHandler
         OnPurchased(elementRenderer);
         return;
 #endif
-        if (ElementsStorage.ElementsLeft <= LastElementsCount)
-        {
-            Billing.PurchaseProduct(
-                OpenLastElementsForYanId,
-                onSuccessCallback: (_) =>
-                {
-                    OnPurchased(elementRenderer);
-                    Metrics.SendEvent(MetricEvent.BuyLastElement);
-                    GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "Yan", 10, "LastElement", "InBook");
-                });
-        }
-        else
-        {
+      //  if (_elementsStorage.ElementsLeft <= LastElementsCount)
+       // {
+        //    Billing.PurchaseProduct(
+         //       OpenLastElementsForYanId,
+          //      onSuccessCallback: (_) =>
+          //      {
+           //         OnPurchased(elementRenderer);
+            //        Metrics.SendEvent(MetricEvent.BuyLastElement);
+            //        GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "Yan", 10, "LastElement", "InBook");
+            //    });
+       // }
+      //  else
+     //   {
             Billing.PurchaseProduct(
                 OpenElementForYanId,
                 onSuccessCallback: (_) =>
@@ -36,7 +36,7 @@ public class ElementForYanOpener : IElementClickHandler
                     Metrics.SendEvent(MetricEvent.BuyBookElement);
                     GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "Yan", 2, "Element", "InBook");
                 });
-        }
+     //   }
     }
 
     private void OnPurchased(BookElementRenderer elementRenderer)

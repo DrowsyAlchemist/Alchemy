@@ -24,8 +24,6 @@ public class Score : MonoBehaviour
     {
         if (_instance == null)
             _instance = this;
-        else
-            Destroy(gameObject);
     }
 
     public void Init(bool isPlayerAuthorized)

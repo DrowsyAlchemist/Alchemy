@@ -70,7 +70,6 @@ public sealed class GameInitialize : MonoBehaviour
         _progress.Init(_elementsStorage);
         _elementsMerger = new ElementsMerger();
         _openedElementsView.InitMainView(_gameField, _elementsMerger, _elementsStorage);
-        _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
         _alphabeticalIndex.Init();
 
         _openRecipiesBookButton.AssignOnClickAction(onButtonClick: OpenRecipiesBook);
@@ -112,9 +111,9 @@ public sealed class GameInitialize : MonoBehaviour
 
     public void ResetSaves()
     {
+        ResetProgress();
         UnityEngine.PlayerPrefs.DeleteAll();
         UnityEngine.PlayerPrefs.Save();
-        ResetProgress();
     }
 
     public void ResetProgress()

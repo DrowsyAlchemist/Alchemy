@@ -23,6 +23,7 @@ public class BookElementsView : ElementsView
         _elementClickHandler = elementClickHandler;
         _closeButton.AssignOnClickAction(Close);
         IsInitialized = true;
+        Fill(elementsStorage.SortedOpenedElements);
     }
 
     protected override void AddElement(Element element)

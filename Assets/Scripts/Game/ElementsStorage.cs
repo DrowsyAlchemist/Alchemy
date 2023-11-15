@@ -9,10 +9,10 @@ public class ElementsStorage : MonoBehaviour, IProgressHolder
     [SerializeField] private List<Element> _elements = new();
 
     private const string OffAdProductId = "OffAd";
-    private static ElementsStorage _instance;
+    //private static ElementsStorage _instance;
     private List<Element> _sortedOpenedElements = new();
 
-    public static int ElementsLeft => _instance.SortedElements.Count - _instance.SortedOpenedElements.Count;
+    public int ElementsLeft => SortedElements.Count - SortedOpenedElements.Count;
     public IReadOnlyCollection<Element> SortedElements => _elements;
     public IReadOnlyCollection<Element> SortedOpenedElements => _sortedOpenedElements;
     public int MaxCount => _elements.Count;
@@ -20,16 +20,15 @@ public class ElementsStorage : MonoBehaviour, IProgressHolder
 
     public event Action<int> CurrentCountChanged;
 
-    private void Awake()
+    private void OnDestroy()
     {
-        if (_instance == null)
-            _instance = this;
-        else
-            throw new InvalidOperationException();
+        foreach (var element in _elements)
+            element.Opened -= OnElementOpened;
     }
 
     public void Init(Saver saver)
     {
+        // _instance = this;
         SortElements(_elements);
 
         foreach (var element in _elements)

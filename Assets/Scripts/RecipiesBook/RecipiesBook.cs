@@ -18,7 +18,6 @@ public sealed class RecipiesBook : IElementClickHandler
     public void Open()
     {
         _gridView.Activate();
-        _gridView.Fill(_elementsStorage.SortedOpenedElements);
     }
 
     public void OnElementClick(BookElementRenderer elementRenderer)

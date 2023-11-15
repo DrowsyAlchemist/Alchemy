@@ -9,8 +9,6 @@ public class MergeTask : Task
         if (firstElement.Id.Equals("Fire") && secondElement.Id.Equals("Water")
             || firstElement.Id.Equals("Water") && secondElement.Id.Equals("Fire"))
             Complete();
-        else
-            SetHand(TrainingPanel.AnimatedHand);
     }
 
     protected override void BeginTask()

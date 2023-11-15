@@ -18,6 +18,7 @@ public class MainOpenedElementsView : ElementsView
         _mergeHandler = mergeHandler ?? throw new ArgumentNullException();
         _trainingMode = trainingMode;
         IsInitialized = true;
+        Fill(elementsStorage.SortedOpenedElements);
     }
 
     protected override void AddElement(Element element)

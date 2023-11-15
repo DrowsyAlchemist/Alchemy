@@ -16,7 +16,7 @@ public class TrainingWindow : MonoBehaviour
     {
         _saver = saver ?? throw new ArgumentNullException();
 
-        if (_saver.IsTrainingCompleted)
+        if (_saver.IsTrainingCompleted == false)
         {
             _startTrainingButton.AssignOnClickAction(OnStartButtonClick);
             _cancelTrainingButton.AssignOnClickAction(OnCancelButtonClick);
