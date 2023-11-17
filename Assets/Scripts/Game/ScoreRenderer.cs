@@ -17,8 +17,6 @@ public class ScoreRenderer : MonoBehaviour
     public void Init(Score score)
     {
         _score = score;
-        OnScoreChanged(_score.CurrentScore);
-        OnBestScoreChanged(_score.BestScore);
         _score.CurrentScoreChanged += OnScoreChanged;
         _score.BestScoreChanged += OnBestScoreChanged;
     }

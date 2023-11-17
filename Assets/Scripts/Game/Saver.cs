@@ -84,6 +84,14 @@ public class Saver
     public void ResetSaves()
     {
         _saveDataBuilder.Clear();
+        _score.ResetCurrentScore();
+        Save();
+    }
+
+    public void RemoveSaves()
+    {
+        _saveDataBuilder.Clear();
+        _score.RemoveScore();
         Save();
     }
 
@@ -113,8 +121,10 @@ public class Saver
 
     private void Save()
     {
-        var saves = new SavedElements();
+        var saves = new Saves();
         saves.Elements = _saveDataBuilder.ToString();
+        saves.CurrentScore = _score.CurrentScore;
+        saves.BestScore = _score.BestScore;
         string jsonData = JsonUtility.ToJson(saves);
 
         if (_isPlayerAuthorized)
@@ -137,21 +147,24 @@ public class Saver
             IsReady = true;
             return;
         }
-        var savedElements = JsonUtility.FromJson<SavedElements>(jsonData);
+        var saves = JsonUtility.FromJson<Saves>(jsonData);
 
-        if (savedElements == null)
-            Debug.Log("savedElements is null");
+        if (saves == null)
+            Debug.Log("savesElements is null");
         else
-            Debug.Log("Savedelements: " + savedElements.Elements);
+            Debug.Log("SavedElements: " + saves.Elements);
 
-        _saveDataBuilder.Append(savedElements.Elements);
+        _saveDataBuilder.Append(saves.Elements);
+        _score.Init(saves.BestScore, saves.CurrentScore);
         Save();
         IsReady = true;
     }
 
     [Serializable]
-    private class SavedElements
+    private class Saves
     {
         public string Elements;
+        public int BestScore;
+        public int CurrentScore;
     }
 }

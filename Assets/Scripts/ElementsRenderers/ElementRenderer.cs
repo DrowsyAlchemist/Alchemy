@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public abstract class ElementRenderer : MonoBehaviour, IHasElement
+public class ElementRenderer : MonoBehaviour, IHasElement
 {
     [SerializeField] private Image _image;
     [SerializeField] private TMP_Text _lableText;

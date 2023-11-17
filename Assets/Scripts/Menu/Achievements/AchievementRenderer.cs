@@ -14,7 +14,8 @@ public class AchievementRenderer : MonoBehaviour
 
     private void OnDestroy()
     {
-        _achievement.Achieved -= OnAchieved;
+        if (_achievement != null)
+            _achievement.Achieved -= OnAchieved;
     }
 
     public void Render(Achievement achievement)
@@ -50,8 +51,11 @@ public class AchievementRenderer : MonoBehaviour
 
     private void UnfadeIcon()
     {
-        _iconImage.color = _normalColor;
-        _lableText.color = _normalColor;
-        _descriptionText.color = _normalColor;
+        if (this != null)
+        {
+            _iconImage.color = _normalColor;
+            _lableText.color = _normalColor;
+            _descriptionText.color = _normalColor;
+        }
     }
 }

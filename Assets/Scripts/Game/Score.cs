@@ -1,5 +1,7 @@
 using Agava.YandexGames;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using PlayerPrefs = UnityEngine.PlayerPrefs;
 
@@ -8,43 +10,49 @@ public class Score : MonoBehaviour
     [SerializeField] private ScoreRenderer[] _scoreRenderers;
 
     private const string CurrentScoreStorage = "CurrentScore";
-
-    private static Score _instance;
+    private const int DefaultScore = 0;
     private bool _isPlayerAuthorized;
     private PlayerExtraData _playerExtraData;
+    private Queue<Action> _saveActions = new();
+    private Coroutine _saveCoroutine;
+    private Saver _saver;
 
+    public bool IsReady { get; private set; } = true;
     public int CurrentScore { get; private set; }
     public int BestScore { get; private set; }
 
     public event Action<int> CurrentScoreChanged;
     public event Action<int> BestScoreChanged;
 
-
-    private void Awake()
+    public void Init(int bestScore, int currentScore)
     {
-        if (_instance == null)
-            _instance = this;
-    }
+        foreach (var scoreRenderer in _scoreRenderers)
+            scoreRenderer.Init(this);
 
-    public void Init(bool isPlayerAuthorized)
-    {
-        _isPlayerAuthorized = isPlayerAuthorized;
-
+        //_isPlayerAuthorized = isPlayerAuthorized;
+        BestScore = bestScore;
+        CurrentScore = currentScore;
+        BestScoreChanged?.Invoke(BestScore);
+        CurrentScoreChanged?.Invoke(CurrentScore);
+        /*
         try
         {
             if (isPlayerAuthorized)
-                Leaderboard.GetPlayerEntry(Settings.LeaderboardSettings.LeaderboardName, GetScoreFromLeaderboard, OnLeaderboardError);
+            {
+                _saveActions.Enqueue(() => Leaderboard.GetPlayerEntry(Settings.LeaderboardSettings.LeaderboardName, GetScoreFromLeaderboard, OnLeaderboardError));
+                StartCoroutine(SaveWithDelay());
+            }
             else
+            {
                 GetScoreFromPrefs();
+            }
         }
         catch (Exception e)
         {
             Debug.Log("ScoreInitError: " + e.Message + e.StackTrace);
             _playerExtraData = new PlayerExtraData();
         }
-
-        foreach (var scoreRenderer in _scoreRenderers)
-            scoreRenderer.Init(this);
+        */
     }
 
     public void AddScore(int amount)
@@ -59,30 +67,61 @@ public class Score : MonoBehaviour
         {
             BestScore = CurrentScore;
             BestScoreChanged?.Invoke(BestScore);
+            SetScoreToLeaderboard();
         }
-        SaveScore();
+        // SaveScore();
     }
 
     public void ResetCurrentScore()
     {
-        CurrentScore = 0;
+        CurrentScore = DefaultScore;
         CurrentScoreChanged?.Invoke(CurrentScore);
-        SaveScore();
+        // SaveScore();
+    }
+
+    public void RemoveScore()
+    {
+        CurrentScore = DefaultScore;
+        BestScore = DefaultScore;
+        // SaveScore();
+        CurrentScoreChanged?.Invoke(CurrentScore);
+        BestScoreChanged?.Invoke(BestScore);
+        SetScoreToLeaderboard();
     }
 
     private void SaveScore()
     {
         if (_isPlayerAuthorized)
-            SetScoreToLeaderboard();
+            // SetScoreToLeaderboard();
+            SetScoreToCloud();
         else
             SetScoreToPrefs();
     }
 
+    private void SetScoreToCloud()
+    {
+
+    }
+
     private void SetScoreToLeaderboard()
     {
-        _playerExtraData.CurrentScore = CurrentScore;
-        string jsonData = JsonUtility.ToJson(_playerExtraData);
-        Leaderboard.SetScore(Settings.LeaderboardSettings.LeaderboardName, BestScore, extraData: jsonData);
+#if UNITY_EDITOR
+        return;
+#endif
+        Leaderboard.SetScore(Settings.LeaderboardSettings.LeaderboardName, BestScore);
+    }
+
+    private IEnumerator SaveWithDelay()
+    {
+        IsReady = false;
+        var waitForSeconds = new WaitForSecondsRealtime(1.1f);
+
+        while (_saveActions.Count > 0)
+        {
+            _saveActions.Dequeue()?.Invoke();
+            yield return waitForSeconds;
+        }
+        IsReady = true;
     }
 
     private void SetScoreToPrefs()
@@ -111,6 +150,8 @@ public class Score : MonoBehaviour
         }
         _playerExtraData ??= new PlayerExtraData();
         CurrentScore = _playerExtraData.CurrentScore;
+        CurrentScoreChanged?.Invoke(CurrentScore);
+        BestScoreChanged?.Invoke(BestScore);
     }
 
     private void OnLeaderboardError(string error)
@@ -123,6 +164,8 @@ public class Score : MonoBehaviour
     {
         BestScore = PlayerPrefs.GetInt(Settings.LeaderboardSettings.LeaderboardName);
         CurrentScore = PlayerPrefs.GetInt(CurrentScoreStorage);
+        CurrentScoreChanged?.Invoke(CurrentScore);
+        BestScoreChanged?.Invoke(BestScore);
     }
 
     [Serializable]

@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class TerminalElementWindow : MonoBehaviour
 {
-    private const string ShowAnimation = "Show";
+    private const string ShowAnimation = "ShowTerminalElement";
     private Animator _animator;
     private ElementsStorage _elementsStorage;
     private Saver _saver;

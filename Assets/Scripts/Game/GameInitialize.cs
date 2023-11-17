@@ -4,6 +4,7 @@ using Lean.Localization;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public sealed class GameInitialize : MonoBehaviour
@@ -61,7 +62,7 @@ public sealed class GameInitialize : MonoBehaviour
         while (_saver.IsReady == false)
             yield return null;
 
-        _score.Init(isPlayerAuthorized);
+       // _score.Init(isPlayerAuthorized);
         OpenInitialElements();
         _elementsStorage.Init(_saver);
         _menu.Init(this);
@@ -109,22 +110,26 @@ public sealed class GameInitialize : MonoBehaviour
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
     }
 
-    public void ResetSaves()
+    public void RemoveSaves()
     {
-        ResetProgress();
-        UnityEngine.PlayerPrefs.DeleteAll();
-        UnityEngine.PlayerPrefs.Save();
+        _fadeImage.Activate();
+        _saver.RemoveSaves();
+        _elementsStorage.ResetOpenedElements();
+        OpenInitialElements();
+        _gameField.Clear();
+        _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
+        SceneManager.LoadScene(Settings.MainSceneName);
     }
 
     public void ResetProgress()
     {
+        _fadeImage.Activate();
         _saver.ResetSaves();
-        _score.ResetCurrentScore();
         _elementsStorage.ResetOpenedElements();
         OpenInitialElements();
-
         _gameField.Clear();
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
+        _fadeImage.Deactivate();
     }
 
     private void OpenRecipiesBook()

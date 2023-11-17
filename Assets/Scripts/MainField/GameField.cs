@@ -9,6 +9,7 @@ public class GameField : MonoBehaviour
     [SerializeField] private UIButton _clearButton;
     [SerializeField] private UIButton _hideAdForYanButton;
     [SerializeField] private UIButton _openElementForYanButton;
+    [SerializeField] private YanElementWindow _yanElementWindow;
 
     private const string OffAdProductId = "OffAd";
     private const string OpenElementForYanId = "OpenElement";
@@ -63,6 +64,7 @@ public class GameField : MonoBehaviour
         Element elementForOpenenig = elementsForOpenening[Random.Range(0, elementsForOpenening.Count)];
 #if UNITY_EDITOR
         elementForOpenenig.Open();
+        _yanElementWindow.Show(elementForOpenenig);
         return;
 #endif
         if (elementsForOpenening.Count <= LastElementsCount)
@@ -72,6 +74,7 @@ public class GameField : MonoBehaviour
                 onSuccessCallback: (_) =>
                 {
                     elementForOpenenig.Open();
+                    _yanElementWindow.Show(elementForOpenenig);
                     Metrics.SendEvent(MetricEvent.BuyLastElement);
                     GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "Yan", 10, "LastElement", "InField");
                 },
@@ -84,6 +87,7 @@ public class GameField : MonoBehaviour
                 onSuccessCallback: (_) =>
                 {
                     elementForOpenenig.Open();
+                    _yanElementWindow.Show(elementForOpenenig);
                     Metrics.SendEvent(MetricEvent.BuyRandomElement);
                     GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "Yan", 2, "Element", "InField");
                 },

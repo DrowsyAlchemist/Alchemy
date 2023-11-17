@@ -51,7 +51,7 @@ public sealed class TrainingInitialize : MonoBehaviour
         while (_saver.IsReady == false)
             yield return null;
 
-        _score.Init(isPlayerAuthorized);
+        //_score.Init(isPlayerAuthorized);
         OpenInitialElements();
         _elementsStorage.Init(_saver);
         _menu.Init(null); //
