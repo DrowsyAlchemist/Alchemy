@@ -50,7 +50,6 @@ public sealed class TrainingInitialize : MonoBehaviour
         while (_saver.IsReady == false)
             yield return null;
 
-        _elementsStorage.Init(_saver);
         OpenInitialElements();
         _menu.Init(null); //
         _gameField.Init(_saver, _elementsStorage, isTrainingMode: true);

@@ -60,7 +60,6 @@ public sealed class GameInitialize : MonoBehaviour
         while (_saver.IsReady == false)
             yield return null;
 
-        _elementsStorage.Init(_saver);
         OpenInitialElements();
         _menu.Init(this);
         _gameField.Init(_saver, _elementsStorage);

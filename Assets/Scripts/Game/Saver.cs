@@ -42,15 +42,13 @@ public class Saver
         _isTrainingMode = isTrainingMode;
         _elementsStorage = elementsStorage;
         _score = score;
-
         _elementsStorage.ElementOpened += OnElementOpened;
-
-        Load();
     }
 
     public static Saver Create(ElementsStorage elementsStorage, Score score, bool isTrainingMode = false)
     {
         _instance = new Saver(elementsStorage, score, isTrainingMode);
+        _instance.Load();
         return _instance;
     }
 
@@ -106,6 +104,8 @@ public class Saver
 
     public void Load()
     {
+        IsReady = false;
+
         if (IsPlayerAuthorized)
             PlayerAccount.GetCloudSaveData(onSuccessCallback: (result) => SetLoadedData(result), onErrorCallback: (error) => Debug.Log("Saves load error: " + error));
         else
@@ -142,13 +142,14 @@ public class Saver
 
         if (IsPlayerAuthorized)
         {
-            PlayerAccount.SetCloudSaveData(jsonData);
+            PlayerAccount.SetCloudSaveData(jsonData, onSuccessCallback: () => IsReady = true);
             Debug.Log("Saved: " + jsonData);
         }
         else
         {
             PlayerPrefs.SetString(SavesStorage, jsonData);
             PlayerPrefs.Save();
+            IsReady = true;
         }
     }
 
@@ -157,6 +158,7 @@ public class Saver
         if (string.IsNullOrEmpty(jsonData))
         {
             Debug.Log("jsonData is null or empty");
+            _elementsStorage.Init(this);
             _score.Init(0, 0);
             IsReady = true;
             return;
@@ -169,13 +171,12 @@ public class Saver
             Debug.Log("SavedElements: " + saves.Elements);
 
         _saveDataBuilder.Append(saves.Elements);
-
+        _elementsStorage.Init(this); ///////////////////////////
         int bestScore = saves.BestScore > _elementsStorage.SortedOpenedElements.Count ? saves.BestScore : _elementsStorage.SortedOpenedElements.Count;
         int currentScore = saves.CurrentScore > _elementsStorage.SortedOpenedElements.Count ? saves.CurrentScore : _elementsStorage.SortedOpenedElements.Count;
         _score.Init(bestScore, currentScore);
         IsTrainingCompleted = saves.IsTrainingCompleted || IsTrainingCompleted;
         Save();
-        IsReady = true;
     }
 
     [Serializable]

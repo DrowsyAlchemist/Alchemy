@@ -29,6 +29,7 @@ public class ElementsStorage : MonoBehaviour, IProgressHolder
     public void Init(Saver saver)
     {
         SortElements(_elements);
+        _sortedOpenedElements = new();
 
         foreach (var element in _elements)
         {
@@ -58,6 +59,7 @@ public class ElementsStorage : MonoBehaviour, IProgressHolder
                     if (purchasedElement != null)
                     {
                         purchasedElement.Open();
+                        Billing.ConsumeProduct(product.purchaseToken);
                         Debug.Log($"Element {product.developerPayload} is opened");
                     }
                     else

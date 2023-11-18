@@ -1,5 +1,6 @@
 using Agava.YandexGames;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -88,23 +89,29 @@ public class LeaderboardView : MonoBehaviour
     {
         if (PlayerAccount.HasPersonalProfileDataPermission)
         {
-            _saver.Load();
-            SceneManager.LoadScene(Settings.MainSceneName);
+            StartLoadCoroutine();
         }
         else
         {
             PlayerAccount.RequestPersonalProfileDataPermission(
-                onSuccessCallback: () =>
-                {
-                    _saver.Load();
-                    SceneManager.LoadScene(Settings.MainSceneName);
-                },
-                onErrorCallback: (error) =>
-                {
-                    _saver.Load();
-                    SceneManager.LoadScene(Settings.MainSceneName);
-                });
+                onSuccessCallback: StartLoadCoroutine,
+                onErrorCallback: (_) => StartLoadCoroutine());
         }
+    }
+
+    private void StartLoadCoroutine()
+    {
+        Settings.CoroutineObject.StartCoroutine(MergeSavesAndLoadScene());
+    }
+
+    private IEnumerator MergeSavesAndLoadScene()
+    {
+        _saver.Load();
+
+        while (_saver.IsReady == false)
+            yield return null;
+
+        SceneManager.LoadScene(Settings.MainSceneName);
     }
 
     private void RenderPlayerOnly()

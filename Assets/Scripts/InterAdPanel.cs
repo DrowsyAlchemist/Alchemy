@@ -25,13 +25,20 @@ public class InterAdPanel : MonoBehaviour
         if (_elapsedTime > Settings.MonetizationSettings.SecondsBetweenInters)
         {
             _elapsedTime = 0;
-            _animator.Play(ShowAnimation);
+
+            if (_saver.IsAdAllowed)
+                _animator.Play(ShowAnimation);
+            else
+                Destroy(gameObject);
         }
     }
 
     public void Init(Saver saver)
     {
         _saver = saver;
+
+        if (_saver.IsAdAllowed == false)
+            Destroy(gameObject);
     }
 
     private void SetTimerString(string str)
@@ -41,10 +48,8 @@ public class InterAdPanel : MonoBehaviour
 
     private void ShowInter()
     {
-        if (_saver.IsAdAllowed)
-        {
-            InterstitialAd.Show();
-            GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "InterAd", 1, "InterAd", "InterAd");
-        }
+
+        InterstitialAd.Show();
+        GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "InterAd", 1, "InterAd", "InterAd");
     }
 }
