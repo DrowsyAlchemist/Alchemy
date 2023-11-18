@@ -12,6 +12,7 @@ public class Sound : MonoBehaviour
     [SerializeField] private string _musicVolumeName = "MusicVolume";
     [SerializeField] private float _maxValue = 0;
     [SerializeField] private float _minValue = -80;
+    [SerializeField] private float _defaultNormalizedValue = 0.5f;
 
     [SerializeField] private Sprite _turnedOnSprite;
     [SerializeField] private Sprite _muteSprite;
@@ -26,6 +27,7 @@ public class Sound : MonoBehaviour
 
     private static Sound _instance;
     private const float ValuePower = 0.3f;
+    private static float _currentGeneralNormalizedVolume = 1;
     private float _musicNormalizedVolume = 1;
 
     public static bool IsOn { get; private set; }
@@ -34,15 +36,21 @@ public class Sound : MonoBehaviour
     public static Sprite MuteSprite => _instance._muteSprite;
     public static Sprite TurnedOnMusicSprite => _instance._turnedOnMusicSprite;
     public static Sprite MuteMusicSprite => _instance._muteMusicSprite;
+    public static float CurrentGeneralNormalizedVolume => _currentGeneralNormalizedVolume;
 
     public static event Action ConditionChanged;
 
     private void Awake()
     {
         if (_instance == false)
+        {
             _instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
         else
+        {
             Destroy(gameObject);
+        }
     }
 
     private void Start()
@@ -53,6 +61,7 @@ public class Sound : MonoBehaviour
             TurnOn();
 
         ResumeMusic();
+        SetGeneralVolume(_defaultNormalizedValue);
         WebApplication.InBackgroundChangeEvent += OnBackgroundChanged;
         ConditionChanged?.Invoke();
     }
@@ -78,6 +87,7 @@ public class Sound : MonoBehaviour
 
     public static void SetGeneralVolume(float normalizedValue)
     {
+        _currentGeneralNormalizedVolume = normalizedValue;
         _instance.SetVolume(_instance._masterVolumeName, normalizedValue);
     }
 

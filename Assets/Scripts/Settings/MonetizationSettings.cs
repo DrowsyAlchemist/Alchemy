@@ -5,6 +5,7 @@ using UnityEngine;
 public class MonetizationSettings : ScriptableObject
 {
     [SerializeField] private float _secondsBetweenInter = 100;
+    [SerializeField] private int _lastElementsCount = 20;
 
     [SerializeField] private Sprite _adSprite;
     [SerializeField] private string _adLable = "Посмотреть";
@@ -14,7 +15,11 @@ public class MonetizationSettings : ScriptableObject
     [SerializeField] private string _yanLable = "Открыть";
     [SerializeField] private string _yanLableEn = "Open";
 
+    public const string OpenElementForYanId = "OpenElement";
+    public const string OpenLastElementForYanId = "OpenLastElements";
+
     public float SecondsBetweenInters => _secondsBetweenInter;
+    public int LastElementsCount => _lastElementsCount;
 
     public Sprite AdSprite => _adSprite;
     public string AdLable => LeanLocalization.GetFirstCurrentLanguage().Equals("ru") ? _adLable : _adLableEn;

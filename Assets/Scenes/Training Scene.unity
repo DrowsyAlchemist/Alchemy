@@ -3582,8 +3582,8 @@ MonoBehaviour:
   m_Padding:
     m_Left: 10
     m_Right: 75
-    m_Top: 10
-    m_Bottom: 10
+    m_Top: 70
+    m_Bottom: 15
   m_ChildAlignment: 0
   m_Spacing: 15
   m_ChildForceExpandWidth: 1
@@ -7968,7 +7968,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -134775375594954589, guid: f2ac22f5a077a1b469a07636c84b72e5, type: 2}
   m_audioClip: {fileID: 8300000, guid: 740cea7d0f9b7d14e9bb8ae7ed840c5b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9033,7 +9033,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1394192652}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 397554671}
+        m_TargetAssemblyTypeName: Sound, Assembly-CSharp
+        m_MethodName: PlayClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1394192652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13471,7 +13483,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1883572130}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 397554671}
+        m_TargetAssemblyTypeName: Sound, Assembly-CSharp
+        m_MethodName: PlayClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1883572130
 MonoBehaviour:
   m_ObjectHideFlags: 0

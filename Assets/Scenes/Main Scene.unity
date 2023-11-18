@@ -3469,7 +3469,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397554669}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3478,8 +3478,8 @@ Transform:
   - {fileID: 767644058}
   - {fileID: 1674715204}
   - {fileID: 1310309516}
-  m_Father: {fileID: 1549033969}
-  m_RootOrder: 4
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &397554671
 MonoBehaviour:
@@ -4848,7 +4848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 0
-  m_DragThreshold: 10
+  m_DragThreshold: 1
 --- !u!4 &552630269
 Transform:
   m_ObjectHideFlags: 0
@@ -4996,8 +4996,8 @@ MonoBehaviour:
   m_Padding:
     m_Left: 10
     m_Right: 75
-    m_Top: 10
-    m_Bottom: 10
+    m_Top: 70
+    m_Bottom: 15
   m_ChildAlignment: 0
   m_Spacing: 15
   m_ChildForceExpandWidth: 1
@@ -5054,7 +5054,7 @@ Transform:
   - {fileID: 612570535}
   - {fileID: 1660120919}
   m_Father: {fileID: 1549033969}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &599979648
 MonoBehaviour:
@@ -5532,7 +5532,7 @@ Transform:
   - {fileID: 1087391157}
   - {fileID: 1220380016}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &734081552
 GameObject:
@@ -9712,7 +9712,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -134775375594954589, guid: f2ac22f5a077a1b469a07636c84b72e5, type: 2}
   m_audioClip: {fileID: 8300000, guid: 740cea7d0f9b7d14e9bb8ae7ed840c5b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.272
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -12740,7 +12740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 465288, guid: a9d27d37bab3c447b8eb7a2a6756e952, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 465288, guid: a9d27d37bab3c447b8eb7a2a6756e952, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13201,10 +13201,9 @@ Transform:
   - {fileID: 937938471}
   - {fileID: 1254463362}
   - {fileID: 1435712764}
-  - {fileID: 397554670}
   - {fileID: 599979647}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1561204922
 GameObject:
@@ -15989,7 +15988,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1839457123
 MonoBehaviour:

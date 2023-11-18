@@ -12,9 +12,6 @@ public class GameField : MonoBehaviour
     [SerializeField] private YanElementWindow _yanElementWindow;
 
     private const string OffAdProductId = "OffAd";
-    private const string OpenElementForYanId = "OpenElement";
-    private const string OpenLastElementsForYanId = "OpenLastElements";
-    private const int LastElementsCount = 20;
     private Saver _saver;
     private ElementsStorage _elementsStorage;
 
@@ -35,6 +32,7 @@ public class GameField : MonoBehaviour
         if (_saver.IsAdAllowed == false)
             _hideAdForYanButton.Deactivate();
 
+        CheckClosedElements(null);
         _elementsStorage.ElementOpened += CheckClosedElements;
     }
 
@@ -51,7 +49,7 @@ public class GameField : MonoBehaviour
 
     private void CheckClosedElements(Element _)
     {
-        if (_elementsStorage.SortedElements.Count == _elementsStorage.SortedOpenedElements.Count)
+        if (_elementsStorage.ElementsLeft == 0)
             _openElementForYanButton.Deactivate();
     }
 
@@ -65,10 +63,10 @@ public class GameField : MonoBehaviour
         _yanElementWindow.Show(elementForOpenenig);
         return;
 #endif
-        if (elementsForOpenening.Count <= LastElementsCount)
+        if (_elementsStorage.ElementsLeft <= Settings.MonetizationSettings.LastElementsCount)
         {
             Billing.PurchaseProduct(
-                OpenLastElementsForYanId,
+                MonetizationSettings.OpenLastElementForYanId,
                 onSuccessCallback: (_) =>
                 {
                     elementForOpenenig.Open();
@@ -76,12 +74,12 @@ public class GameField : MonoBehaviour
                     Metrics.SendEvent(MetricEvent.BuyLastElement);
                     GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "Yan", 10, "LastElement", "InField");
                 },
-                developerPayload: elementForOpenenig.Id);
+                developerPayload: elementForOpenenig.Id); ;
         }
         else
         {
             Billing.PurchaseProduct(
-                OpenElementForYanId,
+                MonetizationSettings.OpenElementForYanId,
                 onSuccessCallback: (_) =>
                 {
                     elementForOpenenig.Open();

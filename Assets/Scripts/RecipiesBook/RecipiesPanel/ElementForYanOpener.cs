@@ -5,9 +5,6 @@ using UnityEngine;
 
 public class ElementForYanOpener : IElementClickHandler
 {
-    private const string OpenElementForYanId = "OpenElement";
-    private const string OpenLastElementsForYanId = "OpenLastElement";
-    private const int LastElementsCount = 20;
     private ElementsStorage _elementsStorage;
 
     public event Action ElementOpened;
@@ -24,10 +21,10 @@ public class ElementForYanOpener : IElementClickHandler
         OnPurchased(elementRenderer);
         return;
 #endif
-        if (_elementsStorage.ElementsLeft <= LastElementsCount)
+        if (_elementsStorage.ElementsLeft <= Settings.MonetizationSettings.LastElementsCount)
         {
             Billing.PurchaseProduct(
-               OpenLastElementsForYanId,
+              MonetizationSettings.OpenLastElementForYanId,
               onSuccessCallback: (_) =>
               {
                   OnPurchased(elementRenderer);
@@ -38,7 +35,7 @@ public class ElementForYanOpener : IElementClickHandler
         else
         {
             Billing.PurchaseProduct(
-            OpenElementForYanId,
+            MonetizationSettings.OpenElementForYanId,
             onSuccessCallback: (_) =>
             {
                 OnPurchased(elementRenderer);

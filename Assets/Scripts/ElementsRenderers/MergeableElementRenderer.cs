@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragHandler, IPointerClickHandler
+public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragHandler, IPointerClickHandler, IBeginDragHandler
 {
     private const float DoubleClickTime = 0.3f;
     private const float XCloneShift = 20;
@@ -12,6 +12,7 @@ public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragH
     private IMergeHandler _mergeHandler;
     private float _lastClickTime;
     private bool _trainingMode;
+    private Vector3 _deltaPosition;
 
     public void Init(IMergeHandler mergeHandler, bool trainingMode = false)
     {
@@ -19,9 +20,14 @@ public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragH
         _trainingMode = trainingMode;
     }
 
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        _deltaPosition = (Vector3)eventData.position - transform.position;
+    }
+
     public void OnDrag(PointerEventData eventData)
     {
-        transform.position = eventData.position;
+        transform.position = (Vector3)eventData.position - _deltaPosition;
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -72,6 +78,7 @@ public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragH
         var clone = Instantiate(this, transform.position + new Vector3(XCloneShift, YCloneShift, 0), Quaternion.identity, transform.parent);
         clone.Render(Element);
         clone.Init(_mergeHandler, _trainingMode);
+        Sound.PlayCreate();
 
         if (_trainingMode)
             Training.SetDoubleClick();
