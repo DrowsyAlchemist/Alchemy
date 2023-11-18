@@ -64,6 +64,7 @@ public sealed class TrainingInitialize : MonoBehaviour
         _leaderboardView.Init(_score, _saver);
         _achievementsMenu.Init(_score);
         _training.Init(_saver);
+        yield return new WaitForEndOfFrame();
         _training.Begin();
         _fadeImage.Deactivate();
 

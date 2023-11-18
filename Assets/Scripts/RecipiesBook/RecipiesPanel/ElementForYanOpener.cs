@@ -8,8 +8,14 @@ public class ElementForYanOpener : IElementClickHandler
     private const string OpenElementForYanId = "OpenElement";
     private const string OpenLastElementsForYanId = "OpenLastElement";
     private const int LastElementsCount = 20;
+    private ElementsStorage _elementsStorage;
 
     public event Action ElementOpened;
+
+    public ElementForYanOpener(ElementsStorage elementsStorage)
+    {
+        _elementsStorage = elementsStorage;
+    }
 
     public void OnElementClick(BookElementRenderer elementRenderer)
     {
@@ -18,28 +24,28 @@ public class ElementForYanOpener : IElementClickHandler
         OnPurchased(elementRenderer);
         return;
 #endif
-      //  if (_elementsStorage.ElementsLeft <= LastElementsCount)
-       // {
-        //    Billing.PurchaseProduct(
-         //       OpenLastElementsForYanId,
-          //      onSuccessCallback: (_) =>
-          //      {
-           //         OnPurchased(elementRenderer);
-            //        Metrics.SendEvent(MetricEvent.BuyLastElement);
-            //        GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "Yan", 10, "LastElement", "InBook");
-            //    });
-       // }
-      //  else
-     //   {
+        if (_elementsStorage.ElementsLeft <= LastElementsCount)
+        {
             Billing.PurchaseProduct(
-                OpenElementForYanId,
-                onSuccessCallback: (_) =>
-                {
-                    OnPurchased(elementRenderer);
-                    Metrics.SendEvent(MetricEvent.BuyBookElement);
-                    GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "Yan", 2, "Element", "InBook");
-                });
-     //   }
+               OpenLastElementsForYanId,
+              onSuccessCallback: (_) =>
+              {
+                  OnPurchased(elementRenderer);
+                  Metrics.SendEvent(MetricEvent.BuyLastElement);
+                  GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "Yan", 10, "LastElement", "InBook");
+              });
+        }
+        else
+        {
+            Billing.PurchaseProduct(
+            OpenElementForYanId,
+            onSuccessCallback: (_) =>
+            {
+                OnPurchased(elementRenderer);
+                Metrics.SendEvent(MetricEvent.BuyBookElement);
+                GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "Yan", 2, "Element", "InBook");
+            });
+        }
     }
 
     private void OnPurchased(BookElementRenderer elementRenderer)

@@ -18,6 +18,7 @@ public class RecipiesView : MonoBehaviour
     private List<RecipeRenderer> _recipiesWithElementsRenderers = new();
     private List<RecipeRenderer> _creationRecipiesRenderers = new();
     private Element _currentElement;
+    private ElementsStorage _elementsStorage;
 
     private void Awake()
     {
@@ -30,8 +31,9 @@ public class RecipiesView : MonoBehaviour
             recipieRenderer.ElementOpened -= OnElementOpenedForYan;
     }
 
-    public void Fill(Element element)
+    public void Fill(Element element, ElementsStorage elementsStorage)
     {
+        _elementsStorage = elementsStorage;
         _currentElement = element;
         element.SortRecipies();
         FillRecipiesWithElement(element);
@@ -55,7 +57,7 @@ public class RecipiesView : MonoBehaviour
             if ((i + 1) > _recipiesWithElementsRenderers.Count)
                 AddRecipieWithElement(element, recipie);
             else
-                _recipiesWithElementsRenderers[i].Render(element, recipie);
+                _recipiesWithElementsRenderers[i].Render(element, recipie, _elementsStorage);
 
             i++;
         }
@@ -91,7 +93,7 @@ public class RecipiesView : MonoBehaviour
     private void AddRecipieWithElement(Element element, Recipe recipie)
     {
         var recipieRenderer = Instantiate(_recipieRendererTemplate, _recipiesWithElementContainer);
-        recipieRenderer.Render(element, recipie);
+        recipieRenderer.Render(element, recipie, _elementsStorage);
         _recipiesWithElementsRenderers.Add(recipieRenderer);
         recipieRenderer.ElementOpened += OnElementOpenedForYan;
     }

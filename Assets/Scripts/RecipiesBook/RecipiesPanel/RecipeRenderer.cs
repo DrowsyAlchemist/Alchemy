@@ -11,18 +11,18 @@ public class RecipeRenderer : MonoBehaviour
 
     public event Action ElementOpened;
 
-    private void Init()
+    private void Init(ElementsStorage elementsStorage)
     {
         _secondElementRenderer.AssignClickHandler(new ElementForAdOpener());
-        _resultElementRenderer.AssignClickHandler(new ElementForYanOpener());
+        _resultElementRenderer.AssignClickHandler(new ElementForYanOpener(elementsStorage));
         _resultElementRenderer.ElementOpened += () => ElementOpened?.Invoke();
         _isInitialized = true;
     }
 
-    public void Render(Element element, Recipe recipe)
+    public void Render(Element element, Recipe recipe, ElementsStorage elementsStorage)
     {
         if (_isInitialized == false)
-            Init();
+            Init(elementsStorage);
 
         if (element.IsOpened)
             _firstElementRenderer.RenderOpened(element);
