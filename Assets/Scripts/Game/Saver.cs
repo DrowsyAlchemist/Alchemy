@@ -33,8 +33,7 @@ public class Saver
         _elementsStorage = elementsStorage;
         _score = score;
 
-        foreach (var element in _elementsStorage.SortedElements)
-            element.Opened += OnElementOpened;
+        _elementsStorage.ElementOpened += OnElementOpened;
 
         Load();
     }
@@ -105,6 +104,9 @@ public class Saver
 
     private void OnElementOpened(Element element)
     {
+        if (this == null)
+            return;
+
         if (IsElementOpened(element) == false)
         {
             if (_saveDataBuilder.ToString().Contains(element.Id + SavesDevideSymbol) == false)

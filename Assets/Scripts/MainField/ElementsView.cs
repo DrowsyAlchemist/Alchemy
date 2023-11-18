@@ -14,15 +14,12 @@ public abstract class ElementsView : MonoBehaviour
     {
         OpenedElementRenderers = new();
         _elementsStorage = elementsStorage;
-
-        foreach (var element in elementsStorage.SortedElements)
-            element.Opened += OnElementOpened;
+        _elementsStorage.ElementOpened += OnElementOpened;
     }
 
     private void OnDestroy()
     {
-        foreach (var element in _elementsStorage.SortedElements)
-            element.Opened -= OnElementOpened;
+        _elementsStorage.ElementOpened -= OnElementOpened;
     }
 
     public void Fill(IReadOnlyCollection<Element> elements)

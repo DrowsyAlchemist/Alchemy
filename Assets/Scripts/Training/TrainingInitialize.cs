@@ -52,8 +52,8 @@ public sealed class TrainingInitialize : MonoBehaviour
             yield return null;
 
         //_score.Init(isPlayerAuthorized);
-        OpenInitialElements();
         _elementsStorage.Init(_saver);
+        OpenInitialElements();
         _menu.Init(null); //
         _gameField.Init(_saver, _elementsStorage, isTrainingMode: true);
         _elementsMerger = new ElementsMerger();

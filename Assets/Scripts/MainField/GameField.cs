@@ -35,14 +35,12 @@ public class GameField : MonoBehaviour
         if (_saver.IsAdAllowed == false)
             _hideAdForYanButton.Deactivate();
 
-        foreach (var element in _elementsStorage.SortedElements)
-            element.Opened += CheckClosedElements;
+        _elementsStorage.ElementOpened += CheckClosedElements;
     }
 
     private void OnDestroy()
     {
-        foreach (var element in _elementsStorage.SortedElements)
-            element.Opened -= CheckClosedElements;
+        _elementsStorage.ElementOpened -= CheckClosedElements;
     }
 
     public void Clear()

@@ -63,8 +63,8 @@ public sealed class GameInitialize : MonoBehaviour
             yield return null;
 
        // _score.Init(isPlayerAuthorized);
-        OpenInitialElements();
         _elementsStorage.Init(_saver);
+        OpenInitialElements();
         _menu.Init(this);
         _gameField.Init(_saver, _elementsStorage);
         _interAdPanel.Init(_saver);

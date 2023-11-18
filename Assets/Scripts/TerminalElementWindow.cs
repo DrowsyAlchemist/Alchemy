@@ -10,8 +10,7 @@ public class TerminalElementWindow : MonoBehaviour
 
     private void OnDestroy()
     {
-        foreach (var element in _elementsStorage.SortedElements)
-            element.Opened -= OnElementOpened;
+        _elementsStorage.ElementOpened -= OnElementOpened;
     }
 
     public void Init(ElementsStorage elementsStorage, Saver saver)
@@ -25,8 +24,7 @@ public class TerminalElementWindow : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        foreach (var element in elementsStorage.SortedElements)
-            element.Opened += OnElementOpened;
+        _elementsStorage.ElementOpened += OnElementOpened;
     }
 
     private void OnElementOpened(Element element)

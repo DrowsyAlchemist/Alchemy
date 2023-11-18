@@ -18,6 +18,7 @@ public class ElementsStorage : MonoBehaviour, IProgressHolder
     public int MaxCount => _elements.Count;
     public int CurrentCount => _sortedOpenedElements.Count;
 
+    public event Action<Element> ElementOpened;
     public event Action<int> CurrentCountChanged;
 
     private void OnDestroy()
@@ -78,6 +79,7 @@ public class ElementsStorage : MonoBehaviour, IProgressHolder
         _sortedOpenedElements.Add(element);
         SortElements(_sortedOpenedElements);
         CurrentCountChanged?.Invoke(CurrentCount);
+        ElementOpened?.Invoke(element);
     }
 
     private void SortElements(List<Element> elements)
