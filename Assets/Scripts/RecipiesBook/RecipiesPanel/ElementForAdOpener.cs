@@ -1,4 +1,5 @@
 using GameAnalyticsSDK;
+using System;
 
 public class ElementForAdOpener : IElementClickHandler
 {
@@ -8,6 +9,8 @@ public class ElementForAdOpener : IElementClickHandler
     {
         _adShower = new AdShower();
     }
+
+    public event Action ElementOpened;
 
     public void OnElementClick(BookElementRenderer elementRenderer)
     {
@@ -20,5 +23,6 @@ public class ElementForAdOpener : IElementClickHandler
         elementRenderer.RenderOpened(elementRenderer.Element);
         GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "VideoAd", 2, "Element", "InBook");
         Metrics.SendEvent(MetricEvent.OpenElementForAd);
+        ElementOpened?.Invoke();
     }
 }

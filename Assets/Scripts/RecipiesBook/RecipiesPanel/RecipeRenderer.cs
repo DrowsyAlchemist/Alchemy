@@ -9,10 +9,13 @@ public class RecipeRenderer : MonoBehaviour
 
     private bool _isInitialized;
 
+    public event Action ElementOpened;
+
     private void Init()
     {
         _secondElementRenderer.AssignClickHandler(new ElementForAdOpener());
         _resultElementRenderer.AssignClickHandler(new ElementForYanOpener());
+        _resultElementRenderer.ElementOpened += () => ElementOpened?.Invoke();
         _isInitialized = true;
     }
 

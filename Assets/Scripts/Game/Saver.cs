@@ -9,7 +9,6 @@ public class Saver
     private const string SavesStorage = "Saves";
     private const string StickyAdName = "StickyAd";
     private const string TerminalElementName = "Terminal1";
-    private const string TrainingCompletedName = "TrainingCompleted1";
     private const char SavesDevideSymbol = '0';
     private const char TrainingSavesDevideSymbol = '1';
 
@@ -24,7 +23,7 @@ public class Saver
     public bool IsReady { get; private set; } = false;
     public bool IsAdAllowed => _saveDataBuilder.ToString().Contains(StickyAdName) == false;
     public bool IsTerminalElementOpened => _saveDataBuilder.ToString().Contains(TerminalElementName);
-    public bool IsTrainingCompleted => _saveDataBuilder.ToString().Contains(TrainingCompletedName);
+    public bool IsTrainingCompleted { get; private set; } = false;
 
     private Saver(ElementsStorage elementsStorage, bool isPlayerAuthorized, Score score, bool isTrainingMode)
     {
@@ -76,7 +75,7 @@ public class Saver
     {
         if (IsTrainingCompleted == false)
         {
-            _saveDataBuilder.Append(TrainingCompletedName);
+            IsTrainingCompleted = true;
             Save();
         }
     }
@@ -92,6 +91,7 @@ public class Saver
     {
         _saveDataBuilder.Clear();
         _score.RemoveScore();
+        IsTrainingCompleted = false;
         Save();
     }
 
@@ -125,6 +125,7 @@ public class Saver
         saves.Elements = _saveDataBuilder.ToString();
         saves.CurrentScore = _score.CurrentScore;
         saves.BestScore = _score.BestScore;
+        saves.IsTrainingCompleted = IsTrainingCompleted;
         string jsonData = JsonUtility.ToJson(saves);
 
         if (_isPlayerAuthorized)
@@ -156,6 +157,7 @@ public class Saver
 
         _saveDataBuilder.Append(saves.Elements);
         _score.Init(saves.BestScore, saves.CurrentScore);
+        IsTrainingCompleted = saves.IsTrainingCompleted;
         Save();
         IsReady = true;
     }
@@ -166,5 +168,6 @@ public class Saver
         public string Elements;
         public int BestScore;
         public int CurrentScore;
+        public bool IsTrainingCompleted;
     }
 }

@@ -1,8 +1,12 @@
+using System;
+
 public sealed class RecipiesBook : IElementClickHandler
 {
     private ElementsStorage _elementsStorage;
     private BookElementsView _gridView;
     private RecipiesView _recipiesView;
+
+    public event Action ElementOpened;
 
     public RecipiesBook(ElementsStorage elementsStorage, BookElementsView gridView, RecipiesView recipiesView)
     {
@@ -24,5 +28,6 @@ public sealed class RecipiesBook : IElementClickHandler
     {
         _recipiesView.Fill(elementRenderer.Element);
         _recipiesView.Activate();
+        ElementOpened?.Invoke();
     }
 }

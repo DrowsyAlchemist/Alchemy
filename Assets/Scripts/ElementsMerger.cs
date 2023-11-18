@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -17,15 +18,19 @@ public class ElementsMerger : IMergeHandler
 
     private void Merge(MergeableElementRenderer firstRenderer, MergeableElementRenderer secondRenderer, List<Element> results)
     {
+        Action playSound = null;
+
         for (var i = 0; i < results.Count; i++)
         {
             if (results[i].IsOpened == false)
+            {
                 results[i].Open();
-
+                playSound = Sound.PlayOpenElement;
+            }
             if (i == 0)
             {
                 firstRenderer.Render(results[0]);
-                Sound.PlayMerge();
+                playSound ??= Sound.PlayCreate;
             }
             if (i == 1)
                 secondRenderer.Render(results[1]);
@@ -36,6 +41,8 @@ public class ElementsMerger : IMergeHandler
                 newRenderer.Render(results[i]);
             }
         }
+        playSound?.Invoke();
+
         if (results.Count == 1)
             Object.Destroy(secondRenderer.gameObject);
     }

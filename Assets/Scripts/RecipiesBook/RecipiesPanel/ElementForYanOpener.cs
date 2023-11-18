@@ -1,5 +1,6 @@
 using Agava.YandexGames;
 using GameAnalyticsSDK;
+using System;
 using UnityEngine;
 
 public class ElementForYanOpener : IElementClickHandler
@@ -7,6 +8,8 @@ public class ElementForYanOpener : IElementClickHandler
     private const string OpenElementForYanId = "OpenElement";
     private const string OpenLastElementsForYanId = "OpenLastElement";
     private const int LastElementsCount = 20;
+
+    public event Action ElementOpened;
 
     public void OnElementClick(BookElementRenderer elementRenderer)
     {
@@ -44,5 +47,6 @@ public class ElementForYanOpener : IElementClickHandler
         elementRenderer.Element.Open();
         Debug.Log("Element purchased");
         elementRenderer.RenderOpened(elementRenderer.Element);
+        ElementOpened?.Invoke();
     }
 }

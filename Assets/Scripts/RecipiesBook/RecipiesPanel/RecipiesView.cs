@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,20 +17,33 @@ public class RecipiesView : MonoBehaviour
 
     private List<RecipeRenderer> _recipiesWithElementsRenderers = new();
     private List<RecipeRenderer> _creationRecipiesRenderers = new();
+    private Element _currentElement;
 
     private void Awake()
     {
         _closeButton.AssignOnClickAction(Close);
     }
 
+    private void OnDestroy()
+    {
+        foreach (var recipieRenderer in _recipiesWithElementsRenderers)
+            recipieRenderer.ElementOpened -= OnElementOpenedForYan;
+    }
+
     public void Fill(Element element)
     {
+        _currentElement = element;
         element.SortRecipies();
         FillRecipiesWithElement(element);
         FillCreationRecipies(element);
         _scrollView.RerenderContent(Settings.CoroutineObject);
         _scrollView.RaiseContent();
         Metrics.SendEvent(MetricEvent.OpenRecipies);
+    }
+
+    private void OnElementOpenedForYan()
+    {
+        FillRecipiesWithElement(_currentElement);
     }
 
     private void FillRecipiesWithElement(Element element)
@@ -78,6 +93,7 @@ public class RecipiesView : MonoBehaviour
         var recipieRenderer = Instantiate(_recipieRendererTemplate, _recipiesWithElementContainer);
         recipieRenderer.Render(element, recipie);
         _recipiesWithElementsRenderers.Add(recipieRenderer);
+        recipieRenderer.ElementOpened += OnElementOpenedForYan;
     }
 
     private void AddCreationRecipie(Element element, CreationRecipie recipie)

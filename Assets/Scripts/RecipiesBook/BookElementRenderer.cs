@@ -12,6 +12,8 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
     private bool _isInitialized;
     private bool _isInteractable;
 
+    public event Action ElementOpened;
+
     private void Init()
     {
         _highlightedImage.gameObject.SetActive(false);
@@ -29,6 +31,7 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
     public void AssignClickHandler(IElementClickHandler clickHandler)
     {
         _clickHandler = clickHandler;
+        _clickHandler.ElementOpened += () => ElementOpened?.Invoke();
     }
 
     public void RenderOpened(Element element)

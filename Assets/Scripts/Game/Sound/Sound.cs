@@ -21,7 +21,8 @@ public class Sound : MonoBehaviour
 
     [SerializeField] private AudioSource _backgroundMusic;
     [SerializeField] private AudioSource _clickSound;
-    [SerializeField] private AudioSource _mergeSound;
+    [SerializeField] private AudioSource _elementCreatedSound;
+    [SerializeField] private AudioSource _elementOpenedSound;
 
     private static Sound _instance;
     private const float ValuePower = 0.3f;
@@ -33,9 +34,6 @@ public class Sound : MonoBehaviour
     public static Sprite MuteSprite => _instance._muteSprite;
     public static Sprite TurnedOnMusicSprite => _instance._turnedOnMusicSprite;
     public static Sprite MuteMusicSprite => _instance._muteMusicSprite;
-    public static AudioSource BackgroundMusic => _instance._backgroundMusic;
-    public static AudioSource ClickSound => _instance._clickSound;
-    public static AudioSource MergeSound => _instance._mergeSound;
 
     public static event Action ConditionChanged;
 
@@ -103,9 +101,14 @@ public class Sound : MonoBehaviour
         ConditionChanged?.Invoke();
     }
 
-    public static void PlayMerge()
+    public static void PlayCreate()
     {
-        _instance._mergeSound.Play();
+        _instance._elementCreatedSound.Play();
+    }
+
+    public static void PlayOpenElement()
+    {
+        _instance._elementOpenedSound.Play();
     }
 
     public static void PlayClick()

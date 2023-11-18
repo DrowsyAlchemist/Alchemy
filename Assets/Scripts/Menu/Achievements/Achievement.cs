@@ -33,9 +33,9 @@ public class Achievement : ScriptableObject
             score.BestScoreChanged += OnBestScoreChanged;
     }
 
-    private void OnBestScoreChanged(int _)
+    private void OnBestScoreChanged(int score)
     {
-        if (CheckAchieved(Score))
+        if (score == _scoreRequired)
         {
             Score.BestScoreChanged -= OnBestScoreChanged;
             IsAchieved = true;
