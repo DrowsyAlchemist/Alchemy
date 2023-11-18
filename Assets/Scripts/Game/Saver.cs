@@ -14,7 +14,6 @@ public class Saver
 
     private static Saver _instance;
 
-    private readonly bool _isPlayerAuthorized;
     private readonly ElementsStorage _elementsStorage;
     private readonly StringBuilder _saveDataBuilder = new();
     private Score _score;
@@ -25,11 +24,22 @@ public class Saver
     public bool IsTerminalElementOpened => _saveDataBuilder.ToString().Contains(TerminalElementName);
     public bool IsTrainingCompleted { get; private set; } = false;
 
-    private Saver(ElementsStorage elementsStorage, bool isPlayerAuthorized, Score score, bool isTrainingMode)
+    public bool IsPlayerAuthorized
+    {
+        get
+        {
+#if UNITY_EDITOR
+            return false;
+#else
+            return PlayerAccount.IsAuthorized;
+#endif
+        }
+    }
+
+    private Saver(ElementsStorage elementsStorage, Score score, bool isTrainingMode)
     {
         IsReady = false;
         _isTrainingMode = isTrainingMode;
-        _isPlayerAuthorized = isPlayerAuthorized;
         _elementsStorage = elementsStorage;
         _score = score;
 
@@ -38,9 +48,9 @@ public class Saver
         Load();
     }
 
-    public static Saver Create(ElementsStorage elementsStorage, bool isPlayerAuthorizedge, Score score, bool isTrainingMode = false)
+    public static Saver Create(ElementsStorage elementsStorage, Score score, bool isTrainingMode = false)
     {
-        _instance = new Saver(elementsStorage, isPlayerAuthorizedge, score, isTrainingMode);
+        _instance = new Saver(elementsStorage, score, isTrainingMode);
         return _instance;
     }
 
@@ -96,7 +106,7 @@ public class Saver
 
     public void Load()
     {
-        if (_isPlayerAuthorized)
+        if (IsPlayerAuthorized)
             PlayerAccount.GetCloudSaveData(onSuccessCallback: (result) => SetLoadedData(result), onErrorCallback: (error) => Debug.Log("Saves load error: " + error));
         else
             SetLoadedData(PlayerPrefs.GetString(SavesStorage));
@@ -130,7 +140,7 @@ public class Saver
         saves.IsTrainingCompleted = IsTrainingCompleted;
         string jsonData = JsonUtility.ToJson(saves);
 
-        if (_isPlayerAuthorized)
+        if (IsPlayerAuthorized)
         {
             PlayerAccount.SetCloudSaveData(jsonData);
             Debug.Log("Saved: " + jsonData);
@@ -147,6 +157,7 @@ public class Saver
         if (string.IsNullOrEmpty(jsonData))
         {
             Debug.Log("jsonData is null or empty");
+            _score.Init(0, 0);
             IsReady = true;
             return;
         }
@@ -158,8 +169,11 @@ public class Saver
             Debug.Log("SavedElements: " + saves.Elements);
 
         _saveDataBuilder.Append(saves.Elements);
-        _score.Init(saves.BestScore, saves.CurrentScore);
-        IsTrainingCompleted = saves.IsTrainingCompleted;
+
+        int bestScore = saves.BestScore > _elementsStorage.SortedOpenedElements.Count ? saves.BestScore : _elementsStorage.SortedOpenedElements.Count;
+        int currentScore = saves.CurrentScore > _elementsStorage.SortedOpenedElements.Count ? saves.CurrentScore : _elementsStorage.SortedOpenedElements.Count;
+        _score.Init(bestScore, currentScore);
+        IsTrainingCompleted = saves.IsTrainingCompleted || IsTrainingCompleted;
         Save();
         IsReady = true;
     }

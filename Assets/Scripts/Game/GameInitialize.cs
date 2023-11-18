@@ -51,18 +51,15 @@ public sealed class GameInitialize : MonoBehaviour
 
     private IEnumerator Init()
     {
-#if UNITY_EDITOR
-        bool isPlayerAuthorized = false;
-#else
-        bool isPlayerAuthorized = PlayerAccount.IsAuthorized;
-
+#if !UNITY_EDITOR
+        string systemLang = YandexGamesSdk.Environment.GetCurrentLang();
+        LeanLocalization.SetCurrentLanguageAll(systemLang);
 #endif
-        _saver = Saver.Create(_elementsStorage, isPlayerAuthorized, _score);
+        _saver = Saver.Create(_elementsStorage, _score);
 
         while (_saver.IsReady == false)
             yield return null;
 
-       // _score.Init(isPlayerAuthorized);
         _elementsStorage.Init(_saver);
         OpenInitialElements();
         _menu.Init(this);
@@ -95,8 +92,6 @@ public sealed class GameInitialize : MonoBehaviour
         {
             StickyAd.Hide();
         }
-        string systemLang = YandexGamesSdk.Environment.GetCurrentLang();
-        LeanLocalization.SetCurrentLanguageAll(systemLang);
         _fadeImage.Deactivate();
         YandexGamesSdk.GameReady();
         Metrics.SendEvent(MetricEvent.StartGame);
@@ -124,6 +119,25 @@ public sealed class GameInitialize : MonoBehaviour
     public void ResetProgress()
     {
         _fadeImage.Activate();
+
+#if UNITY_EDITOR
+        RemoveProgress();
+        return;
+#endif
+        if (PlayerAccount.IsAuthorized)
+            Billing.GetPurchasedProducts(onSuccessCallback: (response) =>
+            {
+                for (int i = 0; i < response.purchasedProducts.Length; i++)
+                    Billing.ConsumeProduct(response.purchasedProducts[i].purchaseToken);
+
+                RemoveProgress();
+            });
+        else
+            RemoveProgress();
+    }
+
+    private void RemoveProgress()
+    {
         _saver.ResetSaves();
         _elementsStorage.ResetOpenedElements();
         OpenInitialElements();

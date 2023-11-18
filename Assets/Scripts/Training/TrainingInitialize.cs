@@ -40,18 +40,16 @@ public sealed class TrainingInitialize : MonoBehaviour
     {
         _fadeImage.Activate();
         yield return new WaitForEndOfFrame();
-#if UNITY_EDITOR
-        bool isPlayerAuthorized = false;
-#else
-        bool isPlayerAuthorized = PlayerAccount.IsAuthorized;
+#if !UNITY_EDITOR
+        string systemLang = YandexGamesSdk.Environment.GetCurrentLang();
+        LeanLocalization.SetCurrentLanguageAll(systemLang);
 
 #endif
-        _saver = Saver.Create(_elementsStorage, isPlayerAuthorized, _score, isTrainingMode: true);
+        _saver = Saver.Create(_elementsStorage, _score, isTrainingMode: true);
 
         while (_saver.IsReady == false)
             yield return null;
 
-        //_score.Init(isPlayerAuthorized);
         _elementsStorage.Init(_saver);
         OpenInitialElements();
         _menu.Init(null); //
@@ -79,8 +77,6 @@ public sealed class TrainingInitialize : MonoBehaviour
         else
             StickyAd.Hide();
 
-        string systemLang = YandexGamesSdk.Environment.GetCurrentLang();
-        LeanLocalization.SetCurrentLanguageAll(systemLang);
         _fadeImage.Deactivate();
     }
 
