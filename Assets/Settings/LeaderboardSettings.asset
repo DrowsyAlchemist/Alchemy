@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a5559b5381dca41828927186f75c62, type: 3}
   m_Name: LeaderboardSettings
   m_EditorClassIdentifier: 
-  _topPlayersCount: 5
-  _competingPlayersCount: 5
+  _leaderboardName: AlchemyLeaderboard
+  _topPlayersCount: 100
+  _competingPlayersCount: 100
   _includeSelf: 1
   _profilePictureSize: 1
