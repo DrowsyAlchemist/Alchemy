@@ -138,6 +138,9 @@ public class Saver
         saves.CurrentScore = _score.CurrentScore;
         saves.BestScore = _score.BestScore;
         saves.IsTrainingCompleted = IsTrainingCompleted;
+        saves.SoundIsOn = Sound.IsOn;
+        saves.MusicIsOn = Sound.MusicIsOn;
+        saves.SoundNormalizedVolume = Sound.CurrentGeneralNormalizedVolume;
         string jsonData = JsonUtility.ToJson(saves);
 
         if (IsPlayerAuthorized)
@@ -160,6 +163,7 @@ public class Saver
             Debug.Log("jsonData is null or empty");
             _elementsStorage.Init(this);
             _score.Init(0, 0);
+            Sound.Init(true, true, Sound.DefaultNormalizedVolume);
             IsReady = true;
             return;
         }
@@ -176,6 +180,7 @@ public class Saver
         int currentScore = saves.CurrentScore > _elementsStorage.SortedOpenedElements.Count ? saves.CurrentScore : _elementsStorage.SortedOpenedElements.Count;
         _score.Init(bestScore, currentScore);
         IsTrainingCompleted = saves.IsTrainingCompleted || IsTrainingCompleted;
+        Sound.Init(saves.SoundIsOn, saves.MusicIsOn, saves.SoundNormalizedVolume);
         Save();
     }
 
@@ -186,5 +191,8 @@ public class Saver
         public int BestScore;
         public int CurrentScore;
         public bool IsTrainingCompleted;
+        public bool SoundIsOn;
+        public bool MusicIsOn;
+        public float SoundNormalizedVolume;
     }
 }

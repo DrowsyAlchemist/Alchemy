@@ -37,6 +37,7 @@ public class Sound : MonoBehaviour
     public static Sprite TurnedOnMusicSprite => _instance._turnedOnMusicSprite;
     public static Sprite MuteMusicSprite => _instance._muteMusicSprite;
     public static float CurrentGeneralNormalizedVolume => _currentGeneralNormalizedVolume;
+    public static float DefaultNormalizedVolume => _instance._defaultNormalizedValue;
 
     public static event Action ConditionChanged;
 
@@ -53,22 +54,26 @@ public class Sound : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        if (_muteOnAwake)
-            Mute();
-        else
-            TurnOn();
-
-        ResumeMusic();
-        SetGeneralVolume(_defaultNormalizedValue);
-        WebApplication.InBackgroundChangeEvent += OnBackgroundChanged;
-        ConditionChanged?.Invoke();
-    }
-
     private void OnDestroy()
     {
         WebApplication.InBackgroundChangeEvent -= OnBackgroundChanged;
+    }
+
+    public static void Init(bool isVolumeOn, bool isMusicOn, float normalizedVolume)
+    {
+        if (isVolumeOn)
+            TurnOn();
+        else
+            Mute();
+
+        if (isMusicOn)
+            ResumeMusic();
+        else
+            PauseMusic();
+
+        SetGeneralVolume(normalizedVolume);
+        WebApplication.InBackgroundChangeEvent += _instance.OnBackgroundChanged;
+        ConditionChanged?.Invoke();
     }
 
     public static void TurnOn()
