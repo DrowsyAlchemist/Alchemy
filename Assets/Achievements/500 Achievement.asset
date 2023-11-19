@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 500 Achievement
   m_EditorClassIdentifier: 
   _scoreRequired: 500
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 32bed098da722294f89925d19df4018f, type: 3}
   _lableEn: 500 Elements
   _lableRu: "500 \u042D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432"
   _descriptionEn: Find 500 elements.

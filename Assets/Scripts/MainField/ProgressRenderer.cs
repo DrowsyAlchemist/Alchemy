@@ -28,11 +28,11 @@ public class ProgressRenderer : MonoBehaviour
 
     private void RenderCount(int currentProgress)
     {
-        if (LeanLocalization.GetFirstCurrentLanguage().Equals("ru"))
-            _text.text = $"Открыто {currentProgress} из {_maxCount}";
-        else
-            _text.text = $"{currentProgress} out of {_maxCount} are open";
-
+        _text.text = currentProgress + " / " + _maxCount;
+        //if (LeanLocalization.GetFirstCurrentLanguage().Equals("ru"))
+        //    _text.text = $"Открыто {currentProgress} из {_maxCount}";
+        //else
+        //    _text = $"{currentProgress} out of {_maxCount} are open";
         _animator.Play(OpenElementAnimation);
     }
 }
