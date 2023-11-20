@@ -1,3 +1,4 @@
+using Agava.YandexGames;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,6 +16,12 @@ public class MainMenuPanel : MonoBehaviour
         _trainingButton.AssignOnClickAction(OnTrainingButtonClick);
         _feedbackButton.AssignOnClickAction(OnFeedbackButtonClick);
         _resetProgressButton.AssignOnClickAction(OnResetButtonClick);
+
+#if UNITY_EDITOR
+        return;
+#endif
+        if (PlayerAccount.IsAuthorized == false)
+            _feedbackButton.Deactivate();
     }
 
     private void OnTrainingButtonClick()
@@ -24,6 +31,7 @@ public class MainMenuPanel : MonoBehaviour
 
     private void OnFeedbackButtonClick()
     {
+        _feedbackButton.SetInteractable(false);
         Feedback.RequestFeedbackFromSDK();
     }
 

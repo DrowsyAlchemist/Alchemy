@@ -19,6 +19,11 @@ public class UIButton : MonoBehaviour
         }
     }
 
+    public void SetInteractable(bool value)
+    {
+        Button.interactable = value;
+    }    
+
     private void Awake()
     {
         Init();
