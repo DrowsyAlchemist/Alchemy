@@ -78,6 +78,12 @@ public static class Metrics
             case MetricEvent.OpenRecipies:
                 metricEventStr = "openRecipies";
                 break;
+            case MetricEvent.LngEn:
+                metricEventStr = "lngEn";
+                break;
+            case MetricEvent.LngRu:
+                metricEventStr = "lngRu";
+                break;
         }
         YandexMetrica.Send(metricEventStr, eventDataJson);
     }

@@ -27,4 +27,7 @@ public enum MetricEvent
     OpenAchievements,
     OpenBook,
     OpenRecipies,
+
+    LngEn,
+    LngRu
 }

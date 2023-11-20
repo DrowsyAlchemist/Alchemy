@@ -54,6 +54,11 @@ public sealed class GameInitialize : MonoBehaviour
 #if !UNITY_EDITOR
         string systemLang = YandexGamesSdk.Environment.GetCurrentLang();
         LeanLocalization.SetCurrentLanguageAll(systemLang);
+
+        if (systemLang.Equals("ru"))
+            Metrics.SendEvent(MetricEvent.LngRu);
+        else
+            Metrics.SendEvent(MetricEvent.LngEn);
 #endif
         _saver = Saver.Create(_elementsStorage, _score);
 
