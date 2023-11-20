@@ -38,6 +38,11 @@ public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragH
 
         foreach (var result in results)
         {
+            if (result.gameObject.TryGetComponent(out ButtonsPanel _))
+            {
+                Destroy(gameObject);
+                return;
+            }
             if (result.gameObject.TryGetComponent(out GameField _))
             {
                 needDestroy = false;
@@ -45,7 +50,6 @@ public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragH
                 if (_trainingMode)
                     Training.SetElementOnGameField(Element);
             }
-
             if (result.gameObject.TryGetComponent(out MergeableElementRenderer otherElementRenderer))
             {
                 if (otherElementRenderer != this)
