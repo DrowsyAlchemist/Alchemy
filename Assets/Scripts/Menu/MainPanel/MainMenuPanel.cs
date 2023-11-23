@@ -1,4 +1,5 @@
 using Agava.YandexGames;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +10,13 @@ public class MainMenuPanel : MonoBehaviour
     [SerializeField] private UIButton _resetProgressButton;
 
     private GameInitialize _gameInitialize;
+
+    public event Action Closed;
+
+    private void OnDisable()
+    {
+        Closed?.Invoke();
+    }
 
     public void Init(GameInitialize gameInitialize)
     {

@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,7 +6,7 @@ public class ClickTask : Task
     [SerializeField] private Button _targetButton;
     [SerializeField] private Button[] _excessButtons;
 
-    private const float MarginFromButtonModifier = 1.3f;
+    private const float MarginFromButtonModifier = 1.7f;
 
     protected Button TargetButton => _targetButton;
     protected float ButtonScale => _targetButton.transform.lossyScale.x;

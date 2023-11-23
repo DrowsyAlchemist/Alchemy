@@ -146,7 +146,7 @@ public class Sound : MonoBehaviour
 
     private void TurnSoundOn()
     {
-        _mixer.SetFloat(_instance._masterVolumeName, _instance._maxValue);
+        _mixer.SetFloat(_instance._masterVolumeName, CurrentGeneralNormalizedVolume);
     }
 
     private void TurnSoundOff()

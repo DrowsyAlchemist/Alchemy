@@ -36,18 +36,19 @@ public class Saver
         }
     }
 
-    private Saver(ElementsStorage elementsStorage, Score score, bool isTrainingMode)
+    private Saver(ElementsStorage elementsStorage, Score score, MainMenuPanel mainMenuPanel, bool isTrainingMode)
     {
         IsReady = false;
         _isTrainingMode = isTrainingMode;
         _elementsStorage = elementsStorage;
         _score = score;
         _elementsStorage.ElementOpened += OnElementOpened;
+        mainMenuPanel.Closed += Save;
     }
 
-    public static Saver Create(ElementsStorage elementsStorage, Score score, bool isTrainingMode = false)
+    public static Saver Create(ElementsStorage elementsStorage, Score score, MainMenuPanel mainMenuPanel, bool isTrainingMode = false)
     {
-        _instance = new Saver(elementsStorage, score, isTrainingMode);
+        _instance = new Saver(elementsStorage, score, mainMenuPanel, isTrainingMode);
         _instance.Load();
         return _instance;
     }

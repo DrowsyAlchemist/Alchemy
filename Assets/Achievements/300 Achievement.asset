@@ -16,5 +16,5 @@ MonoBehaviour:
   _icon: {fileID: 21300000, guid: f6e8cf2dee9608d4886a184a6e5b40b6, type: 3}
   _lableEn: 300 Elements
   _lableRu: "300 \u042D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432"
-  _descriptionEn: Find 300 elements.
-  _descriptionRu: "\u041D\u0430\u0439\u0442\u0438 300 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432"
+  _descriptionEn: 300 elements are open.
+  _descriptionRu: "\u041E\u0442\u043A\u0440\u044B\u0442\u043E 300 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432."

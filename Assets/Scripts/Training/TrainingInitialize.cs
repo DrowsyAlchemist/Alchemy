@@ -45,7 +45,7 @@ public sealed class TrainingInitialize : MonoBehaviour
         LeanLocalization.SetCurrentLanguageAll(systemLang);
 
 #endif
-        _saver = Saver.Create(_elementsStorage, _score, isTrainingMode: true);
+        _saver = Saver.Create(_elementsStorage, _score, _menu.MainMenuPanel, isTrainingMode: true);
 
         while (_saver.IsReady == false)
             yield return null;

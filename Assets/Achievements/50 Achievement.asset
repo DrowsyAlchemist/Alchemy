@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a6ddcdff8127214a9c878bcf4d1302f, type: 3}
   m_Name: 50 Achievement
   m_EditorClassIdentifier: 
-  _scoreRequired: 10
+  _scoreRequired: 50
   _icon: {fileID: -290554555, guid: 087f29d446c900e49a7fbe61ae767017, type: 3}
-  _lableEn: 10 Elements
-  _lableRu: "10 \u042D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432"
-  _descriptionEn: Find 50 elements.
-  _descriptionRu: "\u041D\u0430\u0439\u0442\u0438 50 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432"
+  _lableEn: 50 Elements
+  _lableRu: "50 \u042D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432"
+  _descriptionEn: 50 elements are open.
+  _descriptionRu: "\u041E\u0442\u043A\u0440\u044B\u0442\u043E 50 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432."

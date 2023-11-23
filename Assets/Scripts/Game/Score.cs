@@ -16,8 +16,9 @@ public class Score : MonoBehaviour
 
     public void Init(int bestScore, int currentScore)
     {
-        foreach (var scoreRenderer in _scoreRenderers)
-            scoreRenderer.Init(this);
+        if (_scoreRenderers != null && _scoreRenderers.Length > 0)
+            foreach (var scoreRenderer in _scoreRenderers)
+                scoreRenderer.Init(this);
 
         BestScore = bestScore;
         CurrentScore = currentScore;
@@ -42,6 +43,22 @@ public class Score : MonoBehaviour
             BestScoreChanged?.Invoke(BestScore);
             SetScoreToLeaderboard();
         }
+        if (BestScore == 5)
+            Metrics.SendEvent(MetricEvent.MakeFirstElement);
+        else if (BestScore == 50)
+            Metrics.SendEvent(MetricEvent.MakeFiftyElements);
+        else if (BestScore == 100)
+            Metrics.SendEvent(MetricEvent.MakeOneHundredElements);
+        else if (BestScore == 200)
+            Metrics.SendEvent(MetricEvent.MakeTwoHundredElements);
+        else if (BestScore == 300)
+            Metrics.SendEvent(MetricEvent.MakeThreeHundredElements);
+        else if (BestScore == 400)
+            Metrics.SendEvent(MetricEvent.MakeFourHundredElements);
+        else if (BestScore == 500)
+            Metrics.SendEvent(MetricEvent.MakeFiveHundredElements);
+        else if (BestScore == 600)
+            Metrics.SendEvent(MetricEvent.MakeSixHundredElements);
     }
 
     public void ResetCurrentScore()

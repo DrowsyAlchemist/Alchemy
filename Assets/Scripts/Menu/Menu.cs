@@ -8,6 +8,8 @@ public class Menu : MonoBehaviour
 
     private MenuButton _currentButton;
 
+    public MainMenuPanel MainMenuPanel => _mainMenuPanel;
+
     public void Init(GameInitialize gameInitialize)
     {
         _mainMenuPanel.Init(gameInitialize);

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: Algae
   _lable: "\u0412\u043E\u0434\u043E\u0440\u043E\u0441\u043B\u0438"
-  _sprite: {fileID: 21300000, guid: fdf618070bb50784c8c39d9a894bdac9, type: 3}
+  _sprite: {fileID: 21300000, guid: 31666db653e836e4dac5663db95c17f1, type: 3}
   _creationRecipies:
   - _firstElement: {fileID: 11400000, guid: bebaefc52908c9c4f809dc9f68c8022f, type: 2}
     _secondElement: {fileID: 11400000, guid: af932be459e7b9a4fb2be3d6543a9009, type: 2}

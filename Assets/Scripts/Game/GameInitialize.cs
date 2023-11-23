@@ -60,7 +60,7 @@ public sealed class GameInitialize : MonoBehaviour
         else
             Metrics.SendEvent(MetricEvent.LngEn);
 #endif
-        _saver = Saver.Create(_elementsStorage, _score);
+        _saver = Saver.Create(_elementsStorage, _score, _menu.MainMenuPanel);
 
         while (_saver.IsReady == false)
             yield return null;
