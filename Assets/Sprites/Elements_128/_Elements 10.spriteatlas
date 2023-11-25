@@ -52,11 +52,13 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 045817ac84a9c7149815137ce5064513, type: 3}
     - {fileID: 2800000, guid: 25d771298f8a36c46a51218d341c66b2, type: 3}
     - {fileID: 2800000, guid: 31666db653e836e4dac5663db95c17f1, type: 3}
+    - {fileID: 2800000, guid: d7e97bb2352ec4947b0103384005aab9, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: d7e97bb2352ec4947b0103384005aab9, type: 3}
   - {fileID: 21300000, guid: 31666db653e836e4dac5663db95c17f1, type: 3}
   - {fileID: 21300000, guid: 7f1a01179f817154ebe1e1637ef3fc21, type: 3}
   - {fileID: 21300000, guid: 100e47c8b179ba44f9342c95add387b8, type: 3}
@@ -66,6 +68,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 87c76c1c07fffe64b916deff4534a4b7, type: 3}
   - {fileID: 21300000, guid: 045817ac84a9c7149815137ce5064513, type: 3}
   m_PackedSpriteNamesToIndex:
+  - air
   - algae
   - flying-squirrel
   - yak

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 50 Achievement
   m_EditorClassIdentifier: 
   _scoreRequired: 50
-  _icon: {fileID: -290554555, guid: 087f29d446c900e49a7fbe61ae767017, type: 3}
+  _icon: {fileID: 1286450637, guid: a83fe4e72a44b0748b53d8321295b71a, type: 3}
   _lableEn: 50 Elements
   _lableRu: "50 \u042D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432"
   _descriptionEn: 50 elements are open.

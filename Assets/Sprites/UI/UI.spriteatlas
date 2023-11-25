@@ -25,17 +25,17 @@ SpriteAtlas:
       m_BuildTarget: WebGL
       m_MaxTextureSize: 2048
       m_ResizeAlgorithm: 0
-      m_TextureFormat: 29
+      m_TextureFormat: 50
       m_TextureCompression: 1
       m_CompressionQuality: 50
       m_CrunchedCompression: 0
       m_AllowsAlphaSplitting: 0
-      m_Overridden: 1
+      m_Overridden: 0
       m_AndroidETC2FallbackOverride: 0
       m_ForceMaximumCompressionQuality_BC6H_BC7: 0
     packingSettings:
       serializedVersion: 2
-      padding: 2
+      padding: 4
       blockOffset: 1
       allowAlphaSplitting: 0
       enableRotation: 0
@@ -44,56 +44,56 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 2800000, guid: c20e5d9c1bc44f04fac2bdfc66c2da15, type: 3}
-    - {fileID: 2800000, guid: b0c3f12f0c2011f4bba8184003b3b0a2, type: 3}
-    - {fileID: 2800000, guid: 25dbcfef7e141d347bd40a28e40d6ffa, type: 3}
-    - {fileID: 2800000, guid: 4822d99d75e524647b94874bbe7a0bbc, type: 3}
-    - {fileID: 2800000, guid: d04b5fd68437e4faba7a160858d7b6a6, type: 3}
+    - {fileID: 2800000, guid: 0b619e5076d08984d83f0f7768e58993, type: 3}
+    - {fileID: 2800000, guid: 62a3fa57e89cebf4aafd89cdd6bcac8a, type: 3}
     - {fileID: 2800000, guid: 376f94de5229c9c498f845d2d45b82ef, type: 3}
-    - {fileID: 2800000, guid: 893c23489085517498a9ee97cac2097a, type: 3}
+    - {fileID: 2800000, guid: f55ddb8e8ef4cac469e0e73ec78045cf, type: 3}
+    - {fileID: 2800000, guid: 25dbcfef7e141d347bd40a28e40d6ffa, type: 3}
+    - {fileID: 2800000, guid: 1815db8ee391cdf4abdd74bf95af8994, type: 3}
+    - {fileID: 2800000, guid: 3a9007bd6c762e14783b78b7868275c0, type: 3}
+    - {fileID: 2800000, guid: 55f2552d20452f44d9931708690a7865, type: 3}
+    - {fileID: 2800000, guid: 8a7e54c58f756754985c3c499872c312, type: 3}
     - {fileID: 2800000, guid: aff1be70bb6b7314f99e99000ec7c86e, type: 3}
     - {fileID: 2800000, guid: 67fe50768063b7c4f898fe4bc181e9d1, type: 3}
     - {fileID: 2800000, guid: af9f479642643e14c8f2d9e458c9d618, type: 3}
-    - {fileID: 2800000, guid: b3d5d22770bc77b4091679be5f0f0c30, type: 3}
-    - {fileID: 2800000, guid: fbdfc0f610f8a7f44ad622a26275e3fa, type: 3}
+    - {fileID: 2800000, guid: 1c1cb72f2be8fb44b9833c96ffe1bba2, type: 3}
+    - {fileID: 2800000, guid: 893c23489085517498a9ee97cac2097a, type: 3}
     - {fileID: 2800000, guid: b692151bf9e592d48a0b56f539a40977, type: 3}
-    - {fileID: 2800000, guid: f1a69e69f51a43c47bddcc751bfdd9af, type: 3}
-    - {fileID: 2800000, guid: f55ddb8e8ef4cac469e0e73ec78045cf, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 0b619e5076d08984d83f0f7768e58993, type: 3}
   - {fileID: 21300000, guid: aff1be70bb6b7314f99e99000ec7c86e, type: 3}
+  - {fileID: 21300000, guid: 8a7e54c58f756754985c3c499872c312, type: 3}
   - {fileID: 21300000, guid: 67fe50768063b7c4f898fe4bc181e9d1, type: 3}
   - {fileID: 21300000, guid: af9f479642643e14c8f2d9e458c9d618, type: 3}
-  - {fileID: 21300000, guid: d04b5fd68437e4faba7a160858d7b6a6, type: 3}
-  - {fileID: 21300000, guid: fbdfc0f610f8a7f44ad622a26275e3fa, type: 3}
-  - {fileID: 21300000, guid: b3d5d22770bc77b4091679be5f0f0c30, type: 3}
+  - {fileID: 21300000, guid: 62a3fa57e89cebf4aafd89cdd6bcac8a, type: 3}
   - {fileID: 21300000, guid: 893c23489085517498a9ee97cac2097a, type: 3}
-  - {fileID: 21300000, guid: f1a69e69f51a43c47bddcc751bfdd9af, type: 3}
   - {fileID: 21300000, guid: b692151bf9e592d48a0b56f539a40977, type: 3}
-  - {fileID: 21300000, guid: c20e5d9c1bc44f04fac2bdfc66c2da15, type: 3}
-  - {fileID: 21300000, guid: 4822d99d75e524647b94874bbe7a0bbc, type: 3}
+  - {fileID: 21300000, guid: 55f2552d20452f44d9931708690a7865, type: 3}
+  - {fileID: 21300000, guid: 3a9007bd6c762e14783b78b7868275c0, type: 3}
+  - {fileID: 21300000, guid: 1815db8ee391cdf4abdd74bf95af8994, type: 3}
   - {fileID: 21300000, guid: f55ddb8e8ef4cac469e0e73ec78045cf, type: 3}
   - {fileID: 21300000, guid: 376f94de5229c9c498f845d2d45b82ef, type: 3}
-  - {fileID: 21300000, guid: b0c3f12f0c2011f4bba8184003b3b0a2, type: 3}
+  - {fileID: 21300000, guid: 1c1cb72f2be8fb44b9833c96ffe1bba2, type: 3}
   - {fileID: 21300000, guid: 25dbcfef7e141d347bd40a28e40d6ffa, type: 3}
   m_PackedSpriteNamesToIndex:
+  - social-media
   - music-off
+  - menu
   - music
   - mute (1)
-  - icon_menu2_f
-  - question-mark
-  - no
+  - book (1)
   - point
-  - recycle (1)
   - question
-  - free-icon-book-1245109
-  - hand
+  - recycling
+  - empty
+  - circle
   - up-and-down-arrows
   - tap
-  - Yan
+  - no
   - volume (1)
   m_RenderDataMap: {}
   m_Tag: UI

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 087f29d446c900e49a7fbe61ae767017
+guid: a83fe4e72a44b0748b53d8321295b71a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,127 +117,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: db6e4a90dbfcbf0583dac072f7147373_0
+      name: achievements_withoutBG_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 233
-        width: 220
-        height: 219
+        x: 10
+        y: 324
+        width: 122
+        height: 177
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80d3a45f70c49f34983823157ecdd2e3
-      internalID: -290554555
+      spriteID: 42fda060b7bbe7041996b4ec7853f1aa
+      internalID: 1286450637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: db6e4a90dbfcbf0583dac072f7147373_1
+      name: achievements_withoutBG_1
       rect:
         serializedVersion: 2
-        x: 229
-        y: 233
-        width: 220
-        height: 219
+        x: 138
+        y: 315
+        width: 142
+        height: 185
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e025c59cb16b4804b906f102b653836c
-      internalID: -1746860095
+      spriteID: af1627683c701494d9c1ebffe3d868be
+      internalID: 1529473822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: db6e4a90dbfcbf0583dac072f7147373_2
+      name: achievements_withoutBG_2
       rect:
         serializedVersion: 2
-        x: 458
-        y: 233
-        width: 220
-        height: 219
+        x: 292
+        y: 310
+        width: 122
+        height: 190
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c732635ebf5db9e4b9c9123fbe8c1db2
-      internalID: 892488187
+      spriteID: 6cfda08cdc8aa4e4a880fc40e701e539
+      internalID: -1772413961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: db6e4a90dbfcbf0583dac072f7147373_3
+      name: achievements_withoutBG_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 220
-        height: 220
+        x: 12
+        y: 123
+        width: 135
+        height: 190
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e785a6881a0ff2e4fbe4bedf9fb7a60f
-      internalID: 578607917
+      spriteID: 7f392201c54446242999fbd08aeb58dd
+      internalID: 1255837197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: db6e4a90dbfcbf0583dac072f7147373_4
+      name: achievements_withoutBG_4
       rect:
         serializedVersion: 2
-        x: 229
-        y: 0
-        width: 220
-        height: 220
+        x: 155
+        y: 122
+        width: 144
+        height: 185
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b67aafaacecd19845a017671ceb37ec0
-      internalID: -220366602
+      spriteID: 43b8361ed2e59f0498bce500851852d9
+      internalID: 1688086932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: db6e4a90dbfcbf0583dac072f7147373_5
+      name: achievements_withoutBG_5
       rect:
         serializedVersion: 2
-        x: 458
-        y: 0
-        width: 220
-        height: 220
+        x: 305
+        y: 108
+        width: 168
+        height: 196
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a34c16f8359dd204a82a9e9cfd9871bc
-      internalID: -837122396
+      spriteID: 5878f3ce80785664692a30b63c6161b8
+      internalID: -1770321148
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      db6e4a90dbfcbf0583dac072f7147373_0: -290554555
-      db6e4a90dbfcbf0583dac072f7147373_4: -220366602
-      db6e4a90dbfcbf0583dac072f7147373_2: 892488187
-      db6e4a90dbfcbf0583dac072f7147373_1: -1746860095
-      db6e4a90dbfcbf0583dac072f7147373_5: -837122396
-      db6e4a90dbfcbf0583dac072f7147373_3: 578607917
+      achievements_withoutBG_1: 1529473822
+      achievements_withoutBG_2: -1772413961
+      achievements_withoutBG_5: -1770321148
+      achievements_withoutBG_0: 1286450637
+      achievements_withoutBG_3: 1255837197
+      achievements_withoutBG_4: 1688086932
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

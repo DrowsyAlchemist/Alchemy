@@ -322,8 +322,8 @@ PlayerSettings:
   openGLRequireES32: 0
   m_TemplateCustomTags:
     METRICA_COUNTER_ID: 95373057
-    MOBILE_RENDER_SCALE: 2
-    RENDER_SCALE: 2
+    MOBILE_RENDER_SCALE: 2.2
+    RENDER_SCALE: 2.2
   mobileMTRendering:
     Android: 1
     iPhone: 1

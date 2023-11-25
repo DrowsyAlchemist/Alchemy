@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 600 Achievement
   m_EditorClassIdentifier: 
   _scoreRequired: 600
-  _icon: {fileID: -837122396, guid: 087f29d446c900e49a7fbe61ae767017, type: 3}
+  _icon: {fileID: -1770321148, guid: a83fe4e72a44b0748b53d8321295b71a, type: 3}
   _lableEn: 600 Elements
   _lableRu: "600 \u042D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432"
   _descriptionEn: 600 elements are open.

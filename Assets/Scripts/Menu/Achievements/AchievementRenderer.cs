@@ -45,8 +45,6 @@ public class AchievementRenderer : MonoBehaviour
     private void FadeIcon()
     {
         _iconImage.color = _fadeColor;
-        _lableText.color = _fadeColor;
-        _descriptionText.color = _fadeColor;
     }
 
     private void UnfadeIcon()
@@ -54,8 +52,6 @@ public class AchievementRenderer : MonoBehaviour
         if (this != null)
         {
             _iconImage.color = _normalColor;
-            _lableText.color = _normalColor;
-            _descriptionText.color = _normalColor;
         }
     }
 }
