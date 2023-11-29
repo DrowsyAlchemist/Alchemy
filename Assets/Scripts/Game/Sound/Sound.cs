@@ -128,7 +128,7 @@ public class Sound : MonoBehaviour
 
     public static void PlayClick()
     {
-       // _instance._clickSound.Play();
+        _instance._clickSound.Play();
     }
 
     private void OnBackgroundChanged(bool isOut)

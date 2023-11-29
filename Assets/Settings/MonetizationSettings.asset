@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 931be439bcd519b46b66c070d57d0b47, type: 3}
   m_Name: MonetizationSettings
   m_EditorClassIdentifier: 
-  _secondsBetweenInter: 120
+  _secondsBetweenInter: 180
   _lastElementsCount: 20
   _adSprite: {fileID: 21300000, guid: 391584432233c4e0a864435a50a098c5, type: 3}
   _adLable: "\u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C"
   _adLableEn: Peep
-  _yanSprite: {fileID: 21300000, guid: b0c3f12f0c2011f4bba8184003b3b0a2, type: 3}
+  _yanSprite: {fileID: 21300000, guid: 4842a2ba413e0cc4d80984547ac7d569, type: 3}
   _yanLable: "\u041E\u0442\u043A\u0440\u044B\u0442\u044C"
   _yanLableEn: Open

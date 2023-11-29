@@ -30,6 +30,7 @@ public class LetterButton : MonoBehaviour
 
     private void OnButtonClick()
     {
+        Sound.PlayClick();
         Clicked.Invoke(Letter);
     }
 }
