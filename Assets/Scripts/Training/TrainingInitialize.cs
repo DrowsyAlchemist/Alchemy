@@ -1,3 +1,4 @@
+using Agava.WebUtility;
 using Agava.YandexGames;
 using Lean.Localization;
 using System.Collections;
@@ -7,11 +8,15 @@ using UnityEngine.UI;
 
 public sealed class TrainingInitialize : MonoBehaviour
 {
+    [SerializeField] private bool _adjustForMibile;
+    [SerializeField] private ElementsSizeAdjustment _elementsSizeAdjustment;
+
     [SerializeField] private ElementsStorage _elementsStorage;
     [SerializeField] private MainOpenedElementsView _openedElementsView;
     [SerializeField] private AlphabeticalIndex _alphabeticalIndex;
     [SerializeField] private GameField _gameField;
     [SerializeField] private Menu _menu;
+    [SerializeField] private LanguageHandler _languageHandler;
     [SerializeField] private UIButton _openRecipiesBookButton;
     [SerializeField] private Score _score;
     [SerializeField] private LeaderboardView _leaderboardView;
@@ -44,12 +49,22 @@ public sealed class TrainingInitialize : MonoBehaviour
         string systemLang = YandexGamesSdk.Environment.GetCurrentLang();
         LeanLocalization.SetCurrentLanguageAll(systemLang);
 
+        if (Device.IsMobile)
+            _elementsSizeAdjustment.AdjustForMobile();
+        else
+            _elementsSizeAdjustment.AdjustForPc();
+#else
+        if (_adjustForMibile)
+            _elementsSizeAdjustment.AdjustForMobile();
+        else
+            _elementsSizeAdjustment.AdjustForPc();
 #endif
         _saver = Saver.Create(_elementsStorage, _score, _menu.MainMenuPanel, isTrainingMode: true);
 
         while (_saver.IsReady == false)
             yield return null;
 
+        _languageHandler.Init(_saver);
         OpenInitialElements();
         _menu.Init(null); //
         _gameField.Init(_saver, _elementsStorage, isTrainingMode: true);

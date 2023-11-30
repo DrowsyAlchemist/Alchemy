@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class Training : MonoBehaviour
 {
+    [SerializeField] private Image _fadePanel;
     [SerializeField] private TrainingPanel _trainingPanel;
     [SerializeField] private Task[] _tasks;
 
@@ -66,6 +67,7 @@ public class Training : MonoBehaviour
 
     private void StopTraining()
     {
+        _fadePanel.Activate();
         _saver.SetTrainingCompleted();
         SceneManager.LoadScene(Settings.MainSceneName);
         _trainingPanel.Deactivate();

@@ -1,3 +1,4 @@
+using Agava.WebUtility;
 using Agava.YandexGames;
 using GameAnalyticsSDK;
 using Lean.Localization;
@@ -9,11 +10,15 @@ using UnityEngine.UI;
 
 public sealed class GameInitialize : MonoBehaviour
 {
+    [SerializeField] private bool _adjustForMibile;
+    [SerializeField] private ElementsSizeAdjustment _elementsSizeAdjustment;
+
     [SerializeField] private ElementsStorage _elementsStorage;
     [SerializeField] private MainOpenedElementsView _openedElementsView;
     [SerializeField] private AlphabeticalIndex _alphabeticalIndex;
     [SerializeField] private GameField _gameField;
     [SerializeField] private Menu _menu;
+    [SerializeField] private LanguageHandler _languageHandler; 
     [SerializeField] private UIButton _openRecipiesBookButton;
     [SerializeField] private Progress _progress;
     [SerializeField] private Score _score;
@@ -29,7 +34,7 @@ public sealed class GameInitialize : MonoBehaviour
 
     [SerializeField] private List<Element> _initialElements;
 
-    [SerializeField] private Image _fadeImage;
+    [SerializeField] private RectTransform _loadingCanvas;
 
     private Saver _saver;
     private RecipiesBook _recipiesBook;
@@ -37,7 +42,7 @@ public sealed class GameInitialize : MonoBehaviour
 
     private IEnumerator Start()
     {
-        _fadeImage.Activate();
+        _loadingCanvas.Activate();
 #if UNITY_EDITOR
         Settings.CoroutineObject.StartCoroutine(Init());
         yield break;
@@ -59,12 +64,23 @@ public sealed class GameInitialize : MonoBehaviour
             Metrics.SendEvent(MetricEvent.LngRu);
         else
             Metrics.SendEvent(MetricEvent.LngEn);
+
+        if (Device.IsMobile)
+            _elementsSizeAdjustment.AdjustForMobile();
+        else
+            _elementsSizeAdjustment.AdjustForPc();
+#else
+        if (_adjustForMibile)
+            _elementsSizeAdjustment.AdjustForMobile();
+        else
+            _elementsSizeAdjustment.AdjustForPc();
 #endif
         _saver = Saver.Create(_elementsStorage, _score, _menu.MainMenuPanel);
 
         while (_saver.IsReady == false)
             yield return null;
 
+        _languageHandler.Init(_saver);
         OpenInitialElements();
         _menu.Init(this);
         _gameField.Init(_saver, _elementsStorage);
@@ -84,7 +100,7 @@ public sealed class GameInitialize : MonoBehaviour
         _trainingWindow.Init(_saver);
 
 #if UNITY_EDITOR
-        _fadeImage.Deactivate();
+        _loadingCanvas.Deactivate();
         yield break;
 #endif
         if (_saver.IsAdAllowed)
@@ -96,7 +112,7 @@ public sealed class GameInitialize : MonoBehaviour
         {
             StickyAd.Hide();
         }
-        _fadeImage.Deactivate();
+        _loadingCanvas.Deactivate();
         YandexGamesSdk.GameReady();
         Metrics.SendEvent(MetricEvent.StartGame);
     }
@@ -111,7 +127,7 @@ public sealed class GameInitialize : MonoBehaviour
 
     public void RemoveSaves()
     {
-        _fadeImage.Activate();
+        _loadingCanvas.Activate();
         _saver.RemoveSaves();
         _elementsStorage.ResetOpenedElements();
         OpenInitialElements();
@@ -122,7 +138,7 @@ public sealed class GameInitialize : MonoBehaviour
 
     public void ResetProgress()
     {
-        _fadeImage.Activate();
+        _loadingCanvas.Activate();
 
 #if UNITY_EDITOR
         RemoveProgress();
@@ -147,7 +163,7 @@ public sealed class GameInitialize : MonoBehaviour
         OpenInitialElements();
         _gameField.Clear();
         _openedElementsView.Fill(_elementsStorage.SortedOpenedElements);
-        _fadeImage.Deactivate();
+        _loadingCanvas.Deactivate();
     }
 
     private void OpenRecipiesBook()

@@ -17,6 +17,11 @@ public class ElementRenderer : MonoBehaviour, IHasElement
         _lableText.color = HasRecipies() ? Settings.Elements.DefaultElementColor : Settings.Elements.ElementWithoutRecipiesColor;
     }
 
+    public void SetFontMaxSize(float maxSize)
+    {
+        _lableText.fontSizeMax = maxSize;
+    }
+
     protected void RenderClosed(Element element)
     {
         Element = element;

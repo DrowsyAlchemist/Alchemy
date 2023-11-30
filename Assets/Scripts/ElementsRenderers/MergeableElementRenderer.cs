@@ -23,6 +23,7 @@ public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragH
     public void OnBeginDrag(PointerEventData eventData)
     {
         _deltaPosition = (Vector3)eventData.position - transform.position;
+        transform.SetSiblingIndex(transform.parent.childCount - 1);
     }
 
     public void OnDrag(PointerEventData eventData)

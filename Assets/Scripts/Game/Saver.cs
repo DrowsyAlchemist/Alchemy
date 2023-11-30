@@ -23,6 +23,7 @@ public class Saver
     public bool IsAdAllowed => _saveDataBuilder.ToString().Contains(StickyAdName) == false;
     public bool IsTerminalElementOpened => _saveDataBuilder.ToString().Contains(TerminalElementName);
     public bool IsTrainingCompleted { get; private set; } = false;
+    public string CurrentLanguage { get; private set; }
 
     public bool IsPlayerAuthorized
     {
@@ -88,6 +89,12 @@ public class Saver
         }
     }
 
+    public void SetLanguage(string language)
+    {
+        CurrentLanguage = language;
+        Save();
+    }
+
     public void ResetSaves()
     {
         _saveDataBuilder.Clear();
@@ -142,6 +149,7 @@ public class Saver
         saves.SoundIsOn = Sound.IsOn;
         saves.MusicIsOn = Sound.MusicIsOn;
         saves.SoundNormalizedVolume = Sound.CurrentGeneralNormalizedVolume;
+        saves.Language = CurrentLanguage;
         string jsonData = JsonUtility.ToJson(saves);
 
         if (IsPlayerAuthorized)
@@ -181,6 +189,7 @@ public class Saver
         int currentScore = saves.CurrentScore > _elementsStorage.SortedOpenedElements.Count ? saves.CurrentScore : _elementsStorage.SortedOpenedElements.Count;
         _score.Init(bestScore, currentScore);
         IsTrainingCompleted = saves.IsTrainingCompleted || IsTrainingCompleted;
+        CurrentLanguage = saves.Language;
         Sound.Init(saves.SoundIsOn, saves.MusicIsOn, saves.SoundNormalizedVolume);
         Save();
     }
@@ -195,5 +204,6 @@ public class Saver
         public bool SoundIsOn;
         public bool MusicIsOn;
         public float SoundNormalizedVolume;
+        public string Language;
     }
 }

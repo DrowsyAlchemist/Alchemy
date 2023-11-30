@@ -11,15 +11,16 @@ public class EntryRenderer : MonoBehaviour
     [SerializeField] private TMP_Text _name;
     [SerializeField] private TMP_Text _score;
 
-    private const string DefaultNameRu = "Инкогнито";
-    private const string DefaultNameEn = "Incognito";
+    private const string DefaultNameRu = "Неизвестный Алхимик";
+    private const string DefaultNameEn = "Unknown Alchemist";
     private const string DefaulRank = "???";
 
     protected string LocalizedDefaultName => LeanLocalization.GetFirstCurrentLanguage().Equals("ru") ? DefaultNameRu : DefaultNameEn;
     public void Render(LeaderboardEntryResponse entry)
     {
         _rank.text = entry.rank.ToString();
-        _name.text = PlayerAccount.HasPersonalProfileDataPermission ? entry.player.publicName : LocalizedDefaultName;
+        string playerName = PlayerAccount.HasPersonalProfileDataPermission ? entry.player.publicName : LocalizedDefaultName;
+        _name.text = string.IsNullOrEmpty(playerName) ? LocalizedDefaultName : playerName;
         _score.text = entry.score.ToString();
     }
 
