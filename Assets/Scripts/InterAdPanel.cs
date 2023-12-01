@@ -48,7 +48,7 @@ public class InterAdPanel : MonoBehaviour
 
     private void ShowInter()
     {
-        InterstitialAd.Show(onOpenCallback: Sound.PauseMusic, onCloseCallback: (_) => Sound.ResumeMusic());
+        InterstitialAd.Show(onOpenCallback: Sound.Mute, onCloseCallback: (_) => Sound.TurnOn());
         GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "InterAd", 1, "InterAd", "InterAd");
     }
 }

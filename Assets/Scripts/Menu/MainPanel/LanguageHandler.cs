@@ -8,17 +8,19 @@ using UnityEngine.UI;
 public class LanguageHandler : MonoBehaviour
 {
     [SerializeField] private RectTransform _loadingCanvas;
-    [SerializeField] private UIButton _languageButton;
-    [SerializeField] private Image _lngImage;
-    [SerializeField] private Sprite _ruSprite;
-    [SerializeField] private Sprite _enSprite;
+    [SerializeField] private LanguageButton[] _languageButtons;
 
     private Saver _saver;
+
+    private void OnDestroy()
+    {
+        foreach (var button in _languageButtons)
+            button.Clicked -= OnChangeLanguageButtonClick;
+    }
 
     public void Init(Saver saver)
     {
         _saver = saver;
-        _languageButton.AssignOnClickAction(OnChangeLanguageButtonClick);
 
 #if !UNITY_EDITOR
         string systemLang = YandexGamesSdk.Environment.GetCurrentLang();
@@ -27,23 +29,32 @@ public class LanguageHandler : MonoBehaviour
 #endif
         string savedLang = saver.CurrentLanguage;
         string targetLang = string.IsNullOrEmpty(savedLang) ? systemLang : savedLang;
-
-        _lngImage.sprite = targetLang.Equals("ru") ? _ruSprite : _enSprite;
         LeanLocalization.SetCurrentLanguageAll(targetLang);
         _saver.SetLanguage(targetLang);
 
+        foreach (var button in _languageButtons)
+        {
+            button.Init(targetLang);
+            button.Clicked += OnChangeLanguageButtonClick;
+        }
         if (targetLang.Equals("ru"))
             Metrics.SendEvent(MetricEvent.LngRu);
         else
             Metrics.SendEvent(MetricEvent.LngEn);
     }
 
-    private void OnChangeLanguageButtonClick()
+    private void OnChangeLanguageButtonClick(string targetLang)
     {
-        _loadingCanvas.Activate();
         string currentLanguage = LeanLocalization.GetFirstCurrentLanguage();
-        string targetlanguage = currentLanguage.Equals("ru") ? "en" : "ru";
-        _saver.SetLanguage(targetlanguage);
+
+        if (currentLanguage.Equals(targetLang))
+            return;
+
+        if (targetLang.Equals("ru") == false && targetLang.Equals("en") == false)
+            throw new System.NotImplementedException();
+
+        _loadingCanvas.Activate();
+        _saver.SetLanguage(targetLang);
         SceneManager.LoadScene(Settings.MainSceneName);
     }
 }

@@ -13,7 +13,7 @@ public class AdShower
         onRewarded.Invoke();
         return;
 #endif
-        VideoAd.Show(onOpenCallback: Sound.PauseMusic, onRewardedCallback: onRewarded, onCloseCallback: Sound.ResumeMusic, onErrorCallback: OnErrorDefault);
+        VideoAd.Show(onOpenCallback: Sound.Mute, onRewardedCallback: onRewarded, onCloseCallback: Sound.TurnOn, onErrorCallback: OnErrorDefault);
     }
 
     public void ShowInter()
@@ -22,7 +22,7 @@ public class AdShower
         Debug.Log("ShowInter");
         return;
 #endif
-        InterstitialAd.Show(onOpenCallback: Sound.PauseMusic, onCloseCallback: (_) => Sound.ResumeMusic(), onErrorCallback: OnErrorDefault);
+        InterstitialAd.Show(onOpenCallback: Sound.Mute, onCloseCallback: (_) => Sound.TurnOn(), onErrorCallback: OnErrorDefault);
     }
 
     private void OnErrorDefault(string error)

@@ -56,11 +56,13 @@ public class Sound : MonoBehaviour
 
     private void OnDestroy()
     {
-        WebApplication.InBackgroundChangeEvent -= OnBackgroundChanged;
+        WebApplication.InBackgroundChangeEvent -= _instance.OnBackgroundChanged;
     }
 
     public static void Init(bool isVolumeOn, bool isMusicOn, float normalizedVolume)
     {
+        SetGeneralVolume(normalizedVolume);
+
         if (isVolumeOn)
             TurnOn();
         else
@@ -71,7 +73,6 @@ public class Sound : MonoBehaviour
         else
             PauseMusic();
 
-        SetGeneralVolume(normalizedVolume);
         WebApplication.InBackgroundChangeEvent += _instance.OnBackgroundChanged;
         ConditionChanged?.Invoke();
     }
@@ -131,28 +132,34 @@ public class Sound : MonoBehaviour
         _instance._clickSound.Play();
     }
 
+    private static void OnListener()
+    {
+        AudioListener.pause = false;
+        AudioListener.volume = 1;
+    }
+
+    private static void OffListener()
+    {
+        AudioListener.pause = true;
+        AudioListener.volume = 0;
+    }
+
     private void OnBackgroundChanged(bool isOut)
     {
         if (isOut)
-        {
-            AudioListener.pause = true;
-            AudioListener.volume = 0;
-        }
+            OffListener();
         else
-        {
-            AudioListener.pause = false;
-            AudioListener.volume = 1;
-        }
+            OnListener();
     }
 
     private void TurnSoundOn()
     {
-        _mixer.SetFloat(_instance._masterVolumeName, CurrentGeneralNormalizedVolume);
+        SetVolume(_instance._masterVolumeName, CurrentGeneralNormalizedVolume);
     }
 
     private void TurnSoundOff()
     {
-        _mixer.SetFloat(_instance._masterVolumeName, _instance._minValue);
+        SetVolume(_instance._masterVolumeName, 0);
     }
 
     private void SetVolume(string volumeName, float normalizedValue)
