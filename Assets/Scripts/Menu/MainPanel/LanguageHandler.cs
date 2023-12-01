@@ -32,6 +32,9 @@ public class LanguageHandler : MonoBehaviour
         LeanLocalization.SetCurrentLanguageAll(targetLang);
         _saver.SetLanguage(targetLang);
 
+        if (_languageButtons == null || _languageButtons.Length == 0)
+            return;
+
         foreach (var button in _languageButtons)
         {
             button.Init(targetLang);
