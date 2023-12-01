@@ -137,13 +137,11 @@ public class Sound : MonoBehaviour
         {
             AudioListener.pause = true;
             AudioListener.volume = 0;
-            TurnSoundOff();
         }
-        else if (IsOn)
+        else
         {
             AudioListener.pause = false;
             AudioListener.volume = 1;
-            TurnSoundOn();
         }
     }
 

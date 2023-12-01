@@ -92,6 +92,7 @@ public class Saver
     public void SetLanguage(string language)
     {
         CurrentLanguage = language;
+        _elementsStorage.ResortElements();
         Save();
     }
 

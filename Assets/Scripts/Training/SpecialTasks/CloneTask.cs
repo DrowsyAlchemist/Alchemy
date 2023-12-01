@@ -23,7 +23,7 @@ public class CloneTask : Task
         {
             var elementRenderer = elementsOnField[0];
             Rect rendererRect = elementRenderer.GetComponent<RectTransform>().rect;
-            float yMargin = rendererRect.size.y / 2;
+            float yMargin = rendererRect.size.y / 4f;
             float rendererScale = elementRenderer.transform.lossyScale.x;
             animatedHand.SetPosition((Vector2)elementRenderer.transform.position + Vector2.down * yMargin * rendererScale);
             animatedHand.PlayClone();

@@ -51,7 +51,7 @@ public class MergeableElementRenderer : ElementRenderer, IEndDragHandler, IDragH
                 if (_trainingMode)
                     Training.SetElementOnGameField(Element);
             }
-            if (result.gameObject.TryGetComponent(out MergeableElementRenderer otherElementRenderer))
+            if (result.gameObject.transform.parent.TryGetComponent(out MergeableElementRenderer otherElementRenderer))
             {
                 if (otherElementRenderer != this)
                 {

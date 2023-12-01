@@ -1,3 +1,4 @@
+using System.Drawing;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,8 +22,9 @@ public class ClickTask : Task
 
     protected override void SetHand(AnimatedHand animatedHand)
     {
-        Vector3 margin = ButtonScale * new Vector2(0, MarginFromButtonModifier * _targetButton.GetComponent<RectTransform>().rect.size.y);
-        animatedHand.SetPosition(_targetButton.transform.position + margin);
+        Vector2 buttonSize = _targetButton.GetComponent<RectTransform>().rect.size;
+        Vector2 margin = ButtonScale * new Vector2(buttonSize.x / 3, MarginFromButtonModifier * buttonSize.y);
+        animatedHand.SetPosition((Vector2)_targetButton.transform.position + margin);
         animatedHand.PlayPointDown();
     }
 

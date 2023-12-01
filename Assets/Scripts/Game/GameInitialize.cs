@@ -10,15 +10,13 @@ using UnityEngine.UI;
 
 public sealed class GameInitialize : MonoBehaviour
 {
-    [SerializeField] private bool _adjustForMibile;
     [SerializeField] private ElementsSizeAdjustment _elementsSizeAdjustment;
-
     [SerializeField] private ElementsStorage _elementsStorage;
     [SerializeField] private MainOpenedElementsView _openedElementsView;
     [SerializeField] private AlphabeticalIndex _alphabeticalIndex;
     [SerializeField] private GameField _gameField;
     [SerializeField] private Menu _menu;
-    [SerializeField] private LanguageHandler _languageHandler; 
+    [SerializeField] private LanguageHandler _languageHandler;
     [SerializeField] private UIButton _openRecipiesBookButton;
     [SerializeField] private Progress _progress;
     [SerializeField] private Score _score;
@@ -56,25 +54,7 @@ public sealed class GameInitialize : MonoBehaviour
 
     private IEnumerator Init()
     {
-#if !UNITY_EDITOR
-        string systemLang = YandexGamesSdk.Environment.GetCurrentLang();
-        LeanLocalization.SetCurrentLanguageAll(systemLang);
-
-        if (systemLang.Equals("ru"))
-            Metrics.SendEvent(MetricEvent.LngRu);
-        else
-            Metrics.SendEvent(MetricEvent.LngEn);
-
-        if (Device.IsMobile)
-            _elementsSizeAdjustment.AdjustForMobile();
-        else
-            _elementsSizeAdjustment.AdjustForPc();
-#else
-        if (_adjustForMibile)
-            _elementsSizeAdjustment.AdjustForMobile();
-        else
-            _elementsSizeAdjustment.AdjustForPc();
-#endif
+        _elementsSizeAdjustment.Init();
         _saver = Saver.Create(_elementsStorage, _score, _menu.MainMenuPanel);
 
         while (_saver.IsReady == false)
@@ -148,7 +128,8 @@ public sealed class GameInitialize : MonoBehaviour
             Billing.GetPurchasedProducts(onSuccessCallback: (response) =>
             {
                 for (int i = 0; i < response.purchasedProducts.Length; i++)
-                    Billing.ConsumeProduct(response.purchasedProducts[i].purchaseToken);
+                    if (response.purchasedProducts[i].productID.Contains("OffAd") == false)
+                        Billing.ConsumeProduct(response.purchasedProducts[i].purchaseToken);
 
                 RemoveProgress();
             });

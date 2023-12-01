@@ -4,17 +4,6 @@ using UnityEngine;
 
 public class AdShower
 {
-    private readonly Action _onOpen;
-    private readonly Action _onClose;
-    private readonly Action<string> _onError;
-
-    public AdShower(Action onopen = null, Action onClose = null, Action<string> onError = null)
-    {
-        _onOpen = onopen;
-        _onClose = onClose;
-        _onError = onError ?? OnErrorDefault;
-    }
-
     public void ShowVideo(Action onRewarded)
     {
         if (onRewarded == null)
@@ -24,7 +13,7 @@ public class AdShower
         onRewarded.Invoke();
         return;
 #endif
-        VideoAd.Show(_onOpen, onRewarded, null, _onError);
+        VideoAd.Show(onOpenCallback: Sound.PauseMusic, onRewardedCallback: onRewarded, onCloseCallback: Sound.ResumeMusic, onErrorCallback: OnErrorDefault);
     }
 
     public void ShowInter()
@@ -33,16 +22,11 @@ public class AdShower
         Debug.Log("ShowInter");
         return;
 #endif
-        InterstitialAd.Show(_onOpen, null, _onError);
+        InterstitialAd.Show(onOpenCallback: Sound.PauseMusic, onCloseCallback: (_) => Sound.ResumeMusic(), onErrorCallback: OnErrorDefault);
     }
 
     private void OnErrorDefault(string error)
     {
         Debug.Log("ShowAd error: " + error);
     }
-
-    //private void OnCloseInter(bool _)
-    //{
-    //    _onClose?.Invoke();
-    //}
 }

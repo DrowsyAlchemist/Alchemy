@@ -8,7 +8,6 @@ using UnityEngine.UI;
 
 public sealed class TrainingInitialize : MonoBehaviour
 {
-    [SerializeField] private bool _adjustForMibile;
     [SerializeField] private ElementsSizeAdjustment _elementsSizeAdjustment;
 
     [SerializeField] private ElementsStorage _elementsStorage;
@@ -45,20 +44,7 @@ public sealed class TrainingInitialize : MonoBehaviour
     {
         _fadeImage.Activate();
         yield return new WaitForEndOfFrame();
-#if !UNITY_EDITOR
-        string systemLang = YandexGamesSdk.Environment.GetCurrentLang();
-        LeanLocalization.SetCurrentLanguageAll(systemLang);
-
-        if (Device.IsMobile)
-            _elementsSizeAdjustment.AdjustForMobile();
-        else
-            _elementsSizeAdjustment.AdjustForPc();
-#else
-        if (_adjustForMibile)
-            _elementsSizeAdjustment.AdjustForMobile();
-        else
-            _elementsSizeAdjustment.AdjustForPc();
-#endif
+        _elementsSizeAdjustment.Init();
         _saver = Saver.Create(_elementsStorage, _score, _menu.MainMenuPanel, isTrainingMode: true);
 
         while (_saver.IsReady == false)

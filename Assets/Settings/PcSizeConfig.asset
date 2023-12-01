@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7c556d237128a640ad882c1fb73b1ba, type: 3}
   m_Name: PcSizeConfig
   m_EditorClassIdentifier: 
-  _maxFontSize: 25
-  _openedElementHeight: 60
-  _mergeableElementSize: {x: 155, y: 125}
-  _bookCellSize: {x: 140, y: 140}
+  _maxFontSize: 30
+  _openedElementHeight: 70
+  _mergeableElementSize: {x: 190, y: 140}
+  _bookCellSize: {x: 150, y: 150}

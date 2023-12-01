@@ -1,25 +1,32 @@
+using Agava.WebUtility;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ElementsSizeAdjustment : MonoBehaviour
 {
+    [SerializeField] private bool _adjustForMobile;
+
     [SerializeField] private PcSizeConfig _pcSizeConfig;
     [SerializeField] private MobileSizeConfig _mobileSizeConfig;
 
     [SerializeField] private OpenedElementRenderer _openedElementRendererTemplate;
     [SerializeField] private MergeableElementRenderer _mergeableElementRendererTemplate;
-    [SerializeField] private BookElementRenderer _bookElementRendererTemplate;
+    [SerializeField] private BookElementRenderer _bookGridElementRendererTemplate;
+    [SerializeField] private RecipeRenderer _recipeRendererTemplate;
     [SerializeField] private GridLayoutGroup _recipeBookGrid;
 
-    public void AdjustForMobile()
+    public void Init()
     {
-        Adjust(_mobileSizeConfig);
-    }
-
-    public void AdjustForPc()
-    {
-        Adjust(_pcSizeConfig);
+#if !UNITY_EDITOR
+        bool isMobile = Device.IsMobile;
+#else
+        bool isMobile = _adjustForMobile;
+#endif
+        if (isMobile)
+            Adjust(_mobileSizeConfig);
+        else
+            Adjust(_pcSizeConfig);
     }
 
     private void Adjust(IElementSizeConfig sizeConfig)
@@ -52,6 +59,7 @@ public class ElementsSizeAdjustment : MonoBehaviour
     {
         _openedElementRendererTemplate.SetFontMaxSize(sizeConfig.MaxFontSize);
         _mergeableElementRendererTemplate.SetFontMaxSize(sizeConfig.MaxFontSize);
-        _bookElementRendererTemplate.SetFontMaxSize(sizeConfig.MaxFontSize);
+        _bookGridElementRendererTemplate.SetFontMaxSize(sizeConfig.MaxFontSize);
+        _recipeRendererTemplate.SetMaxFontSize(sizeConfig.MaxFontSize);
     }
 }

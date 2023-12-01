@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ffea4ab41f43904d8097bccc0f90519, type: 3}
   m_Name: MobileSizeConfig
   m_EditorClassIdentifier: 
-  _maxFontSize: 40
-  _openedElementHeight: 90
-  _mergeableElementSize: {x: 190, y: 160}
-  _bookCellSize: {x: 180, y: 180}
+  _maxFontSize: 45
+  _openedElementHeight: 115
+  _mergeableElementSize: {x: 275, y: 220}
+  _bookCellSize: {x: 220, y: 220}

@@ -28,9 +28,11 @@ public class DragTask : Task
     {
         yield return new WaitForEndOfFrame();
         Rect rendererRect = elementRenderer.GetComponent<RectTransform>().rect;
+        float xMargin = rendererRect.size.x / 3f;
         float yMargin = rendererRect.size.y / 2;
         float rendererScale = elementRenderer.transform.lossyScale.x;
-        animatedHand.SetPosition((Vector2)elementRenderer.transform.position + Vector2.down * yMargin * rendererScale);
+        Vector2 margin = -1 * rendererScale * new Vector2(xMargin, yMargin);
+        animatedHand.SetPosition((Vector2)elementRenderer.transform.position + margin);
         animatedHand.PlayDragAndDrop();
     }
 }

@@ -61,4 +61,11 @@ public class RecipeRenderer : MonoBehaviour
 
         _resultElementRenderer.RenderOpened(element);
     }
+
+    public void SetMaxFontSize(float fontSize)
+    {
+        _firstElementRenderer.SetFontMaxSize(fontSize);
+        _secondElementRenderer.SetFontMaxSize(fontSize);
+        _resultElementRenderer.SetFontMaxSize(fontSize);
+    }
 }

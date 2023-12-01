@@ -75,6 +75,12 @@ public class ElementsStorage : MonoBehaviour, IProgressHolder
         _sortedOpenedElements.Clear();
     }
 
+    public void ResortElements()
+    {
+        SortElements(_elements);
+        SortElements(_sortedOpenedElements);
+    }
+
     private void OnElementOpened(Element element)
     {
         _sortedOpenedElements.Add(element);
