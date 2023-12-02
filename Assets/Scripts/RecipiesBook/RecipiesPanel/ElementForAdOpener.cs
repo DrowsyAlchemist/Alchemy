@@ -3,19 +3,12 @@ using System;
 
 public class ElementForAdOpener : IElementClickHandler
 {
-    private readonly AdShower _adShower;
-
-    public ElementForAdOpener()
-    {
-        _adShower = new AdShower();
-    }
-
     public event Action ElementOpened;
 
     public void OnElementClick(BookElementRenderer elementRenderer)
     {
         Metrics.SendEvent(MetricEvent.ClickOpenForAdButton);
-        _adShower.ShowVideo(onRewarded: () => OnRewarded(elementRenderer));
+        AdShower.ShowVideo(onRewarded: () => OnRewarded(elementRenderer));
     }
 
     private void OnRewarded(BookElementRenderer elementRenderer)

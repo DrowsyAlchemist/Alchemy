@@ -86,7 +86,7 @@ public sealed class GameInitialize : MonoBehaviour
         if (_saver.IsAdAllowed)
         {
             StickyAd.Show();
-            InterstitialAd.Show(onOpenCallback: () => Sound.Mute(), onCloseCallback: (_) => Sound.TurnOn());
+            AdShower.ShowInter(); 
         }
         else
         {

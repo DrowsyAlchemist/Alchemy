@@ -9,6 +9,7 @@ public class InterAdPanel : MonoBehaviour
     [SerializeField] private TMP_Text _timerText;
     [SerializeField] private float _initialTime;
 
+    private const float InterExtraSeconds = 30;
     private const string ShowAnimation = "Show";
     private Saver _saver;
     private float _elapsedTime;
@@ -48,7 +49,14 @@ public class InterAdPanel : MonoBehaviour
 
     private void ShowInter()
     {
-        InterstitialAd.Show(onOpenCallback: Sound.Mute, onCloseCallback: (_) => Sound.TurnOn());
-        GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "InterAd", 1, "InterAd", "InterAd");
+        if (AdShower.IsAdOpen)
+        {
+            _elapsedTime = Settings.MonetizationSettings.SecondsBetweenInters - InterExtraSeconds;
+        }
+        else
+        {
+            AdShower.ShowInter();
+            GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "InterAd", 1, "InterAd", "InterAd");
+        }
     }
 }
