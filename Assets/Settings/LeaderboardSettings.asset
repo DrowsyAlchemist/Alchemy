@@ -17,3 +17,8 @@ MonoBehaviour:
   _competingPlayersCount: 100
   _includeSelf: 1
   _profilePictureSize: 1
+  _defaultNameRu: "\u041D\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043D\u044B\u0439
+    \u0410\u043B\u0445\u0438\u043C\u0438\u043A"
+  _defaultNameEn: Unknown Alchemist
+  _defaulRank: ???
+  _defaultAvatar: {fileID: 2800000, guid: 0ac55f9f886d827408c102bdf33c5ff7, type: 3}

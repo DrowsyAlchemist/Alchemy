@@ -63,7 +63,7 @@ public class GameField : MonoBehaviour
         _yanElementWindow.Show(elementForOpenenig);
         return;
 #endif
-        if (_elementsStorage.ElementsLeft <= Settings.MonetizationSettings.LastElementsCount)
+        if (_elementsStorage.ElementsLeft <= Settings.Monetization.LastElementsCount)
         {
             Billing.PurchaseProduct(
                 MonetizationSettings.OpenLastElementForYanId,

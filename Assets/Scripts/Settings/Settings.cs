@@ -20,7 +20,7 @@ public class Settings : MonoBehaviour
     }
 
     public static ElementsSettings Elements => _instance._elementsSettings;
-    public static MonetizationSettings MonetizationSettings => _instance._monetizationSettings;
-    public static LeaderboardSettings LeaderboardSettings => _instance._leaderboardSettings;
+    public static MonetizationSettings Monetization => _instance._monetizationSettings;
+    public static LeaderboardSettings Leaderboard => _instance._leaderboardSettings;
     public static MonoBehaviour CoroutineObject => _instance._coroutineObject;
 }

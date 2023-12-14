@@ -81,10 +81,10 @@ public class Score : MonoBehaviour
 #if UNITY_EDITOR
         return;
 #endif
-        Leaderboard.GetPlayerEntry(Settings.LeaderboardSettings.LeaderboardName, onSuccessCallback: (result) =>
+        Leaderboard.GetPlayerEntry(Settings.Leaderboard.LeaderboardName, onSuccessCallback: (result) =>
         {
             if (result.score < BestScore)
-                Leaderboard.SetScore(Settings.LeaderboardSettings.LeaderboardName, BestScore);
+                Leaderboard.SetScore(Settings.Leaderboard.LeaderboardName, BestScore);
         });
     }
 }

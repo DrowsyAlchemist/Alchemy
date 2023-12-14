@@ -75,7 +75,7 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
         if (_clickHandler == null)
             throw new InvalidOperationException("ClickHandler is not assigned");
 
-        base.RenderManual(element, Settings.MonetizationSettings.AdSprite, Settings.MonetizationSettings.AdLable);
+        base.RenderManual(element, Settings.Monetization.AdSprite, Settings.Monetization.AdLable);
         _isInteractable = true;
         _button.Activate();
     }
@@ -88,7 +88,7 @@ public class BookElementRenderer : ElementRenderer, IPointerEnterHandler, IPoint
         if (_clickHandler == null)
             throw new InvalidOperationException("ClickHandler is not assigned");
 
-        base.RenderManual(element, Settings.MonetizationSettings.YanSprite, Settings.MonetizationSettings.YanLable);
+        base.RenderManual(element, Settings.Monetization.YanSprite, Settings.Monetization.YanLable);
         _isInteractable = true;
         _button.Activate();
     }

@@ -23,7 +23,7 @@ public class InterAdPanel : MonoBehaviour
     {
         _elapsedTime += Time.deltaTime;
 
-        if (_elapsedTime > Settings.MonetizationSettings.SecondsBetweenInters)
+        if (_elapsedTime > Settings.Monetization.SecondsBetweenInters)
         {
             _elapsedTime = 0;
 
@@ -51,11 +51,12 @@ public class InterAdPanel : MonoBehaviour
     {
         if (AdShower.IsAdOpen)
         {
-            _elapsedTime = Settings.MonetizationSettings.SecondsBetweenInters - InterExtraSeconds;
+            _elapsedTime = Settings.Monetization.SecondsBetweenInters - InterExtraSeconds;
         }
         else
         {
             AdShower.ShowInter();
+            _elapsedTime = 0;
             GameAnalytics.NewResourceEvent(GAResourceFlowType.Sink, "InterAd", 1, "InterAd", "InterAd");
         }
     }

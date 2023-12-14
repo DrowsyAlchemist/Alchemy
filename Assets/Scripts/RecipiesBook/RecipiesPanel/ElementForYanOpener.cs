@@ -21,7 +21,7 @@ public class ElementForYanOpener : IElementClickHandler
         OnPurchased(elementRenderer);
         return;
 #endif
-        if (_elementsStorage.ElementsLeft <= Settings.MonetizationSettings.LastElementsCount)
+        if (_elementsStorage.ElementsLeft <= Settings.Monetization.LastElementsCount)
         {
             Billing.PurchaseProduct(
               MonetizationSettings.OpenLastElementForYanId,

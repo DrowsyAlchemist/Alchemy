@@ -50,11 +50,11 @@ public class LeaderboardView : MonoBehaviour
 
         _authorizePanel.Deactivate();
 
-        Leaderboard.GetPlayerEntry(Settings.LeaderboardSettings.LeaderboardName,
+        Leaderboard.GetPlayerEntry(Settings.Leaderboard.LeaderboardName,
             onSuccessCallback: (entry) => _playerRenderer.Render(entry),
             onErrorCallback: (error) => _playerRenderer.Render(_score.BestScore));
 
-        Leaderboard.GetEntries(Settings.LeaderboardSettings.LeaderboardName,
+        Leaderboard.GetEntries(Settings.Leaderboard.LeaderboardName,
             onSuccessCallback: (result) =>
             {
                 int i = 0;
@@ -71,10 +71,10 @@ public class LeaderboardView : MonoBehaviour
                 }
             },
             onErrorCallback: (error) => Debug.Log("Leaderboard error: " + error),
-            topPlayersCount: Settings.LeaderboardSettings.TopPlayersCount,
-            competingPlayersCount: Settings.LeaderboardSettings.CompetingPlayersCount,
-            includeSelf: Settings.LeaderboardSettings.IncludeSelf,
-            pictureSize: Settings.LeaderboardSettings.ProfilePictureSize
+            topPlayersCount: Settings.Leaderboard.TopPlayersCount,
+            competingPlayersCount: Settings.Leaderboard.CompetingPlayersCount,
+            includeSelf: Settings.Leaderboard.IncludeSelf,
+            pictureSize: Settings.Leaderboard.ProfilePictureSize
         );
     }
 
